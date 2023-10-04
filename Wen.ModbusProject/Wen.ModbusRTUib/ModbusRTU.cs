@@ -132,7 +132,7 @@ namespace Wen.ModbusRTUib
         }
         #endregion
 
-        #region  建立01H读取输出线圈
+        #region  读取0X01输出,0X02输入线圈
         //第一步，拼接报文
         //第二步：发送报文
         //第三步：接收报文
@@ -146,10 +146,10 @@ namespace Wen.ModbusRTUib
         /// <param name="startCoil">初始线圈地址十进制</param>
         /// <param name="length">线圈的数量十进制</param>
         /// <returns></returns>
-        public byte[] ReadOutPutCoils(byte slave,ushort startCoil,ushort length)
+        public byte[] ReadOutPutCoils(byte slave, ushort startCoil, ushort length)
         {
             //第一步拼接报文
-            List<byte>  sendReadOutPutCoils=new List<byte>();
+            List<byte> sendReadOutPutCoils = new List<byte>();
             //从站地址
             sendReadOutPutCoils.Add(slave);
             //功能码
@@ -169,7 +169,7 @@ namespace Wen.ModbusRTUib
             //第三步，接受报文
             byte[] receive = null;
             //验证发送接受报文是否成功
-            if( SendAndReceive(sendReadOutPutCoils.ToArray(),ref receive))
+            if (SendAndReceive(sendReadOutPutCoils.ToArray(), ref receive))
             {
 
                 //线圈长度
@@ -178,9 +178,12 @@ namespace Wen.ModbusRTUib
                 if (CheckCRC(receive)&&receive.Length==5+coil)
                 {
                     //第五步，解析报文
-                    byte[] buffer = new byte[coil];
-                    Array.Copy(receive, 3, buffer, 0, buffer.Length);
-                    return buffer;
+                    if (receive[0]==slave&&receive[1]==0x01&&receive[2]==coil)
+                    {
+                        byte[] buffer = new byte[coil];
+                        Array.Copy(receive, 3, buffer, 0, buffer.Length);
+                        return buffer;
+                    }
                 }
             }
             return null;
@@ -225,14 +228,264 @@ namespace Wen.ModbusRTUib
                 if (CheckCRC(receive)&&receive.Length==5+coil)
                 {
                     //第五步，解析报文
-                    byte[] buffer = new byte[coil];
-                    Array.Copy(receive, 3, buffer, 0, buffer.Length);
-                    return buffer;
+                    if (receive[0]==slave&&receive[1]==0x02&&receive[2]==coil)
+                    {
+                        byte[] buffer = new byte[coil];
+                        Array.Copy(receive, 3, buffer, 0, buffer.Length);
+                        return buffer;
+                    }
                 }
             }
             return null;
         }
         #endregion
+
+
+        #region  读取0x03输出0x04输入寄存器
+        /// <summary>
+        /// 读取输出寄存器
+        /// </summary>
+        /// <param name="slaveid">从站地址</param>
+        /// <param name="start">初始寄存器地址</param>
+        /// <param name="bytelength">寄存器数量</param>
+        /// <returns>返回数据</returns>
+        public byte[] ReadOutPutRegisters(byte slaveid, ushort start, ushort bytelength)
+        {
+            //拼接报文
+            List<byte> sendReadOutPutRegisters = new List<byte>();
+            sendReadOutPutRegisters.Add(slaveid);
+            sendReadOutPutRegisters.Add(0x03);
+            sendReadOutPutRegisters.Add(Convert.ToByte(start/256));
+            sendReadOutPutRegisters.Add(Convert.ToByte(start%256));
+            sendReadOutPutRegisters.Add(Convert.ToByte(bytelength/256));
+            sendReadOutPutRegisters.Add(Convert.ToByte(bytelength%256));
+            //CRC校验码
+            byte[] CRC = CRC16(sendReadOutPutRegisters.ToArray(), sendReadOutPutRegisters.Count);
+            sendReadOutPutRegisters.AddRange(CRC);
+
+            byte[] receive = null;
+            if (SendAndReceive(sendReadOutPutRegisters.ToArray(), ref receive))
+            {
+                int receivelength = bytelength*2;
+                byte[] registers = new byte[receivelength];
+                if (CheckCRC(receive)&&receive.Length==receivelength)
+                {
+                    if (receive[0]==slaveid&&receive[1]==0x03&&receive[2]==receivelength)
+                    {
+                        Array.Copy(receive, 3, registers, 0, registers.Length);
+                        return registers;
+                    }
+                }
+            }
+            return null;
+        }
+
+
+        /// <summary>
+        /// 读取输入寄存器
+        /// </summary>
+        /// <param name="slaveid">从站地址</param>
+        /// <param name="start">初始寄存器地址</param>
+        /// <param name="bytelength">寄存器数量</param>
+        /// <returns>返回数据</returns>
+        public byte[] ReadInPutRegisters(byte slaveid, ushort start, ushort bytelength)
+        {
+            //拼接报文
+            List<byte> sendReadOutPutRegisters = new List<byte>();
+            sendReadOutPutRegisters.Add(slaveid);
+            sendReadOutPutRegisters.Add(0x04);
+            sendReadOutPutRegisters.Add(Convert.ToByte(start/256));
+            sendReadOutPutRegisters.Add(Convert.ToByte(start%256));
+            sendReadOutPutRegisters.Add(Convert.ToByte(bytelength/256));
+            sendReadOutPutRegisters.Add(Convert.ToByte(bytelength%256));
+            //CRC校验码
+            byte[] CRC = CRC16(sendReadOutPutRegisters.ToArray(), sendReadOutPutRegisters.Count);
+            sendReadOutPutRegisters.AddRange(CRC);
+
+            byte[] receive = null;
+            if (SendAndReceive(sendReadOutPutRegisters.ToArray(), ref receive))
+            {
+                int receivelength = bytelength*2;
+                byte[] registers = new byte[receivelength];
+                if (CheckCRC(receive)&&receive.Length==receivelength)
+                {
+                    if (receive[0]==slaveid&&receive[1]==0x03&&receive[2]==receivelength)
+                    {
+                        Array.Copy(receive, 3, registers, 0, registers.Length);
+                        return registers;
+                    }
+                }
+            }
+            return null;
+        }
+        #endregion
+
+
+        #region  预置0X05单线圈
+        /// <summary>
+        /// 预置单线圈
+        /// </summary>
+        /// <param name="slaveid">从站地址</param>
+        /// <param name="start">线圈地址</param>
+        /// <param name="value">线圈数据</param>
+        /// <returns>是否成功</returns>
+        public bool PreSetSingleCoil(byte slaveid, ushort start, bool value)
+        {
+            List<byte> send = new List<byte>();
+            send.Add(slaveid);
+            send.Add(0X05);
+            send.Add(Convert.ToByte(start/256));
+            send.Add(Convert.ToByte(start%256));
+            send.Add(value ? (byte)0xFF : (byte)0x00);
+            send.Add(0xff);
+
+            send.AddRange(CRC16(send.ToArray(), send.Count));
+
+            byte[] receive = new byte[send.Count];
+            if (SendAndReceive(send.ToArray(), ref receive))
+            {
+                BytesArrayEquals(send.ToArray(),receive);
+                return true;
+            }
+            return false;
+        }
+        #endregion
+
+        #region  预置0X06单寄存器
+        /// <summary>
+        /// 预置单寄存器
+        /// </summary>
+        /// <param name="slaveid">从站地址</param>
+        /// <param name="start">寄存器地址</param>
+        /// <param name="value">寄存器数据 字节类型</param>
+        /// <returns></returns>
+        public bool PreSetSingleRegister(byte slaveid,ushort start, byte[] value)
+        {
+            List<byte> send = new List<byte>();
+            send.Add(slaveid);
+            send.Add(0X05);
+            send.Add(Convert.ToByte(start/256));
+            send.Add(Convert.ToByte(start%256));
+            send.AddRange(value);
+
+            send.AddRange(CRC16(send.ToArray(), send.Count));
+
+            byte[] receive = new byte[send.Count];
+            if (SendAndReceive(send.ToArray(), ref receive))
+            {
+                BytesArrayEquals(send.ToArray(), receive);
+                return true;
+            }
+            return false;
+        }
+        /// <summary>
+        /// 预置单寄存器
+        /// </summary>
+        /// <param name="slaveid">从站地址</param>
+        /// <param name="start">初始寄存器</param>
+        /// <param name="value">寄存器数据 有符号的整型</param>
+        /// <returns></returns>
+        public bool PreSetSingleRegister(byte slaveid, ushort start, short value)
+        {
+            return PreSetSingleRegister(slaveid,start,BitConverter.GetBytes(value).Reverse().ToArray());
+        }
+        /// <summary>
+        /// 预置单寄存器
+        /// </summary>
+        /// <param name="slaveid">从站地址</param>
+        /// <param name="start">寄存器地址</param>
+        /// <param name="value">寄存器数值 无符号整型</param>
+        /// <returns></returns>
+        public bool PreSetSingleRegister(byte slaveid, ushort start, ushort value)
+        {
+            return PreSetSingleRegister(slaveid,start,BitConverter.GetBytes(value).Reverse().ToArray());
+        }
+        #endregion
+
+        #region  预置0X0F多线圈
+        /// <summary>
+        /// 预置多线圈
+        /// </summary>
+        /// <param name="slaveid">从站地址</param>
+        /// <param name="start">初始线圈</param>
+        /// <param name="value">布尔数组</param>
+        /// <returns>返回结果</returns>
+        public bool PreSetMultiCoils(byte slaveid,ushort start, bool[]  value)
+        {
+            List<byte>  send=new List<byte>();  
+            send.Add(slaveid);
+            send.Add(0x0f);
+            send.Add(Convert.ToByte(start/256));
+            send.Add(Convert.ToByte(start%256));
+            send.Add(Convert.ToByte( value.Length/256));//线圈数量
+            send.Add(Convert.ToByte(value.Length%256));
+
+            send.Add((byte)GetByteArrayFromBoolArray(value).Length);//字节计数
+
+            //数据
+            byte[] boolByte = GetByteArrayFromBoolArray(value);
+            send.AddRange(boolByte);
+            //CRC校验
+            send.AddRange(CRC16(send.ToArray(),send.Count));
+
+            byte[] receive =null;
+            if (SendAndReceive(send.ToArray(), ref receive))
+            {
+                if (CheckCRC(receive)&&receive.Length==8)
+                {
+                    for(int i=0;i<=8;i++)
+                    {
+                        send[i]=receive[i];
+                        return false;
+                    }
+                } 
+                return true;
+            }
+            return false;
+        }
+        #endregion
+
+        #region  预置0X10 多寄存器
+        public bool PreSetMultiRegisters(byte  slaveid,ushort start, byte[] values)
+        {
+            if (values==null &&values.Length%2!=0&&values.Length==0)
+            {
+                return false;
+            }
+
+
+            List<byte> send = new List<byte>();
+            send.Add(slaveid);
+            send.Add(0x10);
+            send.Add(Convert.ToByte(start/256));
+            send.Add(Convert.ToByte(start%256));
+           send.Add(Convert.ToByte(values.Length/2/256));//寄存器数量
+            send.Add(Convert.ToByte(values.Length/2%256));
+
+            send.Add((byte)values.Length);//字节计数
+
+            //直接将byte[]数据,写入
+            send.AddRange(values);
+            //CRC校验
+            send.AddRange(CRC16(send.ToArray(), send.Count));
+
+            byte[] receive = null;
+            if (SendAndReceive(send.ToArray(), ref receive))
+            {
+                if (CheckCRC(receive)&&receive.Length==8)
+                {
+                    for (int i = 0; i<=8; i++)
+                    {
+                        send[i]=receive[i];
+                        return false;
+                    }
+                }
+                return true;
+            }
+            return false;
+        }
+        #endregion
+
 
 
         /// <summary>
@@ -241,7 +494,7 @@ namespace Wen.ModbusRTUib
         /// <param name="send">发送报文字节数组</param>
         /// <param name="receive">接受报文字节数组</param>
         /// <returns>判断是成功</returns>
-        public bool SendAndReceive(byte[] send,ref byte[] receive)
+        public bool SendAndReceive(byte[] send, ref byte[] receive)
         {
             try
             {
@@ -280,11 +533,73 @@ namespace Wen.ModbusRTUib
 
                 return true;
             }
-                catch(Exception )
+            catch (Exception)
             {
                 return false;
             }
         }
+
+        /// <summary>
+        /// 比较数组是否相同
+        /// </summary>
+        /// <param name="b1"></param>
+        /// <param name="b2"></param>
+        /// <returns></returns>
+        public bool BytesArrayEquals(byte[] b1, byte[] b2)
+        {
+            if (b1==null||b2==null) return false;
+            if (b1.Length!=b2.Length) return false;
+            for (int i = 0; i<b1.Length; i++)
+            {
+                if (b1[i]!=b2[i])
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        #region  将布尔数组转变为字节数组
+        /// <summary>
+        /// 将bool数组转变为字节数组
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
+        public byte[] GetByteArrayFromBoolArray(bool[] value)
+        {
+            //首先bool[]，确定字节的个数
+            int byteLength=value.Length%8==0?value.Length/8:value.Length/8+1;
+
+            byte[] result = new byte[byteLength];
+
+            //将每个bool数组的位给byte对应的位赋值
+            for (int i=0;i<result.Length;i++)
+            {
+                //将超过将bool数组，分为8个位一组，对应字节数组
+                int total = value.Length>8*(i+1) ? value.Length-8*(i+1) : 8;
+                for (int j=0;j<total;j++)
+                {
+                    result[i]=SetBitValue(result[i], j, value[8*1+j]);
+                }
+            }
+            return result;
+        }
+
+        /// <summary>
+        /// 将字节中某个位，置位或者复位
+        /// </summary>
+        /// <param name="src">字节</param>
+        /// <param name="bit">指定位</param>
+        /// <param name="value">置位或者复位</param>
+        /// <returns>返回改变之后的字节</returns>
+        public byte SetBitValue(byte  src,int bit,bool value)
+        {
+            //将0000 0000其中一位改为1，可以使对应变为1，然后或1  0010  0000，这样不管是1101 1111/0000 0000都可以不改变其他位
+            //将0010 0000其中一位改为0，可以使对应变为0，然后其他位取反  1101 1111，这样不管是1111 1111/0010 0000都可以使其他位不改变
+            return value ?(byte) (src|(byte)Math.Pow(2,bit)):(byte)(~src&(byte)Math.Pow(2,bit));
+        }
+
+        #endregion
 
         #region  CRC校验【查表法，速度很快】
         /// <summary>
