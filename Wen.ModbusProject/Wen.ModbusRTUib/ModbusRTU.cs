@@ -15,7 +15,7 @@ namespace Wen.ModbusRTUib
         #region 构造函数
         public ModbusRTU()
         {
-            serialPort=null;
+            serialPort=new SerialPort();
         }
         #endregion
 
@@ -173,7 +173,7 @@ namespace Wen.ModbusRTUib
             {
 
                 //线圈长度
-                int coil = length%8==0 ? 1 : length/8+1;
+                int coil = length%8==0 ? length/8 : length/8+1;
                 //第四步验证报文
                 if (CheckCRC(receive)&&receive.Length==5+coil)
                 {
@@ -223,7 +223,7 @@ namespace Wen.ModbusRTUib
             {
 
                 //线圈长度
-                int coil = length%8==0 ? 1 : length/8+1;
+                int coil = length%8==0 ? length/8 : length/8+1;
                 //第四步验证报文
                 if (CheckCRC(receive)&&receive.Length==5+coil)
                 {
@@ -263,15 +263,18 @@ namespace Wen.ModbusRTUib
             byte[] CRC = CRC16(sendReadOutPutRegisters.ToArray(), sendReadOutPutRegisters.Count);
             sendReadOutPutRegisters.AddRange(CRC);
 
+            //发送接收报文
             byte[] receive = null;
             if (SendAndReceive(sendReadOutPutRegisters.ToArray(), ref receive))
             {
                 int receivelength = bytelength*2;
                 byte[] registers = new byte[receivelength];
+                //验证报文
                 if (CheckCRC(receive)&&receive.Length==receivelength)
                 {
                     if (receive[0]==slaveid&&receive[1]==0x03&&receive[2]==receivelength)
                     {
+                        //解析报文
                         Array.Copy(receive, 3, registers, 0, registers.Length);
                         return registers;
                     }
@@ -302,13 +305,16 @@ namespace Wen.ModbusRTUib
             byte[] CRC = CRC16(sendReadOutPutRegisters.ToArray(), sendReadOutPutRegisters.Count);
             sendReadOutPutRegisters.AddRange(CRC);
 
+            //发送接受报文
             byte[] receive = null;
             if (SendAndReceive(sendReadOutPutRegisters.ToArray(), ref receive))
             {
                 int receivelength = bytelength*2;
                 byte[] registers = new byte[receivelength];
+                //验证报文
                 if (CheckCRC(receive)&&receive.Length==receivelength)
                 {
+                    //解析报文
                     if (receive[0]==slaveid&&receive[1]==0x03&&receive[2]==receivelength)
                     {
                         Array.Copy(receive, 3, registers, 0, registers.Length);
@@ -331,19 +337,22 @@ namespace Wen.ModbusRTUib
         /// <returns>是否成功</returns>
         public bool PreSetSingleCoil(byte slaveid, ushort start, bool value)
         {
+            //拼接报文
             List<byte> send = new List<byte>();
             send.Add(slaveid);
             send.Add(0X05);
             send.Add(Convert.ToByte(start/256));
             send.Add(Convert.ToByte(start%256));
             send.Add(value ? (byte)0xFF : (byte)0x00);
-            send.Add(0xff);
+            send.Add(0x00);
 
             send.AddRange(CRC16(send.ToArray(), send.Count));
 
             byte[] receive = new byte[send.Count];
+            //发送 接受报文
             if (SendAndReceive(send.ToArray(), ref receive))
             {
+                //验证报文
                 BytesArrayEquals(send.ToArray(),receive);
                 return true;
             }
@@ -361,18 +370,21 @@ namespace Wen.ModbusRTUib
         /// <returns></returns>
         public bool PreSetSingleRegister(byte slaveid,ushort start, byte[] value)
         {
+            //拼接报文
             List<byte> send = new List<byte>();
             send.Add(slaveid);
             send.Add(0X05);
             send.Add(Convert.ToByte(start/256));
             send.Add(Convert.ToByte(start%256));
-            send.AddRange(value);
+            send.AddRange(value);//寄存器数据
 
             send.AddRange(CRC16(send.ToArray(), send.Count));
 
             byte[] receive = new byte[send.Count];
+            //发送接收报文
             if (SendAndReceive(send.ToArray(), ref receive))
             {
+                //验证报文
                 BytesArrayEquals(send.ToArray(), receive);
                 return true;
             }
@@ -412,6 +424,8 @@ namespace Wen.ModbusRTUib
         /// <returns>返回结果</returns>
         public bool PreSetMultiCoils(byte slaveid,ushort start, bool[]  value)
         {
+
+            //拼接报文
             List<byte>  send=new List<byte>();  
             send.Add(slaveid);
             send.Add(0x0f);
@@ -428,9 +442,11 @@ namespace Wen.ModbusRTUib
             //CRC校验
             send.AddRange(CRC16(send.ToArray(),send.Count));
 
+            //发送接受报文
             byte[] receive =null;
             if (SendAndReceive(send.ToArray(), ref receive))
             {
+                //验证报文
                 if (CheckCRC(receive)&&receive.Length==8)
                 {
                     for(int i=0;i<=8;i++)
@@ -448,12 +464,13 @@ namespace Wen.ModbusRTUib
         #region  预置0X10 多寄存器
         public bool PreSetMultiRegisters(byte  slaveid,ushort start, byte[] values)
         {
+            //判断寄存器数据，不可以奇数字节，不可以无字节，不可以为空
             if (values==null &&values.Length%2!=0&&values.Length==0)
             {
                 return false;
             }
 
-
+            //拼接报文
             List<byte> send = new List<byte>();
             send.Add(slaveid);
             send.Add(0x10);
@@ -469,9 +486,11 @@ namespace Wen.ModbusRTUib
             //CRC校验
             send.AddRange(CRC16(send.ToArray(), send.Count));
 
+            //发送接受报文
             byte[] receive = null;
             if (SendAndReceive(send.ToArray(), ref receive))
             {
+                //验证报文
                 if (CheckCRC(receive)&&receive.Length==8)
                 {
                     for (int i = 0; i<=8; i++)
