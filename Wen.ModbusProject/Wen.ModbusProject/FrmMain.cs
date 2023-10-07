@@ -30,12 +30,14 @@ namespace Wen.ModbusProject
         /// <summary>
         /// ModbusRTU通信对象
         /// </summary>
-        private ModbusRTU modbusRTU=new ModbusRTU();
+        private ModbusRTU modbusRTU = new ModbusRTU();
 
         /// <summary>
         ///判断是否连接
         /// </summary>
-        private bool IsConnect = false;
+        private bool IsConnect { get; set; } = false;
+
+        private DataFormat dataFormat = DataFormat.ABCD;
 
         public FrmMain()
         {
@@ -52,7 +54,7 @@ namespace Wen.ModbusProject
             this.cmbPortName.SelectedIndex = 0;
 
             //添加波特率
-            this.cmbBaudRate.Items.AddRange(new string[] { "2400","4800","9600","19200","38400"});
+            this.cmbBaudRate.Items.AddRange(new string[] { "2400", "4800", "9600", "19200", "38400" });
             this.cmbBaudRate.SelectedIndex=2;
 
             //获取所有校验位，枚举类型
@@ -64,7 +66,7 @@ namespace Wen.ModbusProject
             this.cmbStopBits.SelectedIndex=1;
 
             //数据位  
-            this.cmbDataBits.Items.AddRange(new string[] { "7","8"});
+            this.cmbDataBits.Items.AddRange(new string[] { "7", "8" });
             this.cmbDataBits.SelectedIndex=1;
 
             //大小端  枚举类型DataFormat,
@@ -96,13 +98,16 @@ namespace Wen.ModbusProject
         {
             if (IsConnect)
             {
-                Add_Log(1,"ModbusRTU已连接");
+                Add_Log(1, "ModbusRTU已连接");
                 return;
             }
+
             //得到选定的校验
-            Parity parity = (Parity)Enum.Parse(typeof(Parity),this.cmbParity.Text,true);
-            StopBits stopBits = (StopBits)Enum.Parse(typeof(StopBits),this.cmbStopBits.Text,true);
-            IsConnect= modbusRTU.Connect(this.cmbPortName.Text, Convert.ToInt32(this.cmbBaudRate.Text), parity, Convert.ToInt32(this.cmbDataBits.Text),stopBits);
+            Parity parity = (Parity)Enum.Parse(typeof(Parity), this.cmbParity.Text, true);
+            StopBits stopBits = (StopBits)Enum.Parse(typeof(StopBits), this.cmbStopBits.Text, true);
+            //判断选择的串口号，波特率，校验，数据位，停止位，是否会连接成功
+            IsConnect= modbusRTU.Connect(this.cmbPortName.Text, Convert.ToInt32(this.cmbBaudRate.Text), parity, Convert.ToInt32(this.cmbDataBits.Text), stopBits);
+
             if (IsConnect)
             {
                 Add_Log(0, "ModbusRTU连接成功");
@@ -120,12 +125,13 @@ namespace Wen.ModbusProject
         /// </summary>
         /// <param name="level"></param>
         /// <param name="info"></param>
-        private void Add_Log(int level,string info)
+        private void Add_Log(int level, string info)
         {
-            ListViewItem list = new ListViewItem(DateTime.Now.ToShortDateString(),level);
+            //指定显示初始化ListView的项的文本，以及图片索引
+            ListViewItem list = new ListViewItem(DateTime.Now.ToShortDateString(), level);
             list.SubItems.Add(info);
 
-            this.list_Info.Items.Insert(0,list);
+            this.list_Info.Items.Insert(0, list);
         }
 
         /// <summary>
@@ -137,7 +143,337 @@ namespace Wen.ModbusProject
         {
             modbusRTU.Disconnect();
             IsConnect=false;
-            Add_Log(0,"ModbusRTU连接关闭");
+            Add_Log(0, "ModbusRTU连接关闭");
+        }
+        #endregion
+
+        #region 通用读取方法
+        private void btnRead_Click(object sender, EventArgs e)
+        {
+            //在进行读取之前，验证我们输入从站地址，
+            //初始线圈/寄存器地址，线圈/寄存器数量，存储区，数据类型，是否正确
+            if (CommonVeify())
+            {
+                //将对应的从站地址，初始地址，长度，全部转化为ModbusRTU读取方法中的，参数类型
+                byte slaveid = byte.Parse(this.txtSlaveID.Text.Trim());
+                ushort start = ushort.Parse(this.txtStart.Text);
+                ushort dataLength = ushort.Parse(this.txtDataLength.Text);
+                //明确当前的数据类型
+                DataType dataType = (DataType)Enum.Parse(typeof(DataType), this.cmbDataType.Text, true);
+                //得到存储区
+                StoreArea area = (StoreArea)Enum.Parse(typeof(StoreArea), this.cmbStoreArea.Text, true);
+                //大小端
+                dataFormat=(DataFormat)Enum.Parse(typeof(DataFormat), this.cmbDataFormat.Text, true);
+                //判断数据类型，一般为bool，byte，short，ushort，int，uint，folat(浮点数),
+                //double小数，long长整型，Ulong无符号长整型，string，bytearray字节数组，Hex十六进制，这些一般不考虑
+                switch (dataType)
+                {
+                    case DataType.Bool:
+                        ReadBool(area,slaveid,start,dataLength);
+                        break;
+                    case DataType.Byte:
+                        ReadByte(area,slaveid,start,dataLength);
+                        break;
+                    case DataType.Short:
+                        ReadShort(area,slaveid,start,dataLength);   
+                        break;
+                    case DataType.UShort:
+                        ReadUshort(area, slaveid, start, dataLength);
+                        break;
+                    case DataType.Int:
+                        ReadInt(area,slaveid,start,dataLength);
+                        break;
+                    case DataType.UInt:
+                        ReadUint(area, slaveid, start, dataLength);
+                        break;
+                    case DataType.Float:
+                        ReadFloat(area, slaveid, start, dataLength);
+                        break;
+                    case DataType.Double:
+                    case DataType.String:
+                    case DataType.Long:
+                    case DataType.ULong:
+                    case DataType.ByteArray:
+                    case DataType.HexString:
+                        Add_Log(1, "数据类型错误请检查");
+                        return;
+                }
+            }
+        }
+        #endregion
+
+
+        #region 读取bool
+        //对应不同的数据类型，需要选择对应的大小端传输
+        //写一个读取线圈，bool类型的方法
+        //调用ModbusRTU读取输出，输入线圈的方法，
+        //判断返回数据的字节数组，是否读取到值
+        //将字节数组转化成bool数组，BitLib.GetBitAraayFromByteAraay()方法转化成bool数组，从0开始读取线圈长度
+        //最后将其转化成string数组显示出来
+        /// <summary>
+        /// 读取输入输出线圈，并将数据显示在日志中
+        /// </summary>
+        /// <param name="area">存储区</param>
+        /// <param name="slaveid">从站地址</param>
+        /// <param name="start">初始地址</param>
+        /// <param name="length">长度</param>
+        private void ReadBool(StoreArea area, byte slaveid, ushort start, ushort length)
+        {
+            byte[] result = null;
+            switch (area)
+            {
+                //输入线圈1X,
+                //输出线圈0X,
+                //输入寄存器3X,
+                //输出寄存器4X
+                case StoreArea.输入线圈1X:
+                  result = modbusRTU.ReadInPutCoils(slaveid,start,length);
+                    break;
+                case StoreArea.输出线圈0X: 
+                    result=modbusRTU.ReadOutPutCoils(slaveid,start,length);
+                    break;
+                case StoreArea.输入寄存器3X:
+                case StoreArea.输出寄存器4X:
+                    Add_Log(1, "读取失败，不支持该存储区");
+                    break;
+            }
+            if (result!=null)
+            {
+                Add_Log(0, "读取成功："+ StringLib.GetStringFromValueArray(BitLib.GetBitArrayFromByteArray(result)));
+            }
+            else 
+            {
+                Add_Log(1,"读取失败，请检查参数是否正确");
+            }
+        }
+        #endregion
+
+        #region 读取字节,线圈数据可以是字节，寄存器也是字节
+        private void ReadByte(StoreArea area, byte slaveid, ushort start, ushort length)
+        {
+            byte[] result = null;
+            switch (area)
+            {
+                //输入线圈1X,
+                //输出线圈0X,
+                //输入寄存器3X,
+                //输出寄存器4X
+                case StoreArea.输入线圈1X:
+                    result = modbusRTU.ReadInPutCoils(slaveid, start, length);
+                    break;
+                case StoreArea.输出线圈0X:
+                    result=modbusRTU.ReadOutPutCoils(slaveid, start, length);
+                    break;
+                case StoreArea.输入寄存器3X:
+                    result=modbusRTU.ReadInPutRegisters(slaveid, start, length);
+                    break;
+                case StoreArea.输出寄存器4X:
+                    result=modbusRTU.ReadOutPutRegisters(slaveid, start, length);
+                    break;
+            }
+            if (result!=null)
+            {
+                Add_Log(0, "读取成功："+ StringLib.GetStringFromValueArray(result));
+            }
+            else
+            {
+                Add_Log(1, "读取失败，请检查参数是否正确");
+            }
+        }
+        #endregion
+
+        #region 读取Short，此时只能是寄存器，两个字节的寄存器不存在大小端
+        private void ReadShort(StoreArea area, byte slaveid, ushort start, ushort length)
+        {
+            byte[] result = null;
+            switch (area)
+            {
+                //输入线圈1X,
+                //输出线圈0X,
+                //输入寄存器3X,
+                //输出寄存器4X
+                case StoreArea.输入线圈1X:
+                case StoreArea.输出线圈0X:
+                    Add_Log(1, "读取失败不支持该存储区");
+                   return;
+                case StoreArea.输入寄存器3X:
+                    result=modbusRTU.ReadInPutRegisters(slaveid, start, length);
+                    break;
+                case StoreArea.输出寄存器4X:
+                    result=modbusRTU.ReadOutPutRegisters(slaveid, start, length);
+                    break;
+            }
+            if (result!=null)
+            {
+                Add_Log(0, "读取成功："+ StringLib.GetStringFromValueArray(ShortLib.GetShortArrayFromByteArray( result)));
+            }
+            else
+            {
+                Add_Log(1, "读取失败，请检查参数是否正确");
+            }
+        }
+        #endregion
+
+        #region 读取Ushort，只能是寄存器，两个字节的寄存器不存在大小端
+        private void ReadUshort(StoreArea area, byte slaveid, ushort start, ushort length)
+        {
+            byte[] result = null;
+            switch (area)
+            {
+                //输入线圈1X,
+                //输出线圈0X,
+                //输入寄存器3X,
+                //输出寄存器4X
+                case StoreArea.输入线圈1X:
+                case StoreArea.输出线圈0X:
+                    Add_Log(1, "读取失败不支持该存储区");
+                    return;
+                case StoreArea.输入寄存器3X:
+                    result=modbusRTU.ReadInPutRegisters(slaveid, start, length);
+                    break;
+                case StoreArea.输出寄存器4X:
+                    result=modbusRTU.ReadOutPutRegisters(slaveid, start, length);
+                    break;
+            }
+            if (result!=null)
+            {
+                Add_Log(0, "读取成功："+ StringLib.GetStringFromValueArray(UShortLib.GetUShortArrayFromByteArray(result)));
+            }
+            else
+            {
+                Add_Log(1, "读取失败，请检查参数是否正确");
+            }
+        }
+        #endregion
+
+        #region 读取int，需要考虑大小端，在这里所表示的长度必须乘2，int是4个字节表示的
+        private void ReadInt(StoreArea area, byte slaveid, ushort start, ushort length)
+        {
+            byte[] result = null;
+            switch (area)
+            {
+                //输入线圈1X,
+                //输出线圈0X,
+                //输入寄存器3X,
+                //输出寄存器4X
+                case StoreArea.输入线圈1X:
+                case StoreArea.输出线圈0X:
+                    Add_Log(1, "读取失败不支持该存储区");
+                    return;
+                case StoreArea.输入寄存器3X:
+                    result=modbusRTU.ReadInPutRegisters(slaveid, start, (ushort)(length*2));
+                    break;
+                case StoreArea.输出寄存器4X:
+                    result=modbusRTU.ReadOutPutRegisters(slaveid, start, (ushort)(length*2));
+                    break;
+            }
+            if (result!=null)
+            {
+                Add_Log(0, "读取成功："+ StringLib.GetStringFromValueArray(IntLib.GetIntArrayFromByteArray(result,this.dataFormat)));
+            }
+            else
+            {
+                Add_Log(1, "读取失败，请检查参数是否正确");
+            }
+        }
+        #endregion
+
+        #region 读取Uint，需要考虑大小端，uint和int一样
+        private void ReadUint(StoreArea area, byte slaveid, ushort start, ushort length)
+        {
+            byte[] result = null;
+            switch (area)
+            {
+                //输入线圈1X,
+                //输出线圈0X,
+                //输入寄存器3X,
+                //输出寄存器4X
+                case StoreArea.输入线圈1X:
+                case StoreArea.输出线圈0X:
+                    Add_Log(1, "读取失败不支持该存储区");
+                    return;
+                case StoreArea.输入寄存器3X:
+                    result=modbusRTU.ReadInPutRegisters(slaveid, start, (ushort)(length*2));
+                    break;
+                case StoreArea.输出寄存器4X:
+                    result=modbusRTU.ReadOutPutRegisters(slaveid, start, (ushort)(length*2));
+                    break;
+            }
+            if (result!=null)
+            {
+                Add_Log(0, "读取成功："+ StringLib.GetStringFromValueArray(UIntLib.GetUIntArrayFromByteArray(result, this.dataFormat)));
+            }
+            else
+            {
+                Add_Log(1, "读取失败，请检查参数是否正确");
+            }
+        }
+        #endregion
+
+        #region 读取float浮点数
+        private void ReadFloat(StoreArea area, byte slaveid, ushort start, ushort length)
+        {
+            byte[] result = null;
+            switch (area)
+            {
+                //输入线圈1X,
+                //输出线圈0X,
+                //输入寄存器3X,
+                //输出寄存器4X
+                case StoreArea.输入线圈1X:
+                case StoreArea.输出线圈0X:
+                    Add_Log(1, "读取失败不支持该存储区");
+                    return;
+                case StoreArea.输入寄存器3X:
+                    result=modbusRTU.ReadInPutRegisters(slaveid, start, (ushort)(length*2));
+                    break;
+                case StoreArea.输出寄存器4X:
+                    result=modbusRTU.ReadOutPutRegisters(slaveid, start, (ushort)(length*2));
+                    break;
+            }
+            if (result!=null)
+            {
+                Add_Log(0, "读取成功："+ StringLib.GetStringFromValueArray(FloatLib.GetFloatArrayFromByteArray(result, this.dataFormat)));
+            }
+            else
+            {
+                Add_Log(1, "读取失败，请检查参数是否正确");
+            }
+        }
+        #endregion
+
+        #region 验证读取之前，输入的从站地址，线圈/寄存器的初始位置，线圈/寄存器数量，以及存储区和对应数据的类型是否正确
+        //验证连接是否成功
+        //验证从站地址格式是否正确  byte类型，通过是否可以转换成字节，ushort类型判断是否正确
+        //起始地址是否争取  ushort
+        //检查长度，是否正确
+        /// <summary>
+        /// 在读取之前验证，从站地址，初始地址，长度是否可以转化成ModbusRTU类中方法的参数的类型
+        /// </summary>
+        /// <returns></returns>
+        private bool CommonVeify()
+        {
+            if (!IsConnect)
+            {
+                Add_Log(1, "ModbusRTU连接失败");
+                return false;
+            }
+            if (!byte.TryParse(this.txtSlaveID.Text, out _))//不需要有对应的byte类型接受，只用判断就可以就用_
+            {
+                Add_Log(1, "从站地址格式不对请检查");
+                return false;
+            }
+            if (!ushort.TryParse(this.txtStart.Text, out _))
+            {
+                Add_Log(1, "起始地址格式不对请检查");
+                return false;
+            }
+            if (!ushort.TryParse(this.txtDataLength.Text, out _))
+            {
+                Add_Log(1, "长度不对请检查");
+                return false;
+            }
+            return true;
         }
         #endregion
     }

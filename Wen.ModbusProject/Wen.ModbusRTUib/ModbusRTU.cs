@@ -270,7 +270,7 @@ namespace Wen.ModbusRTUib
                 int receivelength = bytelength*2;
                 byte[] registers = new byte[receivelength];
                 //验证报文
-                if (CheckCRC(receive)&&receive.Length==receivelength)
+                if (CheckCRC(receive)&&receive.Length==5+receivelength)
                 {
                     if (receive[0]==slaveid&&receive[1]==0x03&&receive[2]==receivelength)
                     {
@@ -312,10 +312,10 @@ namespace Wen.ModbusRTUib
                 int receivelength = bytelength*2;
                 byte[] registers = new byte[receivelength];
                 //验证报文
-                if (CheckCRC(receive)&&receive.Length==receivelength)
+                if (CheckCRC(receive)&&receive.Length==5+receivelength)
                 {
                     //解析报文
-                    if (receive[0]==slaveid&&receive[1]==0x03&&receive[2]==receivelength)
+                    if (receive[0]==slaveid&&receive[1]==0x04&&receive[2]==receivelength)
                     {
                         Array.Copy(receive, 3, registers, 0, registers.Length);
                         return registers;
