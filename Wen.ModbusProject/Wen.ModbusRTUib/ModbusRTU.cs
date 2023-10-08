@@ -434,11 +434,12 @@ namespace Wen.ModbusRTUib
             send.Add(Convert.ToByte( value.Length/256));//线圈数量
             send.Add(Convert.ToByte(value.Length%256));
 
-            send.Add((byte)GetByteArrayFromBoolArray(value).Length);//字节计数
+            byte[] setArray = GetByteArrayFromBoolArray(value);
 
-            //数据
-            byte[] boolByte = GetByteArrayFromBoolArray(value);
-            send.AddRange(boolByte);
+            send.Add((byte)setArray.Length);//字节计数
+
+            
+            send.AddRange(setArray);
             //CRC校验
             send.AddRange(CRC16(send.ToArray(),send.Count));
 
@@ -449,10 +450,12 @@ namespace Wen.ModbusRTUib
                 //验证报文
                 if (CheckCRC(receive)&&receive.Length==8)
                 {
-                    for(int i=0;i<=8;i++)
+                    for(int i=0;i<6;i++)
                     {
-                        send[i]=receive[i];
-                        return false;
+                        if (send[i]!=receive[i])
+                        {
+                            return false;
+                        }
                     }
                 } 
                 return true;
@@ -493,10 +496,12 @@ namespace Wen.ModbusRTUib
                 //验证报文
                 if (CheckCRC(receive)&&receive.Length==8)
                 {
-                    for (int i = 0; i<=8; i++)
+                    for (int i = 0; i<6; i++)
                     {
-                        send[i]=receive[i];
-                        return false;
+                        if (send[i]!=receive[i])
+                        {
+                            return false;
+                        }
                     }
                 }
                 return true;
@@ -595,10 +600,10 @@ namespace Wen.ModbusRTUib
             for (int i=0;i<result.Length;i++)
             {
                 //将超过将bool数组，分为8个位一组，对应字节数组
-                int total = value.Length>8*(i+1) ? value.Length-8*(i+1) : 8;
+                int total = value.Length<8*(i+1) ? value.Length-8*i : 8;
                 for (int j=0;j<total;j++)
                 {
-                    result[i]=SetBitValue(result[i], j, value[8*1+j]);
+                    result[i]=SetBitValue(result[i], j, value[8*i+j]);
                 }
             }
             return result;
@@ -615,7 +620,7 @@ namespace Wen.ModbusRTUib
         {
             //将0000 0000其中一位改为1，可以使对应变为1，然后或1  0010  0000，这样不管是1101 1111/0000 0000都可以不改变其他位
             //将0010 0000其中一位改为0，可以使对应变为0，然后其他位取反  1101 1111，这样不管是1111 1111/0010 0000都可以使其他位不改变
-            return value ?(byte) (src|(byte)Math.Pow(2,bit)):(byte)(~src&(byte)Math.Pow(2,bit));
+            return value ?(byte) (src|(byte)Math.Pow(2,bit)):(byte)(src&~(byte)Math.Pow(2,bit));
         }
 
         #endregion

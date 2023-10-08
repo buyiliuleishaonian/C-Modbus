@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using thinger.DataConvertLib;
 using Wen.ModbusRTUib;
+using static System.Windows.Forms.AxHost;
 
 namespace Wen.ModbusProject
 {
@@ -147,7 +148,7 @@ namespace Wen.ModbusProject
         }
         #endregion
 
-        #region 通用读取方法
+        #region 通用读取方法，首先验证选择的参数是否正确，判断数据类型，判断存储区，对于读取数据int uint float四个字节构成寄存器需要考虑到plc存储的大小端
         private void btnRead_Click(object sender, EventArgs e)
         {
             //在进行读取之前，验证我们输入从站地址，
@@ -474,6 +475,279 @@ namespace Wen.ModbusProject
                 return false;
             }
             return true;
+        }
+        #endregion
+
+
+        #region  通用写入,写入int uint float数据的时候不需要考虑大小端
+        private void btnWrite_Click(object sender, EventArgs e)
+        {
+            if (CommonVeify())
+            {
+                //将对应的从站地址，初始地址，长度，全部转化为ModbusRTU读取方法中的，参数类型
+                byte slaveid = byte.Parse(this.txtSlaveID.Text.Trim());
+                ushort start = ushort.Parse(this.txtStart.Text);
+               
+                string setValues=this.txtWriteData.Text.Trim();
+                //明确当前的数据类型
+                DataType dataType = (DataType)Enum.Parse(typeof(DataType), this.cmbDataType.Text, true);
+                //得到存储区
+                StoreArea area = (StoreArea)Enum.Parse(typeof(StoreArea), this.cmbStoreArea.Text, true);
+                //大小端
+                dataFormat=(DataFormat)Enum.Parse(typeof(DataFormat), this.cmbDataFormat.Text, true);
+                //判断数据类型，一般为bool，byte，short，ushort，int，uint，folat(浮点数),
+                //double小数，long长整型，Ulong无符号长整型，string，bytearray字节数组，Hex十六进制，这些一般不考虑
+                switch (dataType)
+                {
+                    case DataType.Bool:
+                        WriteBool(area,slaveid,start,setValues);
+                        break;
+                    case DataType.Byte:
+                        WriteByte(area, slaveid, start, setValues);
+                        break;
+                    case DataType.Short:
+                        WriteShort(area, slaveid, start, setValues);
+                        break;
+                    case DataType.UShort:
+                        WriteUshort(area, slaveid, start, setValues);
+                        break;
+                    case DataType.Int:
+                        WriteInt(area, slaveid, start, setValues);
+                        break;
+                    case DataType.UInt:
+                        WriteUInt(area, slaveid, start, setValues);
+                        break;
+                    case DataType.Float:
+                        WriteFloat(area, slaveid, start, setValues);
+                        break;
+                    case DataType.Double:
+                    case DataType.String:
+                    case DataType.Long:
+                    case DataType.ULong:
+                    case DataType.ByteArray:
+                    case DataType.HexString:
+                        Add_Log(1, "写入失败");
+                        return;
+                }
+            }
+        }
+        #endregion
+
+        #region  写入bool，单线圈或者多线圈
+        private void WriteBool(StoreArea area, byte slave, ushort start, string values)
+        {
+            bool result = false;
+            switch (area)
+            {
+                case StoreArea.输出线圈0X:
+                    bool[] setvalues = BitLib.GetBitArrayFromBitArrayString(values);
+                    if (values.Length==1)
+                    {
+                        result=modbusRTU.PreSetSingleCoil(slave, start, setvalues[0]);
+                    }
+                    else
+                    {
+                        result=modbusRTU.PreSetMultiCoils(slave, start, setvalues);
+                    }
+                    break;
+                case StoreArea.输入线圈1X:
+                case StoreArea.输入寄存器3X:
+                case StoreArea.输出寄存器4X:
+                    Add_Log(1,"不支持该寄存区");
+                    break;
+            }
+            if (result)
+            {
+                Add_Log(0, "写入成功");
+            }
+            else
+            {
+                Add_Log(1,"写入失败");
+            }
+        }
+        #endregion
+
+        #region 写入字节
+        private void WriteByte(StoreArea area, byte slave, ushort start, string values)
+        {
+            bool result = false;
+            byte[] setByte=ByteArrayLib.GetByteArrayFromHexString(values);
+            switch (area)
+            {
+                
+                case StoreArea.输入线圈1X:
+                case StoreArea.输出线圈0X:
+                case StoreArea.输入寄存器3X:
+                    Add_Log(1, "不支持该寄存区");
+                    break;
+                case StoreArea.输出寄存器4X:
+                    result=modbusRTU.PreSetMultiRegisters(slave, start, setByte);
+                    break;
+            }
+            if (result)
+            {
+                Add_Log(0, "写入成功");
+            }
+            else
+            {
+                Add_Log(1, "写入失败");
+            }
+        }
+        #endregion
+
+        #region 写入short
+        private void WriteShort(StoreArea area, byte slave, ushort start, string values)
+        {
+            bool result = false;
+            short[] setValues = ShortLib.GetShortArrayFromString(values);
+            switch (area)
+            {
+
+                case StoreArea.输入线圈1X:
+                case StoreArea.输出线圈0X:
+                case StoreArea.输入寄存器3X:
+                    Add_Log(1, "不支持该寄存区");
+                    break;
+                case StoreArea.输出寄存器4X:
+                    if (setValues.Length==1)
+                    {
+                        result=modbusRTU.PreSetSingleRegister(slave, start, ByteArrayLib.GetByteArrayFromShort(setValues[0]));
+                    }
+                    else
+                    {
+                        result=modbusRTU.PreSetMultiRegisters(slave, start, ByteArrayLib.GetByteArrayFromShortArray(setValues));
+                    }
+                    break;
+            }
+            if (result)
+            {
+                Add_Log(0, "写入成功");
+            }
+            else
+            {
+                Add_Log(1, "写入失败");
+            }
+        }
+        #endregion
+
+        #region 写入ushort
+        private void WriteUshort(StoreArea area, byte slave, ushort start, string values)
+        {
+            bool result = false;
+            ushort[] setValues = UShortLib.GetUShortArrayFromString(values);
+            switch (area)
+            {
+
+                case StoreArea.输入线圈1X:
+                case StoreArea.输出线圈0X:
+                case StoreArea.输入寄存器3X:
+                    Add_Log(1, "不支持该寄存区");
+                    break;
+                case StoreArea.输出寄存器4X:
+                    if (setValues.Length==1)
+                    {
+                        result=modbusRTU.PreSetSingleRegister(slave, start, ByteArrayLib.GetByteArrayFromUShort(setValues[0]));
+                    }
+                    else
+                    {
+                        result=modbusRTU.PreSetMultiRegisters(slave, start, ByteArrayLib.GetByteArrayFromUShortArray(setValues));
+                    }
+                    break;
+            }
+            if (result)
+            {
+                Add_Log(0, "写入成功");
+            }
+            else
+            {
+                Add_Log(1, "写入失败");
+            }
+        }
+        #endregion
+
+        #region  写入int
+        private void WriteInt(StoreArea area, byte slave, ushort start, string values)
+        {
+            bool result = false;
+            int[] setValues = IntLib.GetIntArrayFromString(values);
+            switch (area)
+            {
+
+                case StoreArea.输入线圈1X:
+                case StoreArea.输出线圈0X:
+                case StoreArea.输入寄存器3X:
+                    Add_Log(1, "不支持该寄存区");
+                    break;
+                case StoreArea.输出寄存器4X:
+                        result=modbusRTU.PreSetMultiRegisters(slave, start, ByteArrayLib.GetByteArrayFromIntArray(setValues));
+                    break;
+            }
+            if (result)
+            {
+                Add_Log(0, "写入成功");
+            }
+            else
+            {
+                Add_Log(1, "写入失败");
+            }
+        }
+        #endregion
+
+        #region 写入Uint
+        private void WriteUInt(StoreArea area, byte slave, ushort start, string values)
+        {
+            bool result = false;
+            uint[] setValues = UIntLib.GetUIntArrayFromString(values);
+            switch (area)
+            {
+
+                case StoreArea.输入线圈1X:
+                case StoreArea.输出线圈0X:
+                case StoreArea.输入寄存器3X:
+                    Add_Log(1, "不支持该寄存区");
+                    break;
+                case StoreArea.输出寄存器4X:
+                    
+                        result=modbusRTU.PreSetMultiRegisters(slave, start, ByteArrayLib.GetByteArrayFromUIntArray(setValues));
+                    
+                    break;
+            }
+            if (result)
+            {
+                Add_Log(0, "写入成功");
+            }
+            else
+            {
+                Add_Log(1, "写入失败");
+            }
+        }
+        #endregion
+
+        #region 写入float
+        private void WriteFloat(StoreArea area, byte slave, ushort start, string values)
+        {
+            bool result = false;
+            float[] setValues = FloatLib.GetFloatArrayFromString(values);
+            switch (area)
+            {
+
+                case StoreArea.输入线圈1X:
+                case StoreArea.输出线圈0X:
+                case StoreArea.输入寄存器3X:
+                    Add_Log(1, "不支持该寄存区");
+                    break;
+                case StoreArea.输出寄存器4X:
+                        result=modbusRTU.PreSetMultiRegisters(slave, start, ByteArrayLib.GetByteArrayFromFloatArray(setValues));
+                    break;
+            }
+            if (result)
+            {
+                Add_Log(0, "写入成功");
+            }
+            else
+            {
+                Add_Log(1, "写入失败");
+            }
         }
         #endregion
     }

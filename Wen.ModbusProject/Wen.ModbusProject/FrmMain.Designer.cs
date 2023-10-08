@@ -270,6 +270,7 @@
             this.btnWrite.TabIndex = 28;
             this.btnWrite.Text = "写入";
             this.btnWrite.UseVisualStyleBackColor = true;
+            this.btnWrite.Click += new System.EventHandler(this.btnWrite_Click);
             // 
             // btnRead
             // 
