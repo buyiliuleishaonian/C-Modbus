@@ -123,7 +123,7 @@ namespace Wen.ModbusProject
 
         /// <summary>
         /// 通用写入日志的方法 给ListView显示最新连接信息
-        /// </summary>
+        /// </summary>\
         /// <param name="level"></param>
         /// <param name="info"></param>
         private void Add_Log(int level, string info)

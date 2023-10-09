@@ -510,7 +510,11 @@ namespace Wen.ModbusRTUib
         }
         #endregion
 
-
+        //为什么需要进行加锁，解锁，当读取和写入是通过多线程操作的时候是相互独立的，在某一瞬间会出现读取和写入是同步的
+        /// <summary>
+        /// 添加一个锁对象
+        /// </summary>
+        private SimpleHybirdLock simpleHybirdLock=new SimpleHybirdLock();
 
         /// <summary>
         /// 发送，接受报文
@@ -520,6 +524,8 @@ namespace Wen.ModbusRTUib
         /// <returns>判断是成功</returns>
         public bool SendAndReceive(byte[] send, ref byte[] receive)
         {
+            //加锁,就是当调用时，判断是否此时已经启用用户锁，如果是，就等待其关闭之后，在调用
+            simpleHybirdLock.Enter();
             try
             {
                 //发送报文
@@ -560,6 +566,11 @@ namespace Wen.ModbusRTUib
             catch (Exception)
             {
                 return false;
+            }
+            finally
+            {
+                //进行解锁
+                simpleHybirdLock.Leave();
             }
         }
 
@@ -732,4 +743,81 @@ namespace Wen.ModbusRTUib
 
         #endregion
     }
+
+    #region 简单混合锁
+    /// <summary>
+    /// 
+    /// </summary>
+    public sealed class SimpleHybirdLock : IDisposable
+    {
+        #region IDisposable Support
+        private bool disposedValue = false;
+        void Dispose(bool disposing) 
+        {
+            if (!disposing)
+            {
+                if (disposedValue)
+                {
+                   //TODO：释放托管状态（托管对象）
+                }
+                //TODO:释放未托管的资源（未托管的对象）并在以下内容中替代终结器
+                //TODO：将大型字段设置为null
+                m_waiterLock.Close();
+
+                disposedValue = true;
+            }
+        }
+
+        //TODO:仅当以上Dispose（bool disposing） 拥有用于释放未托管资源的代码时菜替代代终结器
+        //~SimpleHybirdLock（）{// //请勿更改此代码，将清理代码放入以上Dispose（bool disposing）中
+        // Dispose（flase）;}
+
+        //添加此代码以正确实现可处置模式
+        /// <summary>
+        /// 释放资源
+        /// </summary>
+        public void Dispose()
+        {
+            //请勿更改此代码，将清理代码放入以上Dispose（bool disposing）中
+            Dispose(true);
+            //TODO:如果在以上内容中替代了终结器，则取消注释一下行
+            //GC.SuppressFinalize(this);
+        }
+        #endregion
+
+        /// <summary>
+        /// 基元用户模式构造同步锁
+        /// </summary>
+        private Int32  m_waiters = 0;
+
+        /// <summary>
+        /// 基于内核模式构造同步锁
+        /// </summary>
+        private AutoResetEvent m_waiterLock=new AutoResetEvent(false);
+
+        /// <summary>
+        /// 获取锁
+        /// </summary>
+        public void Enter()
+        {
+            if (Interlocked.Decrement(ref m_waiters)==1) return;//用户锁可以使用时，直接返回，第一次调用时发生
+            //当发生锁竞争时，使用内核同步构造锁
+            m_waiterLock.WaitOne();
+        }
+
+        /// <summary>
+        /// 离开锁
+        /// </summary>
+        public void Leave()
+        {
+            if (Interlocked.Decrement(ref m_waiters)==0) return;//没有可用的锁的时候
+            m_waiterLock.Set();
+        }
+
+        /// <summary>
+        /// 获取当前锁是否在等待当中
+        /// </summary>
+        public bool isMaiting => m_waiters==0;
+    }
+    #endregion
 }
