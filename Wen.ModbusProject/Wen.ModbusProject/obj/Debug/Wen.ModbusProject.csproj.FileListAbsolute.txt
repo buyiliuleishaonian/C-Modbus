@@ -3,7 +3,6 @@ F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\bin\Debug\Wen.ModbusP
 F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\bin\Debug\Wen.ModbusProject.pdb
 F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\obj\Debug\Wen.ModbusProject.csproj.AssemblyReference.cache
 F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\obj\Debug\Wen.ModbusProject.csproj.SuggestedBindingRedirects.cache
-F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\obj\Debug\Wen.ModbusProject.FrmMain.resources
 F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\obj\Debug\Wen.ModbusProject.Properties.Resources.resources
 F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\obj\Debug\Wen.ModbusProject.csproj.GenerateResource.cache
 F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\obj\Debug\Wen.ModbusProject.csproj.CoreCompileInputs.cache
@@ -14,3 +13,5 @@ F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\bin\Debug\Wen.ModbusR
 F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\bin\Debug\Wen.ModbusRTUib.pdb
 F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\bin\Debug\thinger.DataConvertLib.xml
 F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\obj\Debug\Wen.ModbusProject.csproj.CopyComplete
+F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\obj\Debug\Wen.ModbusProject.FrmTHMonitor.resources
+F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\obj\Debug\Wen.ModbusProject.FrmModbusRTU.resources

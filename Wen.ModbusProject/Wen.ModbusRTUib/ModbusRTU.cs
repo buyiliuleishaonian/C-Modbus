@@ -353,7 +353,7 @@ namespace Wen.ModbusRTUib
             if (SendAndReceive(send.ToArray(), ref receive))
             {
                 //验证报文
-                BytesArrayEquals(send.ToArray(),receive);
+                BytesArrayEquals(send.ToArray(), receive);
                 return true;
             }
             return false;
@@ -368,7 +368,7 @@ namespace Wen.ModbusRTUib
         /// <param name="start">寄存器地址</param>
         /// <param name="value">寄存器数据 字节类型</param>
         /// <returns></returns>
-        public bool PreSetSingleRegister(byte slaveid,ushort start, byte[] value)
+        public bool PreSetSingleRegister(byte slaveid, ushort start, byte[] value)
         {
             //拼接报文
             List<byte> send = new List<byte>();
@@ -399,7 +399,7 @@ namespace Wen.ModbusRTUib
         /// <returns></returns>
         public bool PreSetSingleRegister(byte slaveid, ushort start, short value)
         {
-            return PreSetSingleRegister(slaveid,start,BitConverter.GetBytes(value).Reverse().ToArray());
+            return PreSetSingleRegister(slaveid, start, BitConverter.GetBytes(value).Reverse().ToArray());
         }
         /// <summary>
         /// 预置单寄存器
@@ -410,7 +410,7 @@ namespace Wen.ModbusRTUib
         /// <returns></returns>
         public bool PreSetSingleRegister(byte slaveid, ushort start, ushort value)
         {
-            return PreSetSingleRegister(slaveid,start,BitConverter.GetBytes(value).Reverse().ToArray());
+            return PreSetSingleRegister(slaveid, start, BitConverter.GetBytes(value).Reverse().ToArray());
         }
         #endregion
 
@@ -422,42 +422,42 @@ namespace Wen.ModbusRTUib
         /// <param name="start">初始线圈</param>
         /// <param name="value">布尔数组</param>
         /// <returns>返回结果</returns>
-        public bool PreSetMultiCoils(byte slaveid,ushort start, bool[]  value)
+        public bool PreSetMultiCoils(byte slaveid, ushort start, bool[] value)
         {
 
             //拼接报文
-            List<byte>  send=new List<byte>();  
+            List<byte> send = new List<byte>();
             send.Add(slaveid);
             send.Add(0x0f);
             send.Add(Convert.ToByte(start/256));
             send.Add(Convert.ToByte(start%256));
-            send.Add(Convert.ToByte( value.Length/256));//线圈数量
+            send.Add(Convert.ToByte(value.Length/256));//线圈数量
             send.Add(Convert.ToByte(value.Length%256));
 
             byte[] setArray = GetByteArrayFromBoolArray(value);
 
             send.Add((byte)setArray.Length);//字节计数
 
-            
+
             send.AddRange(setArray);
             //CRC校验
-            send.AddRange(CRC16(send.ToArray(),send.Count));
+            send.AddRange(CRC16(send.ToArray(), send.Count));
 
             //发送接受报文
-            byte[] receive =null;
+            byte[] receive = null;
             if (SendAndReceive(send.ToArray(), ref receive))
             {
                 //验证报文
                 if (CheckCRC(receive)&&receive.Length==8)
                 {
-                    for(int i=0;i<6;i++)
+                    for (int i = 0; i<6; i++)
                     {
                         if (send[i]!=receive[i])
                         {
                             return false;
                         }
                     }
-                } 
+                }
                 return true;
             }
             return false;
@@ -465,7 +465,7 @@ namespace Wen.ModbusRTUib
         #endregion
 
         #region  预置0X10 多寄存器
-        public bool PreSetMultiRegisters(byte  slaveid,ushort start, byte[] values)
+        public bool PreSetMultiRegisters(byte slaveid, ushort start, byte[] values)
         {
             //判断寄存器数据，不可以奇数字节，不可以无字节，不可以为空
             if (values==null &&values.Length%2!=0&&values.Length==0)
@@ -479,7 +479,7 @@ namespace Wen.ModbusRTUib
             send.Add(0x10);
             send.Add(Convert.ToByte(start/256));
             send.Add(Convert.ToByte(start%256));
-           send.Add(Convert.ToByte(values.Length/2/256));//寄存器数量
+            send.Add(Convert.ToByte(values.Length/2/256));//寄存器数量
             send.Add(Convert.ToByte(values.Length/2%256));
 
             send.Add((byte)values.Length);//字节计数
@@ -514,7 +514,7 @@ namespace Wen.ModbusRTUib
         /// <summary>
         /// 添加一个锁对象
         /// </summary>
-        private SimpleHybirdLock simpleHybirdLock=new SimpleHybirdLock();
+        private SimpleHybirdLock simpleHybirdLock = new SimpleHybirdLock();
 
         /// <summary>
         /// 发送，接受报文
@@ -603,16 +603,16 @@ namespace Wen.ModbusRTUib
         public byte[] GetByteArrayFromBoolArray(bool[] value)
         {
             //首先bool[]，确定字节的个数
-            int byteLength=value.Length%8==0?value.Length/8:value.Length/8+1;
+            int byteLength = value.Length%8==0 ? value.Length/8 : value.Length/8+1;
 
             byte[] result = new byte[byteLength];
 
             //将每个bool数组的位给byte对应的位赋值
-            for (int i=0;i<result.Length;i++)
+            for (int i = 0; i<result.Length; i++)
             {
                 //将超过将bool数组，分为8个位一组，对应字节数组
                 int total = value.Length<8*(i+1) ? value.Length-8*i : 8;
-                for (int j=0;j<total;j++)
+                for (int j = 0; j<total; j++)
                 {
                     result[i]=SetBitValue(result[i], j, value[8*i+j]);
                 }
@@ -627,11 +627,11 @@ namespace Wen.ModbusRTUib
         /// <param name="bit">指定位</param>
         /// <param name="value">置位或者复位</param>
         /// <returns>返回改变之后的字节</returns>
-        public byte SetBitValue(byte  src,int bit,bool value)
+        public byte SetBitValue(byte src, int bit, bool value)
         {
             //将0000 0000其中一位改为1，可以使对应变为1，然后或1  0010  0000，这样不管是1101 1111/0000 0000都可以不改变其他位
             //将0010 0000其中一位改为0，可以使对应变为0，然后其他位取反  1101 1111，这样不管是1111 1111/0010 0000都可以使其他位不改变
-            return value ?(byte) (src|(byte)Math.Pow(2,bit)):(byte)(src&~(byte)Math.Pow(2,bit));
+            return value ? (byte)(src|(byte)Math.Pow(2, bit)) : (byte)(src&~(byte)Math.Pow(2, bit));
         }
 
         #endregion
@@ -752,13 +752,13 @@ namespace Wen.ModbusRTUib
     {
         #region IDisposable Support
         private bool disposedValue = false;
-        void Dispose(bool disposing) 
+        void Dispose(bool disposing)
         {
-            if (!disposing)
+            if (!disposedValue)
             {
-                if (disposedValue)
+                if (disposing)
                 {
-                   //TODO：释放托管状态（托管对象）
+                    //TODO：释放托管状态（托管对象）
                 }
                 //TODO:释放未托管的资源（未托管的对象）并在以下内容中替代终结器
                 //TODO：将大型字段设置为null
@@ -788,19 +788,19 @@ namespace Wen.ModbusRTUib
         /// <summary>
         /// 基元用户模式构造同步锁
         /// </summary>
-        private Int32  m_waiters = 0;
+        private Int32 m_waiters = 0;
 
         /// <summary>
         /// 基于内核模式构造同步锁
         /// </summary>
-        private AutoResetEvent m_waiterLock=new AutoResetEvent(false);
+        private AutoResetEvent m_waiterLock = new AutoResetEvent(false);
 
         /// <summary>
         /// 获取锁
         /// </summary>
         public void Enter()
         {
-            if (Interlocked.Decrement(ref m_waiters)==1) return;//用户锁可以使用时，直接返回，第一次调用时发生
+            if (Interlocked.Increment(ref m_waiters)==1) return;//用户锁可以使用时，直接返回，第一次调用时发生
             //当发生锁竞争时，使用内核同步构造锁
             m_waiterLock.WaitOne();
         }

@@ -50,16 +50,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\DataValidate.cs" />
-    <Compile Include="FrmMain.cs">
+    <Compile Include="FrmTHMonitor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMain.Designer.cs">
-      <DependentUpon>FrmMain.cs</DependentUpon>
+    <Compile Include="FrmTHMonitor.Designer.cs">
+      <DependentUpon>FrmTHMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModbusRTU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModbusRTU.Designer.cs">
+      <DependentUpon>FrmModbusRTU.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmMain.resx">
-      <DependentUpon>FrmMain.cs</DependentUpon>
+    <EmbeddedResource Include="FrmTHMonitor.resx">
+      <DependentUpon>FrmTHMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModbusRTU.resx">
+      <DependentUpon>FrmModbusRTU.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
