@@ -10,6 +10,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using thinger.DataConvertLib;
+using Wen.ControlLibs;
 using Wen.ModbusRTUib;
 using static System.Windows.Forms.AxHost;
 
@@ -135,48 +136,57 @@ namespace Wen.ModbusProject
                 while (!cts.IsCancellationRequested)
                 {
 
-                    byte[] result = modbusRTU.ReadOutPutRegisters(1, 0, 2);
-                    if (result!=null&&result.Length==4)
-                    {
+                    //byte[] result = modbusRTU.ReadOutPutRegisters(1, 0, 2);
+                    //if (result!=null&&result.Length==4)
+                    //{
 
-                        this.Invoke(new Action(() =>
-                        {
-                            this.lblHum1.Text=((result[0]*256+result[1])*0.1f).ToString();
-                            this.lblTem1.Text=((result[2]*256+result[3])*0.1f).ToString();
-                        }));
+                    //    this.Invoke(new Action(() =>
+                    //    {
+                    //        this.thMonitor1.Hum=((result[0]*256+result[1])*0.1f).ToString();
+                    //        this.thMonitor1.Tem=((result[2]*256+result[3])*0.1f).ToString();
+                    //    }));
+                    //}
+
+                    //result = modbusRTU.ReadOutPutRegisters(2, 0, 2);
+                    //if (result!=null&&result.Length==4)
+                    //{
+
+                    //    this.Invoke(new Action(() =>
+                    //    {
+                    //        this.thMonitor2.Hum=((result[0]*256+result[1])*0.1f).ToString();
+                    //        this.thMonitor2.Tem=((result[2]*256+result[3])*0.1f).ToString();
+                    //    }));
+                    //}
+
+                    // result = modbusRTU.ReadOutPutRegisters(3, 0, 2);
+                    //if (result!=null&&result.Length==4)
+                    //{
+
+                    //    this.Invoke(new Action(() =>
+                    //    {
+                    //        this.thMonitor3.Hum=((result[0]*256+result[1])*0.1f).ToString();
+                    //        this.thMonitor3.Tem=((result[2]*256+result[3])*0.1f).ToString();
+                    //    }));
+                    //}
+
+                    // result = modbusRTU.ReadOutPutRegisters(4, 0, 2);
+                    //if (result!=null&&result.Length==4)
+                    //{
+
+                    //    this.Invoke(new Action(() =>
+                    //    {
+                    //        this.thMonitor4.Hum=((result[0]*256+result[1])*0.1f).ToString();
+                    //        this.thMonitor4.Tem=((result[2]*256+result[3])*0.1f).ToString();
+                    //    }));
+                    //}
+                    foreach (THMonitor item in this.Controls)
+                    {
+                        ReadTHMonitor(item);
                     }
 
-                    result = modbusRTU.ReadOutPutRegisters(2, 0, 2);
-                    if (result!=null&&result.Length==4)
+                    foreach (var thmonitor in this.Controls.OfType<THMonitor>())
                     {
 
-                        this.Invoke(new Action(() =>
-                        {
-                            this.lblHum2.Text=((result[0]*256+result[1])*0.1f).ToString();
-                            this.lblTem2.Text=((result[2]*256+result[3])*0.1f).ToString();
-                        }));
-                    }
-
-                     result = modbusRTU.ReadOutPutRegisters(3, 0, 2);
-                    if (result!=null&&result.Length==4)
-                    {
-
-                        this.Invoke(new Action(() =>
-                        {
-                            this.lblHum3.Text=((result[0]*256+result[1])*0.1f).ToString();
-                            this.lblTem3.Text=((result[2]*256+result[3])*0.1f).ToString();
-                        }));
-                    }
-
-                     result = modbusRTU.ReadOutPutRegisters(4, 0, 2);
-                    if (result!=null&&result.Length==4)
-                    {
-
-                        this.Invoke(new Action(() =>
-                        {
-                            this.lblHum4.Text=((result[0]*256+result[1])*0.1f).ToString();
-                            this.lblTem4.Text=((result[2]*256+result[3])*0.1f).ToString();
-                        }));
                     }
                 }
             }
@@ -186,10 +196,27 @@ namespace Wen.ModbusProject
 
             }
         }
-
-        private void FrmTHMonitor_FormClosing(object sender, FormClosingEventArgs e)
+        
+        /// <summary>
+        /// 将读取温湿度方法封装
+        /// </summary>
+        /// <param name="thmonitor">温湿度自定义控件类/param>
+        private void ReadTHMonitor(THMonitor thmonitor)
         {
-            cts.Cancel();
+            byte[] result = modbusRTU.ReadOutPutRegisters(Convert.ToByte( thmonitor.InitialName), 0, 2);
+            if (result!=null&&result.Length==4)
+            {
+                //1、这在ui层中，多线程访问，通过系统委托来改变控件的属性
+                //this.Invoke(new Action(() =>
+                //{
+                //    thmonitor.Hum=((result[0]*256+result[1])*0.1f).ToString();
+                //    thmonitor.Tem=((result[2]*256+result[3])*0.1f).ToString();
+                //}));
+
+                //2、直接就控件的属性赋值，但此时控件属性中需要判断是否跨线程访问
+                thmonitor.Hum=((result[0]*256+result[1])*0.1f).ToString();
+                thmonitor.Tem=((result[2]*256+result[3])*0.1f).ToString();
+            }
         }
     }
 }

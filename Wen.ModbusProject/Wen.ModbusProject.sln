@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wen.ModbusProject", "Wen.Mo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wen.ModbusRTUib", "Wen.ModbusRTUib\Wen.ModbusRTUib.csproj", "{119A1B1B-A84F-4787-B1B8-D36E05FF67B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wen.ControlLibs", "Wen.ControlLibs\Wen.ControlLibs.csproj", "{CC8B5E5E-BC72-410F-A81D-0BD194A6C5E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{119A1B1B-A84F-4787-B1B8-D36E05FF67B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{119A1B1B-A84F-4787-B1B8-D36E05FF67B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{119A1B1B-A84F-4787-B1B8-D36E05FF67B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC8B5E5E-BC72-410F-A81D-0BD194A6C5E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC8B5E5E-BC72-410F-A81D-0BD194A6C5E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC8B5E5E-BC72-410F-A81D-0BD194A6C5E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC8B5E5E-BC72-410F-A81D-0BD194A6C5E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

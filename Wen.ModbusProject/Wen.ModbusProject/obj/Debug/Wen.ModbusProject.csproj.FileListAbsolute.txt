@@ -15,3 +15,5 @@ F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\bin\Debug\thinger.Dat
 F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\obj\Debug\Wen.ModbusProject.csproj.CopyComplete
 F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\obj\Debug\Wen.ModbusProject.FrmTHMonitor.resources
 F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\obj\Debug\Wen.ModbusProject.FrmModbusRTU.resources
+F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\bin\Debug\Wen.ControlLibs.dll
+F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\bin\Debug\Wen.ControlLibs.pdb
