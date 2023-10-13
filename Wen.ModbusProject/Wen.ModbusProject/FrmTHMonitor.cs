@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using thinger.DataConvertLib;
 using Wen.ControlLibs;
-using Wen.ModbusRTUib;
+using Wen.ModbusRTULib;
 using static System.Windows.Forms.AxHost;
 
 namespace Wen.ModbusProject

@@ -98,9 +98,9 @@
       <Project>{CC8B5E5E-BC72-410F-A81D-0BD194A6C5E1}</Project>
       <Name>Wen.ControlLibs</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Wen.ModbusRTUib\Wen.ModbusRTUib.csproj">
+    <ProjectReference Include="..\Wen.ModbusRTUib\Wen.ModbusRTULib.csproj">
       <Project>{119a1b1b-a84f-4787-b1b8-d36e05ff67b6}</Project>
-      <Name>Wen.ModbusRTUib</Name>
+      <Name>Wen.ModbusRTULib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

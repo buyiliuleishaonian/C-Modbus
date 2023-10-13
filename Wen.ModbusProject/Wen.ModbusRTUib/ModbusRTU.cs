@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Wen.ModbusRTUib
+namespace Wen.ModbusRTULib
 {
     public class ModbusRTU
     {
