@@ -32,7 +32,7 @@ namespace Wen.ModbusRTULib
         public int ReadTimeOut { get; set; } = 2000;//2000毫秒
 
         /// <summary>
-        /// 写入超时时间
+        /// 返回超时时间
         /// </summary>
         public int WriteTimeOut { get; set; } = 2000;
 
