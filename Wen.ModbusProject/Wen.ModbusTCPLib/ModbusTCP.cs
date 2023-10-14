@@ -95,28 +95,40 @@ namespace Wen.ModbusTCPLib
         private byte Slave { get; set; } = 0x01;
 
         #region 读取输入输出线圈
-        public byte[] ReadInPutCoils(ushort start,ushort length)
+        /// <summary>
+        /// 读取输入线圈
+        /// </summary>
+        /// <param name="start">初始线圈地址</param>
+        /// <param name="length">线圈数量</param>
+        /// <returns></returns>
+        public byte[] ReadInPutCoils(ushort start, ushort length)
         {
             //第一步拼接报文
             //事务标识符+协议标识符0X00 0X00+长度+单元标识符+功能码+初始线圈地址+长度
             ByteArray sendBytes = new ByteArray();
-            sendBytes.Add(0x00,0x00,0x00,0x00);//事务+协议
-            sendBytes.Add(0x00,0x06,Slave,0x02);//长度+单元标识符+功能码
+            sendBytes.Add(0x00, 0x00, 0x00, 0x00);//事务+协议
+            sendBytes.Add(0x00, 0x06, Slave, 0x02);//长度+单元标识符+功能码
             sendBytes.Add(start);
             sendBytes.Add(length);
             byte[] receive = null;
             if (SendAndReceive(sendBytes.List.ToArray(), ref receive))
             {
                 int count = length%8==0 ? length/8 : length/8+1;
-                byte[] buffer = new byte[count];
+                byte[] result = new byte[count];
                 if (receive.Length==9+count&&sendBytes.List[7]==receive[7])
                 {
-                    Array.Copy(receive, 9, buffer, 0, buffer.Length);
-                    return buffer;
+                    Array.Copy(receive, 9, result, 0, result.Length);
+                    return result;
                 }
             }
             return null;
         }
+        /// <summary>
+        /// 读取输出线圈
+        /// </summary>
+        /// <param name="start">初始线圈地址</param>
+        /// <param name="length">线圈长度</param>
+        /// <returns></returns>
         public byte[] ReadOutPutCoils(ushort start, ushort length)
         {
             //第一步拼接报文
@@ -130,11 +142,11 @@ namespace Wen.ModbusTCPLib
             if (SendAndReceive(sendBytes.List.ToArray(), ref receive))
             {
                 int count = length%8==0 ? length/8 : length/8+1;
-                byte[] buffer = new byte[count];
+                byte[] result = new byte[count];
                 if (receive.Length==9+count&&sendBytes.List[7]==receive[7])
                 {
-                    Array.Copy(receive, 9, buffer, 0, buffer.Length);
-                    return buffer;
+                    Array.Copy(receive, 9, result, 0, result.Length);
+                    return result;
                 }
             }
             return null;
@@ -143,6 +155,243 @@ namespace Wen.ModbusTCPLib
 
         #endregion
 
+        #region 读取输入输出寄存器
+        /// <summary>
+        /// 读取输出线圈
+        /// </summary>
+        /// <param name="start">初始寄存器地址</param>
+        /// <param name="length">寄存器数量</param>
+        /// <returns>返回结果</returns>
+        public byte[] ReadOutPutRegister(ushort start, ushort length)
+        {
+            //拼接报文
+            ByteArray sendBytes = new ByteArray();
+            sendBytes.Add(0x00, 0x00, 0x00, 0x00);//添加事务标识+协议标识
+            sendBytes.Add(0x00, 0x06, Slave, 0x03);//添加长度，单元标识，功能码
+            sendBytes.Add(start);//初始寄存器地址
+            sendBytes.Add(length);//长度
+            byte[] receive = null;
+            //发送接收报文
+            if (SendAndReceive(sendBytes.List.ToArray(), ref receive))
+            {
+                int count = length*2;//表示数据字节个数
+                byte[] result = new byte[count];
+                if (receive.Length==9+count&&receive[7]==0x03)
+                {
+                    Array.Copy(receive, 9, result, 0, result.Length);
+                    return result;
+                }
+            }
+            return null;
+        }
+        /// <summary>
+        /// 读取输入寄存器
+        /// </summary>
+        /// <param name="start">初始寄存器地址</param>
+        /// <param name="length">寄存器长度</param>
+        /// <returns>返回结果</returns>
+        public byte[] ReadInPutRegister(ushort start, ushort length)
+        {
+            //拼接报文
+            ByteArray sendBytes = new ByteArray();
+            sendBytes.Add(0x00, 0x00, 0x00, 0x00);//添加事务标识+协议标识
+            sendBytes.Add(0x00, 0x06, Slave, 0x04);//添加长度，单元标识，功能码
+            sendBytes.Add(start);//初始寄存器地址
+            sendBytes.Add(length);//长度
+            byte[] receive = null;
+            //发送接收报文
+            if (SendAndReceive(sendBytes.List.ToArray(), ref receive))
+            {
+                int count = length*2;//表示数据字节个数
+                byte[] result = new byte[count];
+                if (receive.Length==9+count&&receive[7]==0x04)
+                {
+                    Array.Copy(receive, 9, result, 0, result.Length);
+                    return result;
+                }
+            }
+            return null;
+        }
+        #endregion
+
+        #region 预置单线圈和寄存器
+        /// <summary>
+        /// 预置单线圈
+        /// </summary>
+        /// <param name="start">初始线圈地址</param>
+        /// <param name="value">写入数据</param>
+        /// <returns>返回结果</returns>
+        public bool PerSetSingCoil(ushort start, bool value)
+        {
+            //拼接报文
+            ByteArray sendBytes = new ByteArray();
+            sendBytes.Add(0x00, 0x00, 0x00, 0x00);//添加事务标识+协议标识
+            sendBytes.Add(0x00, 0x06, Slave, 0x05);//添加长度，单元标识，功能码
+            sendBytes.Add(start);
+            byte[] set = null;
+            if (value)
+            {
+                set=new byte[] { 0xff, 0x00 };
+            }
+            else
+            {
+                set= new byte[] { 0x00, 0x00 };
+            }
+            sendBytes.Add(set);
+
+            byte[] receive = null;
+            if (SendAndReceive(sendBytes.List.ToArray(), ref receive))
+            {
+                if (receive.Length==sendBytes.Length&&receive[7]==0x05)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// 预置单寄存器
+        /// </summary>
+        /// <param name="start">寄存器地址</param>
+        /// <param name="values">写入数据（字节数组）</param>
+        /// <returns>返回结果</returns>
+        public bool PerSetSingRegister(ushort start, byte[] values)
+        {
+            //拼接报文
+            ByteArray sendBytes = new ByteArray();
+            sendBytes.Add(0x00, 0x00, 0x00, 0x00);//添加事务标识+协议标识
+            sendBytes.Add(0x00, 0x06, Slave, 0x05);//添加长度，单元标识，功能码
+            sendBytes.Add(start);
+            sendBytes.Add(values);
+            byte[] receive = null;
+            if (SendAndReceive(sendBytes.List.ToArray(), ref receive))
+            {
+                if (receive.Length==sendBytes.Length&&receive[7]==0x05)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        /// <summary>
+        /// 写入单寄存器数据
+        /// </summary>
+        /// <param name="start">寄存器地址</param>
+        /// <param name="value">写入数据（无符号短整型）</param>
+        /// <returns>返回结果</returns>
+        public bool PerSetSingRegister(ushort start, ushort value)
+        {
+            //将一个基数据转换成一个字节数组，再将其反转
+            return PerSetSingRegister(start, BitConverter.GetBytes(value).Reverse().ToArray());
+        }
+        /// <summary>
+        /// 写入单寄存器数据
+        /// </summary>
+        /// <param name="start">寄存器地址</param>
+        /// <param name="value">写入数据（短整型）</param>
+        /// <returns>返回结果</returns>
+        public bool PerSetSingRegister(ushort start, short value)
+        {
+            return PerSetSingRegister(start, BitConverter.GetBytes(value).Reverse().ToArray());
+        }
+        #endregion
+
+        #region 预置多线圈和多寄存器
+        /// <summary>
+        ///  预置多线圈
+        /// </summary>
+        /// <param name="start">寄存器地址</param>
+        /// <param name="values">线圈数据</param>
+        /// <returns>返回结果</returns>
+        public bool PerSetMuiltCoils(ushort start, bool[] values)
+        {
+            //拼接报文
+            ByteArray sendBytes = new ByteArray();
+            byte[] set = ByteArrayFromBoolArray(values);
+            sendBytes.Add(0x00, 0x00, 0x00, 0x00);
+            sendBytes.Add((short)(7+set.Length));
+            sendBytes.Add(Slave,0x0F);
+            sendBytes.Add(start);
+            sendBytes.Add((short)values.Length);//线圈数量
+            sendBytes.Add((short)set.Length);
+            sendBytes.Add(set);
+
+            byte[] receive = null;
+            if (SendAndReceive(sendBytes.List.ToArray(),ref receive))
+            {
+                byte[] send = new byte[12];
+                Array.Copy(sendBytes.List.ToArray(),0,send,0,12);
+                send[4] = 0x00;
+                send[5] = 0x06;
+                return ByteArrayEquls(send,receive);
+            }
+            return false;
+        }
+
+        /// <summary>
+        /// 预置多寄存器
+        /// </summary>
+        /// <param name="start">初始寄存器地址</param>
+        /// <param name="values">寄存器数据</param>
+        /// <returns>返回结果</returns>
+        public bool PerSetMuiltRegister(ushort start, byte[] values)
+        {
+            ByteArray sendBytes = new ByteArray();
+            sendBytes.Add(0x00, 0x00, 0x00, 0x00);
+            sendBytes.Add((short)(7+values.Length));
+            sendBytes.Add(Slave,0x10);
+            sendBytes.Add(start);
+            sendBytes.Add((short)(values.Length/2));//寄存器数量
+            sendBytes.Add((short)(values.Length));//1个字节计数
+            sendBytes.Add(values);//寄存器数据
+
+            byte[] receive = null;
+            if (SendAndReceive(sendBytes.List.ToArray(), ref receive))
+            {
+                byte[] send = new byte[12];
+                Array.Copy(sendBytes.List.ToArray(), 0, send, 0, 12);
+                send[4] = 0x00;
+                send[5] = 0x06;
+                return ByteArrayEquls(send, receive);
+            }
+            return false;
+        }
+        #endregion
+
+        #region 将bool[]转化成字节数组
+        /// <summary>
+        /// 将bool数组转化成字节数组
+        /// </summary>
+        /// <param name="values"></param>
+        /// <returns></returns>
+        private byte[] ByteArrayFromBoolArray(bool[] values)
+        {
+            int count = values.Length%8==0 ? values.Length/8 : values.Length/8+1;
+            byte[] result = new byte[count];
+            //首先要把一个字节全部对应Bool数组弄完，
+            for (int i = 0; i<result.Length; i++)
+            {
+                int initial = values.Length%8<8*(i+1) ? values.Length-8*i:8;
+                for (int x = 0; x < initial; x++)
+                {
+                   result[i]= SetBitLib(result[i], values[8*i+x], x);
+                }
+            }
+            return result;  
+        }
+        /// <summary>
+        /// 将字节里面指定的某位取反
+        /// </summary>
+        /// <param name="set">字节</param>
+        /// <param name="value">数据</param>
+        /// <param name="bit">位置</param>
+        /// <returns>返回结果</returns>
+        private byte SetBitLib(byte set,bool value,int bit)
+        {
+            return value ? (byte)(set|(byte)Math.Pow(2, bit)) : (byte)(set&~(byte)Math.Pow(2, bit));
+        }
+        #endregion
 
         #region 通用发送和接收的方法
         /// <summary>
@@ -202,6 +451,17 @@ namespace Wen.ModbusTCPLib
             }
         }
         #endregion
+
+        /// <summary>
+        /// 比较两个字节数组是否相等
+        /// </summary>
+        /// <param name="b1"></param>
+        /// <param name="b2"></param>
+        /// <returns></returns>
+        public bool ByteArrayEquls(byte[] b1, byte[] b2)
+        {
+            return  BitConverter.ToString(b1)==BitConverter.ToString(b2);
+        }
     }
     #region 简单混合锁
     /// <summary>
