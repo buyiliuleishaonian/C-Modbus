@@ -40,7 +40,7 @@ namespace Wen.ModbusTCPLib
 
 
         #region 建立Socket进行接收延时的时间，和判断是否超过接收时间判断
-        public int DelayTiem { get; set; } = 1000;
+        public int DelayTiem { get; set; } = 1;
 
         public int StartTime { get; set; } = 10;
         #endregion
@@ -162,7 +162,7 @@ namespace Wen.ModbusTCPLib
         /// <param name="start">初始寄存器地址</param>
         /// <param name="length">寄存器数量</param>
         /// <returns>返回结果</returns>
-        public byte[] ReadOutPutRegister(ushort start, ushort length)
+        public byte[] ReadOutPutRegisters(ushort start, ushort length)
         {
             //拼接报文
             ByteArray sendBytes = new ByteArray();
@@ -190,7 +190,7 @@ namespace Wen.ModbusTCPLib
         /// <param name="start">初始寄存器地址</param>
         /// <param name="length">寄存器长度</param>
         /// <returns>返回结果</returns>
-        public byte[] ReadInPutRegister(ushort start, ushort length)
+        public byte[] ReadInPutRegisters(ushort start, ushort length)
         {
             //拼接报文
             ByteArray sendBytes = new ByteArray();
@@ -221,7 +221,7 @@ namespace Wen.ModbusTCPLib
         /// <param name="start">初始线圈地址</param>
         /// <param name="value">写入数据</param>
         /// <returns>返回结果</returns>
-        public bool PerSetSingCoil(ushort start, bool value)
+        public bool PreSetSingleCoil(ushort start, bool value)
         {
             //拼接报文
             ByteArray sendBytes = new ByteArray();
@@ -256,7 +256,7 @@ namespace Wen.ModbusTCPLib
         /// <param name="start">寄存器地址</param>
         /// <param name="values">写入数据（字节数组）</param>
         /// <returns>返回结果</returns>
-        public bool PerSetSingRegister(ushort start, byte[] values)
+        public bool PreSetSingleRegister(ushort start, byte[] values)
         {
             //拼接报文
             ByteArray sendBytes = new ByteArray();
@@ -280,10 +280,10 @@ namespace Wen.ModbusTCPLib
         /// <param name="start">寄存器地址</param>
         /// <param name="value">写入数据（无符号短整型）</param>
         /// <returns>返回结果</returns>
-        public bool PerSetSingRegister(ushort start, ushort value)
+        public bool PreSetSingleRegister(ushort start, ushort value)
         {
             //将一个基数据转换成一个字节数组，再将其反转
-            return PerSetSingRegister(start, BitConverter.GetBytes(value).Reverse().ToArray());
+            return PreSetSingleRegister(start, BitConverter.GetBytes(value).Reverse().ToArray());
         }
         /// <summary>
         /// 写入单寄存器数据
@@ -291,9 +291,9 @@ namespace Wen.ModbusTCPLib
         /// <param name="start">寄存器地址</param>
         /// <param name="value">写入数据（短整型）</param>
         /// <returns>返回结果</returns>
-        public bool PerSetSingRegister(ushort start, short value)
+        public bool PreSetSingleRegister(ushort start, short value)
         {
-            return PerSetSingRegister(start, BitConverter.GetBytes(value).Reverse().ToArray());
+            return PreSetSingleRegister(start, BitConverter.GetBytes(value).Reverse().ToArray());
         }
         #endregion
 
@@ -304,7 +304,7 @@ namespace Wen.ModbusTCPLib
         /// <param name="start">寄存器地址</param>
         /// <param name="values">线圈数据</param>
         /// <returns>返回结果</returns>
-        public bool PerSetMuiltCoils(ushort start, bool[] values)
+        public bool PreSetMultiCoils(ushort start, bool[] values)
         {
             //拼接报文
             ByteArray sendBytes = new ByteArray();
@@ -314,8 +314,8 @@ namespace Wen.ModbusTCPLib
             sendBytes.Add(Slave,0x0F);
             sendBytes.Add(start);
             sendBytes.Add((short)values.Length);//线圈数量
-            sendBytes.Add((short)set.Length);
-            sendBytes.Add(set);
+            sendBytes.Add((byte)set.Length);//字节计数
+            sendBytes.Add(set);//加数据
 
             byte[] receive = null;
             if (SendAndReceive(sendBytes.List.ToArray(),ref receive))
@@ -335,7 +335,7 @@ namespace Wen.ModbusTCPLib
         /// <param name="start">初始寄存器地址</param>
         /// <param name="values">寄存器数据</param>
         /// <returns>返回结果</returns>
-        public bool PerSetMuiltRegister(ushort start, byte[] values)
+        public bool PreSetMultiRegisters(ushort start, byte[] values)
         {
             ByteArray sendBytes = new ByteArray();
             sendBytes.Add(0x00, 0x00, 0x00, 0x00);
@@ -343,7 +343,7 @@ namespace Wen.ModbusTCPLib
             sendBytes.Add(Slave,0x10);
             sendBytes.Add(start);
             sendBytes.Add((short)(values.Length/2));//寄存器数量
-            sendBytes.Add((short)(values.Length));//1个字节计数
+            sendBytes.Add((byte)(values.Length));//1个字节计数
             sendBytes.Add(values);//寄存器数据
 
             byte[] receive = null;
@@ -414,11 +414,12 @@ namespace Wen.ModbusTCPLib
                 MemoryStream memoryStream = new MemoryStream();
                 int timers = 0;
                 this.socket.Send(send, send.Length, SocketFlags.None);
-                //延迟返回
-                Thread.Sleep(this.DelayTiem);
+                
                 //接受报文
                 while (true)
                 {
+                    //延迟返回
+                    Thread.Sleep(this.DelayTiem);
                     if (this.socket.Available>0)
                     {
                         int count = this.socket.Receive(buffer, SocketFlags.None);

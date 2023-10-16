@@ -16,7 +16,7 @@ namespace Wen.ModbusProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmTHMonitor());
+            Application.Run(new FrmModbusTCP());
         }
     }
 }

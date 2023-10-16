@@ -50,6 +50,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\DataValidate.cs" />
+    <Compile Include="FrmModbusTCP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModbusTCP.Designer.cs">
+      <DependentUpon>FrmModbusTCP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSiemens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSiemens.Designer.cs">
+      <DependentUpon>FrmSiemens.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmTHMonitor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +76,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmModbusTCP.resx">
+      <DependentUpon>FrmModbusTCP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSiemens.resx">
+      <DependentUpon>FrmSiemens.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmTHMonitor.resx">
       <DependentUpon>FrmTHMonitor.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,6 +119,10 @@
     <ProjectReference Include="..\Wen.ModbusRTUib\Wen.ModbusRTULib.csproj">
       <Project>{119a1b1b-a84f-4787-b1b8-d36e05ff67b6}</Project>
       <Name>Wen.ModbusRTULib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Wen.ModbusTCPLib\Wen.ModbusTCPLib.csproj">
+      <Project>{91467f35-24d2-4318-9aa8-feffdae18e21}</Project>
+      <Name>Wen.ModbusTCPLib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -17,3 +17,6 @@ F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\obj\Debug\Wen.ModbusP
 F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\obj\Debug\Wen.ModbusProject.FrmModbusRTU.resources
 F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\bin\Debug\Wen.ControlLibs.dll
 F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\bin\Debug\Wen.ControlLibs.pdb
+F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\obj\Debug\Wen.ModbusProject.FrmModbusTCP.resources
+F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\bin\Debug\Wen.ModbusTCPLib.dll
+F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\bin\Debug\Wen.ModbusTCPLib.pdb
