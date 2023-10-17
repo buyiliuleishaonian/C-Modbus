@@ -56,10 +56,10 @@
     <Compile Include="FrmModbusTCP.Designer.cs">
       <DependentUpon>FrmModbusTCP.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmSiemens.cs">
+    <Compile Include="连接西门子\FrmSiemens.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmSiemens.Designer.cs">
+    <Compile Include="连接西门子\FrmSiemens.Designer.cs">
       <DependentUpon>FrmSiemens.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmTHMonitor.cs">
@@ -76,10 +76,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="连接西门子\Variable.cs" />
     <EmbeddedResource Include="FrmModbusTCP.resx">
       <DependentUpon>FrmModbusTCP.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmSiemens.resx">
+    <EmbeddedResource Include="连接西门子\FrmSiemens.resx">
       <DependentUpon>FrmSiemens.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTHMonitor.resx">

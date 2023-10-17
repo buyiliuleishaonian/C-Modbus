@@ -35,7 +35,7 @@
             this.btnConnect = new System.Windows.Forms.Button();
             this.lblPort = new System.Windows.Forms.Label();
             this.lblIp = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gx_Read = new System.Windows.Forms.GroupBox();
             this.lblString2 = new System.Windows.Forms.Label();
             this.lblString1 = new System.Windows.Forms.Label();
             this.lblFloat5 = new System.Windows.Forms.Label();
@@ -57,7 +57,7 @@
             this.lblReadBool2 = new System.Windows.Forms.Label();
             this.lblReadBool1 = new System.Windows.Forms.Label();
             this.lblReadBool = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gx_Write = new System.Windows.Forms.GroupBox();
             this.lblWriteString2 = new System.Windows.Forms.Label();
             this.lblWriteString1 = new System.Windows.Forms.Label();
             this.lblWriteFloat5 = new System.Windows.Forms.Label();
@@ -74,8 +74,8 @@
             this.lblWriteInt1 = new System.Windows.Forms.Label();
             this.lblWriteInt = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.gx_Read.SuspendLayout();
+            this.gx_Write.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -111,7 +111,7 @@
             this.txtIP.Name = "txtIP";
             this.txtIP.Size = new System.Drawing.Size(153, 31);
             this.txtIP.TabIndex = 15;
-            this.txtIP.Text = "127.0.0.1";
+            this.txtIP.Text = "192.168.0.12";
             this.txtIP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnDisConnect
@@ -157,36 +157,36 @@
             this.lblIp.TabIndex = 1;
             this.lblIp.Text = "IP地址";
             // 
-            // groupBox2
+            // gx_Read
             // 
-            this.groupBox2.Controls.Add(this.lblString2);
-            this.groupBox2.Controls.Add(this.lblString1);
-            this.groupBox2.Controls.Add(this.lblFloat5);
-            this.groupBox2.Controls.Add(this.lblFloat4);
-            this.groupBox2.Controls.Add(this.lblFloat3);
-            this.groupBox2.Controls.Add(this.lblFloat2);
-            this.groupBox2.Controls.Add(this.lblFloat1);
-            this.groupBox2.Controls.Add(this.lblInt5);
-            this.groupBox2.Controls.Add(this.lblInt4);
-            this.groupBox2.Controls.Add(this.lblInt3);
-            this.groupBox2.Controls.Add(this.lblInt2);
-            this.groupBox2.Controls.Add(this.lblReadString);
-            this.groupBox2.Controls.Add(this.lblReadFloat);
-            this.groupBox2.Controls.Add(this.lblInt1);
-            this.groupBox2.Controls.Add(this.lblReadInt);
-            this.groupBox2.Controls.Add(this.lblReadBool5);
-            this.groupBox2.Controls.Add(this.lblReadBool4);
-            this.groupBox2.Controls.Add(this.lblReadBool3);
-            this.groupBox2.Controls.Add(this.lblReadBool2);
-            this.groupBox2.Controls.Add(this.lblReadBool1);
-            this.groupBox2.Controls.Add(this.lblReadBool);
-            this.groupBox2.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 167);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(859, 299);
-            this.groupBox2.TabIndex = 17;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "数据读取";
+            this.gx_Read.Controls.Add(this.lblString2);
+            this.gx_Read.Controls.Add(this.lblString1);
+            this.gx_Read.Controls.Add(this.lblFloat5);
+            this.gx_Read.Controls.Add(this.lblFloat4);
+            this.gx_Read.Controls.Add(this.lblFloat3);
+            this.gx_Read.Controls.Add(this.lblFloat2);
+            this.gx_Read.Controls.Add(this.lblFloat1);
+            this.gx_Read.Controls.Add(this.lblInt5);
+            this.gx_Read.Controls.Add(this.lblInt4);
+            this.gx_Read.Controls.Add(this.lblInt3);
+            this.gx_Read.Controls.Add(this.lblInt2);
+            this.gx_Read.Controls.Add(this.lblReadString);
+            this.gx_Read.Controls.Add(this.lblReadFloat);
+            this.gx_Read.Controls.Add(this.lblInt1);
+            this.gx_Read.Controls.Add(this.lblReadInt);
+            this.gx_Read.Controls.Add(this.lblReadBool5);
+            this.gx_Read.Controls.Add(this.lblReadBool4);
+            this.gx_Read.Controls.Add(this.lblReadBool3);
+            this.gx_Read.Controls.Add(this.lblReadBool2);
+            this.gx_Read.Controls.Add(this.lblReadBool1);
+            this.gx_Read.Controls.Add(this.lblReadBool);
+            this.gx_Read.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.gx_Read.Location = new System.Drawing.Point(12, 167);
+            this.gx_Read.Name = "gx_Read";
+            this.gx_Read.Size = new System.Drawing.Size(859, 299);
+            this.gx_Read.TabIndex = 17;
+            this.gx_Read.TabStop = false;
+            this.gx_Read.Text = "数据读取";
             // 
             // lblString2
             // 
@@ -198,6 +198,7 @@
             this.lblString2.Name = "lblString2";
             this.lblString2.Size = new System.Drawing.Size(273, 28);
             this.lblString2.TabIndex = 36;
+            this.lblString2.Tag = "10;84;50";
             this.lblString2.Text = "0.0";
             this.lblString2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -211,6 +212,7 @@
             this.lblString1.Name = "lblString1";
             this.lblString1.Size = new System.Drawing.Size(273, 28);
             this.lblString1.TabIndex = 35;
+            this.lblString1.Tag = "10;32;50";
             this.lblString1.Text = "0.0";
             this.lblString1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -224,6 +226,7 @@
             this.lblFloat5.Name = "lblFloat5";
             this.lblFloat5.Size = new System.Drawing.Size(93, 28);
             this.lblFloat5.TabIndex = 34;
+            this.lblFloat5.Tag = "6;28;0";
             this.lblFloat5.Text = "0.0";
             this.lblFloat5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -237,6 +240,7 @@
             this.lblFloat4.Name = "lblFloat4";
             this.lblFloat4.Size = new System.Drawing.Size(93, 28);
             this.lblFloat4.TabIndex = 33;
+            this.lblFloat4.Tag = "6;24;0";
             this.lblFloat4.Text = "0.0";
             this.lblFloat4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -250,6 +254,7 @@
             this.lblFloat3.Name = "lblFloat3";
             this.lblFloat3.Size = new System.Drawing.Size(93, 28);
             this.lblFloat3.TabIndex = 32;
+            this.lblFloat3.Tag = "6;20;0";
             this.lblFloat3.Text = "0.0";
             this.lblFloat3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -263,6 +268,7 @@
             this.lblFloat2.Name = "lblFloat2";
             this.lblFloat2.Size = new System.Drawing.Size(93, 28);
             this.lblFloat2.TabIndex = 31;
+            this.lblFloat2.Tag = "6;16;0";
             this.lblFloat2.Text = "0.0";
             this.lblFloat2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -276,6 +282,7 @@
             this.lblFloat1.Name = "lblFloat1";
             this.lblFloat1.Size = new System.Drawing.Size(93, 28);
             this.lblFloat1.TabIndex = 30;
+            this.lblFloat1.Tag = "6;12;0";
             this.lblFloat1.Text = "0.0";
             this.lblFloat1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -289,6 +296,7 @@
             this.lblInt5.Name = "lblInt5";
             this.lblInt5.Size = new System.Drawing.Size(93, 28);
             this.lblInt5.TabIndex = 29;
+            this.lblInt5.Tag = "2;10;0";
             this.lblInt5.Text = "0";
             this.lblInt5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -302,7 +310,8 @@
             this.lblInt4.Name = "lblInt4";
             this.lblInt4.Size = new System.Drawing.Size(93, 28);
             this.lblInt4.TabIndex = 28;
-            this.lblInt4.Text = "0";
+            this.lblInt4.Tag = "2;8;0";
+            this.lblInt4.Text = "4";
             this.lblInt4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblInt3
@@ -315,6 +324,7 @@
             this.lblInt3.Name = "lblInt3";
             this.lblInt3.Size = new System.Drawing.Size(93, 28);
             this.lblInt3.TabIndex = 27;
+            this.lblInt3.Tag = "2;6;0";
             this.lblInt3.Text = "0";
             this.lblInt3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -328,6 +338,7 @@
             this.lblInt2.Name = "lblInt2";
             this.lblInt2.Size = new System.Drawing.Size(93, 28);
             this.lblInt2.TabIndex = 26;
+            this.lblInt2.Tag = "2;4;0";
             this.lblInt2.Text = "0";
             this.lblInt2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -361,6 +372,7 @@
             this.lblInt1.Name = "lblInt1";
             this.lblInt1.Size = new System.Drawing.Size(93, 28);
             this.lblInt1.TabIndex = 9;
+            this.lblInt1.Tag = "2;2;0";
             this.lblInt1.Text = "0";
             this.lblInt1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -384,6 +396,7 @@
             this.lblReadBool5.Name = "lblReadBool5";
             this.lblReadBool5.Size = new System.Drawing.Size(93, 28);
             this.lblReadBool5.TabIndex = 7;
+            this.lblReadBool5.Tag = "0;0;4";
             this.lblReadBool5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblReadBool4
@@ -396,6 +409,7 @@
             this.lblReadBool4.Name = "lblReadBool4";
             this.lblReadBool4.Size = new System.Drawing.Size(93, 28);
             this.lblReadBool4.TabIndex = 5;
+            this.lblReadBool4.Tag = "0;0;3";
             this.lblReadBool4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblReadBool3
@@ -408,6 +422,7 @@
             this.lblReadBool3.Name = "lblReadBool3";
             this.lblReadBool3.Size = new System.Drawing.Size(93, 28);
             this.lblReadBool3.TabIndex = 4;
+            this.lblReadBool3.Tag = "0;0;2";
             this.lblReadBool3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblReadBool2
@@ -420,6 +435,7 @@
             this.lblReadBool2.Name = "lblReadBool2";
             this.lblReadBool2.Size = new System.Drawing.Size(93, 28);
             this.lblReadBool2.TabIndex = 3;
+            this.lblReadBool2.Tag = "0;0;1";
             this.lblReadBool2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblReadBool1
@@ -432,6 +448,7 @@
             this.lblReadBool1.Name = "lblReadBool1";
             this.lblReadBool1.Size = new System.Drawing.Size(93, 28);
             this.lblReadBool1.TabIndex = 2;
+            this.lblReadBool1.Tag = "0;0;0";
             this.lblReadBool1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblReadBool
@@ -444,30 +461,30 @@
             this.lblReadBool.TabIndex = 1;
             this.lblReadBool.Text = "布尔数据";
             // 
-            // groupBox3
+            // gx_Write
             // 
-            this.groupBox3.Controls.Add(this.lblWriteString2);
-            this.groupBox3.Controls.Add(this.lblWriteString1);
-            this.groupBox3.Controls.Add(this.lblWriteFloat5);
-            this.groupBox3.Controls.Add(this.lblWriteFloat4);
-            this.groupBox3.Controls.Add(this.lblWriteFloat3);
-            this.groupBox3.Controls.Add(this.lblWriteFloat2);
-            this.groupBox3.Controls.Add(this.lblWriteFloat1);
-            this.groupBox3.Controls.Add(this.lblWriteInt5);
-            this.groupBox3.Controls.Add(this.lblWriteInt4);
-            this.groupBox3.Controls.Add(this.lblWriteInt3);
-            this.groupBox3.Controls.Add(this.lblWriteInt2);
-            this.groupBox3.Controls.Add(this.lblWriteString);
-            this.groupBox3.Controls.Add(this.lblWriteFloat);
-            this.groupBox3.Controls.Add(this.lblWriteInt1);
-            this.groupBox3.Controls.Add(this.lblWriteInt);
-            this.groupBox3.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.groupBox3.Location = new System.Drawing.Point(12, 492);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(859, 299);
-            this.groupBox3.TabIndex = 37;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "数据写入";
+            this.gx_Write.Controls.Add(this.lblWriteString2);
+            this.gx_Write.Controls.Add(this.lblWriteString1);
+            this.gx_Write.Controls.Add(this.lblWriteFloat5);
+            this.gx_Write.Controls.Add(this.lblWriteFloat4);
+            this.gx_Write.Controls.Add(this.lblWriteFloat3);
+            this.gx_Write.Controls.Add(this.lblWriteFloat2);
+            this.gx_Write.Controls.Add(this.lblWriteFloat1);
+            this.gx_Write.Controls.Add(this.lblWriteInt5);
+            this.gx_Write.Controls.Add(this.lblWriteInt4);
+            this.gx_Write.Controls.Add(this.lblWriteInt3);
+            this.gx_Write.Controls.Add(this.lblWriteInt2);
+            this.gx_Write.Controls.Add(this.lblWriteString);
+            this.gx_Write.Controls.Add(this.lblWriteFloat);
+            this.gx_Write.Controls.Add(this.lblWriteInt1);
+            this.gx_Write.Controls.Add(this.lblWriteInt);
+            this.gx_Write.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.gx_Write.Location = new System.Drawing.Point(12, 492);
+            this.gx_Write.Name = "gx_Write";
+            this.gx_Write.Size = new System.Drawing.Size(859, 299);
+            this.gx_Write.TabIndex = 37;
+            this.gx_Write.TabStop = false;
+            this.gx_Write.Text = "数据写入";
             // 
             // lblWriteString2
             // 
@@ -660,18 +677,18 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(963, 832);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.gx_Write);
+            this.Controls.Add(this.gx_Read);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmSiemens";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "基于ModbusTCP实现西门子通信";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.gx_Read.ResumeLayout(false);
+            this.gx_Read.PerformLayout();
+            this.gx_Write.ResumeLayout(false);
+            this.gx_Write.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -685,7 +702,7 @@
         private System.Windows.Forms.Button btnConnect;
         private System.Windows.Forms.Label lblPort;
         private System.Windows.Forms.Label lblIp;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gx_Read;
         private System.Windows.Forms.Label lblReadBool;
         private System.Windows.Forms.Label lblReadBool1;
         private System.Windows.Forms.Label lblReadBool5;
@@ -707,7 +724,7 @@
         private System.Windows.Forms.Label lblFloat2;
         private System.Windows.Forms.Label lblFloat1;
         private System.Windows.Forms.Label lblInt5;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox gx_Write;
         private System.Windows.Forms.Label lblWriteString2;
         private System.Windows.Forms.Label lblWriteString1;
         private System.Windows.Forms.Label lblWriteFloat5;

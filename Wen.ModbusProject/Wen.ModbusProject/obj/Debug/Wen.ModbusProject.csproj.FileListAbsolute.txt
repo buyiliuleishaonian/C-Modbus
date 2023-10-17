@@ -20,3 +20,4 @@ F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\bin\Debug\Wen.Control
 F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\obj\Debug\Wen.ModbusProject.FrmModbusTCP.resources
 F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\bin\Debug\Wen.ModbusTCPLib.dll
 F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\bin\Debug\Wen.ModbusTCPLib.pdb
+F:\备份\通信协议\Wen.ModbusProject\Wen.ModbusProject\obj\Debug\Wen.ModbusProject.FrmSiemens.resources

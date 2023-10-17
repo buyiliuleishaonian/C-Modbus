@@ -311,20 +311,20 @@ namespace Wen.ModbusTCPLib
             byte[] set = ByteArrayFromBoolArray(values);
             sendBytes.Add(0x00, 0x00, 0x00, 0x00);
             sendBytes.Add((short)(7+set.Length));
-            sendBytes.Add(Slave,0x0F);
+            sendBytes.Add(Slave, 0x0F);
             sendBytes.Add(start);
             sendBytes.Add((short)values.Length);//线圈数量
             sendBytes.Add((byte)set.Length);//字节计数
             sendBytes.Add(set);//加数据
 
             byte[] receive = null;
-            if (SendAndReceive(sendBytes.List.ToArray(),ref receive))
+            if (SendAndReceive(sendBytes.List.ToArray(), ref receive))
             {
                 byte[] send = new byte[12];
-                Array.Copy(sendBytes.List.ToArray(),0,send,0,12);
+                Array.Copy(sendBytes.List.ToArray(), 0, send, 0, 12);
                 send[4] = 0x00;
                 send[5] = 0x06;
-                return ByteArrayEquls(send,receive);
+                return ByteArrayEquls(send, receive);
             }
             return false;
         }
@@ -340,7 +340,7 @@ namespace Wen.ModbusTCPLib
             ByteArray sendBytes = new ByteArray();
             sendBytes.Add(0x00, 0x00, 0x00, 0x00);
             sendBytes.Add((short)(7+values.Length));
-            sendBytes.Add(Slave,0x10);
+            sendBytes.Add(Slave, 0x10);
             sendBytes.Add(start);
             sendBytes.Add((short)(values.Length/2));//寄存器数量
             sendBytes.Add((byte)(values.Length));//1个字节计数
@@ -372,13 +372,13 @@ namespace Wen.ModbusTCPLib
             //首先要把一个字节全部对应Bool数组弄完，
             for (int i = 0; i<result.Length; i++)
             {
-                int initial = values.Length%8<8*(i+1) ? values.Length-8*i:8;
+                int initial = values.Length%8<8*(i+1) ? values.Length-8*i : 8;
                 for (int x = 0; x < initial; x++)
                 {
-                   result[i]= SetBitLib(result[i], values[8*i+x], x);
+                    result[i]= SetBitLib(result[i], values[8*i+x], x);
                 }
             }
-            return result;  
+            return result;
         }
         /// <summary>
         /// 将字节里面指定的某位取反
@@ -387,7 +387,7 @@ namespace Wen.ModbusTCPLib
         /// <param name="value">数据</param>
         /// <param name="bit">位置</param>
         /// <returns>返回结果</returns>
-        private byte SetBitLib(byte set,bool value,int bit)
+        private byte SetBitLib(byte set, bool value, int bit)
         {
             return value ? (byte)(set|(byte)Math.Pow(2, bit)) : (byte)(set&~(byte)Math.Pow(2, bit));
         }
@@ -414,7 +414,7 @@ namespace Wen.ModbusTCPLib
                 MemoryStream memoryStream = new MemoryStream();
                 int timers = 0;
                 this.socket.Send(send, send.Length, SocketFlags.None);
-                
+
                 //接受报文
                 while (true)
                 {
@@ -428,13 +428,13 @@ namespace Wen.ModbusTCPLib
                     else
                     {
                         timers++;
-                        if (memoryStream.Length>0)
-                        {
-                            break;
-                        }
-                        else if (timers>StartTime)
+                        if (timers>StartTime)
                         {
                             return false;
+                        }
+                        else if (memoryStream.Length>0)
+                        {
+                            break;
                         }
                     }
                 }
@@ -461,7 +461,7 @@ namespace Wen.ModbusTCPLib
         /// <returns></returns>
         public bool ByteArrayEquls(byte[] b1, byte[] b2)
         {
-            return  BitConverter.ToString(b1)==BitConverter.ToString(b2);
+            return BitConverter.ToString(b1)==BitConverter.ToString(b2);
         }
     }
     #region 简单混合锁
