@@ -58,21 +58,21 @@
             this.lblReadBool1 = new System.Windows.Forms.Label();
             this.lblReadBool = new System.Windows.Forms.Label();
             this.gx_Write = new System.Windows.Forms.GroupBox();
-            this.lblWriteString2 = new System.Windows.Forms.Label();
-            this.lblWriteString1 = new System.Windows.Forms.Label();
-            this.lblWriteFloat5 = new System.Windows.Forms.Label();
-            this.lblWriteFloat4 = new System.Windows.Forms.Label();
-            this.lblWriteFloat3 = new System.Windows.Forms.Label();
-            this.lblWriteFloat2 = new System.Windows.Forms.Label();
-            this.lblWriteFloat1 = new System.Windows.Forms.Label();
-            this.lblWriteInt5 = new System.Windows.Forms.Label();
-            this.lblWriteInt4 = new System.Windows.Forms.Label();
-            this.lblWriteInt3 = new System.Windows.Forms.Label();
-            this.lblWriteInt2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblWriteString = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.lblWriteFloat = new System.Windows.Forms.Label();
-            this.lblWriteInt1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.lblWriteInt = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.gx_Read.SuspendLayout();
             this.gx_Write.SuspendLayout();
@@ -311,7 +311,7 @@
             this.lblInt4.Size = new System.Drawing.Size(93, 28);
             this.lblInt4.TabIndex = 28;
             this.lblInt4.Tag = "2;8;0";
-            this.lblInt4.Text = "4";
+            this.lblInt4.Text = "0";
             this.lblInt4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblInt3
@@ -463,21 +463,21 @@
             // 
             // gx_Write
             // 
-            this.gx_Write.Controls.Add(this.lblWriteString2);
-            this.gx_Write.Controls.Add(this.lblWriteString1);
-            this.gx_Write.Controls.Add(this.lblWriteFloat5);
-            this.gx_Write.Controls.Add(this.lblWriteFloat4);
-            this.gx_Write.Controls.Add(this.lblWriteFloat3);
-            this.gx_Write.Controls.Add(this.lblWriteFloat2);
-            this.gx_Write.Controls.Add(this.lblWriteFloat1);
-            this.gx_Write.Controls.Add(this.lblWriteInt5);
-            this.gx_Write.Controls.Add(this.lblWriteInt4);
-            this.gx_Write.Controls.Add(this.lblWriteInt3);
-            this.gx_Write.Controls.Add(this.lblWriteInt2);
+            this.gx_Write.Controls.Add(this.label1);
             this.gx_Write.Controls.Add(this.lblWriteString);
+            this.gx_Write.Controls.Add(this.label2);
             this.gx_Write.Controls.Add(this.lblWriteFloat);
-            this.gx_Write.Controls.Add(this.lblWriteInt1);
+            this.gx_Write.Controls.Add(this.label3);
             this.gx_Write.Controls.Add(this.lblWriteInt);
+            this.gx_Write.Controls.Add(this.label4);
+            this.gx_Write.Controls.Add(this.label12);
+            this.gx_Write.Controls.Add(this.label5);
+            this.gx_Write.Controls.Add(this.label11);
+            this.gx_Write.Controls.Add(this.label6);
+            this.gx_Write.Controls.Add(this.label10);
+            this.gx_Write.Controls.Add(this.label7);
+            this.gx_Write.Controls.Add(this.label9);
+            this.gx_Write.Controls.Add(this.label8);
             this.gx_Write.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.gx_Write.Location = new System.Drawing.Point(12, 492);
             this.gx_Write.Name = "gx_Write";
@@ -486,148 +486,20 @@
             this.gx_Write.TabStop = false;
             this.gx_Write.Text = "数据写入";
             // 
-            // lblWriteString2
+            // label1
             // 
-            this.lblWriteString2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblWriteString2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblWriteString2.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblWriteString2.ForeColor = System.Drawing.Color.Black;
-            this.lblWriteString2.Location = new System.Drawing.Point(495, 188);
-            this.lblWriteString2.Name = "lblWriteString2";
-            this.lblWriteString2.Size = new System.Drawing.Size(273, 28);
-            this.lblWriteString2.TabIndex = 36;
-            this.lblWriteString2.Text = "0.0";
-            this.lblWriteString2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblWriteString1
-            // 
-            this.lblWriteString1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblWriteString1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblWriteString1.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblWriteString1.ForeColor = System.Drawing.Color.Black;
-            this.lblWriteString1.Location = new System.Drawing.Point(142, 188);
-            this.lblWriteString1.Name = "lblWriteString1";
-            this.lblWriteString1.Size = new System.Drawing.Size(273, 28);
-            this.lblWriteString1.TabIndex = 35;
-            this.lblWriteString1.Text = "0.0";
-            this.lblWriteString1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblWriteFloat5
-            // 
-            this.lblWriteFloat5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblWriteFloat5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblWriteFloat5.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblWriteFloat5.ForeColor = System.Drawing.Color.Black;
-            this.lblWriteFloat5.Location = new System.Drawing.Point(661, 127);
-            this.lblWriteFloat5.Name = "lblWriteFloat5";
-            this.lblWriteFloat5.Size = new System.Drawing.Size(93, 28);
-            this.lblWriteFloat5.TabIndex = 34;
-            this.lblWriteFloat5.Text = "0.0";
-            this.lblWriteFloat5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblWriteFloat4
-            // 
-            this.lblWriteFloat4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblWriteFloat4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblWriteFloat4.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblWriteFloat4.ForeColor = System.Drawing.Color.Black;
-            this.lblWriteFloat4.Location = new System.Drawing.Point(526, 127);
-            this.lblWriteFloat4.Name = "lblWriteFloat4";
-            this.lblWriteFloat4.Size = new System.Drawing.Size(93, 28);
-            this.lblWriteFloat4.TabIndex = 33;
-            this.lblWriteFloat4.Text = "0.0";
-            this.lblWriteFloat4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblWriteFloat3
-            // 
-            this.lblWriteFloat3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblWriteFloat3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblWriteFloat3.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblWriteFloat3.ForeColor = System.Drawing.Color.Black;
-            this.lblWriteFloat3.Location = new System.Drawing.Point(391, 127);
-            this.lblWriteFloat3.Name = "lblWriteFloat3";
-            this.lblWriteFloat3.Size = new System.Drawing.Size(93, 28);
-            this.lblWriteFloat3.TabIndex = 32;
-            this.lblWriteFloat3.Text = "0.0";
-            this.lblWriteFloat3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblWriteFloat2
-            // 
-            this.lblWriteFloat2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblWriteFloat2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblWriteFloat2.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblWriteFloat2.ForeColor = System.Drawing.Color.Black;
-            this.lblWriteFloat2.Location = new System.Drawing.Point(256, 127);
-            this.lblWriteFloat2.Name = "lblWriteFloat2";
-            this.lblWriteFloat2.Size = new System.Drawing.Size(93, 28);
-            this.lblWriteFloat2.TabIndex = 31;
-            this.lblWriteFloat2.Text = "0.0";
-            this.lblWriteFloat2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblWriteFloat1
-            // 
-            this.lblWriteFloat1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblWriteFloat1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblWriteFloat1.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblWriteFloat1.ForeColor = System.Drawing.Color.Black;
-            this.lblWriteFloat1.Location = new System.Drawing.Point(121, 127);
-            this.lblWriteFloat1.Name = "lblWriteFloat1";
-            this.lblWriteFloat1.Size = new System.Drawing.Size(93, 28);
-            this.lblWriteFloat1.TabIndex = 30;
-            this.lblWriteFloat1.Text = "0.0";
-            this.lblWriteFloat1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblWriteInt5
-            // 
-            this.lblWriteInt5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblWriteInt5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblWriteInt5.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblWriteInt5.ForeColor = System.Drawing.Color.Black;
-            this.lblWriteInt5.Location = new System.Drawing.Point(661, 61);
-            this.lblWriteInt5.Name = "lblWriteInt5";
-            this.lblWriteInt5.Size = new System.Drawing.Size(93, 28);
-            this.lblWriteInt5.TabIndex = 29;
-            this.lblWriteInt5.Text = "0";
-            this.lblWriteInt5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblWriteInt4
-            // 
-            this.lblWriteInt4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblWriteInt4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblWriteInt4.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblWriteInt4.ForeColor = System.Drawing.Color.Black;
-            this.lblWriteInt4.Location = new System.Drawing.Point(526, 61);
-            this.lblWriteInt4.Name = "lblWriteInt4";
-            this.lblWriteInt4.Size = new System.Drawing.Size(93, 28);
-            this.lblWriteInt4.TabIndex = 28;
-            this.lblWriteInt4.Text = "0";
-            this.lblWriteInt4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblWriteInt3
-            // 
-            this.lblWriteInt3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblWriteInt3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblWriteInt3.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblWriteInt3.ForeColor = System.Drawing.Color.Black;
-            this.lblWriteInt3.Location = new System.Drawing.Point(391, 61);
-            this.lblWriteInt3.Name = "lblWriteInt3";
-            this.lblWriteInt3.Size = new System.Drawing.Size(93, 28);
-            this.lblWriteInt3.TabIndex = 27;
-            this.lblWriteInt3.Text = "0";
-            this.lblWriteInt3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblWriteInt2
-            // 
-            this.lblWriteInt2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblWriteInt2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblWriteInt2.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblWriteInt2.ForeColor = System.Drawing.Color.Black;
-            this.lblWriteInt2.Location = new System.Drawing.Point(256, 61);
-            this.lblWriteInt2.Name = "lblWriteInt2";
-            this.lblWriteInt2.Size = new System.Drawing.Size(93, 28);
-            this.lblWriteInt2.TabIndex = 26;
-            this.lblWriteInt2.Text = "0";
-            this.lblWriteInt2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label1.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(495, 187);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(273, 28);
+            this.label1.TabIndex = 48;
+            this.label1.Tag = "10;84;50";
+            this.label1.Text = "0.0";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.DoubleClick += new System.EventHandler(this.CommonModify_DoubleClick);
             // 
             // lblWriteString
             // 
@@ -639,6 +511,21 @@
             this.lblWriteString.TabIndex = 20;
             this.lblWriteString.Text = "字符串数据";
             // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label2.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(142, 187);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(273, 28);
+            this.label2.TabIndex = 47;
+            this.label2.Tag = "10;32;50";
+            this.label2.Text = "0.0";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.DoubleClick += new System.EventHandler(this.CommonModify_DoubleClick);
+            // 
             // lblWriteFloat
             // 
             this.lblWriteFloat.AutoSize = true;
@@ -649,18 +536,20 @@
             this.lblWriteFloat.TabIndex = 14;
             this.lblWriteFloat.Text = "浮点数据";
             // 
-            // lblWriteInt1
+            // label3
             // 
-            this.lblWriteInt1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblWriteInt1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblWriteInt1.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lblWriteInt1.ForeColor = System.Drawing.Color.Black;
-            this.lblWriteInt1.Location = new System.Drawing.Point(121, 61);
-            this.lblWriteInt1.Name = "lblWriteInt1";
-            this.lblWriteInt1.Size = new System.Drawing.Size(93, 28);
-            this.lblWriteInt1.TabIndex = 9;
-            this.lblWriteInt1.Text = "0";
-            this.lblWriteInt1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label3.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(661, 126);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(93, 28);
+            this.label3.TabIndex = 46;
+            this.label3.Tag = "6;28;0";
+            this.label3.Text = "0.0";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.DoubleClick += new System.EventHandler(this.CommonModify_DoubleClick);
             // 
             // lblWriteInt
             // 
@@ -672,6 +561,141 @@
             this.lblWriteInt.TabIndex = 8;
             this.lblWriteInt.Text = "整型数据";
             // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label4.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(526, 126);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(93, 28);
+            this.label4.TabIndex = 45;
+            this.label4.Tag = "6;24;0";
+            this.label4.Text = "0.0";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.DoubleClick += new System.EventHandler(this.CommonModify_DoubleClick);
+            // 
+            // label12
+            // 
+            this.label12.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label12.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(121, 60);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(93, 28);
+            this.label12.TabIndex = 37;
+            this.label12.Tag = "2;2;0";
+            this.label12.Text = "0";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label12.DoubleClick += new System.EventHandler(this.CommonModify_DoubleClick);
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label5.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(391, 126);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(93, 28);
+            this.label5.TabIndex = 44;
+            this.label5.Tag = "6;20;0";
+            this.label5.Text = "0.0";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.DoubleClick += new System.EventHandler(this.CommonModify_DoubleClick);
+            // 
+            // label11
+            // 
+            this.label11.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label11.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(256, 60);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(93, 28);
+            this.label11.TabIndex = 38;
+            this.label11.Tag = "2;4;0";
+            this.label11.Text = "0";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label11.DoubleClick += new System.EventHandler(this.CommonModify_DoubleClick);
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label6.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(256, 126);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(93, 28);
+            this.label6.TabIndex = 43;
+            this.label6.Tag = "6;16;0";
+            this.label6.Text = "0.0";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label6.DoubleClick += new System.EventHandler(this.CommonModify_DoubleClick);
+            // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label10.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label10.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(391, 60);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(93, 28);
+            this.label10.TabIndex = 39;
+            this.label10.Tag = "2;6;0";
+            this.label10.Text = "0";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label10.DoubleClick += new System.EventHandler(this.CommonModify_DoubleClick);
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label7.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label7.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(121, 126);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(93, 28);
+            this.label7.TabIndex = 42;
+            this.label7.Tag = "6;12;0";
+            this.label7.Text = "0.0";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label7.DoubleClick += new System.EventHandler(this.CommonModify_DoubleClick);
+            // 
+            // label9
+            // 
+            this.label9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label9.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(526, 60);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(93, 28);
+            this.label9.TabIndex = 40;
+            this.label9.Tag = "2;8;0";
+            this.label9.Text = "0";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label9.DoubleClick += new System.EventHandler(this.CommonModify_DoubleClick);
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label8.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(661, 60);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(93, 28);
+            this.label8.TabIndex = 41;
+            this.label8.Tag = "2;10;0";
+            this.label8.Text = "0";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label8.DoubleClick += new System.EventHandler(this.CommonModify_DoubleClick);
+            // 
             // FrmSiemens
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -681,7 +705,7 @@
             this.Controls.Add(this.gx_Read);
             this.Controls.Add(this.groupBox1);
             this.Name = "FrmSiemens";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "基于ModbusTCP实现西门子通信";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -725,20 +749,20 @@
         private System.Windows.Forms.Label lblFloat1;
         private System.Windows.Forms.Label lblInt5;
         private System.Windows.Forms.GroupBox gx_Write;
-        private System.Windows.Forms.Label lblWriteString2;
-        private System.Windows.Forms.Label lblWriteString1;
-        private System.Windows.Forms.Label lblWriteFloat5;
-        private System.Windows.Forms.Label lblWriteFloat4;
-        private System.Windows.Forms.Label lblWriteFloat3;
-        private System.Windows.Forms.Label lblWriteFloat2;
-        private System.Windows.Forms.Label lblWriteFloat1;
-        private System.Windows.Forms.Label lblWriteInt5;
-        private System.Windows.Forms.Label lblWriteInt4;
-        private System.Windows.Forms.Label lblWriteInt3;
-        private System.Windows.Forms.Label lblWriteInt2;
         private System.Windows.Forms.Label lblWriteString;
         private System.Windows.Forms.Label lblWriteFloat;
-        private System.Windows.Forms.Label lblWriteInt1;
         private System.Windows.Forms.Label lblWriteInt;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
     }
 }

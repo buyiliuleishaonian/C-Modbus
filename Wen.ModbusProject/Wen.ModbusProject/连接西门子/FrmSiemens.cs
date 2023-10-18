@@ -66,6 +66,8 @@ namespace Wen.ModbusProject
             while (!this.cts.IsCancellationRequested)
             {
                 //从PLC中读取从0开始的DB1.DBB0-DBB343的
+                //从西门子里面往Modbus中写地址，西门子地址要除以2
+                //所在在modbus中地址乘以2就是对应在西门子中的地址
 
                 byte[] result = modbusTCP.ReadOutPutRegisters(0, 68);
                 try
@@ -208,6 +210,23 @@ namespace Wen.ModbusProject
             }
         }
 
+        //创建一个窗体来显示，PLC所传输过来的数据值，数据类型，将要设定的参数
+        //编写双击事件，通过触发事件对象，判断是否是Label控件，之后将其属性传输给我们所创建的窗体
 
+        private void CommonModify_DoubleClick(object sender,EventArgs e)
+        {
+            //判断是否点击的Label控件
+            if (sender is Label )
+            {
+                Label lbl = sender as Label;
+                if (lbl.Tag!=null&&lbl.Tag.ToString().Trim().Length>0)
+                {
+                    string initialValue=lbl.Text;
+                    Variable var = GetVariableByTag(lbl.Tag.ToString().Trim());
+                    FrmParamSet frmParamSet= new FrmParamSet(initialValue,var,modbusTCP);
+                    frmParamSet.ShowDialog();
+                }
+            }
+        }
     }
 }

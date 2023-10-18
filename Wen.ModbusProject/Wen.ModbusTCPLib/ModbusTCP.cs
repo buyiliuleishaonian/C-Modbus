@@ -261,13 +261,13 @@ namespace Wen.ModbusTCPLib
             //拼接报文
             ByteArray sendBytes = new ByteArray();
             sendBytes.Add(0x00, 0x00, 0x00, 0x00);//添加事务标识+协议标识
-            sendBytes.Add(0x00, 0x06, Slave, 0x05);//添加长度，单元标识，功能码
+            sendBytes.Add(0x00, 0x06, Slave, 0x06);//添加长度，单元标识，功能码
             sendBytes.Add(start);
             sendBytes.Add(values);
             byte[] receive = null;
             if (SendAndReceive(sendBytes.List.ToArray(), ref receive))
             {
-                if (receive.Length==sendBytes.Length&&receive[7]==0x05)
+                if (receive.Length==sendBytes.Length&&receive[7]==0x06)
                 {
                     return true;
                 }
