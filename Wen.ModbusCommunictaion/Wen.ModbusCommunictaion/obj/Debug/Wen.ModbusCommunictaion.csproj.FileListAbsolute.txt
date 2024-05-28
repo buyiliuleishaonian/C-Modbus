@@ -1,0 +1,12 @@
+C:\学习文件\西门子PLC开放式通信\Wen.ModbusCommunictaion\Wen.ModbusCommunictaion\bin\Debug\Wen.ModbusCommunictaion.exe.config
+C:\学习文件\西门子PLC开放式通信\Wen.ModbusCommunictaion\Wen.ModbusCommunictaion\bin\Debug\Wen.ModbusCommunictaion.exe
+C:\学习文件\西门子PLC开放式通信\Wen.ModbusCommunictaion\Wen.ModbusCommunictaion\bin\Debug\Wen.ModbusCommunictaion.pdb
+C:\学习文件\西门子PLC开放式通信\Wen.ModbusCommunictaion\Wen.ModbusCommunictaion\bin\Debug\Wen.ModbucCommunicationLib.dll
+C:\学习文件\西门子PLC开放式通信\Wen.ModbusCommunictaion\Wen.ModbusCommunictaion\bin\Debug\Wen.ModbucCommunicationLib.pdb
+C:\学习文件\西门子PLC开放式通信\Wen.ModbusCommunictaion\Wen.ModbusCommunictaion\obj\Debug\Wen.ModbusCommunictaion.csproj.AssemblyReference.cache
+C:\学习文件\西门子PLC开放式通信\Wen.ModbusCommunictaion\Wen.ModbusCommunictaion\obj\Debug\Wen.ModbusCommunictaion.Properties.Resources.resources
+C:\学习文件\西门子PLC开放式通信\Wen.ModbusCommunictaion\Wen.ModbusCommunictaion\obj\Debug\Wen.ModbusCommunictaion.csproj.GenerateResource.cache
+C:\学习文件\西门子PLC开放式通信\Wen.ModbusCommunictaion\Wen.ModbusCommunictaion\obj\Debug\Wen.ModbusCommunictaion.csproj.CoreCompileInputs.cache
+C:\学习文件\西门子PLC开放式通信\Wen.ModbusCommunictaion\Wen.ModbusCommunictaion\obj\Debug\Wen.ModbusCommunictaion.csproj.CopyComplete
+C:\学习文件\西门子PLC开放式通信\Wen.ModbusCommunictaion\Wen.ModbusCommunictaion\obj\Debug\Wen.ModbusCommunictaion.exe
+C:\学习文件\西门子PLC开放式通信\Wen.ModbusCommunictaion\Wen.ModbusCommunictaion\obj\Debug\Wen.ModbusCommunictaion.pdb

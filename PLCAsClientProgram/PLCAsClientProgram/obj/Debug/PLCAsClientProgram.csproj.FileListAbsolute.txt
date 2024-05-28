@@ -1,0 +1,12 @@
+C:\学习文件\西门子PLC开放式通信\PLCAsClientProgram\PLCAsClientProgram\bin\Debug\PLCAsClientProgram.exe.config
+C:\学习文件\西门子PLC开放式通信\PLCAsClientProgram\PLCAsClientProgram\bin\Debug\PLCAsClientProgram.exe
+C:\学习文件\西门子PLC开放式通信\PLCAsClientProgram\PLCAsClientProgram\bin\Debug\PLCAsClientProgram.pdb
+C:\学习文件\西门子PLC开放式通信\PLCAsClientProgram\PLCAsClientProgram\obj\Debug\PLCAsClientProgram.csproj.AssemblyReference.cache
+C:\学习文件\西门子PLC开放式通信\PLCAsClientProgram\PLCAsClientProgram\obj\Debug\PLCAsClientProgram.FrmMain.resources
+C:\学习文件\西门子PLC开放式通信\PLCAsClientProgram\PLCAsClientProgram\obj\Debug\PLCAsClientProgram.Properties.Resources.resources
+C:\学习文件\西门子PLC开放式通信\PLCAsClientProgram\PLCAsClientProgram\obj\Debug\PLCAsClientProgram.csproj.GenerateResource.cache
+C:\学习文件\西门子PLC开放式通信\PLCAsClientProgram\PLCAsClientProgram\obj\Debug\PLCAsClientProgram.csproj.CoreCompileInputs.cache
+C:\学习文件\西门子PLC开放式通信\PLCAsClientProgram\PLCAsClientProgram\obj\Debug\PLCAsClientProgram.csproj.CopyComplete
+C:\学习文件\西门子PLC开放式通信\PLCAsClientProgram\PLCAsClientProgram\obj\Debug\PLCAsClientProgram.exe
+C:\学习文件\西门子PLC开放式通信\PLCAsClientProgram\PLCAsClientProgram\obj\Debug\PLCAsClientProgram.pdb
+C:\学习文件\西门子PLC开放式通信\PLCAsClientProgram\PLCAsClientProgram\obj\Debug\Wen.PLCAsClientProgram.FrmParam.resources

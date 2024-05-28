@@ -1,0 +1,2845 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>thinger.CommunicationLib</name>
+    </assembly>
+    <members>
+        <member name="T:thinger.CommunicationLib.Base.ReadWriteBase">
+            <summary>
+            读写基类
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Base.ReadWriteBase.DataFormat">
+            <summary>
+            字节大小端顺序
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.Base.ReadWriteBase.AreaType">
+            <summary>
+            存储区格式
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.ReadByteArray(System.String,System.UInt16)">
+            <summary>
+            读取字节数组接口
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="length">长度</param>
+            <returns>带字节数组的操作结果</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.ReadBoolArray(System.String,System.UInt16)">
+            <summary>
+            读取布尔数组接口
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="length">长度</param>
+            <returns>带布尔数组的操作结果</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.WriteByteArray(System.String,System.Byte[])">
+            <summary>
+            写入字节数组接口
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="value">字节数组</param>
+            <returns>操作结果</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.WriteBoolArray(System.String,System.Boolean[])">
+            <summary>
+            写入布尔数组接口
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="value">布尔数组</param>
+            <returns>操作结果</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.ReadComm``1(System.String,System.UInt16)">
+            <summary>
+            通用读取方法
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="address">地址</param>
+            <param name="length">长度</param>
+            <returns>返回操作结果</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.ReadCommon``1(System.String,System.UInt16)">
+            <summary>
+            通用读取方法
+            </summary>
+            <param name="address"></param>
+            <param name="length"></param>
+            <returns></returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.ReadBool(System.String)">
+            <summary>
+            读取单个布尔
+            </summary>
+            <param name="address">变量地址</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.ReadByte(System.String)">
+            <summary>
+            读取单个字节
+            </summary>
+            <param name="address">变量地址</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.ReadShortArray(System.String,System.UInt16)">
+            <summary>
+            读取Short数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="length">长度</param>
+            <returns>Short数组</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.ReadShort(System.String)">
+            <summary>
+            读取单个Short
+            </summary>
+            <param name="address">变量地址</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.ReadUShortArray(System.String,System.UInt16)">
+            <summary>
+            读取UShort数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="length">长度</param>
+            <returns>UShort数组</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.ReadUShort(System.String)">
+            <summary>
+            读取单个UShort
+            </summary>
+            <param name="address">变量地址</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.ReadIntArray(System.String,System.UInt16)">
+            <summary>
+            读取Int数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="length">长度</param>
+            <returns>Int数组</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.ReadInt(System.String)">
+            <summary>
+            读取单个Int
+            </summary>
+            <param name="address">变量地址</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.ReadUIntArray(System.String,System.UInt16)">
+            <summary>
+            读取UInt数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="length">长度</param>
+            <returns>UInt数组</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.ReadUInt(System.String)">
+            <summary>
+            读取单个UInt
+            </summary>
+            <param name="address">变量地址</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.ReadFloatArray(System.String,System.UInt16)">
+            <summary>
+            读取Float数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="length">长度</param>
+            <returns>UInt数组</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.ReadFloat(System.String)">
+            <summary>
+            读取单个Float
+            </summary>
+            <param name="address">变量地址</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.ReadLongArray(System.String,System.UInt16)">
+            <summary>
+            读取Long数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="length">长度</param>
+            <returns>Long数组</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.ReadLong(System.String)">
+            <summary>
+            读取单个Long
+            </summary>
+            <param name="address">变量地址</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.ReadULongArray(System.String,System.UInt16)">
+            <summary>
+            读取ULong数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="length">长度</param>
+            <returns>ULong数组</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.ReadULong(System.String)">
+            <summary>
+            读取单个ULong
+            </summary>
+            <param name="address">变量地址</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.ReadDoubleArray(System.String,System.UInt16)">
+            <summary>
+            读取Double数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="length">长度</param>
+            <returns>Double数组</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.ReadDouble(System.String)">
+            <summary>
+            读取单个Double
+            </summary>
+            <param name="address">变量地址</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.ReadString(System.String,System.Int32,System.Int32)">
+            <summary>
+            读取String
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="length">字符串所占字节长度</param>
+            <param name="stringType">返回字符串类型，0表示10进制组合，1表示16进制组合，2表示ASCII编码格式，3表示使用BitConvert,4表示针对西门子PLC</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.WriteCommon(System.String,System.Object)">
+            <summary>
+            通用写入方法
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="value">变量值</param>
+            <returns>返回对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.WriteBool(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            写入单个布尔
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="value">布尔</param>
+            <param name="isRegBool">是否为寄存器布尔</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.WriteByte(System.String,System.Byte)">
+            <summary>
+            写入单个字节
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="value">字节数据</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.WriteShortArray(System.String,System.Int16[])">
+            <summary>
+            写入Short数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="values">Short数组</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.WriteShort(System.String,System.Int16)">
+            <summary>
+            写入单个Short
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="value">Short</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.WriteUShortArray(System.String,System.UInt16[])">
+            <summary>
+            写入UShort数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="values">UShort数组</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.WriteUShort(System.String,System.UInt16)">
+            <summary>
+            写入单个UShort
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="value">UShort</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.WriteIntArray(System.String,System.Int32[])">
+            <summary>
+            写入Int数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="values">Int数组</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.WriteInt(System.String,System.Int32)">
+            <summary>
+            写入单个Int
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="value">Int</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.WriteUIntArray(System.String,System.UInt32[])">
+            <summary>
+            写入UInt数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="values">UInt数组</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.WriteUInt(System.String,System.UInt32)">
+            <summary>
+            写入单个UInt
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="value">UInt</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.WriteFloatArray(System.String,System.Single[])">
+            <summary>
+            写入Float数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="values">Float数组</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.WriteFloat(System.String,System.Single)">
+            <summary>
+            写入单个Float
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="value">Float</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.WriteLongArray(System.String,System.Int64[])">
+            <summary>
+            写入Long数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="values">Long数组</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.WriteLong(System.String,System.Int64)">
+            <summary>
+            写入单个Long
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="value">Long</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.WriteULongArray(System.String,System.UInt64[])">
+            <summary>
+            写入ULong数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="values">ULong数组</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.WriteULong(System.String,System.UInt64)">
+            <summary>
+            写入单个ULong
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="value">ULong</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.WriteDoubleArray(System.String,System.Double[])">
+            <summary>
+            写入Double数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="values">Double数组</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.WriteDouble(System.String,System.Double)">
+            <summary>
+            写入单个Double
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="value">Double</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.WriteString(System.String,System.String,System.Text.Encoding)">
+            <summary>
+            写入String类型
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="value">String</param>
+            <param name="encoding">编码格式</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.ReadWriteBase.WriteString(System.String,System.String)">
+            <summary>
+            写入String类型
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="value">String</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="T:thinger.CommunicationLib.Base.NetDeviceBase">
+            <summary>
+            网络设备基类
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.Base.NetDeviceBase.InteractiveLock">
+            <summary>
+            一次正常的交互的互斥锁
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.Base.NetDeviceBase.DefaultTimeout">
+            <summary>
+            默认超时时间
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Base.NetDeviceBase.ReadTimeout">
+            <summary>
+            接收超时时间
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Base.NetDeviceBase.WriteTimeout">
+            <summary>
+            发送超时时间
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Base.NetDeviceBase.WaitTimes">
+            <summary>
+            接受返回报文等待次数，默认为10次
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Base.NetDeviceBase.SleepTime">
+            <summary>
+            接受返回报文等待时间，每次为10ms
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Base.NetDeviceBase.ConnectTimeOut">
+            <summary>
+            连接超时时间
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Base.NetDeviceBase.Requeset">
+            <summary>
+            请求报文
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Base.NetDeviceBase.Response">
+            <summary>
+            响应报文
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.NetDeviceBase.Connect(System.String,System.Int32)">
+            <summary>
+            建立Socket连接
+            </summary>
+            <param name="ip">IP地址或域名</param>
+            <param name="port">端口号</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.NetDeviceBase.DisConnect">
+            <summary>
+            断开连接
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.NetDeviceBase.SendAndReceive(System.Byte[],System.Byte[]@,thinger.CommunicationLib.Message.IMessage)">
+            <summary>
+            发送并接收
+            </summary>
+            <param name="request">字节数组</param>
+            <param name="response">返回报文</param>
+            <param name="message">IMessage对象</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="T:thinger.CommunicationLib.Base.SerialDeviceBase">
+            <summary>
+            串口设备基类
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.Base.SerialDeviceBase.serialPort">
+            <summary>
+            定义SerialPort对象
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Base.SerialDeviceBase.ReadTimeOut">
+            <summary>
+            读取超时时间
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Base.SerialDeviceBase.WriteTimeOut">
+            <summary>
+            写入超时时间
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Base.SerialDeviceBase.DtrEnable">
+            <summary>
+            Dtr使能标志
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Base.SerialDeviceBase.RtsEnable">
+            <summary>
+            Rts使能标志
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Base.SerialDeviceBase.SleepTime">
+            <summary>
+            延时时间
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Base.SerialDeviceBase.ReceiveTimeOut">
+            <summary>
+            接收超时时间
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.Base.SerialDeviceBase.InteractiveLock">
+            <summary>
+            创建一个互斥锁对象
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Base.SerialDeviceBase.Requeset">
+            <summary>
+            请求报文
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Base.SerialDeviceBase.Response">
+            <summary>
+            响应报文
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.SerialDeviceBase.Connect(System.String,System.Int32,System.Int32,System.IO.Ports.Parity,System.IO.Ports.StopBits)">
+            <summary>
+            打开串口
+            </summary>
+            <param name="iPaudRate">波特率</param>
+            <param name="iPortName">串口号</param>
+            <param name="iDataBits">数据位</param>
+            <param name="iParity">校验位</param>
+            <param name="iStopBits">停止位</param>    
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.SerialDeviceBase.DisConnect">
+            <summary>
+            关闭串口
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.Base.SerialDeviceBase.SendAndReceive(System.Byte[],System.Byte[]@,thinger.CommunicationLib.Message.IMessage)">
+            <summary>
+            发送并接收
+            </summary>
+            <param name="request">字节数组</param>
+            <param name="response">返回报文</param>
+            <param name="message">IMessage对象</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="T:thinger.CommunicationLib.ErrorStatus">
+            <summary>
+            错误状态
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.ErrorStatus.通讯正常">
+            <summary>
+            通讯正常
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.ErrorStatus.消息头不是FINS">
+            <summary>
+            消息头不是"FINS"
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.ErrorStatus.数据长度太长">
+            <summary>
+            数据长度太长
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.ErrorStatus.命令不支持">
+            <summary>
+            命令不支持
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.ErrorStatus.超过连接上限">
+            <summary>
+            超过连接上限
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.ErrorStatus.节点已经处于连接中">
+            <summary>
+            节点已经处于连接中
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.ErrorStatus.节点还未配置到PLC中">
+            <summary>
+            节点还未配置到PLC中
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.ErrorStatus.网络节点超过正常范围">
+            <summary>
+            网络节点超过正常范围
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.ErrorStatus.网络节点已经被使用">
+            <summary>
+            网络节点已经被使用
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.ErrorStatus.所有的网络节点已经被使用">
+            <summary>
+            所有的网络节点已经被使用
+            </summary>
+        </member>
+        <member name="T:thinger.CommunicationLib.AreaType">
+            <summary>
+            存储区格式
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.AreaType.Byte">
+            <summary>
+            字节
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.AreaType.Word">
+            <summary>
+            字
+            </summary>
+        </member>
+        <member name="T:thinger.CommunicationLib.OPCMethod">
+            <summary>
+            通信方式
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.OPCMethod.Sync">
+            <summary>
+            同步方式
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.OPCMethod.Async">
+            <summary>
+            异步方式
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.OPCMethod.Subscribe">
+            <summary>
+            订阅方式
+            </summary>
+        </member>
+        <member name="T:thinger.CommunicationLib.FunctionCode">
+            <summary>
+            功能码
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.FunctionCode.ReadOutputStatus">
+            <summary>
+            读取输出线圈
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.FunctionCode.ReadInputStatus">
+            <summary>
+            读取输入线圈
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.FunctionCode.ReadKeepReg">
+            <summary>
+            读取保持寄存器
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.FunctionCode.ReadInputReg">
+            <summary>
+            读取输入寄存器
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.FunctionCode.ForceCoil">
+            <summary>
+            预置单线圈
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.FunctionCode.PreSetSingleReg">
+            <summary>
+            预置单寄存器
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.FunctionCode.ForceMultiCoil">
+            <summary>
+            预置多线圈
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.FunctionCode.PreSetMultiReg">
+            <summary>
+            预置多寄存器
+            </summary>
+        </member>
+        <member name="T:thinger.CommunicationLib.Helper.ModbusHelper">
+            <summary>
+            Modbus地址帮助类
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.Helper.ModbusHelper.ModbusAddressAnalysis(System.String,System.Byte,System.Boolean)">
+            <summary>
+            解析Modbus地址
+            </summary>
+            <param name="address">Modbus地址</param>
+            <remarks>如果带站号，那么地址格式为1.40001，其中.前面表示站号，.后面表示Modbus绝对地址，如果不带站号，地址格式为40001</remarks>
+            <param name="defaultDevAdd">默认站号</param>
+            <param name="isShortAddress">默认是短地址，如果长地址，改成False</param>
+            <returns>返回第1个值为存储区信息，第2个值为站地址，第3个值为起始地址</returns>
+        </member>
+        <member name="T:thinger.CommunicationLib.Helper.ParityHelper">
+            <summary>
+            校验帮助类
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.Helper.ParityHelper.CalculateCRC(System.Byte[],System.Int32)">
+            <summary>
+            CRC校验
+            </summary>
+            <param name="data">字节数组</param>
+            <param name="length">验证长度</param>
+            <returns>2个字节</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Helper.ParityHelper.CheckCRC(System.Byte[])">
+            <summary>
+            验证校验
+            </summary>
+            <param name="data">待验证报文</param>
+            <returns>是否正确</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Helper.ParityHelper.CaculateLRC(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            计算LRC校验
+            </summary>
+            <param name="data">字节数组</param>
+            <param name="start">开始索引</param>
+            <param name="len">长度</param>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Helper.ParityHelper.CheckLRC(System.Byte[])">
+            <summary>
+            验证LRC报文
+            </summary>
+            <param name="data">字节数组</param>
+            <returns>是否正确</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Helper.ParityHelper.CalculateSUM(System.Byte[])">
+            <summary>
+            计算校验和
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Helper.ParityHelper.CheckSUM(System.Byte[])">
+            <summary>
+            验证校验和
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Helper.ParityHelper.CalculateACC(System.String)">
+            <summary>
+            ACC校验 ASCII
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Helper.ParityHelper.FCS(System.Byte[])">
+            <summary>
+            FCS校验
+            </summary>
+            <param name="data">数据</param>
+            <returns>校验结果</returns>
+        </member>
+        <member name="T:thinger.CommunicationLib.Helper.SiemensHelper">
+            <summary>
+            西门子通信帮助类
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.Helper.SiemensHelper.SiemensAddressAnalysis(System.String)">
+            <summary>
+            西门子地址解析
+            </summary>
+            <param name="address">PLC地址</param>
+            <returns>操作结果</returns>
+        </member>
+        <member name="T:thinger.CommunicationLib.Helper.OmronHelper">
+            <summary>
+            欧姆龙通信帮助类
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.Helper.OmronHelper.OmronFinsAnalysisAddress(System.String,System.Boolean)">
+            <summary>
+            欧姆龙FINS通信地址解析
+            </summary>
+            <param name="address">地址</param>
+            <param name="isBit">是否为位地址</param>
+            <returns>操作结果</returns>
+        </member>
+        <member name="T:thinger.CommunicationLib.Helper.MelsecHelper">
+            <summary>
+            三菱帮助类
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.Helper.MelsecHelper.MelsecAddressAnalysis(System.String,System.Boolean)">
+            <summary>
+            三菱MC地址解析
+            </summary>
+            <param name="address"></param>
+            <param name="IsFx5U"></param>
+            <returns></returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Helper.MelsecHelper.MelsecA1EAddressAnalysis(System.String)">
+            <summary>
+            三菱A1E地址解析
+            </summary>
+            <param name="address"></param>
+            <returns></returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Helper.MelsecHelper.MelsecFXAnalysisAddress(System.String)">
+            <summary>
+            三菱FXSerial地址解析
+            </summary>
+            <param name="address"></param>
+            <returns></returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Helper.MelsecHelper.MelsecFXLinkAnalysisAddress(System.String)">
+            <summary>
+            三菱FXLink地址解析
+            </summary>
+            <param name="address"></param>
+            <returns></returns>
+        </member>
+        <member name="T:thinger.CommunicationLib.Helper.SimpleHybirdLock">
+            <summary>
+            一个简单的混合线程同步锁，采用了基元用户加基元内核同步构造实现
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.Helper.SimpleHybirdLock.Dispose">
+            <summary>
+            释放资源
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.Helper.SimpleHybirdLock.m_waiters">
+            <summary>
+            基元用户模式构造同步锁
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.Helper.SimpleHybirdLock.m_waiterLock">
+            <summary>
+            基元内核模式构造同步锁
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.Helper.SimpleHybirdLock.Enter">
+            <summary>
+            获取锁
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.Helper.SimpleHybirdLock.Leave">
+            <summary>
+            离开锁
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Helper.SimpleHybirdLock.IsWaitting">
+            <summary>
+            获取当前锁是否在等待当中
+            </summary>
+        </member>
+        <member name="T:thinger.CommunicationLib.MelsecFXLink">
+            <summary>
+            MelsecFxLink通信类
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecFXLink.#ctor(thinger.DataConvertLib.DataFormat)">
+            <summary>
+            构造方法初始化
+            </summary>
+            <param name="dataFormat">数据格式</param>
+        </member>
+        <member name="P:thinger.CommunicationLib.MelsecFXLink.PLCStation">
+            <summary>
+            PLC站号
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.MelsecFXLink.WaitTime">
+            <summary>
+            报文等待时间，单位是10ms，范围是0-15
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.MelsecFXLink.SumCheckEnable">
+            <summary>
+            是否启用校验和
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecFXLink.ReadByteArray(System.String,System.UInt16)">
+            <summary>
+            读取字节数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="length">长度</param>
+            <returns>带字节数组的结果</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecFXLink.ReadBoolArray(System.String,System.UInt16)">
+            <summary>
+            读取布尔数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="length">长度</param>
+            <returns>带布尔数组的操作结果</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecFXLink.WriteByteArray(System.String,System.Byte[])">
+            <summary>
+            写入字节数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="value">字节数组</param>
+            <returns>返回对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecFXLink.WriteBoolArray(System.String,System.Boolean[])">
+            <summary>
+            写入布尔数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="values">布尔数组</param>
+            <returns>返回对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecFXLink.StartPLC">
+            <summary>
+            启动PLC
+            </summary>
+            <returns>是否启动成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecFXLink.StopPLC">
+            <summary>
+            停止PLC
+            </summary>
+            <returns>是否停止成功</returns>
+        </member>
+        <member name="T:thinger.CommunicationLib.SiemensS7">
+            <summary>
+            西门子S7通信类
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.SiemensS7.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.SiemensS7.Connect(System.String,System.Int32,S7.Net.CpuType,System.Int32,System.Int32)">
+            <summary>
+            建立连接
+            </summary>
+            <param name="ip"></param>
+            <param name="port"></param>
+            <param name="cpuType"></param>
+            <param name="rack"></param>
+            <param name="slot"></param>
+            <returns></returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.SiemensS7.DisConnect">
+            <summary>
+            断开连接
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.SiemensS7.ReadByteArray(System.String,System.UInt16)">
+            <summary>
+            读取字节数组
+            </summary>
+            <param name="address"></param>
+            <param name="length"></param>
+            <returns></returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.SiemensS7.ReadBoolArray(System.String,System.UInt16)">
+            <summary>
+            读取布尔数组
+            </summary>
+            <param name="address"></param>
+            <param name="length"></param>
+            <returns></returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.SiemensS7.WriteBoolArray(System.String,System.Boolean[])">
+            <summary>
+            写入布尔数组
+            </summary>
+            <param name="address"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.SiemensS7.WriteByteArray(System.String,System.Byte[])">
+            <summary>
+            写入字节数组
+            </summary>
+            <param name="address"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:thinger.CommunicationLib.OmronHostlink">
+            <summary>
+            OmronHostlink通信类
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.OmronHostlink.#ctor(thinger.DataConvertLib.DataFormat)">
+            <summary>
+            构造方法初始化
+            </summary>
+            <param name="dataFormat">数据格式</param>
+        </member>
+        <member name="P:thinger.CommunicationLib.OmronHostlink.ICF">
+            <summary>
+            格式为1?00000?，低位Bit0：需要回复（0），不需要回复（1）；Bit7：命令（0），响应（1）
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OmronHostlink.DA2">
+            <summary>
+            PLC单元号
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OmronHostlink.SA2">
+            <summary>
+            PC单元号
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OmronHostlink.SID">
+            <summary>
+            设备标识号
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OmronHostlink.ResponseWaitTime">
+            <summary>
+            相应等待时间
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OmronHostlink.UnitNo">
+            <summary>
+            Hostlink单元号
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.OmronHostlink.ReadByteArray(System.String,System.UInt16)">
+            <summary>
+            读取字节数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="length">长度</param>
+            <returns>带字节数组的结果</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OmronHostlink.ReadBoolArray(System.String,System.UInt16)">
+            <summary>
+            读取布尔数组
+            </summary>
+            <param name="address"></param>
+            <param name="length"></param>
+            <returns></returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OmronHostlink.WriteBoolArray(System.String,System.Boolean[])">
+            <summary>
+            写入布尔数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="values">布尔数组</param>
+            <returns>返回对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OmronHostlink.WriteByteArray(System.String,System.Byte[])">
+            <summary>
+            写入字节数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="value">字节数组</param>
+            <returns>返回对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OmronHostlink.BuildReadMessageFrame(System.String,System.UInt16,System.Boolean)">
+            <summary>
+            获取读取指令报文
+            </summary>
+            <param name="address">地址</param>
+            <param name="length">长度</param>
+            <param name="isBit">是否为位</param>
+            <returns>带字节数组返回值</returns>
+        </member>
+        <member name="T:thinger.CommunicationLib.OPCDAAuto">
+            <summary>
+            OPCDA自动化接口通信类
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.OPCDAAuto.kepServer">
+            <summary>
+            定义OPC服务器
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.OPCDAAuto.oPCGroups">
+            <summary>
+            OPCDAAuto通信组
+            </summary>
+        </member>
+        <member name="E:thinger.CommunicationLib.OPCDAAuto.OnDataChanged">
+            <summary>
+            数据变化完成事件
+            </summary>
+        </member>
+        <member name="E:thinger.CommunicationLib.OPCDAAuto.OnReadCompleted">
+            <summary>
+            异步读取数据完成事件
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCDAAuto.UpdateRate">
+            <summary>
+            设置更新速率
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCDAAuto.DefaultGroupIsActive">
+            <summary>
+            默认是否激活
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCDAAuto.DefaultGroupDeadband">
+            <summary>
+            默认死区
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCDAAuto.OPCDAMethod">
+            <summary>
+            通信方式
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCDAAuto.Connect(System.String,System.String)">
+            <summary>
+            连接OPC服务器
+            </summary>
+            <param name="ServerName">服务名称</param>
+            <param name="ServerNode">服务节点</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCDAAuto.AddOpcGroup(System.Collections.Generic.List{thinger.CommunicationLib.OPCDAAutoGroup})">
+            <summary>
+            添加OPC通信组
+            </summary>
+            <param name="opcGroups">通信组</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCDAAuto.DisConnect">
+            <summary>
+            断开连接
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCDAAuto.AsyncRead">
+            <summary>
+            异步读取
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCDAAuto.SyncRead">
+            <summary>
+            同步读取
+            </summary>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCDAAuto.AsyncWrite(System.Object,System.Int32,System.Int32)">
+            <summary>
+            异步写单个数据
+            </summary>
+            <param name="value">值</param>
+            <param name="groupHandle">组ID</param>
+            <param name="clientHandle">项ID</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCDAAuto.SyncWrite(System.Object,System.Int32,System.Int32)">
+            <summary>
+            同步写单个数据
+            </summary>
+            <param name="value">值</param>
+            <param name="groupHandle">组ID</param>
+            <param name="clientHandle">项ID</param>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCDAAuto.GetOpcGroup(System.Int32)">
+            <summary>
+            根据OPC句柄获取OPC组对象索引
+            </summary>
+            <param name="groupHandle">OPC组对象</param>
+            <returns>组句柄ID</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCDAAuto.GetOPCServers(System.String)">
+            <summary>
+            获取所有的服务器名称
+            </summary>
+            <param name="ServerNode">服务节点名称</param>
+            <returns>服务集合</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCDAAuto.GetOPCBrower">
+            <summary>
+            获取所有的OPC变量
+            </summary>
+            <returns>所有OPC变量</returns>
+        </member>
+        <member name="T:thinger.CommunicationLib.OPCDAAutoGroup">
+            <summary>
+            OpcDaAutoGroup
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCDAAutoGroup.IsActive">
+            <summary>
+            组对象是否激活
+            1为激活，0为未激活,默认激活
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCDAAutoGroup.ItemCount">
+            <summary>
+            项的个数
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCDAAutoGroup.RequestedUpdateRate">
+            <summary>
+            客户端指定的数据变化率
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCDAAutoGroup.GroupName">
+            <summary>
+            OPC组名称
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCDAAutoGroup.ClientGroupHandle">
+            <summary>
+            客户端程序为组对象提供的句柄
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.OPCDAAutoGroup.oPCDAAutoItems">
+            <summary>
+            OPCDAAuto变量数组
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCDAAutoGroup.OpcDaAutoItems">
+            <summary>
+            OPC项数组
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCDAAutoGroup.OpcDaGroup">
+            <summary>
+            OPC通信组
+            </summary>
+        </member>
+        <member name="T:thinger.CommunicationLib.OPCDAAutoItem">
+            <summary>
+            OPCDAAutoItem
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCDAAutoItem.Name">
+            <summary>
+            项名称
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCDAAutoItem.AccessPath">
+            <summary>
+            项对象的访问路径
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCDAAutoItem.ItemID">
+            <summary>
+            项对象的ItemIDea，唯一标识该数据项
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCDAAutoItem.IsActive">
+            <summary>
+            项对象的激活状态
+            1为激活，0为未激活，默认激活
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCDAAutoItem.ClientHandle">
+            <summary>
+            项对象的客户端句柄
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCDAAutoItem.RequestedDataType">
+            <summary>
+            OPC项的数据类型
+            VbBoolean:11，VbByte:17,VbDecimal:14,VbDouble:5,Vbinteger:2,VbLong:3,VbSingle:4,VbString:8
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCDAAutoItem.Value">
+            <summary>
+            OPC项的值
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCDAAutoItem.ServerHandle">
+            <summary>
+            OPC项的服务器句柄
+            </summary>
+        </member>
+        <member name="T:thinger.CommunicationLib.OPCDAAutoAsyncEventArgs">
+            <summary>
+            OPCDAAuto异步参数
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCDAAutoAsyncEventArgs.GroupHandle">
+            <summary>
+            Opc组句柄
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCDAAutoAsyncEventArgs.Count">
+            <summary>
+            项组长度
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCDAAutoAsyncEventArgs.Values">
+            <summary>
+            项组值
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCDAAutoAsyncEventArgs.Errors">
+            <summary>
+            错误信息
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCDAAutoAsyncEventArgs.ClientItemsHandle">
+            <summary>
+            项组句柄
+            </summary>
+        </member>
+        <member name="T:thinger.CommunicationLib.ModbusRTU">
+            <summary>
+            ModbusRTU通信类
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.ModbusRTU.#ctor(thinger.DataConvertLib.DataFormat)">
+            <summary>
+            构造方法初始化
+            </summary>
+            <param name="dataFormat">数据格式</param>
+        </member>
+        <member name="P:thinger.CommunicationLib.ModbusRTU.DevAddress">
+            <summary>
+            从站地址
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.ModbusRTU.IsShortAddress">
+            <summary>
+            是否为短地址
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.ModbusRTU.ReadByteArray(System.String,System.UInt16)">
+            <summary>
+            带结果数据对象的读取字节数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="length">长度</param>
+            <returns>结果数据对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.ModbusRTU.ReadBoolArray(System.String,System.UInt16)">
+            <summary>
+            带结果数据对象的读取字节数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="length">长度</param>
+            <returns>结果数据对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.ModbusRTU.WriteByteArray(System.String,System.Byte[])">
+            <summary>
+            带结果的写入字节数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="value">写入数据</param>
+            <returns>结果数据对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.ModbusRTU.WriteBoolArray(System.String,System.Boolean[])">
+            <summary>
+            带结果的写入字节数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="value">写入数据</param>
+            <returns>结果数据对象</returns>
+        </member>
+        <member name="T:thinger.CommunicationLib.ModbusTCP">
+            <summary>
+            ModbusTCP通信类
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.ModbusTCP.#ctor(thinger.DataConvertLib.DataFormat)">
+            <summary>
+            构造方法初始化
+            </summary>
+            <param name="dataFormat">数据格式</param>
+        </member>
+        <member name="P:thinger.CommunicationLib.ModbusTCP.DevAddress">
+            <summary>
+            从站地址
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.ModbusTCP.IsShortAddress">
+            <summary>
+            是否为短地址
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.ModbusTCP.ReadByteArray(System.String,System.UInt16)">
+            <summary>
+            带结果数据对象的读取字节数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="length">长度</param>
+            <returns>结果数据对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.ModbusTCP.ReadBoolArray(System.String,System.UInt16)">
+            <summary>
+            带结果数据对象的读取字节数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="length">长度</param>
+            <returns>结果数据对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.ModbusTCP.WriteByteArray(System.String,System.Byte[])">
+            <summary>
+            带结果的写入字节数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="value">写入数据</param>
+            <returns>结果数据对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.ModbusTCP.WriteBoolArray(System.String,System.Boolean[])">
+            <summary>
+            带结果的写入字节数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="value">写入数据</param>
+            <returns>结果数据对象</returns>
+        </member>
+        <member name="T:thinger.CommunicationLib.ModbusRTUOverTCP">
+            <summary>
+            ModbusRTUOverTCP通信类
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.ModbusRTUOverTCP.#ctor(thinger.DataConvertLib.DataFormat)">
+            <summary>
+            构造方法初始化
+            </summary>
+            <param name="dataFormat">数据格式</param>
+        </member>
+        <member name="P:thinger.CommunicationLib.ModbusRTUOverTCP.DevAddress">
+            <summary>
+            从站地址
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.ModbusRTUOverTCP.IsShortAddress">
+            <summary>
+            是否为短地址
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.ModbusRTUOverTCP.ReadByteArray(System.String,System.UInt16)">
+            <summary>
+            带结果数据对象的读取字节数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="length">长度</param>
+            <returns>结果数据对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.ModbusRTUOverTCP.ReadBoolArray(System.String,System.UInt16)">
+            <summary>
+            带结果数据对象的读取字节数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="length">长度</param>
+            <returns>结果数据对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.ModbusRTUOverTCP.WriteByteArray(System.String,System.Byte[])">
+            <summary>
+            带结果的写入字节数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="value">写入数据</param>
+            <returns>结果数据对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.ModbusRTUOverTCP.WriteBoolArray(System.String,System.Boolean[])">
+            <summary>
+            带结果的写入字节数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="value">写入数据</param>
+            <returns>结果数据对象</returns>
+        </member>
+        <member name="T:thinger.CommunicationLib.OPCUA">
+            <summary>
+            OPCUA通信库
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.#ctor">
+            <summary>
+            默认的构造函数，实例化一个新的OPC UA类
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.ConnectServer(System.String)">
+            <summary>
+            连接服务器
+            </summary>
+            <param name="serverUrl">服务器节点</param>
+            <returns>Task</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.Connect(System.String)">
+            <summary>
+            Creates a new session.
+            </summary>
+            <returns>The new session object.</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.Disconnect">
+            <summary>
+            Disconnects from the server.
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.UpdateStatus(System.Boolean,System.DateTime,System.String,System.Object[])">
+            <summary>
+            Report the client status
+            </summary>
+            <param name="error">Whether the status represents an error.</param>
+            <param name="time">The time associated with the status.</param>
+            <param name="status">The status message.</param>
+            <param name="args">Arguments used to format the status message.</param>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.Session_KeepAlive(Opc.Ua.Client.Session,Opc.Ua.Client.KeepAliveEventArgs)">
+            <summary>
+            Handles a keep alive event from a session.
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.Server_ReconnectComplete(System.Object,System.EventArgs)">
+            <summary>
+            Handles a reconnect event complete from the reconnect handler.
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.SetLogPathName(System.String,System.Boolean)">
+            <summary>
+            设置OPC客户端的日志输出
+            </summary>
+            <param name="filePath">完整的文件路径</param>
+            <param name="deleteExisting">是否删除原文件</param>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCUA.OpcUaName">
+            <summary>
+            OPCUA名称
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCUA.UseSecurity">
+            <summary>
+            是否安全验证
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCUA.UserIdentity">
+            <summary>
+            验证信息
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCUA.Session">
+            <summary>
+            session. 
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCUA.Connected">
+            <summary>
+            连接状态
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCUA.ReconnectPeriod">
+            <summary>
+            重连周期
+            </summary>
+        </member>
+        <member name="E:thinger.CommunicationLib.OPCUA.KeepAliveComplete">
+            <summary>
+            保持连接事件
+            </summary>
+        </member>
+        <member name="E:thinger.CommunicationLib.OPCUA.ReconnectStarting">
+            <summary>
+            重连事件
+            </summary>
+        </member>
+        <member name="E:thinger.CommunicationLib.OPCUA.ReconnectComplete">
+            <summary>
+            重连完成事件
+            </summary>
+        </member>
+        <member name="E:thinger.CommunicationLib.OPCUA.ConnectComplete">
+            <summary>
+            连接或断开连接事件
+            </summary>
+        </member>
+        <member name="E:thinger.CommunicationLib.OPCUA.OpcStatusChange">
+            <summary>
+            连接状态改变
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OPCUA.AppConfig">
+            <summary>
+            配置信息
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.ReadNode(Opc.Ua.NodeId)">
+            <summary>
+            读取变量
+            </summary>
+            <param name="nodeId">NodeId</param>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.ReadNode``1(System.String)">
+            <summary>
+            读取变量
+            </summary>
+            <typeparam name="T">类型</typeparam>
+            <param name="tag">NodeId</param>
+            <returns>实际值</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.ReadNodeAsync``1(System.String)">
+            <summary>
+            异步读取变量
+            </summary>
+            <typeparam name="T">变量对象</typeparam>
+            <param name="tag">变量</param>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.ReadNodes(Opc.Ua.NodeId[])">
+            <summary>
+            批量读取
+            </summary>
+            <param name="nodeIds">NodeId集合</param>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.ReadNodes``1(System.String[])">
+            <summary>
+            批量读取
+            </summary>
+            <typeparam name="T">变量类型</typeparam>
+            <param name="tags">所以的节点数组信息</param>
+            <returns>返回数据</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.WriteNode``1(System.String,``0)">
+            <summary>
+            写入单个变量
+            </summary>
+            <typeparam name="T">变量类型</typeparam>
+            <param name="tag">变量名称</param>
+            <param name="value">值</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.WriteNodeAsync``1(System.String,``0)">
+            <summary>
+            异步写入单个变量
+            </summary>
+            <typeparam name="T">变量类型</typeparam>
+            <param name="tag">变量名称</param>
+            <param name="value">写入值</param>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.Write(System.String,System.String,thinger.DataConvertLib.DataType,System.Boolean)">
+            <summary>
+            通用写入方法
+            </summary>
+            <param name="address">变量名称</param>
+            <param name="value">数值</param>
+            <param name="dataType">数据类型</param>
+            <param name="IsAsync">是否异步</param>
+            <returns>带结果的操作参数</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.WriteNodes(System.String[],System.Object[])">
+            <summary>
+            批量写入变量
+            </summary>
+            <param name="tags">节点名称数组</param>
+            <param name="values">节点的值数据</param>
+            <returns>所有的是否都写入成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.DeleteExsistNode(System.String)">
+            <summary>
+            删除一个节点的操作
+            </summary>
+            <param name="tag">节点文本描述</param>
+            <returns>是否成功</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.AddNewNode(Opc.Ua.NodeId)">
+            <summary>
+            新增一个节点数据
+            </summary>
+            <param name="parent">父节点tag名称</param>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.AddSubscription(System.String,System.String,System.Action{System.String,Opc.Ua.Client.MonitoredItem,Opc.Ua.Client.MonitoredItemNotificationEventArgs})">
+            <summary>
+            添加一个订阅
+            </summary>
+            <param name="key">关键字</param>
+            <param name="tag">tag</param>
+            <param name="callback">回调方法</param>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.AddSubscription(System.String,System.String[],System.Action{System.String,Opc.Ua.Client.MonitoredItem,Opc.Ua.Client.MonitoredItemNotificationEventArgs})">
+            <summary>
+            批量添加订阅
+            </summary>
+            <param name="key">关键字</param>
+            <param name="tags">节点名称数组</param>
+            <param name="callback">回调方法</param>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.RemoveSubscription(System.String)">
+            <summary>
+            移除订阅消息
+            </summary>
+            <param name="key">订阅关键值</param>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.RemoveAllSubscription">
+            <summary>
+            移除所有的订阅消息
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.ReadHistoryRawDataValues(System.String,System.DateTime,System.DateTime,System.UInt32,System.Boolean)">
+            <summary>
+            read History data
+            </summary>
+            <param name="tag">节点的索引</param>
+            <param name="start">开始时间</param>
+            <param name="end">结束时间</param>
+            <param name="count">读取的个数</param>
+            <param name="containBound">是否包含边界</param>
+            <returns>读取的数据列表</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.ReadHistoryRawDataValues``1(System.String,System.DateTime,System.DateTime,System.UInt32,System.Boolean)">
+            <summary>
+            读取一连串的历史数据，并将其转化成指定的类型
+            </summary>
+            <param name="tag">节点的索引</param>
+            <param name="start">开始时间</param>
+            <param name="end">结束时间</param>
+            <param name="count">读取的个数</param>
+            <param name="containBound">是否包含边界</param>
+            <returns>读取的数据列表</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.BrowseNodeReference(System.String)">
+            <summary>
+            浏览一个节点的引用
+            </summary>
+            <param name="tag">节点值</param>
+            <returns>引用节点描述</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.ReadNoteAttributes(System.String)">
+            <summary>
+            读取一个节点的所有属性
+            </summary>
+            <param name="tag">节点信息</param>
+            <returns>节点的特性值</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.ReadNoteDataValueAttributes(System.String)">
+            <summary>
+            读取一个节点的所有属性
+            </summary>
+            <param name="tag">节点值</param>
+            <returns>所有的数据</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.CallMethodByNodeId(System.String,System.String,System.Object[])">
+            <summary>
+            call a server method
+            </summary>
+            <param name="tagParent">方法的父节点tag</param>
+            <param name="tag">方法的节点tag</param>
+            <param name="args">传递的参数</param>
+            <returns>输出的结果值</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OPCUA.DoConnectComplete(System.Object)">
+            <summary>
+            Raises the connect complete event on the main GUI thread.
+            </summary>
+        </member>
+        <member name="T:thinger.CommunicationLib.OpcUaStatusEventArgs">
+            <summary>
+            OPC UA的状态更新消息
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OpcUaStatusEventArgs.Error">
+            <summary>
+            是否异常
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OpcUaStatusEventArgs.Time">
+            <summary>
+            时间
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OpcUaStatusEventArgs.Text">
+            <summary>
+            文本
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.OpcUaStatusEventArgs.ToString">
+            <summary>
+            转化为字符串
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:thinger.CommunicationLib.OpcNodeAttribute">
+            <summary>
+            读取属性过程中用于描述的
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OpcNodeAttribute.Name">
+            <summary>
+            属性的名称
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OpcNodeAttribute.Type">
+            <summary>
+            属性的类型描述
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OpcNodeAttribute.StatusCode">
+            <summary>
+            操作结果状态描述
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OpcNodeAttribute.Value">
+            <summary>
+            属性的值，如果读取错误，返回文本描述
+            </summary>
+        </member>
+        <member name="T:thinger.CommunicationLib.FormUtils">
+            <summary>
+            FormUtils
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.FormUtils.GetAccessLevelDisplayText(System.Byte)">
+            <summary>
+            获取等级指示
+            </summary>
+            <param name="accessLevel">操作等级</param>
+            <returns>返回结果</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.FormUtils.GetEventNotifierDisplayText(System.Byte)">
+            <summary>
+            Gets the display text for the event notifier attribute.
+            </summary>
+            <param name="eventNotifier">The event notifier.</param>
+            <returns>The event notifier formatted as a string.</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.FormUtils.GetValueRankDisplayText(System.Int32)">
+            <summary>
+            Gets the display text for the value rank attribute.
+            </summary>
+            <param name="valueRank">The value rank.</param>
+            <returns>The value rank formatted as a string.</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.FormUtils.GetAttributeDisplayText(Opc.Ua.Client.Session,System.UInt32,Opc.Ua.Variant)">
+            <summary>
+            Gets the display text for the specified attribute.
+            </summary>
+            <param name="session">The currently active session.</param>
+            <param name="attributeId">The id of the attribute.</param>
+            <param name="value">The value of the attribute.</param>
+            <returns>The attribute formatted as a string.</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.FormUtils.DiscoverServers(Opc.Ua.ApplicationConfiguration)">
+            <summary>
+            发现服务器
+            </summary>
+            <param name="configuration">配置param</param>
+            <returns>服务集合</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.FormUtils.SelectEndpoint(System.String,System.Boolean)">
+            <summary>
+            选择Endpoint
+            </summary>
+            <param name="discoveryUrl">服务器Url</param>
+            <param name="useSecurity">是否使用安全策略</param>
+            <returns>可用EndPoint</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.FormUtils.Browse(Opc.Ua.Client.Session,Opc.Ua.BrowseDescriptionCollection,System.Boolean)">
+            <summary>
+            Browses the address space and returns the references found.
+            </summary>
+            <param name="session">The session.</param>
+            <param name="nodesToBrowse">The set of browse operations to perform.</param>
+            <param name="throwOnError">if set to <c>true</c> a exception will be thrown on an error.</param>
+            <returns>
+            The references found. Null if an error occurred.
+            </returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.FormUtils.FindEventType(Opc.Ua.Client.MonitoredItem,Opc.Ua.EventFieldList)">
+            <summary>
+            Finds the type of the event for the notification.
+            </summary>
+            <param name="monitoredItem">The monitored item.</param>
+            <param name="notification">The notification.</param>
+            <returns>The NodeId of the EventType.</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.FormUtils.Browse(Opc.Ua.Client.Session,Opc.Ua.BrowseDescription,System.Boolean)">
+            <summary>
+            Browses the address space and returns the references found.
+            </summary>
+            <param name="session">The session.</param>
+            <param name="nodeToBrowse">The NodeId for the starting node.</param>
+            <param name="throwOnError">if set to <c>true</c> a exception will be thrown on an error.</param>
+            <returns>
+            The references found. Null if an error occurred.
+            </returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.FormUtils.BrowseSuperTypes(Opc.Ua.Client.Session,Opc.Ua.NodeId,System.Boolean)">
+            <summary>
+            Browses the address space and returns all of the supertypes of the specified type node.
+            </summary>
+            <param name="session">The session.</param>
+            <param name="typeId">The NodeId for a type node in the address space.</param>
+            <param name="throwOnError">if set to <c>true</c> a exception will be thrown on an error.</param>
+            <returns>
+            The references found. Null if an error occurred.
+            </returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.FormUtils.ConstructEvent(Opc.Ua.Client.Session,Opc.Ua.Client.MonitoredItem,Opc.Ua.EventFieldList,System.Collections.Generic.Dictionary{Opc.Ua.NodeId,System.Type},System.Collections.Generic.Dictionary{Opc.Ua.NodeId,Opc.Ua.NodeId})">
+            <summary>
+            Constructs an event object from a notification.
+            </summary>
+            <param name="session">The session.</param>
+            <param name="monitoredItem">The monitored item that produced the notification.</param>
+            <param name="notification">The notification.</param>
+            <param name="knownEventTypes">The known event types.</param>
+            <param name="eventTypeMappings">Mapping between event types and known event types.</param>
+            <returns>
+            The event object. Null if the notification is not a valid event type.
+            </returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.FormUtils.TranslateBrowsePaths(Opc.Ua.Client.Session,Opc.Ua.NodeId,Opc.Ua.NamespaceTable,System.String[])">
+            <summary>
+            Returns the node ids for a set of relative paths.
+            </summary>
+            <param name="session">An open session with the server to use.</param>
+            <param name="startNodeId">The starting node for the relative paths.</param>
+            <param name="namespacesUris">The namespace URIs referenced by the relative paths.</param>
+            <param name="relativePaths">The relative paths.</param>
+            <returns>A collection of local nodes.</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.FormUtils.CollectFieldsForType(Opc.Ua.Client.Session,Opc.Ua.NodeId,Opc.Ua.SimpleAttributeOperandCollection,System.Collections.Generic.List{Opc.Ua.NodeId})">
+            <summary>
+            Collects the fields for the type.
+            </summary>
+            <param name="session">The session.</param>
+            <param name="typeId">The type id.</param>
+            <param name="fields">The fields.</param>
+            <param name="fieldNodeIds">The node id for the declaration of the field.</param>
+        </member>
+        <member name="M:thinger.CommunicationLib.FormUtils.CollectFieldsForInstance(Opc.Ua.Client.Session,Opc.Ua.NodeId,Opc.Ua.SimpleAttributeOperandCollection,System.Collections.Generic.List{Opc.Ua.NodeId})">
+            <summary>
+            Collects the fields for the instance.
+            </summary>
+            <param name="session">The session.</param>
+            <param name="instanceId">The instance id.</param>
+            <param name="fields">The fields.</param>
+            <param name="fieldNodeIds">The node id for the declaration of the field.</param>
+        </member>
+        <member name="M:thinger.CommunicationLib.FormUtils.CollectFields(Opc.Ua.Client.Session,Opc.Ua.NodeId,Opc.Ua.QualifiedNameCollection,Opc.Ua.SimpleAttributeOperandCollection,System.Collections.Generic.List{Opc.Ua.NodeId},System.Collections.Generic.Dictionary{Opc.Ua.NodeId,Opc.Ua.QualifiedNameCollection})">
+            <summary>
+            Collects the fields for the instance node.
+            </summary>
+            <param name="session">The session.</param>
+            <param name="nodeId">The node id.</param>
+            <param name="parentPath">The parent path.</param>
+            <param name="fields">The event fields.</param>
+            <param name="fieldNodeIds">The node id for the declaration of the field.</param>
+            <param name="foundNodes">The table of found nodes.</param>
+        </member>
+        <member name="M:thinger.CommunicationLib.FormUtils.ContainsPath(Opc.Ua.SimpleAttributeOperandCollection,Opc.Ua.QualifiedNameCollection)">
+            <summary>
+            Determines whether the specified select clause contains the browse path.
+            </summary>
+            <param name="selectClause">The select clause.</param>
+            <param name="browsePath">The browse path.</param>
+            <returns>返回结果</returns>
+        </member>
+        <member name="T:thinger.CommunicationLib.Message.ModbusRTUMessage">
+            <summary>
+            ModbusRTU消息类
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Message.ModbusRTUMessage.HeadDataLength">
+            <summary>
+            包头长度
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Message.ModbusRTUMessage.HeadData">
+            <summary>
+            包头内容
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Message.ModbusRTUMessage.ContentData">
+            <summary>
+            数据内容
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Message.ModbusRTUMessage.SendData">
+            <summary>
+            发送报文
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Message.ModbusRTUMessage.NumberOfPoints">
+            <summary>
+            数据点
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Message.ModbusRTUMessage.FunctionCode">
+            <summary>
+            功能码
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.Message.ModbusRTUMessage.CheckHeadData(System.Byte[])">
+            <summary>
+            验证包头
+            </summary>
+            <param name="headData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Message.ModbusRTUMessage.GetContentLength">
+            <summary>
+            获取数据长度
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:thinger.CommunicationLib.Message.MelsecA1EMessage">
+            <summary>
+            MelsecA1EMessage
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Message.MelsecA1EMessage.HeadDataLength">
+            <summary>
+            包头长度
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Message.MelsecA1EMessage.HeadData">
+            <summary>
+            包头内容
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Message.MelsecA1EMessage.ContentData">
+            <summary>
+            数据内容
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Message.MelsecA1EMessage.SendData">
+            <summary>
+            发送报文
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.Message.MelsecA1EMessage.CheckHeadData(System.Byte[])">
+            <summary>
+            验证包头是否正确
+            </summary>
+            <param name="headData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Message.MelsecA1EMessage.GetContentLength">
+            <summary>
+            获取数据长度
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:thinger.CommunicationLib.Message.IMessage">
+            <summary>
+            IMessage接口
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Message.IMessage.HeadDataLength">
+            <summary>
+            包头长度
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.Message.IMessage.GetContentLength">
+            <summary>
+            获取后续字节长度
+            </summary>
+            <returns>返回字节长度</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Message.IMessage.CheckHeadData(System.Byte[])">
+            <summary>
+            检查包头是否正确
+            </summary>
+            <returns>是否成功</returns>
+        </member>
+        <member name="P:thinger.CommunicationLib.Message.IMessage.HeadData">
+            <summary>
+            包头字节
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Message.IMessage.ContentData">
+            <summary>
+            报文字节
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Message.IMessage.SendData">
+            <summary>
+            发送字节
+            </summary>
+        </member>
+        <member name="T:thinger.CommunicationLib.Message.MelsecMCAsciiMessage">
+            <summary>
+            MelsecMCAsciiMessage
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Message.MelsecMCAsciiMessage.HeadDataLength">
+            <summary>
+            包头长度
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Message.MelsecMCAsciiMessage.HeadData">
+            <summary>
+            获取包头数据
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Message.MelsecMCAsciiMessage.ContentData">
+            <summary>
+            数据内容
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Message.MelsecMCAsciiMessage.SendData">
+            <summary>
+            发送报文
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.Message.MelsecMCAsciiMessage.GetContentLength">
+            <summary>
+            获取内容字节长度
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Message.MelsecMCAsciiMessage.CheckHeadData(System.Byte[])">
+            <summary>
+            验证包头是否合法
+            </summary>
+            <returns>是否合法</returns>
+        </member>
+        <member name="T:thinger.CommunicationLib.Message.MelsecMcBinaryMessage">
+            <summary>
+            MelsecMcBinaryMessage
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Message.MelsecMcBinaryMessage.HeadDataLength">
+            <summary>
+            包头长度
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Message.MelsecMcBinaryMessage.HeadData">
+            <summary>
+            获取后续字节长度
+            </summary>
+            <returns>返回字节长度</returns>
+        </member>
+        <member name="P:thinger.CommunicationLib.Message.MelsecMcBinaryMessage.ContentData">
+            <summary>
+            获取数据内容
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.Message.MelsecMcBinaryMessage.SendData">
+            <summary>
+            发送报文
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.Message.MelsecMcBinaryMessage.CheckHeadData(System.Byte[])">
+            <summary>
+            验证包头是否正确
+            </summary>
+            <param name="headData"></param>
+            <returns></returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.Message.MelsecMcBinaryMessage.GetContentLength">
+            <summary>
+            获取内容长度
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:thinger.CommunicationLib.StoreArea.ModbusStoreArea">
+            <summary>
+            Modbus存储区
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.StoreArea.ModbusStoreArea.#ctor(System.Byte,System.Byte)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="readFuncCode"></param>
+            <param name="writeFuncCode"></param>
+        </member>
+        <member name="P:thinger.CommunicationLib.StoreArea.ModbusStoreArea.ReadFuncCode">
+            <summary>
+            读取功能码
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.StoreArea.ModbusStoreArea.WriteFuncCode">
+            <summary>
+            写入功能码
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.ModbusStoreArea.X4">
+            <summary>
+            4区保持寄存器
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.ModbusStoreArea.X3">
+            <summary>
+            3区输入寄存器
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.ModbusStoreArea.X1">
+            <summary>
+            1区输入线圈
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.ModbusStoreArea.X0">
+            <summary>
+            0区输出线圈
+            </summary>
+        </member>
+        <member name="T:thinger.CommunicationLib.StoreArea.OmronFinsStoreType">
+            <summary>
+            欧姆龙FINS存储区类型
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.StoreArea.OmronFinsStoreType.#ctor(System.Byte,System.Byte)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="bitCode"></param>
+            <param name="wordCode"></param>
+        </member>
+        <member name="P:thinger.CommunicationLib.StoreArea.OmronFinsStoreType.BitCode">
+            <summary>
+            位代号
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.StoreArea.OmronFinsStoreType.WordCode">
+            <summary>
+            字代号
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.OmronFinsStoreType.DM">
+            <summary>
+            DM存储区
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.OmronFinsStoreType.CIO">
+            <summary>
+            CIO存储区
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.OmronFinsStoreType.WR">
+            <summary>
+            WR存储区
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.OmronFinsStoreType.HR">
+            <summary>
+            HR存储区
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.OmronFinsStoreType.AR">
+            <summary>
+            AR存储区
+            </summary>
+        </member>
+        <member name="T:thinger.CommunicationLib.StoreArea.MelsecA1EStoreArea">
+            <summary>
+            Melsec软元件存储区，参考手册125页
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.StoreArea.MelsecA1EStoreArea.#ctor(System.Byte[],System.String,System.Byte,System.Int32)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="areaBinaryCode">二进制代码</param>
+            <param name="areaASCIICode">ASCII代码</param>
+            <param name="areaType">类型</param>
+            <param name="fromBase">进制</param>
+        </member>
+        <member name="P:thinger.CommunicationLib.StoreArea.MelsecA1EStoreArea.AreaBinaryCode">
+            <summary>
+            二进制代码
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.StoreArea.MelsecA1EStoreArea.AreaASCIICode">
+            <summary>
+            ASCII代码
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.StoreArea.MelsecA1EStoreArea.AreaType">
+            <summary>
+            类型：位/字，0代表按字，1代表按位
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.StoreArea.MelsecA1EStoreArea.FromBase">
+            <summary>
+            进制
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.MelsecA1EStoreArea.X">
+            <summary>
+            X输入继电器
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.MelsecA1EStoreArea.Y">
+            <summary>
+            Y输出继电器
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.MelsecA1EStoreArea.M">
+            <summary>
+            M内部继电器
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.MelsecA1EStoreArea.W">
+            <summary>
+            W链接继电器
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.MelsecA1EStoreArea.D">
+            <summary>
+            D数据寄存器
+            </summary>
+        </member>
+        <member name="T:thinger.CommunicationLib.StoreArea.MelsecStoreArea">
+            <summary>
+            Melsec软元件存储区，参考手册125页
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.StoreArea.MelsecStoreArea.#ctor(System.Byte,System.String,System.Byte,System.Int32)">
+            <summary>
+            Melsec存储区
+            </summary>
+            <param name="areaBinaryCode">二进制代码</param>
+            <param name="areaASCIICode">ASCII代码</param>
+            <param name="areaType">类型：位/字，0代表按字，1代表按位</param>
+            <param name="fromBase">进制</param>
+        </member>
+        <member name="P:thinger.CommunicationLib.StoreArea.MelsecStoreArea.AreaBinaryCode">
+            <summary>
+            二进制代码
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.StoreArea.MelsecStoreArea.AreaASCIICode">
+            <summary>
+            ASCII代码
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.StoreArea.MelsecStoreArea.AreaType">
+            <summary>
+            类型：位/字，0代表按字，1代表按位
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.StoreArea.MelsecStoreArea.FromBase">
+            <summary>
+            进制
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.MelsecStoreArea.X">
+            <summary>
+            X输入继电器
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.MelsecStoreArea.Y">
+            <summary>
+            Y输出继电器
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.MelsecStoreArea.X8">
+            <summary>
+            X输入继电器（八进制）
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.MelsecStoreArea.Y8">
+            <summary>
+            Y输出继电器（八进制）
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.MelsecStoreArea.M">
+            <summary>
+            M内部继电器
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.MelsecStoreArea.L">
+            <summary>
+            L锁存继电器
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.MelsecStoreArea.F">
+            <summary>
+            F报警继电器
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.MelsecStoreArea.V">
+            <summary>
+            V边沿继电器
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.MelsecStoreArea.B">
+            <summary>
+            B链接继电器
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.MelsecStoreArea.D">
+            <summary>
+            D数据寄存器
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.MelsecStoreArea.W">
+            <summary>
+            W链接寄存器
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.MelsecStoreArea.Z">
+            <summary>
+            变址寄存器
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.MelsecStoreArea.TN">
+            <summary>
+            定时器寄存器（当前值）
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.MelsecStoreArea.SN">
+            <summary>
+            累计定时器寄存器（当前值）
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.MelsecStoreArea.CN">
+            <summary>
+            计数器寄存器（当前值）
+            </summary>
+        </member>
+        <member name="T:thinger.CommunicationLib.StoreArea.SiemensStoreArea">
+            <summary>
+            西门子存储区
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.StoreArea.SiemensStoreArea.#ctor(S7.Net.DataType,System.Int32)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="dataType"></param>
+            <param name="dbNo"></param>
+        </member>
+        <member name="P:thinger.CommunicationLib.StoreArea.SiemensStoreArea.DBNo">
+            <summary>
+            DB号
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.StoreArea.SiemensStoreArea.DataType">
+            <summary>
+            数据类型
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.SiemensStoreArea.I">
+            <summary>
+            I输入存储区
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.SiemensStoreArea.Q">
+            <summary>
+            Q输出存储区
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.SiemensStoreArea.M">
+            <summary>
+            M内部存储区
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.SiemensStoreArea.V">
+            <summary>
+            V数据存储区
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.SiemensStoreArea.DB">
+            <summary>
+            DB数据存储区
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.SiemensStoreArea.T">
+            <summary>
+            Timer定时器存储区
+            </summary>
+        </member>
+        <member name="F:thinger.CommunicationLib.StoreArea.SiemensStoreArea.C">
+            <summary>
+            Counter计数器存储区
+            </summary>
+        </member>
+        <member name="T:thinger.CommunicationLib.OmronFinsTCP">
+            <summary>
+            OmronFinsTCP通信类
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.OmronFinsTCP.#ctor(thinger.DataConvertLib.DataFormat)">
+            <summary>
+            构造方法初始化
+            </summary>
+            <param name="dataFormat">数据格式</param>
+        </member>
+        <member name="P:thinger.CommunicationLib.OmronFinsTCP.DNA">
+            <summary>
+            PLC网络号
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OmronFinsTCP.DA1">
+            <summary>
+            PLC节点号
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OmronFinsTCP.DA2">
+            <summary>
+            PLC单元号
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OmronFinsTCP.SNA">
+            <summary>
+            PC网络号
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OmronFinsTCP.SA1">
+            <summary>
+            PC节点号
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OmronFinsTCP.SA2">
+            <summary>
+            PC单元号
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.OmronFinsTCP.SID">
+            <summary>
+            设备标识号
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.OmronFinsTCP.Connect(System.String,System.Int32)">
+            <summary>
+            建立连接
+            </summary>
+            <param name="ip"></param>
+            <param name="port"></param>
+            <returns></returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OmronFinsTCP.ReadBoolArray(System.String,System.UInt16)">
+            <summary>
+            读取布尔数组
+            </summary>
+            <param name="address"></param>
+            <param name="length"></param>
+            <returns></returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OmronFinsTCP.ReadByteArray(System.String,System.UInt16)">
+            <summary>
+            读取字节数组
+            </summary>
+            <param name="address"></param>
+            <param name="length"></param>
+            <returns></returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OmronFinsTCP.WriteBoolArray(System.String,System.Boolean[])">
+            <summary>
+            写入布尔数组
+            </summary>
+            <param name="address"></param>
+            <param name="values"></param>
+            <returns></returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.OmronFinsTCP.WriteByteArray(System.String,System.Byte[])">
+            <summary>
+            写入字节数组
+            </summary>
+            <param name="address"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:thinger.CommunicationLib.MelsecMcA1E">
+            <summary>
+            Melsec A1E协议
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecMcA1E.#ctor(thinger.DataConvertLib.DataFormat)">
+            <summary>
+            构造方法初始化，传入字节序
+            </summary>
+            <param name="DataFormat"></param>
+        </member>
+        <member name="P:thinger.CommunicationLib.MelsecMcA1E.PLCNumber">
+            <summary>
+            PLC编号
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecMcA1E.ReadByteArray(System.String,System.UInt16)">
+            <summary>
+            带结果数据对象的批量读取软元件
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="length">长度</param>
+            <returns>结果数据对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecMcA1E.ReadBoolArray(System.String,System.UInt16)">
+             <summary>
+            带结果数据对象的批量读取位软元件
+             </summary>
+             <param name="address">变量地址</param>
+             <param name="length">长度</param>
+             <returns>结果数据对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecMcA1E.WriteByteArray(System.String,System.Byte[])">
+            <summary>
+            带结果对象的批量写入字节数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="value">字节数组</param>
+            <returns>结果对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecMcA1E.WriteBoolArray(System.String,System.Boolean[])">
+            <summary>
+            带结果对象的批量写入布尔数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="values">布尔数组</param>
+            <returns>结果对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecMcA1E.BuildReadMessageFrame(System.String,System.UInt16)">
+            <summary>
+            根据起始地址及长度，确定读取协议帧
+            </summary>
+            <param name="address">起始地址</param>
+            <param name="length">长度</param>
+            <returns>协议帧数据</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecMcA1E.BuildWriteMessageFrame(System.String,System.Byte[])">
+            <summary>
+            根据起始地址及长度，确定写入协议帧
+            </summary>
+            <param name="address">起始地址</param>
+            <param name="value">写入数据</param>
+            <returns>协议帧数据</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecMcA1E.AnalysisResponseMessage(System.Byte[],System.Boolean)">
+            <summary>
+            解析返回的响应报文
+            </summary>
+            <param name="response">响应报文</param>
+            <param name="isBit">是否为位地址</param>
+            <returns>带返回值的操作结果</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecMcA1E.IsValidBitAddress(System.String)">
+            <summary>
+            是否为有效的位地址
+            </summary>
+            <param name="address">变量地址</param>
+            <returns>带返回值的操作结果</returns>
+        </member>
+        <member name="T:thinger.CommunicationLib.MelsecFxSerial">
+            <summary>
+            MelsecFxSerial通信类
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecFxSerial.#ctor(thinger.DataConvertLib.DataFormat)">
+            <summary>
+            构造方法初始化
+            </summary>
+            <param name="dataFormat">数据格式</param>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecFxSerial.ReadByteArray(System.String,System.UInt16)">
+            <summary>
+            带结果数据对象的读取字节数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="length">长度</param>
+            <returns>结果数据对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecFxSerial.ReadBoolArray(System.String,System.UInt16)">
+             <summary>
+            批量读取位软元件
+             </summary>
+             <param name="address">起始地址</param>
+             <param name="length">读取的长度</param>
+             <returns>结果数据对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecFxSerial.WriteByteArray(System.String,System.Byte[])">
+            <summary>
+            向PLC写入数据，数据格式为原始的字节类型
+            </summary>
+            <param name="address">初始地址</param>
+            <param name="value">原始的字节数据</param>
+            <returns>结果</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecFxSerial.WriteBoolArray(System.String,System.Boolean[])">
+            <summary>
+            向PLC中位软元件写入bool数组
+            </summary>
+            <param name="address">要写入的数据地址</param>
+            <param name="values">要写入的实际数据，可以指定任意的长度</param>
+            <returns>返回写入结果</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecFxSerial.ForceBool(System.String,System.Boolean)">
+            <summary>
+            强制写入布尔值
+            </summary>
+            <param name="address"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:thinger.CommunicationLib.MelsecMcAscii">
+            <summary>
+            三菱MC协议Qna兼容3E，Ascii格式
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecMcAscii.#ctor(thinger.DataConvertLib.DataFormat)">
+            <summary>
+            构造方法初始化，传入字节序
+            </summary>
+            <param name="DataFormat"></param>
+        </member>
+        <member name="P:thinger.CommunicationLib.MelsecMcAscii.NetworkNo">
+            <summary>
+            网络编号，通常为0
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.MelsecMcAscii.DstModuleNo">
+            <summary>
+            请求目标模块站号，通常为0
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.MelsecMcAscii.IsFx5U">
+            <summary>
+            设置是否为FX5U，FX5U的XY存储区为8进制
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecMcAscii.ReadByteArray(System.String,System.UInt16)">
+            <summary>
+            带结果数据对象的批量读取软元件
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="length">长度</param>
+            <returns>结果数据对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecMcAscii.ReadBoolArray(System.String,System.UInt16)">
+             <summary>
+            带结果数据对象的批量读取位软元件
+             </summary>
+             <param name="address">变量地址</param>
+             <param name="length">长度</param>
+             <returns>结果数据对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecMcAscii.WriteByteArray(System.String,System.Byte[])">
+            <summary>
+            带结果对象的批量写入字节数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="value">字节数组</param>
+            <returns>结果对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecMcAscii.WriteBoolArray(System.String,System.Boolean[])">
+            <summary>
+            带结果对象的批量写入布尔数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="values">布尔数组</param>
+            <returns>结果对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecMcAscii.BuildReadMessageFrame(System.String,System.UInt16)">
+            <summary>
+            根据起始地址及长度，确定读取协议帧
+            </summary>
+            <param name="address">起始地址</param>
+            <param name="length">长度</param>
+            <returns>协议帧数据</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecMcAscii.BuildWriteMessageFrame(System.String,System.Byte[])">
+            <summary>
+            根据起始地址及长度，确定写入协议帧
+            </summary>
+            <param name="address">起始地址</param>
+            <param name="value">写入数据</param>
+            <returns>协议帧数据</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecMcAscii.AnalysisResponseMessage(System.Byte[],System.Boolean)">
+            <summary>
+            解析返回的响应报文
+            </summary>
+            <param name="response">响应报文</param>
+            <param name="isBit">是否为位地址</param>
+            <returns>带返回值的操作结果</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecMcAscii.IsValidBitAddress(System.String)">
+            <summary>
+            是否为有效的位地址
+            </summary>
+            <param name="address">变量地址</param>
+            <returns>带返回值的操作结果</returns>
+        </member>
+        <member name="T:thinger.CommunicationLib.MelsecMcBinary">
+            <summary>
+            三菱MC协议Qna兼容3E，二进制格式
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecMcBinary.#ctor(thinger.DataConvertLib.DataFormat)">
+            <summary>
+            构造方法初始化，传入字节序
+            </summary>
+            <param name="DataFormat"></param>
+        </member>
+        <member name="P:thinger.CommunicationLib.MelsecMcBinary.NetworkNo">
+            <summary>
+            网络编号，通常为0
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.MelsecMcBinary.DstModuleNo">
+            <summary>
+            请求目标模块站号，通常为0
+            </summary>
+        </member>
+        <member name="P:thinger.CommunicationLib.MelsecMcBinary.IsFx5U">
+            <summary>
+            设置是否为FX5U，FX5U的XY存储区为8进制
+            </summary>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecMcBinary.ReadByteArray(System.String,System.UInt16)">
+            <summary>
+            带结果数据对象的批量读取软元件
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="length">长度</param>
+            <returns>结果数据对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecMcBinary.ReadBoolArray(System.String,System.UInt16)">
+             <summary>
+            带结果数据对象的批量读取位软元件
+             </summary>
+             <param name="address">变量地址</param>
+             <param name="length">长度</param>
+             <returns>结果数据对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecMcBinary.WriteByteArray(System.String,System.Byte[])">
+            <summary>
+            带结果对象的批量写入字节数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="value">字节数组</param>
+            <returns>结果对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecMcBinary.WriteBoolArray(System.String,System.Boolean[])">
+            <summary>
+            带结果对象的批量写入布尔数组
+            </summary>
+            <param name="address">变量地址</param>
+            <param name="values">布尔数组</param>
+            <returns>结果对象</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecMcBinary.BuildReadMessageFrame(System.String,System.UInt16)">
+            <summary>
+            根据起始地址及长度，确定读取协议帧
+            </summary>
+            <param name="address">起始地址</param>
+            <param name="length">长度</param>
+            <returns>协议帧数据</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecMcBinary.BuildWriteMessageFrame(System.String,System.Byte[])">
+            <summary>
+            根据起始地址及长度，确定写入协议帧
+            </summary>
+            <param name="address">起始地址</param>
+            <param name="value">写入数据</param>
+            <returns>协议帧数据</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecMcBinary.AnalysisResponseMessage(System.Byte[],System.Boolean)">
+            <summary>
+            解析返回的响应报文
+            </summary>
+            <param name="response">响应报文</param>
+            <param name="isBit">是否为位地址</param>
+            <returns>带返回值的操作结果</returns>
+        </member>
+        <member name="M:thinger.CommunicationLib.MelsecMcBinary.IsValidBitAddress(System.String)">
+            <summary>
+            是否为有效的位地址
+            </summary>
+            <param name="address">变量地址</param>
+            <returns>带返回值的操作结果</returns>
+        </member>
+    </members>
+</doc>
