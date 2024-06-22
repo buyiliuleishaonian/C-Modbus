@@ -1,0 +1,11 @@
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\KYJDAL\bin\Debug\KYJDAL.dll
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\KYJDAL\bin\Debug\KYJDAL.pdb
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\KYJDAL\bin\Debug\Model.dll
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\KYJDAL\bin\Debug\EnvDTE.dll
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\KYJDAL\bin\Debug\stdole.dll
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\KYJDAL\bin\Debug\Model.pdb
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\KYJDAL\obj\Debug\KYJDAL.csproj.AssemblyReference.cache
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\KYJDAL\obj\Debug\KYJDAL.csproj.CoreCompileInputs.cache
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\KYJDAL\obj\Debug\KYJDAL.dll
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\KYJDAL\obj\Debug\KYJDAL.pdb
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\KYJDAL\obj\Debug\KYJDAL.csproj.Up2Date

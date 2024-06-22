@@ -1,0 +1,12 @@
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\kYJBLL\bin\Debug\kYJBLL.dll
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\kYJBLL\bin\Debug\kYJBLL.pdb
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\kYJBLL\bin\Debug\KYJDAL.dll
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\kYJBLL\bin\Debug\Model.dll
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\kYJBLL\bin\Debug\System.Data.SQLite.dll
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\kYJBLL\bin\Debug\KYJDAL.pdb
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\kYJBLL\bin\Debug\Model.pdb
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\kYJBLL\obj\Debug\kYJBLL.csproj.AssemblyReference.cache
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\kYJBLL\obj\Debug\kYJBLL.csproj.CoreCompileInputs.cache
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\kYJBLL\obj\Debug\kYJBLL.dll
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\kYJBLL\obj\Debug\kYJBLL.pdb
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\kYJBLL\obj\Debug\kYJBLL.csproj.Up2Date

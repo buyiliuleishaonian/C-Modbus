@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96E13294-A95C-47D9-AFC0-E6D068ED07C0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wen.KYJControlLib</RootNamespace>
+    <AssemblyName>Wen.KYJControlLib</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="thinger.ControlLib">
+      <HintPath>..\AIR CompressorModbusRTU\bin\Debug\thinger.ControlLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DeviceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeviceControl.Designer.cs">
+      <DependentUpon>DeviceControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeviceState.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DeviceState.Designer.cs">
+      <DependentUpon>DeviceState.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KYJcontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KYJcontrol.Designer.cs">
+      <DependentUpon>KYJcontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NaviControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NaviControl.Designer.cs">
+      <DependentUpon>NaviControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PumpControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PumpControl.Designer.cs">
+      <DependentUpon>PumpControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TapControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TapControl.Designer.cs">
+      <DependentUpon>TapControl.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DeviceControl.resx">
+      <DependentUpon>DeviceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeviceState.resx">
+      <DependentUpon>DeviceState.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KYJcontrol.resx">
+      <DependentUpon>KYJcontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NaviControl.resx">
+      <DependentUpon>NaviControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PumpControl.resx">
+      <DependentUpon>PumpControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TapControl.resx">
+      <DependentUpon>TapControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Title.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bottom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KYJFault.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KYJRun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KYJSpare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KYJStop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PumpFault.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PumpRun.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PumpSpare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PumpStop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TapFault.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TapRun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TapSpare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TapStop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Run.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fault.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

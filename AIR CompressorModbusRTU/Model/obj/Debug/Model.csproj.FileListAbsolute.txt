@@ -1,0 +1,6 @@
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\Model\bin\Debug\Model.dll
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\Model\bin\Debug\Model.pdb
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\Model\obj\Debug\Model.dll
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\Model\obj\Debug\Model.pdb

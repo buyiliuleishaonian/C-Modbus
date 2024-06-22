@@ -1,0 +1,18 @@
+C:\学习文件\西门子PLC开放式通信\Wen.ModbusCommunictaion\Wen.ModbucCommunicationLib\bin\Debug\Wen.ModbucCommunicationLib.dll
+C:\学习文件\西门子PLC开放式通信\Wen.ModbusCommunictaion\Wen.ModbucCommunicationLib\bin\Debug\Wen.ModbucCommunicationLib.pdb
+C:\学习文件\西门子PLC开放式通信\Wen.ModbusCommunictaion\Wen.ModbucCommunicationLib\bin\Debug\thinger.DataConvertLib.pdb
+C:\学习文件\西门子PLC开放式通信\Wen.ModbusCommunictaion\Wen.ModbucCommunicationLib\bin\Debug\thinger.DataConvertLib.xml
+C:\学习文件\西门子PLC开放式通信\Wen.ModbusCommunictaion\Wen.ModbucCommunicationLib\obj\Debug\Wen.ModbucCommunicationLib.csproj.AssemblyReference.cache
+C:\学习文件\西门子PLC开放式通信\Wen.ModbusCommunictaion\Wen.ModbucCommunicationLib\obj\Debug\Wen.ModbucCommunicationLib.csproj.CoreCompileInputs.cache
+C:\学习文件\西门子PLC开放式通信\Wen.ModbusCommunictaion\Wen.ModbucCommunicationLib\obj\Debug\Wen.ModbucCommunicationLib.csproj.CopyComplete
+C:\学习文件\西门子PLC开放式通信\Wen.ModbusCommunictaion\Wen.ModbucCommunicationLib\obj\Debug\Wen.ModbucCommunicationLib.dll
+C:\学习文件\西门子PLC开放式通信\Wen.ModbusCommunictaion\Wen.ModbucCommunicationLib\obj\Debug\Wen.ModbucCommunicationLib.pdb
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\Wen.ModbusCommunictaion\Wen.ModbucCommunicationLib\bin\Debug\Wen.ModbucCommunicationLib.dll
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\Wen.ModbusCommunictaion\Wen.ModbucCommunicationLib\bin\Debug\Wen.ModbucCommunicationLib.pdb
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\Wen.ModbusCommunictaion\Wen.ModbucCommunicationLib\bin\Debug\thinger.DataConvertLib.pdb
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\Wen.ModbusCommunictaion\Wen.ModbucCommunicationLib\bin\Debug\thinger.DataConvertLib.xml
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\Wen.ModbusCommunictaion\Wen.ModbucCommunicationLib\obj\Debug\Wen.ModbucCommunicationLib.csproj.AssemblyReference.cache
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\Wen.ModbusCommunictaion\Wen.ModbucCommunicationLib\obj\Debug\Wen.ModbucCommunicationLib.csproj.CoreCompileInputs.cache
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\Wen.ModbusCommunictaion\Wen.ModbucCommunicationLib\obj\Debug\Wen.ModbucCommunicationLib.dll
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\Wen.ModbusCommunictaion\Wen.ModbucCommunicationLib\obj\Debug\Wen.ModbucCommunicationLib.pdb
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\Wen.ModbusCommunictaion\Wen.ModbucCommunicationLib\obj\Debug\Wen.Modb.7A3CF2D8.Up2Date
