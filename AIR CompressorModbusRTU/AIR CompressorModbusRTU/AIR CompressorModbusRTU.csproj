@@ -37,9 +37,47 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\ConfigLib.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IO.RecyclableMemoryStream.3.0.0\lib\netstandard2.0\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.Core, Version=2.7.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.7.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.7.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.7.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="SeeSharpTools.JY.GUI">
+      <HintPath>..\..\..\C#项目\C#基础类和BLL\指示灯dll和曲线表的BLL\SeeSharpTools.JY.GUI.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -66,11 +104,41 @@
     <Compile Include="FrmLogIn.Designer.cs">
       <DependentUpon>FrmLogIn.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMessageBoxWithOutAck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMessageBoxWithOutAck.Designer.cs">
+      <DependentUpon>FrmMessageBoxWithOutAck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMessageBoxWithAck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMessageBoxWithAck.Designer.cs">
+      <DependentUpon>FrmMessageBoxWithAck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModify.Designer.cs">
+      <DependentUpon>FrmModify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrint.designer.cs">
+      <DependentUpon>FrmPrint.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPumpControl.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmPumpControl.Designer.cs">
       <DependentUpon>FrmPumpControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelectParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelectParam.Designer.cs">
+      <DependentUpon>FrmSelectParam.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmTapControl.cs">
       <SubType>Form</SubType>
@@ -132,13 +200,35 @@
     <Compile Include="FrmMonitor.Designer.cs">
       <DependentUpon>FrmMonitor.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmWaitTip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWaitTip.Designer.cs">
+      <DependentUpon>FrmWaitTip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDGV.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmLogIn.resx">
       <DependentUpon>FrmLogIn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmMessageBoxWithOutAck.resx">
+      <DependentUpon>FrmMessageBoxWithOutAck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMessageBoxWithAck.resx">
+      <DependentUpon>FrmMessageBoxWithAck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModify.resx">
+      <DependentUpon>FrmModify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrint.resx">
+      <DependentUpon>FrmPrint.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmPumpControl.resx">
       <DependentUpon>FrmPumpControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelectParam.resx">
+      <DependentUpon>FrmSelectParam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTapControl.resx">
       <DependentUpon>FrmTapControl.cs</DependentUpon>
@@ -170,6 +260,9 @@
     <EmbeddedResource Include="FrmMonitor.resx">
       <DependentUpon>FrmMonitor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmWaitTip.resx">
+      <DependentUpon>FrmWaitTip.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -180,6 +273,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -302,6 +396,10 @@
     <None Include="bin\Debug\images\Top.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CommonHelper\CommonHelper\CommonHelper.csproj">
+      <Project>{1a4e635a-67d1-4923-8e24-e7bfcccd25d7}</Project>
+      <Name>CommonHelper</Name>
+    </ProjectReference>
     <ProjectReference Include="..\kYJBLL\kYJBLL.csproj">
       <Project>{397ca630-122a-4359-9dbd-621e6bd7ac14}</Project>
       <Name>kYJBLL</Name>

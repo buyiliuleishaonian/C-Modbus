@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPumpControl));
             this.panelEnhanced1 = new thinger.ControlLib.PanelEnhanced();
-            this.led2 = new thinger.ControlLib.Led();
+            this.simpleLed2 = new thinger.ControlLib.SimpleLed();
+            this.simpleLed1 = new thinger.ControlLib.SimpleLed();
             this.label10 = new System.Windows.Forms.Label();
-            this.led1 = new thinger.ControlLib.Led();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btn_Manual = new System.Windows.Forms.Button();
+            this.btn_Stop = new System.Windows.Forms.Button();
+            this.btn_Run = new System.Windows.Forms.Button();
+            this.btn_Mode = new System.Windows.Forms.Button();
             this.textShow4 = new thinger.ControlLib.TextShow();
             this.textShow3 = new thinger.ControlLib.TextShow();
             this.textShow2 = new thinger.ControlLib.TextShow();
@@ -60,12 +61,12 @@
             // 
             this.panelEnhanced1.BackColor = System.Drawing.Color.Transparent;
             this.panelEnhanced1.BackgroundImage = global::AIR_CompressorModbusRTU.Properties.Resources.background;
-            this.panelEnhanced1.Controls.Add(this.led2);
+            this.panelEnhanced1.Controls.Add(this.simpleLed2);
+            this.panelEnhanced1.Controls.Add(this.simpleLed1);
             this.panelEnhanced1.Controls.Add(this.label10);
-            this.panelEnhanced1.Controls.Add(this.led1);
-            this.panelEnhanced1.Controls.Add(this.button3);
-            this.panelEnhanced1.Controls.Add(this.button2);
-            this.panelEnhanced1.Controls.Add(this.btn_Manual);
+            this.panelEnhanced1.Controls.Add(this.btn_Stop);
+            this.panelEnhanced1.Controls.Add(this.btn_Run);
+            this.panelEnhanced1.Controls.Add(this.btn_Mode);
             this.panelEnhanced1.Controls.Add(this.textShow4);
             this.panelEnhanced1.Controls.Add(this.textShow3);
             this.panelEnhanced1.Controls.Add(this.textShow2);
@@ -90,27 +91,29 @@
             this.panelEnhanced1.Size = new System.Drawing.Size(546, 435);
             this.panelEnhanced1.TabIndex = 0;
             // 
-            // led2
+            // simpleLed2
             // 
-            this.led2.BackColor = System.Drawing.Color.Transparent;
-            this.led2.BlinkVelocity = 200;
-            this.led2.BorderWidth = 5;
-            this.led2.CenterColor = System.Drawing.Color.White;
-            this.led2.ColorList = new System.Drawing.Color[] {
-        System.Drawing.Color.Red,
-        System.Drawing.Color.Green};
-            this.led2.CurrentValue = 0;
-            this.led2.DefaultColor = System.Drawing.Color.Gray;
-            this.led2.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.led2.GapWidth = 5;
-            this.led2.IsBlink = false;
-            this.led2.IsBorder = false;
-            this.led2.IsHighLight = false;
-            this.led2.Location = new System.Drawing.Point(447, 358);
-            this.led2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.led2.Name = "led2";
-            this.led2.Size = new System.Drawing.Size(26, 26);
-            this.led2.TabIndex = 96;
+            this.simpleLed2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("simpleLed2.BackgroundImage")));
+            this.simpleLed2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.simpleLed2.BindVarName = null;
+            this.simpleLed2.Location = new System.Drawing.Point(441, 358);
+            this.simpleLed2.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
+            this.simpleLed2.Name = "simpleLed2";
+            this.simpleLed2.Size = new System.Drawing.Size(25, 26);
+            this.simpleLed2.State = false;
+            this.simpleLed2.TabIndex = 97;
+            // 
+            // simpleLed1
+            // 
+            this.simpleLed1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("simpleLed1.BackgroundImage")));
+            this.simpleLed1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.simpleLed1.BindVarName = null;
+            this.simpleLed1.Location = new System.Drawing.Point(153, 358);
+            this.simpleLed1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.simpleLed1.Name = "simpleLed1";
+            this.simpleLed1.Size = new System.Drawing.Size(25, 26);
+            this.simpleLed1.State = false;
+            this.simpleLed1.TabIndex = 96;
             // 
             // label10
             // 
@@ -125,72 +128,53 @@
             this.label10.Text = "故障状态";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // led1
+            // btn_Stop
             // 
-            this.led1.BackColor = System.Drawing.Color.Transparent;
-            this.led1.BlinkVelocity = 200;
-            this.led1.BorderWidth = 5;
-            this.led1.CenterColor = System.Drawing.Color.White;
-            this.led1.ColorList = new System.Drawing.Color[] {
-        System.Drawing.Color.Red,
-        System.Drawing.Color.Green};
-            this.led1.CurrentValue = 0;
-            this.led1.DefaultColor = System.Drawing.Color.Gray;
-            this.led1.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.led1.GapWidth = 5;
-            this.led1.IsBlink = false;
-            this.led1.IsBorder = false;
-            this.led1.IsHighLight = false;
-            this.led1.Location = new System.Drawing.Point(173, 358);
-            this.led1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.led1.Name = "led1";
-            this.led1.Size = new System.Drawing.Size(26, 26);
-            this.led1.TabIndex = 94;
+            this.btn_Stop.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Stop.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_Stop.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_Stop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Stop.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_Stop.ForeColor = System.Drawing.Color.White;
+            this.btn_Stop.Location = new System.Drawing.Point(410, 293);
+            this.btn_Stop.Name = "btn_Stop";
+            this.btn_Stop.Size = new System.Drawing.Size(113, 46);
+            this.btn_Stop.TabIndex = 93;
+            this.btn_Stop.Text = "停止";
+            this.btn_Stop.UseVisualStyleBackColor = false;
+            this.btn_Stop.Click += new System.EventHandler(this.btn_OP_Click);
             // 
-            // button3
+            // btn_Run
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(410, 293);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(113, 46);
-            this.button3.TabIndex = 93;
-            this.button3.Text = "停止";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btn_Run.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Run.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_Run.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_Run.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Run.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_Run.ForeColor = System.Drawing.Color.White;
+            this.btn_Run.Location = new System.Drawing.Point(271, 293);
+            this.btn_Run.Name = "btn_Run";
+            this.btn_Run.Size = new System.Drawing.Size(113, 46);
+            this.btn_Run.TabIndex = 92;
+            this.btn_Run.Text = "启动";
+            this.btn_Run.UseVisualStyleBackColor = false;
+            this.btn_Run.Click += new System.EventHandler(this.btn_OP_Click);
             // 
-            // button2
+            // btn_Mode
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(271, 293);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(113, 46);
-            this.button2.TabIndex = 92;
-            this.button2.Text = "启动";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // btn_Manual
-            // 
-            this.btn_Manual.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Manual.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btn_Manual.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btn_Manual.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Manual.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.btn_Manual.ForeColor = System.Drawing.Color.White;
-            this.btn_Manual.Location = new System.Drawing.Point(132, 293);
-            this.btn_Manual.Name = "btn_Manual";
-            this.btn_Manual.Size = new System.Drawing.Size(113, 46);
-            this.btn_Manual.TabIndex = 91;
-            this.btn_Manual.Text = "手动模式";
-            this.btn_Manual.UseVisualStyleBackColor = false;
+            this.btn_Mode.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Mode.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_Mode.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_Mode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Mode.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.btn_Mode.ForeColor = System.Drawing.Color.White;
+            this.btn_Mode.Location = new System.Drawing.Point(132, 293);
+            this.btn_Mode.Name = "btn_Mode";
+            this.btn_Mode.Size = new System.Drawing.Size(113, 46);
+            this.btn_Mode.TabIndex = 91;
+            this.btn_Mode.Text = "手动模式";
+            this.btn_Mode.UseVisualStyleBackColor = false;
+            this.btn_Mode.Click += new System.EventHandler(this.btn_Mode_Click);
             // 
             // textShow4
             // 
@@ -222,7 +206,7 @@
             this.textShow3.Name = "textShow3";
             this.textShow3.Size = new System.Drawing.Size(154, 52);
             this.textShow3.TabIndex = 86;
-            this.textShow3.Unit = "℃";
+            this.textShow3.Unit = "Kwh";
             // 
             // textShow2
             // 
@@ -238,7 +222,7 @@
             this.textShow2.Name = "textShow2";
             this.textShow2.Size = new System.Drawing.Size(154, 52);
             this.textShow2.TabIndex = 85;
-            this.textShow2.Unit = "℃";
+            this.textShow2.Unit = "r/min";
             // 
             // textShow1
             // 
@@ -254,7 +238,7 @@
             this.textShow1.Name = "textShow1";
             this.textShow1.Size = new System.Drawing.Size(154, 52);
             this.textShow1.TabIndex = 84;
-            this.textShow1.Unit = "℃";
+            this.textShow1.Unit = "A";
             // 
             // label9
             // 
@@ -417,7 +401,7 @@
             this.textShow5.Name = "textShow5";
             this.textShow5.Size = new System.Drawing.Size(154, 52);
             this.textShow5.TabIndex = 88;
-            this.textShow5.Unit = "℃";
+            this.textShow5.Unit = "Hz";
             // 
             // textShow6
             // 
@@ -433,7 +417,7 @@
             this.textShow6.Name = "textShow6";
             this.textShow6.Size = new System.Drawing.Size(154, 52);
             this.textShow6.TabIndex = 89;
-            this.textShow6.Unit = "℃";
+            this.textShow6.Unit = "KW";
             // 
             // textShow7
             // 
@@ -449,7 +433,7 @@
             this.textShow7.Name = "textShow7";
             this.textShow7.Size = new System.Drawing.Size(154, 52);
             this.textShow7.TabIndex = 90;
-            this.textShow7.Unit = "℃";
+            this.textShow7.Unit = "h";
             // 
             // FrmPumpControl
             // 
@@ -475,12 +459,10 @@
         #endregion
 
         private thinger.ControlLib.PanelEnhanced panelEnhanced1;
-        private thinger.ControlLib.Led led2;
         private System.Windows.Forms.Label label10;
-        private thinger.ControlLib.Led led1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btn_Manual;
+        private System.Windows.Forms.Button btn_Stop;
+        private System.Windows.Forms.Button btn_Run;
+        private System.Windows.Forms.Button btn_Mode;
         private thinger.ControlLib.TextShow textShow4;
         private thinger.ControlLib.TextShow textShow3;
         private thinger.ControlLib.TextShow textShow2;
@@ -499,5 +481,7 @@
         private thinger.ControlLib.TextShow textShow5;
         private thinger.ControlLib.TextShow textShow6;
         private thinger.ControlLib.TextShow textShow7;
+        private thinger.ControlLib.SimpleLed simpleLed2;
+        private thinger.ControlLib.SimpleLed simpleLed1;
     }
 }

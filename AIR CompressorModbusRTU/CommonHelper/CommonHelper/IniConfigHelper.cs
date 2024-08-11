@@ -9,18 +9,20 @@ namespace CommonHelper
 {
     public class IniConfigHelper
     {
+        private string InitialPath = null;
+
         #region API函数声明
 
         [DllImport("kernel32")]//返回0表示失败，非0为成功
         private static extern long WritePrivateProfileString(string section, string key,
             string val, string filePath);
 
-        [DllImport("kernel32",EntryPoint ="GetPrivateProfileString")]//返回取得字符串缓冲区的长度
+        [DllImport("kernel32", EntryPoint = "GetPrivateProfileString")]//返回取得字符串缓冲区的长度
         private static extern uint GetPrivateProfileStringA(string section, string key,
             string def, byte[] buffer, int size, string filePath);
 
 
-        [DllImport("kernel32",EntryPoint ="GetPrivateProfileString")]//返回取得字符串缓冲区的长度
+        [DllImport("kernel32", EntryPoint = "GetPrivateProfileString")]//返回取得字符串缓冲区的长度
         private static extern long GetPrivateProfileString(string section, string key,
             string def, StringBuilder retVal, int size, string filePath);
 
@@ -50,6 +52,19 @@ namespace CommonHelper
             }
         }
 
+        public static string ReadIniData(string Section, string NoText, string iniFilePath)
+        {
+            if (File.Exists(iniFilePath))
+            {
+                StringBuilder temp = new StringBuilder(1024);
+                GetPrivateProfileString(Section, iniFilePath, NoText, temp, 1024, iniFilePath);
+                return temp.ToString();
+            }
+            else
+            {
+                return String.Empty;
+            }
+        }
         #endregion
 
         #region 写Ini文件
@@ -63,21 +78,41 @@ namespace CommonHelper
         /// <returns></returns>
         public static bool WriteIniData(string Section, string Key, string Value, string iniFilePath)
         {
-            if (File.Exists(iniFilePath))
+            if (!File.Exists(iniFilePath))
             {
-                long OpStation = WritePrivateProfileString(Section, Key, Value, iniFilePath);
-                if (OpStation == 0)
+                using (FileStream fs = File.Create(iniFilePath))
                 {
-                    return false;
+
                 }
-                else
-                {
-                    return true;
-                }
+            }
+            long OpStation = WritePrivateProfileString(Section, Key, Value, iniFilePath);
+            if (OpStation == 0)
+            {
+                return false;
             }
             else
             {
+                return true;
+            }
+        }
+
+        public static bool WriteIniData(string Section, string Value, string iniFilePath)
+        {
+            if (!File.Exists(iniFilePath))
+            {
+                using (FileStream fs = File.Create(iniFilePath))
+                {
+
+                }
+            }
+            long OpStation = WritePrivateProfileString(Section, iniFilePath, Value, iniFilePath);
+            if (OpStation == 0)
+            {
                 return false;
+            }
+            else
+            {
+                return true;
             }
         }
 
@@ -91,10 +126,10 @@ namespace CommonHelper
         /// <returns></returns>
         public static List<string> ReadSectionName(string path)
         {
-            byte[] buffer=new byte[65536];
-            uint length=GetPrivateProfileStringA(null, null, null, buffer, buffer.Length, path);
+            byte[] buffer = new byte[65536];
+            uint length = GetPrivateProfileStringA(null, null, null, buffer, buffer.Length, path);
             int startSection = 0;
-            List<string> section=new List<string>();
+            List<string> section = new List<string>();
             for (int i = 0; i < length; i++)
             {
                 if (buffer[i]==0)
@@ -115,7 +150,7 @@ namespace CommonHelper
         /// <param name="section"></param>
         /// <param name="path"></param>
         /// <returns></returns>
-        public static List<string> ReadSectionKey(string section,string path)
+        public static List<string> ReadSectionKey(string section, string path)
         {
 
             byte[] buffer = new byte[65536];

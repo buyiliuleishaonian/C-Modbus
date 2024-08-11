@@ -900,7 +900,7 @@ namespace CommonHelper
         /// <param name="filePath">保存路径</param>
         /// <param name="dataGridView">表格控件</param>
         /// <returns></returns>
-        private static bool DataGridViewToExcelNew(string filePath, DataGridView dataGridView)
+        public static bool DataGridViewToExcelNew(string filePath, DataGridView dataGridView)
         {
             bool result = true;
 
@@ -935,7 +935,7 @@ namespace CommonHelper
                     }
                 }
             }
-            catch
+            catch(Exception ex)
             {
                 result = false;
                 return result;
@@ -963,7 +963,7 @@ namespace CommonHelper
             {
                 workbook.Write(fs);
             }
-            catch
+            catch(Exception ex)
             {
                 result = false;
                 return result;

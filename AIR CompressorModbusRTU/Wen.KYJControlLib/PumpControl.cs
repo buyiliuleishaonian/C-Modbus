@@ -66,6 +66,9 @@ namespace Wen.KYJControlLib
         [Description("编号")]
         public int PumpIndex { get; set; } = 1;
 
+        [Browsable(true)]
+        [Category("自定义事件")]
+        [Description("泵的双击触发事件")]
         /// <summary>
         /// 控件双击事件
         /// </summary>

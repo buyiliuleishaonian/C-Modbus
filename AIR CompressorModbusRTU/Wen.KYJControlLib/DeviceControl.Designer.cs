@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DeviceControl));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btn_Close = new System.Windows.Forms.Button();
+            this.btn_Open = new System.Windows.Forms.Button();
             this.lbl_Title = new System.Windows.Forms.Label();
             this.deviceState1 = new Wen.KYJControlLib.DeviceState();
             this.tableLayoutPanel1.SuspendLayout();
@@ -45,8 +45,8 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btn_Close, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btn_Open, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.lbl_Title, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.deviceState1, 3, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -57,37 +57,39 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(360, 44);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // button1
+            // btn_Close
             // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("微软雅黑", 11.5F);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(219, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(73, 38);
-            this.button1.TabIndex = 94;
-            this.button1.Text = "关闭";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_Close.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Close.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_Close.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_Close.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_Close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Close.Font = new System.Drawing.Font("微软雅黑", 11.5F);
+            this.btn_Close.ForeColor = System.Drawing.Color.White;
+            this.btn_Close.Location = new System.Drawing.Point(219, 3);
+            this.btn_Close.Name = "btn_Close";
+            this.btn_Close.Size = new System.Drawing.Size(73, 38);
+            this.btn_Close.TabIndex = 94;
+            this.btn_Close.Text = "关闭";
+            this.btn_Close.UseVisualStyleBackColor = false;
+            this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
             // 
-            // button2
+            // btn_Open
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("微软雅黑", 11.5F);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(140, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(73, 38);
-            this.button2.TabIndex = 93;
-            this.button2.Text = "打开";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_Open.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Open.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_Open.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btn_Open.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btn_Open.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Open.Font = new System.Drawing.Font("微软雅黑", 11.5F);
+            this.btn_Open.ForeColor = System.Drawing.Color.White;
+            this.btn_Open.Location = new System.Drawing.Point(140, 3);
+            this.btn_Open.Name = "btn_Open";
+            this.btn_Open.Size = new System.Drawing.Size(73, 38);
+            this.btn_Open.TabIndex = 93;
+            this.btn_Open.Text = "打开";
+            this.btn_Open.UseVisualStyleBackColor = false;
+            this.btn_Open.Click += new System.EventHandler(this.btn_Open_Click);
             // 
             // lbl_Title
             // 
@@ -136,8 +138,8 @@
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label lbl_Title;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_Close;
+        private System.Windows.Forms.Button btn_Open;
         private DeviceState deviceState1;
     }
 }

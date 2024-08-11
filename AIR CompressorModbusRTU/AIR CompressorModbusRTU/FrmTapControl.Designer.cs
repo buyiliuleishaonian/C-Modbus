@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panelEnhanced1 = new thinger.ControlLib.PanelEnhanced();
+            this.btn_Close = new System.Windows.Forms.Button();
+            this.lbl_Title = new System.Windows.Forms.Label();
             this.deviceControl9 = new Wen.KYJControlLib.DeviceControl();
             this.deviceControl10 = new Wen.KYJControlLib.DeviceControl();
             this.deviceControl7 = new Wen.KYJControlLib.DeviceControl();
@@ -39,8 +41,6 @@
             this.deviceControl4 = new Wen.KYJControlLib.DeviceControl();
             this.deviceControl2 = new Wen.KYJControlLib.DeviceControl();
             this.deviceControl1 = new Wen.KYJControlLib.DeviceControl();
-            this.btn_Close = new System.Windows.Forms.Button();
-            this.lbl_Title = new System.Windows.Forms.Label();
             this.panelEnhanced1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,106 +66,6 @@
             this.panelEnhanced1.TabIndex = 0;
             this.panelEnhanced1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FraMain_MouseDown);
             this.panelEnhanced1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.FraMain_MouseMove);
-            // 
-            // deviceControl9
-            // 
-            this.deviceControl9.BackColor = System.Drawing.Color.Transparent;
-            this.deviceControl9.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.deviceControl9.Location = new System.Drawing.Point(381, 301);
-            this.deviceControl9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.deviceControl9.Name = "deviceControl9";
-            this.deviceControl9.Size = new System.Drawing.Size(360, 44);
-            this.deviceControl9.TabIndex = 62;
-            // 
-            // deviceControl10
-            // 
-            this.deviceControl10.BackColor = System.Drawing.Color.Transparent;
-            this.deviceControl10.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.deviceControl10.Location = new System.Drawing.Point(13, 300);
-            this.deviceControl10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.deviceControl10.Name = "deviceControl10";
-            this.deviceControl10.Size = new System.Drawing.Size(360, 44);
-            this.deviceControl10.TabIndex = 61;
-            // 
-            // deviceControl7
-            // 
-            this.deviceControl7.BackColor = System.Drawing.Color.Transparent;
-            this.deviceControl7.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.deviceControl7.Location = new System.Drawing.Point(381, 240);
-            this.deviceControl7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.deviceControl7.Name = "deviceControl7";
-            this.deviceControl7.Size = new System.Drawing.Size(360, 44);
-            this.deviceControl7.TabIndex = 60;
-            // 
-            // deviceControl8
-            // 
-            this.deviceControl8.BackColor = System.Drawing.Color.Transparent;
-            this.deviceControl8.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.deviceControl8.Location = new System.Drawing.Point(13, 239);
-            this.deviceControl8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.deviceControl8.Name = "deviceControl8";
-            this.deviceControl8.Size = new System.Drawing.Size(360, 44);
-            this.deviceControl8.TabIndex = 59;
-            // 
-            // deviceControl5
-            // 
-            this.deviceControl5.BackColor = System.Drawing.Color.Transparent;
-            this.deviceControl5.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.deviceControl5.Location = new System.Drawing.Point(381, 179);
-            this.deviceControl5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.deviceControl5.Name = "deviceControl5";
-            this.deviceControl5.Size = new System.Drawing.Size(360, 44);
-            this.deviceControl5.TabIndex = 58;
-            // 
-            // deviceControl6
-            // 
-            this.deviceControl6.BackColor = System.Drawing.Color.Transparent;
-            this.deviceControl6.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.deviceControl6.Location = new System.Drawing.Point(13, 178);
-            this.deviceControl6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.deviceControl6.Name = "deviceControl6";
-            this.deviceControl6.Size = new System.Drawing.Size(360, 44);
-            this.deviceControl6.TabIndex = 57;
-            // 
-            // deviceControl3
-            // 
-            this.deviceControl3.BackColor = System.Drawing.Color.Transparent;
-            this.deviceControl3.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.deviceControl3.Location = new System.Drawing.Point(381, 118);
-            this.deviceControl3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.deviceControl3.Name = "deviceControl3";
-            this.deviceControl3.Size = new System.Drawing.Size(360, 44);
-            this.deviceControl3.TabIndex = 56;
-            // 
-            // deviceControl4
-            // 
-            this.deviceControl4.BackColor = System.Drawing.Color.Transparent;
-            this.deviceControl4.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.deviceControl4.Location = new System.Drawing.Point(13, 117);
-            this.deviceControl4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.deviceControl4.Name = "deviceControl4";
-            this.deviceControl4.Size = new System.Drawing.Size(360, 44);
-            this.deviceControl4.TabIndex = 55;
-            // 
-            // deviceControl2
-            // 
-            this.deviceControl2.BackColor = System.Drawing.Color.Transparent;
-            this.deviceControl2.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.deviceControl2.Location = new System.Drawing.Point(381, 57);
-            this.deviceControl2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.deviceControl2.Name = "deviceControl2";
-            this.deviceControl2.Size = new System.Drawing.Size(360, 44);
-            this.deviceControl2.TabIndex = 54;
-            // 
-            // deviceControl1
-            // 
-            this.deviceControl1.BackColor = System.Drawing.Color.Transparent;
-            this.deviceControl1.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.deviceControl1.Location = new System.Drawing.Point(13, 57);
-            this.deviceControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.deviceControl1.Name = "deviceControl1";
-            this.deviceControl1.Size = new System.Drawing.Size(360, 44);
-            this.deviceControl1.TabIndex = 53;
             // 
             // btn_Close
             // 
@@ -197,6 +97,166 @@
             this.lbl_Title.Text = "1#冷却循环泵";
             this.lbl_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // deviceControl9
+            // 
+            this.deviceControl9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.deviceControl9.BindVarName = "3#储气罐出气阀";
+            this.deviceControl9.CloseAddress = "CQG3Out_Close";
+            this.deviceControl9.DeviceState = "CQG3Out_State";
+            this.deviceControl9.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.deviceControl9.Location = new System.Drawing.Point(395, 302);
+            this.deviceControl9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.deviceControl9.Name = "deviceControl9";
+            this.deviceControl9.OpenAddress = "CQG3Out_Open";
+            this.deviceControl9.Size = new System.Drawing.Size(360, 44);
+            this.deviceControl9.State = ((byte)(0));
+            this.deviceControl9.TabIndex = 62;
+            this.deviceControl9.DeviceControlClick += new System.EventHandler(this.CommonDevice_DeviceControlClick);
+            // 
+            // deviceControl10
+            // 
+            this.deviceControl10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.deviceControl10.BindVarName = "3#干燥机进液阀";
+            this.deviceControl10.CloseAddress = "GZQ3Out_Close";
+            this.deviceControl10.DeviceState = "GZQ3Out_State";
+            this.deviceControl10.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.deviceControl10.Location = new System.Drawing.Point(13, 302);
+            this.deviceControl10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.deviceControl10.Name = "deviceControl10";
+            this.deviceControl10.OpenAddress = "GZQ3Out_Open";
+            this.deviceControl10.Size = new System.Drawing.Size(360, 44);
+            this.deviceControl10.State = ((byte)(0));
+            this.deviceControl10.TabIndex = 61;
+            this.deviceControl10.DeviceControlClick += new System.EventHandler(this.CommonDevice_DeviceControlClick);
+            // 
+            // deviceControl7
+            // 
+            this.deviceControl7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.deviceControl7.BindVarName = "2#储气罐出气阀";
+            this.deviceControl7.CloseAddress = "CQG2Out_Close";
+            this.deviceControl7.DeviceState = "CQG2Out_State";
+            this.deviceControl7.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.deviceControl7.Location = new System.Drawing.Point(395, 240);
+            this.deviceControl7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.deviceControl7.Name = "deviceControl7";
+            this.deviceControl7.OpenAddress = "CQG2Out_Open";
+            this.deviceControl7.Size = new System.Drawing.Size(360, 44);
+            this.deviceControl7.State = ((byte)(0));
+            this.deviceControl7.TabIndex = 60;
+            this.deviceControl7.DeviceControlClick += new System.EventHandler(this.CommonDevice_DeviceControlClick);
+            // 
+            // deviceControl8
+            // 
+            this.deviceControl8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.deviceControl8.BindVarName = "2#干燥机进液阀";
+            this.deviceControl8.CloseAddress = "GZQ2Out_Close";
+            this.deviceControl8.DeviceState = "GZQ2Out_State";
+            this.deviceControl8.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.deviceControl8.Location = new System.Drawing.Point(13, 240);
+            this.deviceControl8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.deviceControl8.Name = "deviceControl8";
+            this.deviceControl8.OpenAddress = "GZQ2Out_Open";
+            this.deviceControl8.Size = new System.Drawing.Size(360, 44);
+            this.deviceControl8.State = ((byte)(0));
+            this.deviceControl8.TabIndex = 59;
+            this.deviceControl8.DeviceControlClick += new System.EventHandler(this.CommonDevice_DeviceControlClick);
+            // 
+            // deviceControl5
+            // 
+            this.deviceControl5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.deviceControl5.BindVarName = "1#储气罐出气阀";
+            this.deviceControl5.CloseAddress = "CQG1Out_Close";
+            this.deviceControl5.DeviceState = "CQG1Out_State";
+            this.deviceControl5.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.deviceControl5.Location = new System.Drawing.Point(395, 178);
+            this.deviceControl5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.deviceControl5.Name = "deviceControl5";
+            this.deviceControl5.OpenAddress = "CQG1Out_Open";
+            this.deviceControl5.Size = new System.Drawing.Size(360, 44);
+            this.deviceControl5.State = ((byte)(0));
+            this.deviceControl5.TabIndex = 58;
+            this.deviceControl5.DeviceControlClick += new System.EventHandler(this.CommonDevice_DeviceControlClick);
+            // 
+            // deviceControl6
+            // 
+            this.deviceControl6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.deviceControl6.BindVarName = "1#干燥机进液阀";
+            this.deviceControl6.CloseAddress = "GZQ1Out_Close";
+            this.deviceControl6.DeviceState = "GZQ1Out_State";
+            this.deviceControl6.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.deviceControl6.Location = new System.Drawing.Point(13, 178);
+            this.deviceControl6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.deviceControl6.Name = "deviceControl6";
+            this.deviceControl6.OpenAddress = "GZQ1Out_Open";
+            this.deviceControl6.Size = new System.Drawing.Size(360, 44);
+            this.deviceControl6.State = ((byte)(0));
+            this.deviceControl6.TabIndex = 57;
+            this.deviceControl6.DeviceControlClick += new System.EventHandler(this.CommonDevice_DeviceControlClick);
+            // 
+            // deviceControl3
+            // 
+            this.deviceControl3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.deviceControl3.BindVarName = "4#空压机进液阀";
+            this.deviceControl3.CloseAddress = "KYJ4In_Close";
+            this.deviceControl3.DeviceState = "KYJ4In_State";
+            this.deviceControl3.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.deviceControl3.Location = new System.Drawing.Point(395, 116);
+            this.deviceControl3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.deviceControl3.Name = "deviceControl3";
+            this.deviceControl3.OpenAddress = "KYJ4In_Open";
+            this.deviceControl3.Size = new System.Drawing.Size(360, 44);
+            this.deviceControl3.State = ((byte)(0));
+            this.deviceControl3.TabIndex = 56;
+            this.deviceControl3.DeviceControlClick += new System.EventHandler(this.CommonDevice_DeviceControlClick);
+            // 
+            // deviceControl4
+            // 
+            this.deviceControl4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.deviceControl4.BindVarName = "3#空压机进液阀";
+            this.deviceControl4.CloseAddress = "KYJ3In_Close";
+            this.deviceControl4.DeviceState = "KYJ3In_State";
+            this.deviceControl4.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.deviceControl4.Location = new System.Drawing.Point(13, 116);
+            this.deviceControl4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.deviceControl4.Name = "deviceControl4";
+            this.deviceControl4.OpenAddress = "KYJ3In_Open";
+            this.deviceControl4.Size = new System.Drawing.Size(360, 44);
+            this.deviceControl4.State = ((byte)(0));
+            this.deviceControl4.TabIndex = 55;
+            this.deviceControl4.DeviceControlClick += new System.EventHandler(this.CommonDevice_DeviceControlClick);
+            // 
+            // deviceControl2
+            // 
+            this.deviceControl2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.deviceControl2.BindVarName = "2#空压机进液阀";
+            this.deviceControl2.CloseAddress = "KYJ2In_Close";
+            this.deviceControl2.DeviceState = "KYJ2In_State";
+            this.deviceControl2.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.deviceControl2.Location = new System.Drawing.Point(395, 54);
+            this.deviceControl2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.deviceControl2.Name = "deviceControl2";
+            this.deviceControl2.OpenAddress = "KYJ2In_Open";
+            this.deviceControl2.Size = new System.Drawing.Size(360, 44);
+            this.deviceControl2.State = ((byte)(0));
+            this.deviceControl2.TabIndex = 54;
+            this.deviceControl2.DeviceControlClick += new System.EventHandler(this.CommonDevice_DeviceControlClick);
+            // 
+            // deviceControl1
+            // 
+            this.deviceControl1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.deviceControl1.BindVarName = "1#空压机进液阀";
+            this.deviceControl1.CloseAddress = "KYJ1In_Close";
+            this.deviceControl1.DeviceState = "KYJ1In_State";
+            this.deviceControl1.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.deviceControl1.Location = new System.Drawing.Point(13, 54);
+            this.deviceControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.deviceControl1.Name = "deviceControl1";
+            this.deviceControl1.OpenAddress = "KYJ1In_Open";
+            this.deviceControl1.Size = new System.Drawing.Size(360, 44);
+            this.deviceControl1.State = ((byte)(0));
+            this.deviceControl1.TabIndex = 53;
+            this.deviceControl1.DeviceControlClick += new System.EventHandler(this.CommonDevice_DeviceControlClick);
+            // 
             // FrmTapControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -207,6 +267,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmTapControl";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FrmTapControl";
             this.panelEnhanced1.ResumeLayout(false);
             this.panelEnhanced1.PerformLayout();
@@ -219,6 +280,7 @@
         private thinger.ControlLib.PanelEnhanced panelEnhanced1;
         private System.Windows.Forms.Button btn_Close;
         private System.Windows.Forms.Label lbl_Title;
+        private Wen.KYJControlLib.DeviceControl deviceControl2;
         private Wen.KYJControlLib.DeviceControl deviceControl1;
         private Wen.KYJControlLib.DeviceControl deviceControl9;
         private Wen.KYJControlLib.DeviceControl deviceControl10;
@@ -228,6 +290,5 @@
         private Wen.KYJControlLib.DeviceControl deviceControl6;
         private Wen.KYJControlLib.DeviceControl deviceControl3;
         private Wen.KYJControlLib.DeviceControl deviceControl4;
-        private Wen.KYJControlLib.DeviceControl deviceControl2;
     }
 }

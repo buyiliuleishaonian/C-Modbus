@@ -53,10 +53,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActualDataServer.cs" />
     <Compile Include="Helper\SQLLiteHelper.cs" />
     <Compile Include="SQLLiteServer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SysAdminServer.cs" />
+    <Compile Include="SysLogServer.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">

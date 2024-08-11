@@ -1,33 +1,203 @@
 ﻿using ConfigLib;
+using Model;
+
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Management;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using thinger.DataConvertLib;
 using Wen.KYJControlLib;
 using Wen.ModbucCommunicationLib.Helper;
 using Wen.ModbucCommunicationLib.Library;
 using Wen.ModbucCommunicationLib.StoreArea;
+using Timer = System.Windows.Forms.Timer;
 
+using Microsoft.Win32;
+using kYJBLL;
+using NPOI.SS.Formula.Functions;
+using System.Web.UI.WebControls;
 
 namespace AIR_CompressorModbusRTU
 {
     public partial class FraMain : Form
     {
+        /// <summary>
+        /// 报警委托对象
+        /// </summary>
+        private Action<SysLogIn> AddAlarmDelegate { get; set; }
+        /// <summary>
+        /// 当前时间
+        /// </summary>
+        private string CurrentTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
+        /// <summary>
+        /// 报警动态集合
+        /// </summary>
+        private ObservableCollection<string> actualAlarmList { get; set; } = new ObservableCollection<string>();
+
+        /// <summary>
+        /// 定时器
+        /// </summary>
+        private static Timer Timer = null;
+
+
+        /// <summary>
+        /// 锁屏，解锁标志位
+        /// </summary>
+        private static bool lockbit = false;
+
+        //设置解锁屏监控对象
+        public ManagementEventWatcher unlockWatcher;
+
+        /// <summary>
+        /// 当前周几
+        /// </summary>
+        public DayOfWeek  CurrentWeek { get; set; }=DateTime.Now.DayOfWeek;
+
+        /// <summary>
+        /// 消息自动过滤类
+        /// </summary>
+        private MessageFilter messageFilter { get; set; }
+
+        //数据写入数据库定时器
+        private System.Timers.Timer Writetimer=new System.Timers.Timer();
+
+        //数据表管理对象
+        private SQLLiteManage SQLLiteManage=new SQLLiteManage();    
+
+        //数据名称集合
+        private List<string> varName=new List<string>();
+
+        //数据集合
+        private List<string> varValue; 
+
+        //数据逻辑对象
+        private ActualDataManage ActualDataManage = new ActualDataManage();
 
         public FraMain()
         {
             InitializeComponent();
+            //窗体初始化
             this.Load+=FraMain_Load;
+            //开启固定窗体界面
+            OpenForm(FormNames.日志报警);
             OpenForm(FormNames.控制流程);
+            //读取自动锁屏信息
+            lockbit=CommonMethod.config.AutoLock;
+
+            //自动锁屏定时器
+            Timer=new Timer();
+            Timer.Interval=200;
+            Timer.Start();
+            Timer.Tick+=Timer_Tick;
+
+            //数据读取定时器
+            Writetimer.Interval=200;
+            Writetimer.Elapsed+=Timer_Elapsed;
+
+            //窗体关闭前相应事件
+            this.FormClosing+=FraMain_FormClosing;
+
+            //监控解锁
+            SystemEvents.SessionSwitch += new SessionSwitchEventHandler(SystemEvents_SessionSwitch);
+        }
+
+        /// <summary>
+        /// 将数据写入数据库
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            this.Invoke(new Action(() => 
+            {
+                this.lbl_CurrentTime.Text=CurrentTime.ToString()+CurrentWeek.ToString();
+            }));
+            //判断数据表的列对应的PLC的变量不为空
+            if (CommonMethod.PLCDevice.StoreVarList!=null && SQLLiteManage.IsTableExist("ActualTable"))
+            {
+                varValue = new List<string>();
+                varValue.Add(CurrentTime);
+                varValue.AddRange(CommonMethod.PLCDevice.StoreVarList.Select(c => c.VarValue?.ToString()).ToList());
+                try
+                {
+                    ActualDataManage.AddActualData(varName,varValue);
+                }
+                catch 
+                {
+                    CommonMethod.AddLog(true,"添加数据失败");
+                }
+            }
+        }
+
+        /// <summary>
+        /// 窗体关闭前
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void FraMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Timer?.Stop();
+            Writetimer?.Stop();
+            SystemEvents.SessionSwitch -= new SessionSwitchEventHandler(SystemEvents_SessionSwitch);
+        }
+
+        /// <summary>
+        /// 定时锁屏
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            if (CommonMethod.config.AutoLock&&lockbit)
+            {
+                CommonMethod.tickCount++;
+                if (CommonMethod.tickCount>=CommonMethod.config.LockyPeriod*60*1000/Timer.Interval)
+                {
+                    //锁屏
+                    LockWorkStation();
+                }
+            }
+
+        }
+
+        /// <summary>
+        /// 解锁
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SystemEvents_SessionSwitch(object sender, SessionSwitchEventArgs e)
+        {
+            if (e.Reason == SessionSwitchReason.SessionUnlock)
+            {
+                OnUserUnlock();
+            }
+        }
+
+
+
+
+        /// <summary>
+        /// 报警日志
+        /// </summary>
+        /// <param name="syslog"></param>
+        private void Alarm(SysLogIn syslog)
+        {
+            if (AddAlarmDelegate!=null)
+            {
+                AddAlarmDelegate(syslog);
+            }
         }
 
 
@@ -43,6 +213,13 @@ namespace AIR_CompressorModbusRTU
         {
             this.lbl_UserName.Text=CommonMethod.SysAdmin.LoginName;
 
+            //关联，动态集合，数据改变（减少，增加）触发事件
+            actualAlarmList.CollectionChanged+=ActualAlarmList_CollectionChanged;
+
+            //添加日志信息
+            CommonMethod.AddOpLog(false, "管理员"+CommonMethod.SysAdmin.LoginName+"登入成功");
+
+            //读取配置文件
             var result = GetDeviceByPath(devicePath);
 
             CommonMethod.PLCDevice=result.Content;
@@ -56,11 +233,86 @@ namespace AIR_CompressorModbusRTU
             //配置PLC通信对象
             CommonMethod.PLC.DataFormat=DataFormat.CDAB;
 
+            CommonMethod.PLCDevice.AlarmTriggerEvent+=PLCDevice_AlarmTriggerEvent;
+
+            //自动锁屏消息过滤对象,保证鼠标或者键盘信息给到的时候，重新计时锁屏
+            messageFilter= new MessageFilter();
+            Application.AddMessageFilter(messageFilter);
+
+            //添加数据名称
+            varName.Add("insertTime");
+            varName.AddRange(CommonMethod.PLCDevice.StoreVarList.Select(c=>c.VarName));
+
             //多线程，进行连接读取
             Task.Run(() =>
             {
                 PLCCommunication(CommonMethod.PLCDevice);
             }, CommonMethod.PLCDevice.Cts.Token);
+
+            Writetimer.Start();
+        }
+
+
+        /// <summary>
+        /// 报警触发事件
+        /// </summary>
+        /// <param name="sender">触发者</param>
+        /// <param name="e">事件包含的数据</param>
+        private void PLCDevice_AlarmTriggerEvent(object sender, AlarmEventArgs e)
+        {
+            Alarm(new SysLogIn()
+            {
+                InsertTime=CurrentTime,
+                LogType="系统报警",
+                AlarmSet=e.SetValue,
+                AlarmValue=e.CurrentValue,
+                Note=e.AlarmNote,
+                AlarmType=e.IsTrigger ? "触发" : "消除",
+                VarName=e.Name,
+                Operador=CommonMethod.SysAdmin.LoginName,
+            });
+
+            if (e.IsTrigger)
+            {
+                if (!this.actualAlarmList.Contains(e.AlarmNote))
+                {
+                    this.actualAlarmList.Add(e.AlarmNote);
+                }
+            }
+            else
+            {
+                if (this.actualAlarmList.Contains(e.AlarmNote))
+                {
+                    this.actualAlarmList.Remove(e.AlarmNote);
+                }
+            }
+        }
+
+        /// <summary>
+        /// 报警信息，改变触发事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ActualAlarmList_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+        {
+            //需要根据 actualAlarmList 集合  数量判断
+            //为0，没有报警，不显示报警滚动条
+            //为1，显示唯一的滚动条，但是不滚动
+            //超过1，显示所有报警，滚动显示条
+            switch (this.actualAlarmList.Count)
+            {
+                case 0:
+                    this.AlarmPanel.Visible = false;
+                    break;
+                case 1:
+                    this.AlarmPanel.Visible = true;
+                    this.SystemSct.TextScroll=this.actualAlarmList[0];
+                    break;
+                default:
+                    this.AlarmPanel.Visible = true;
+                    this.SystemSct.TextScroll=string.Join("   ", actualAlarmList);
+                    break;
+            }
         }
 
         //1、通过公共端 设定Device，Connect对象，设定手动关闭多线程
@@ -95,7 +347,6 @@ namespace AIR_CompressorModbusRTU
                             {
                                 //更改通信状态
                                 SetConnectState(true);
-
                                 //清空读取错误次数
                                 device.ErrorTimes=0;
                             }
@@ -142,7 +393,7 @@ namespace AIR_CompressorModbusRTU
                         //添加日志，通信状态
                         device.IsConnected=true;
                         SetConnectState(true);
-                        CommonMethod.AddLog(true, device.IsFirstConnect ? "第一次连接成功" : "重新连接成功");
+                        CommonMethod.AddLog(false, device.IsFirstConnect ? "第一次连接成功" : "重新连接成功");
                     }
                     else
                     {
@@ -176,6 +427,10 @@ namespace AIR_CompressorModbusRTU
             //调用系统委托，系统多线程，改变控件属性
             else
             {
+                while (!this.IsHandleCreated)
+                {
+                    ;
+                }
                 this.Invoke(new Action(() =>
                 {
                     this.led_ConnState.State=state;
@@ -487,42 +742,42 @@ namespace AIR_CompressorModbusRTU
                 case FormNames.日志查询:
                     if (!CommonMethod.SysAdmin.HistoryLog)
                     {
-                        MessageBox.Show("无日志查询权限,请切换用户", "窗体切换", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                        new FrmMessageBoxWithOutAck("无日志查询权限,请切换用户", "窗体切换").ShowDialog();
                         return false;
                     }
                     break;
                 case FormNames.参数设置:
                     if (!CommonMethod.SysAdmin.ParamSet)
                     {
-                        MessageBox.Show("无参数设置权限,请切换用户", "窗体切换", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                        new FrmMessageBoxWithOutAck("无参数设置权限,请切换用户", "窗体切换").ShowDialog();
                         return false;
                     }
                     break;
                 case FormNames.实时趋势:
                     if (!CommonMethod.SysAdmin.ActualTrend)
                     {
-                        MessageBox.Show("无实时趋势权限,请切换用户", "窗体切换", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                        new FrmMessageBoxWithOutAck("无查看实时趋势权限,请切换用户", "窗体切换").ShowDialog();
                         return false;
                     }
                     break;
                 case FormNames.历史趋势:
                     if (!CommonMethod.SysAdmin.HistoryTrend)
                     {
-                        MessageBox.Show("无历史趋势权限,请切换用户", "窗体切换", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                        new FrmMessageBoxWithOutAck("无查看历史趋势权限,请切换用户", "窗体切换").ShowDialog();
                         return false;
                     }
                     break;
                 case FormNames.数据报表:
                     if (!CommonMethod.SysAdmin.Report)
                     {
-                        MessageBox.Show("无数据报表权限,请切换用户", "窗体切换", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                        new FrmMessageBoxWithAck("无查看数据报表权限,请切换用户", "窗体切换").ShowDialog();
                         return false;
                     }
                     break;
                 case FormNames.用户管理:
                     if (!CommonMethod.SysAdmin.UserManage)
                     {
-                        MessageBox.Show("无用户管理权限,请切换用户", "窗体切换", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                        new FrmMessageBoxWithOutAck("无用户管理权限,请切换用户", "窗体切换").ShowDialog();
                         return false;
                     }
                     break;
@@ -550,7 +805,7 @@ namespace AIR_CompressorModbusRTU
             //判断是否是没有创建的窗体
             bool isFinde = false;
 
-            //遍历控件中所存在的窗体控件
+            //遍历控件中所存在的窗体
             for (int i = 0; i < total; i++)
             {
                 Control ct = this.MainPanel.Controls[i-closeNumber];
@@ -582,6 +837,9 @@ namespace AIR_CompressorModbusRTU
                         break;
                     case FormNames.日志报警:
                         frm=new FrmAlarmLog();
+                        CommonMethod.AddLogDelegate+=((FrmAlarmLog)frm).AddLog;
+                        CommonMethod.AddLogOperaDelegate+=((FrmAlarmLog)frm).AddOperaLog;
+                        AddAlarmDelegate+=((FrmAlarmLog)frm).AddAlarmLog;
                         break;
                     case FormNames.日志查询:
                         frm=new FrmHistoryLog();
@@ -647,5 +905,42 @@ namespace AIR_CompressorModbusRTU
             }
         }
         #endregion
+
+
+        #region 锁屏,解锁
+        //调用window32的
+        [DllImport("user32")]
+        private static extern bool LockWorkStation();
+
+        /// <summary>
+        /// 消息过滤类
+        /// </summary>
+        internal class MessageFilter : IMessageFilter
+        {
+            public bool PreFilterMessage(ref Message m)
+            {
+                //如果检查到鼠标或者键盘的消息，则基数为0
+                if (m.Msg==0x2000||m.Msg==0x201||m.Msg==0x207)
+                {
+                    CommonMethod.tickCount=0;
+                }
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// 解锁
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private static void OnUserUnlock()
+        {
+            lockbit=true;
+
+            Timer.Stop();
+            CommonMethod.tickCount=0;
+            Timer.Start();
+        }
+        #endregion        
     }
 }

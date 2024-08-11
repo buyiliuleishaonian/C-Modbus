@@ -17,20 +17,41 @@ namespace AIR_CompressorModbusRTU
         /// <summary>
         /// 用户逻辑类
         /// </summary>
-        public SysAdminManage SysAdminManage { get; set; }=new SysAdminManage();
+        public SysAdminManage SysAdminManage { get; set; } = new SysAdminManage();
         /// <summary>
         /// 用户类
         /// </summary>
-        public SysAdmin SysAdmin { get; set; } =new SysAdmin();
+        public SysAdmin SysAdmin { get; set; } = new SysAdmin();
 
         /// <summary>
         /// 公用配置
         /// </summary>
-        public CommonMethod CommonMethod { get; set; }   
+        public CommonMethod CommonMethod { get; set; }
 
         public FrmLogIn()
         {
             InitializeComponent();
+
+            CommonMethod.GetConfig();
+
+            this.Load+=FrmLogIn_Load;
+
+        }
+
+        /// <summary>
+        /// 绘制窗体前读取配置文件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void FrmLogIn_Load(object sender, EventArgs e)
+        {
+            if (CommonMethod.config!=null)
+            {
+                if (CommonMethod.config.AutoLogin)
+                {
+                    btn_LogIn_Click(null, null);
+                }
+            }
         }
 
         /// <summary>
@@ -43,14 +64,14 @@ namespace AIR_CompressorModbusRTU
             string userName = this.txt_UserName.Text;
             string pwd = this.txt_PassWord.Text;
             //验证数据
-            if (userName==null&&userName.Trim().Length<=0)
+            if (userName.Trim().Length<=0)
             {
-                MessageBox.Show("用户名错误/为空","登入提示",MessageBoxButtons.OK,MessageBoxIcon.Stop);
+                new FrmMessageBoxWithOutAck("登入提示", "用户名错误/为空").ShowDialog();
                 return;
             }
-            if (pwd==null&&pwd.Trim().Length<=0)
+            if (pwd.Trim().Length<=0)
             {
-                MessageBox.Show("密码错误/为空", "登入提示", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                new FrmMessageBoxWithOutAck("登入提示", "密码错误/为空").ShowDialog();
                 return;
             }
             //封装数据
@@ -113,7 +134,7 @@ namespace AIR_CompressorModbusRTU
         {
             if (e.KeyValue==13)
             {
-                btn_LogIn_Click(null,null);
+                btn_LogIn_Click(null, null);
             }
         }
     }

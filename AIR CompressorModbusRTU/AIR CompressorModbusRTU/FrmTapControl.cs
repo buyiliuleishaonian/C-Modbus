@@ -1,12 +1,16 @@
-﻿using System;
+﻿using ConfigLib;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using thinger.ControlLib;
+using Wen.KYJControlLib;
 
 namespace AIR_CompressorModbusRTU
 {
@@ -15,8 +19,53 @@ namespace AIR_CompressorModbusRTU
         public FrmTapControl()
         {
             InitializeComponent();
+
+            Timer=new System.Windows.Forms.Timer();
+            Timer.Interval=200;
+            Timer.Tick+=Timer_Tick;
+            Timer.Start();
+
+            this.FormClosing+=(send, e) =>
+            {
+                this.Timer.Stop();
+            };
         }
 
+        /// <summary>
+        /// 刷新数据
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            UpdateControl(this.panelEnhanced1);
+        }
+
+        /// <summary>
+        /// 更新控件属性
+        /// </summary>
+        /// <param name="panelControl"></param>
+        private void UpdateControl(Control panelControl)
+        {
+            foreach (Control control in panelControl.Controls)
+            {
+                if (control is DeviceControl deviceControl)
+                {
+                    if (deviceControl.DeviceState.Length>0)
+                    {
+                        byte value = 0;
+                        if (Byte.TryParse(CommonMethod.PLCDevice.CurrentValue[deviceControl.DeviceState].ToString(),out value))
+                        {
+                            deviceControl.State = value;
+                        }
+                    }
+                }
+            }
+        }
+        /// <summary>
+        /// 定时器
+        /// </summary>
+        private System.Windows.Forms.Timer Timer;
         /// <summary>
         /// 关闭
         /// </summary>
@@ -53,5 +102,32 @@ namespace AIR_CompressorModbusRTU
             }
         }
         #endregion
+
+        /// <summary>
+        /// 单击触发
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void CommonDevice_DeviceControlClick(object sender, EventArgs e)
+        {
+            if (CommonMethod.CommonWrite(sender.ToString(), "True").IsSuccess)
+            {
+                CommonMethod.AddLog(true, $"写入成功");
+                VariableBase varible= CommonMethod.PLCDevice.VarList.Find(c => c.VarName==sender.ToString());
+                Thread.Sleep(100);
+                if (!CommonMethod.CommonWrite(sender.ToString(), "false").IsSuccess)
+                {
+                    CommonMethod.AddLog(true, $"变量{sender.ToString()}不存在");
+                }
+                else
+                {
+                    CommonMethod.AddLog(true, $"写入成功");
+                }
+            }
+            else
+            {
+                 CommonMethod.AddLog(true, $"变量{sender.ToString()}不存在"); ;
+            }
+        }
     }
 }

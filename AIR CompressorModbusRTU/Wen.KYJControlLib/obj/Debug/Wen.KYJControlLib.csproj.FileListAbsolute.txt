@@ -1,6 +1,5 @@
 C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\Wen.KYJControlLib\bin\Debug\Wen.KYJControlLib.dll
 C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\Wen.KYJControlLib\bin\Debug\Wen.KYJControlLib.pdb
-C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\Wen.KYJControlLib\bin\Debug\thinger.ControlLib.dll
 C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\Wen.KYJControlLib\obj\Debug\Wen.KYJControlLib.csproj.AssemblyReference.cache
 C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\Wen.KYJControlLib\obj\Debug\Wen.KYJControlLib.NaviControl.resources
 C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\Wen.KYJControlLib\obj\Debug\Wen.KYJControlLib.Properties.Resources.resources
@@ -14,3 +13,5 @@ C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\Wen.KYJContr
 C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\Wen.KYJControlLib\obj\Debug\Wen.KYJControlLib.DeviceControl.resources
 C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\Wen.KYJControlLib\obj\Debug\Wen.KYJControlLib.DeviceState.resources
 C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\Wen.KYJControlLib\obj\Debug\Wen.KYJC.020DDFCE.Up2Date
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\Wen.KYJControlLib\bin\Debug\thinger.ControlLib.dll
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\Wen.KYJControlLib\obj\Debug\Wen.KYJControlLib.Title.resources

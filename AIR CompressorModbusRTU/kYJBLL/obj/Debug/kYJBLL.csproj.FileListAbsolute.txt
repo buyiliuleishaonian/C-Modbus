@@ -10,3 +10,4 @@ C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\kYJBLL\obj\D
 C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\kYJBLL\obj\Debug\kYJBLL.dll
 C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\kYJBLL\obj\Debug\kYJBLL.pdb
 C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\kYJBLL\obj\Debug\kYJBLL.csproj.Up2Date
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\kYJBLL\bin\Debug\thinger.DataConvertLib.dll

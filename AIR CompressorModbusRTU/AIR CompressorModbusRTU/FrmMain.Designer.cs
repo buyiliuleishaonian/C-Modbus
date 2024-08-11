@@ -34,18 +34,18 @@
             this.MainPanel = new System.Windows.Forms.Panel();
             this.TopPanel = new System.Windows.Forms.Panel();
             this.led_ConnState = new thinger.ControlLib.SimpleLed();
-            this.TitlePanel = new System.Windows.Forms.Panel();
+            this.AlarmPanel = new System.Windows.Forms.Panel();
             this.SystemSct = new thinger.ControlLib.ScrollText();
             this.label7 = new System.Windows.Forms.Label();
             this.lbl_UserName = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbl_CurrentTime = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.NaviPanel.SuspendLayout();
             this.TopPanel.SuspendLayout();
-            this.TitlePanel.SuspendLayout();
+            this.AlarmPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // NaviPanel
@@ -89,11 +89,11 @@
             this.TopPanel.BackColor = System.Drawing.Color.Transparent;
             this.TopPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TopPanel.BackgroundImage")));
             this.TopPanel.Controls.Add(this.led_ConnState);
-            this.TopPanel.Controls.Add(this.TitlePanel);
+            this.TopPanel.Controls.Add(this.AlarmPanel);
             this.TopPanel.Controls.Add(this.label7);
             this.TopPanel.Controls.Add(this.lbl_UserName);
             this.TopPanel.Controls.Add(this.label5);
-            this.TopPanel.Controls.Add(this.label4);
+            this.TopPanel.Controls.Add(this.lbl_CurrentTime);
             this.TopPanel.Controls.Add(this.label3);
             this.TopPanel.Controls.Add(this.label2);
             this.TopPanel.Controls.Add(this.label1);
@@ -119,14 +119,15 @@
             this.led_ConnState.State = true;
             this.led_ConnState.TabIndex = 10;
             // 
-            // TitlePanel
+            // AlarmPanel
             // 
-            this.TitlePanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TitlePanel.BackgroundImage")));
-            this.TitlePanel.Controls.Add(this.SystemSct);
-            this.TitlePanel.Location = new System.Drawing.Point(450, 23);
-            this.TitlePanel.Name = "TitlePanel";
-            this.TitlePanel.Size = new System.Drawing.Size(428, 43);
-            this.TitlePanel.TabIndex = 9;
+            this.AlarmPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("AlarmPanel.BackgroundImage")));
+            this.AlarmPanel.Controls.Add(this.SystemSct);
+            this.AlarmPanel.Location = new System.Drawing.Point(450, 23);
+            this.AlarmPanel.Name = "AlarmPanel";
+            this.AlarmPanel.Size = new System.Drawing.Size(428, 43);
+            this.AlarmPanel.TabIndex = 9;
+            this.AlarmPanel.Visible = false;
             // 
             // SystemSct
             // 
@@ -143,7 +144,7 @@
             this.SystemSct.Size = new System.Drawing.Size(428, 43);
             this.SystemSct.TabIndex = 8;
             this.SystemSct.TextScroll = "系统运行正常";
-            this.SystemSct.VerticalAlignment = thinger.ControlLib.TextVerticalAlignment.Center;
+            this.SystemSct.VerticalAlignment = thinger.ControlLib.TextVerticalAlignment.Top;
             // 
             // label7
             // 
@@ -175,15 +176,15 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "管理员:";
             // 
-            // label4
+            // lbl_CurrentTime
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(1013, 23);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(216, 26);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "2024.6.4 21:36 星期二";
+            this.lbl_CurrentTime.AutoSize = true;
+            this.lbl_CurrentTime.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lbl_CurrentTime.Location = new System.Drawing.Point(1013, 23);
+            this.lbl_CurrentTime.Name = "lbl_CurrentTime";
+            this.lbl_CurrentTime.Size = new System.Drawing.Size(216, 26);
+            this.lbl_CurrentTime.TabIndex = 3;
+            this.lbl_CurrentTime.Text = "2024.6.4 21:36 星期二";
             // 
             // label3
             // 
@@ -235,7 +236,7 @@
             this.NaviPanel.ResumeLayout(false);
             this.TopPanel.ResumeLayout(false);
             this.TopPanel.PerformLayout();
-            this.TitlePanel.ResumeLayout(false);
+            this.AlarmPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -249,10 +250,10 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lbl_UserName;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbl_CurrentTime;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel TitlePanel;
+        private System.Windows.Forms.Panel AlarmPanel;
         private thinger.ControlLib.ScrollText SystemSct;
         private Wen.KYJControlLib.NaviControl naviControl1;
         private thinger.ControlLib.SimpleLed led_ConnState;

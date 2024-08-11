@@ -32,3 +32,24 @@ C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\AIR Compress
 C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\AIR CompressorModbusRTU\bin\Debug\Wen.ModbucCommunicationLib.dll
 C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\AIR CompressorModbusRTU\bin\Debug\Wen.ModbucCommunicationLib.pdb
 C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\AIR CompressorModbusRTU\obj\Debug\AIR Comp.0755A4AE.Up2Date
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\AIR CompressorModbusRTU\bin\Debug\CommonHelper.dll
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\AIR CompressorModbusRTU\bin\Debug\MySql.Data.dll
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\AIR CompressorModbusRTU\bin\Debug\System.Memory.dll
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\AIR CompressorModbusRTU\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\AIR CompressorModbusRTU\bin\Debug\System.Numerics.Vectors.dll
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\AIR CompressorModbusRTU\bin\Debug\System.Buffers.dll
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\AIR CompressorModbusRTU\bin\Debug\CommonHelper.pdb
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\AIR CompressorModbusRTU\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\AIR CompressorModbusRTU\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\AIR CompressorModbusRTU\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\AIR CompressorModbusRTU\bin\Debug\System.Buffers.xml
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\AIR CompressorModbusRTU\bin\Debug\System.Memory.xml
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\AIR CompressorModbusRTU\bin\Debug\System.Numerics.Vectors.xml
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\AIR CompressorModbusRTU\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\AIR CompressorModbusRTU\obj\Debug\AIR_CompressorModbusRTU.FrmModify.resources
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\AIR CompressorModbusRTU\obj\Debug\AIR_CompressorModbusRTU.FrmMessageBoxWithOutAck.resources
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\AIR CompressorModbusRTU\obj\Debug\AIR_CompressorModbusRTU.FrmMessageBoxWithAck.resources
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\AIR CompressorModbusRTU\bin\Debug\SeeSharpTools.JY.GUI.dll
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\AIR CompressorModbusRTU\obj\Debug\AIR_CompressorModbusRTU.FrmSelectParam.resources
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\AIR CompressorModbusRTU\obj\Debug\AIR_CompressorModbusRTU.FrmWaitTip.resources
+C:\学习文件\西门子PLC开放式通信\AIR CompressorModbusRTU\AIR CompressorModbusRTU\obj\Debug\AIR_CompressorModbusRTU.FrmPrint.resources

@@ -90,7 +90,7 @@ namespace ConfigLib
 
 
         /// <summary>
-        /// 所有归档变量的集合
+        /// 所有归档变量的集合,用来建立动态的数据库表，来监控所需要的变量的数据
         /// </summary>
         [JsonIgnore]
         public List<VariableBase> StoreVarList { get; set; } = new List<VariableBase>();
