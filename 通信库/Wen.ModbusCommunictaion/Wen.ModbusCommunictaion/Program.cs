@@ -16,7 +16,7 @@ namespace Wen.ModbusCommunictaion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmModbusRTU());
+            Application.Run(new FrmModbusTCP());
         }
     }
 }

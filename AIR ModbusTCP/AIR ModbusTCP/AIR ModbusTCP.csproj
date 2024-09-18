@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BAF45534-CBA3-4BFE-A3AC-4189CF515145}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AIR_ModbusTCP</RootNamespace>
+    <AssemblyName>AIR ModbusTCP</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ConfigLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ConfigLib.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.Core, Version=2.7.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.7.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.7.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.7.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="SeeSharpTools.JY.GUI, Version=1.4.7.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\SeeSharpTools.JY.GUI.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="thinger.ControlLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\thinger.ControlLib.dll</HintPath>
+    </Reference>
+    <Reference Include="thinger.DataConvertLib, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\thinger.DataConvertLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Wen.ModbucCommunicationLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Wen.ModbucCommunicationLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonMethod.cs" />
+    <Compile Include="FrmHistoryLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHistoryLog.Designer.cs">
+      <DependentUpon>FrmHistoryLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMonitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMonitor.Designer.cs">
+      <DependentUpon>FrmMonitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTapControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTapControl.Designer.cs">
+      <DependentUpon>FrmTapControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserManage.Designer.cs">
+      <DependentUpon>FrmUserManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReport.Designer.cs">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmParamSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmParamSet.Designer.cs">
+      <DependentUpon>FrmParamSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHistoryTrend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHistoryTrend.Designer.cs">
+      <DependentUpon>FrmHistoryTrend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmActualTrend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmActualTrend.Designer.cs">
+      <DependentUpon>FrmActualTrend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAlarmLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlarmLog.Designer.cs">
+      <DependentUpon>FrmAlarmLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMessageBoxWithAck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMessageBoxWithAck.Designer.cs">
+      <DependentUpon>FrmMessageBoxWithAck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMessageBoxWithOutAck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMessageBoxWithOutAck.Designer.cs">
+      <DependentUpon>FrmMessageBoxWithOutAck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrint.designer.cs">
+      <DependentUpon>FrmPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDGV.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmHistoryLog.resx">
+      <DependentUpon>FrmHistoryLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMonitor.resx">
+      <DependentUpon>FrmMonitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTapControl.resx">
+      <DependentUpon>FrmTapControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserManage.resx">
+      <DependentUpon>FrmUserManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReport.resx">
+      <DependentUpon>FrmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmParamSet.resx">
+      <DependentUpon>FrmParamSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHistoryTrend.resx">
+      <DependentUpon>FrmHistoryTrend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmActualTrend.resx">
+      <DependentUpon>FrmActualTrend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAlarmLog.resx">
+      <DependentUpon>FrmAlarmLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMessageBoxWithAck.resx">
+      <DependentUpon>FrmMessageBoxWithAck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMessageBoxWithOutAck.resx">
+      <DependentUpon>FrmMessageBoxWithOutAck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrint.resx">
+      <DependentUpon>FrmPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Alarm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Blink.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Bottom.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\CQG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Fault.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\FQG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\GLQ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\GZJ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ico1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ico2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\ico3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\KYJFault.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\KYJRun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\KYJSpare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\KYJStop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\load.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Main.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\PumpFault.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\PumpRun.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\PumpSpare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\PumpStop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Run.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Spare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Tank.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\TapFault.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\TapRun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\TapSpare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\TapStop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Title.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Title.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Images\Top.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AIR BLL\AIR BLL.csproj">
+      <Project>{edea9369-fa4c-4597-8aae-c6cffecccc25}</Project>
+      <Name>AIR BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CommonHelper\CommonHelper.csproj">
+      <Project>{faea47ee-dc5f-429d-8ac4-e2e036475c52}</Project>
+      <Name>CommonHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{68c68db6-4fa2-4cee-a1d5-7f84b2d4a166}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Wen.KYJControlLib\Wen.KYJControlLib.csproj">
+      <Project>{96E13294-A95C-47D9-AFC0-E6D068ED07C0}</Project>
+      <Name>Wen.KYJControlLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

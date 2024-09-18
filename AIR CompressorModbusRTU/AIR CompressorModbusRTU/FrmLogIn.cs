@@ -84,6 +84,12 @@ namespace AIR_CompressorModbusRTU
                 CommonMethod.SysAdmin=SysAdmin;
                 this.DialogResult = DialogResult.OK;
             }
+            else
+            {
+                new FrmMessageBoxWithOutAck("登入提示", "用户不存在").ShowDialog();
+                return;
+            }
+
         }
 
         /// <summary>

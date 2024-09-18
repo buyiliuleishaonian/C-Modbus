@@ -11,6 +11,7 @@ namespace Wen.ModbucCommunicationLib.Enum
     /// </summary>
     public enum AreaType
     {
+
         /// <summary>
         /// 西门子最小存储 1字节
         /// </summary>

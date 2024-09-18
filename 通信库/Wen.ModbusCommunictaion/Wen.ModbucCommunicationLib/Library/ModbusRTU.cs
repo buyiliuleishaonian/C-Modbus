@@ -272,7 +272,7 @@ namespace Wen.ModbucCommunicationLib.Library
         /// </summary>
         /// <param name="response">返回报文</param>
         /// <param name="length">数据字节长度</param>
-        /// <param name="isRead">是否是读取返回报文认证</param>
+        /// <param name="isRead">是否是读取还是返回报文认证</param>
         /// <param name="devAddress">从站地址</param>
         /// <returns></returns>
         public OperateResult CheckResponse(byte[] response, ushort length, bool isRead, byte devAddress)

@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            SeeSharpTools.JY.GUI.StripChartXSeries stripChartXSeries1 = new SeeSharpTools.JY.GUI.StripChartXSeries();
-            SeeSharpTools.JY.GUI.StripChartXSeries stripChartXSeries2 = new SeeSharpTools.JY.GUI.StripChartXSeries();
+            SeeSharpTools.JY.GUI.StripChartXSeries stripChartXSeries3 = new SeeSharpTools.JY.GUI.StripChartXSeries();
+            SeeSharpTools.JY.GUI.StripChartXSeries stripChartXSeries4 = new SeeSharpTools.JY.GUI.StripChartXSeries();
             this.panelEnhanced1 = new thinger.ControlLib.PanelEnhanced();
             this.panelMain = new thinger.ControlLib.PanelEx();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
@@ -360,24 +360,24 @@
             this.Chart_ActualThread.LegendFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Chart_ActualThread.LegendForeColor = System.Drawing.Color.White;
             this.Chart_ActualThread.LegendVisible = false;
-            stripChartXSeries1.Color = System.Drawing.Color.Red;
-            stripChartXSeries1.Marker = SeeSharpTools.JY.GUI.StripChartXSeries.MarkerType.None;
-            stripChartXSeries1.Name = "Series1";
-            stripChartXSeries1.Type = SeeSharpTools.JY.GUI.StripChartXSeries.LineType.FastLine;
-            stripChartXSeries1.Visible = true;
-            stripChartXSeries1.Width = SeeSharpTools.JY.GUI.StripChartXSeries.LineWidth.Thin;
-            stripChartXSeries1.XPlotAxis = SeeSharpTools.JY.GUI.StripChartXAxis.PlotAxis.Primary;
-            stripChartXSeries1.YPlotAxis = SeeSharpTools.JY.GUI.StripChartXAxis.PlotAxis.Primary;
-            stripChartXSeries2.Color = System.Drawing.Color.Blue;
-            stripChartXSeries2.Marker = SeeSharpTools.JY.GUI.StripChartXSeries.MarkerType.None;
-            stripChartXSeries2.Name = "Series2";
-            stripChartXSeries2.Type = SeeSharpTools.JY.GUI.StripChartXSeries.LineType.FastLine;
-            stripChartXSeries2.Visible = true;
-            stripChartXSeries2.Width = SeeSharpTools.JY.GUI.StripChartXSeries.LineWidth.Thin;
-            stripChartXSeries2.XPlotAxis = SeeSharpTools.JY.GUI.StripChartXAxis.PlotAxis.Primary;
-            stripChartXSeries2.YPlotAxis = SeeSharpTools.JY.GUI.StripChartXAxis.PlotAxis.Secondary;
-            this.Chart_ActualThread.LineSeries.Add(stripChartXSeries1);
-            this.Chart_ActualThread.LineSeries.Add(stripChartXSeries2);
+            stripChartXSeries3.Color = System.Drawing.Color.Red;
+            stripChartXSeries3.Marker = SeeSharpTools.JY.GUI.StripChartXSeries.MarkerType.None;
+            stripChartXSeries3.Name = "Series1";
+            stripChartXSeries3.Type = SeeSharpTools.JY.GUI.StripChartXSeries.LineType.FastLine;
+            stripChartXSeries3.Visible = true;
+            stripChartXSeries3.Width = SeeSharpTools.JY.GUI.StripChartXSeries.LineWidth.Thin;
+            stripChartXSeries3.XPlotAxis = SeeSharpTools.JY.GUI.StripChartXAxis.PlotAxis.Primary;
+            stripChartXSeries3.YPlotAxis = SeeSharpTools.JY.GUI.StripChartXAxis.PlotAxis.Primary;
+            stripChartXSeries4.Color = System.Drawing.Color.Blue;
+            stripChartXSeries4.Marker = SeeSharpTools.JY.GUI.StripChartXSeries.MarkerType.None;
+            stripChartXSeries4.Name = "Series2";
+            stripChartXSeries4.Type = SeeSharpTools.JY.GUI.StripChartXSeries.LineType.FastLine;
+            stripChartXSeries4.Visible = true;
+            stripChartXSeries4.Width = SeeSharpTools.JY.GUI.StripChartXSeries.LineWidth.Thin;
+            stripChartXSeries4.XPlotAxis = SeeSharpTools.JY.GUI.StripChartXAxis.PlotAxis.Primary;
+            stripChartXSeries4.YPlotAxis = SeeSharpTools.JY.GUI.StripChartXAxis.PlotAxis.Secondary;
+            this.Chart_ActualThread.LineSeries.Add(stripChartXSeries3);
+            this.Chart_ActualThread.LineSeries.Add(stripChartXSeries4);
             this.Chart_ActualThread.Location = new System.Drawing.Point(0, 0);
             this.Chart_ActualThread.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Chart_ActualThread.Miscellaneous.CheckInfinity = false;

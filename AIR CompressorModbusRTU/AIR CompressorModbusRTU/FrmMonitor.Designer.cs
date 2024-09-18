@@ -620,7 +620,7 @@
             // 
             this.tapControl8.BackColor = System.Drawing.Color.Transparent;
             this.tapControl8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tapControl8.BackgroundImage")));
-            this.tapControl8.BindVarName = "";
+            this.tapControl8.BindVarName = "CQG4Out_State";
             this.tapControl8.Location = new System.Drawing.Point(1024, 582);
             this.tapControl8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tapControl8.Name = "tapControl8";

@@ -1,0 +1,120 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\PLCAsServer(ModbusTCP)\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F4D27848-ECB9-49EA-93D0-876E6699EBBD}|PLCAsServer(ModbusTCP)\\PLCAsServer(ModbusTCP).csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\PLCAsServer(ModbusTCP)\\plcasserver(modbustcp)\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4D27848-ECB9-49EA-93D0-876E6699EBBD}|PLCAsServer(ModbusTCP)\\PLCAsServer(ModbusTCP).csproj|solutionrelative:plcasserver(modbustcp)\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4D27848-ECB9-49EA-93D0-876E6699EBBD}|PLCAsServer(ModbusTCP)\\PLCAsServer(ModbusTCP).csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\PLCAsServer(ModbusTCP)\\plcasserver(modbustcp)\\frmparam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F4D27848-ECB9-49EA-93D0-876E6699EBBD}|PLCAsServer(ModbusTCP)\\PLCAsServer(ModbusTCP).csproj|solutionrelative:plcasserver(modbustcp)\\frmparam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4D27848-ECB9-49EA-93D0-876E6699EBBD}|PLCAsServer(ModbusTCP)\\PLCAsServer(ModbusTCP).csproj|c:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50plc\u5F00\u653E\u5F0F\u901A\u4FE1\\plcasserver(modbustcp)\\plcasserver(modbustcp)\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4D27848-ECB9-49EA-93D0-876E6699EBBD}|PLCAsServer(ModbusTCP)\\PLCAsServer(ModbusTCP).csproj|solutionrelative:plcasserver(modbustcp)\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4D27848-ECB9-49EA-93D0-876E6699EBBD}|PLCAsServer(ModbusTCP)\\PLCAsServer(ModbusTCP).csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\PLCAsServer(ModbusTCP)\\plcasserver(modbustcp)\\frmparam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4D27848-ECB9-49EA-93D0-876E6699EBBD}|PLCAsServer(ModbusTCP)\\PLCAsServer(ModbusTCP).csproj|solutionrelative:plcasserver(modbustcp)\\frmparam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4D27848-ECB9-49EA-93D0-876E6699EBBD}|PLCAsServer(ModbusTCP)\\PLCAsServer(ModbusTCP).csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\PLCAsServer(ModbusTCP)\\plcasserver(modbustcp)\\bindvariable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F4D27848-ECB9-49EA-93D0-876E6699EBBD}|PLCAsServer(ModbusTCP)\\PLCAsServer(ModbusTCP).csproj|solutionrelative:plcasserver(modbustcp)\\bindvariable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 287,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmParam.cs [Design]",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\PLCAsServer(ModbusTCP)\\PLCAsServer(ModbusTCP)\\FrmParam.cs",
+              "RelativeDocumentMoniker": "PLCAsServer(ModbusTCP)\\FrmParam.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\PLCAsServer(ModbusTCP)\\PLCAsServer(ModbusTCP)\\FrmParam.cs [Design]",
+              "RelativeToolTip": "PLCAsServer(ModbusTCP)\\FrmParam.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T11:58:57.11Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmParam.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\PLCAsServer(ModbusTCP)\\PLCAsServer(ModbusTCP)\\FrmParam.cs",
+              "RelativeDocumentMoniker": "PLCAsServer(ModbusTCP)\\FrmParam.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\PLCAsServer(ModbusTCP)\\PLCAsServer(ModbusTCP)\\FrmParam.cs",
+              "RelativeToolTip": "PLCAsServer(ModbusTCP)\\FrmParam.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T11:58:52.62Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmMain.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\PLCAsServer(ModbusTCP)\\PLCAsServer(ModbusTCP)\\FrmMain.cs",
+              "RelativeDocumentMoniker": "PLCAsServer(ModbusTCP)\\FrmMain.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\PLCAsServer(ModbusTCP)\\PLCAsServer(ModbusTCP)\\FrmMain.cs",
+              "RelativeToolTip": "PLCAsServer(ModbusTCP)\\FrmMain.cs",
+              "ViewState": "AQIAAMgAAAAAAAAAAAAAAPYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T13:40:19.094Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BindVariable.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\PLCAsServer(ModbusTCP)\\PLCAsServer(ModbusTCP)\\BindVariable.cs",
+              "RelativeDocumentMoniker": "PLCAsServer(ModbusTCP)\\BindVariable.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\PLCAsServer(ModbusTCP)\\PLCAsServer(ModbusTCP)\\BindVariable.cs",
+              "RelativeToolTip": "PLCAsServer(ModbusTCP)\\BindVariable.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T11:55:25.293Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmMain.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\PLCAsServer(ModbusTCP)\\PLCAsServer(ModbusTCP)\\FrmMain.cs",
+              "RelativeDocumentMoniker": "PLCAsServer(ModbusTCP)\\FrmMain.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\PLCAsServer(ModbusTCP)\\PLCAsServer(ModbusTCP)\\FrmMain.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "PLCAsServer(ModbusTCP)\\FrmMain.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T11:48:26.322Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 113,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wen.ModbusCommunictaion", "Wen.ModbusCommunictaion\Wen.ModbusCommunictaion.csproj", "{934AF2D7-5608-409A-8936-1A1D6A20D053}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wen.ModbucCommunicationLib", "Wen.ModbucCommunicationLib\Wen.ModbucCommunicationLib.csproj", "{B8258DD9-9385-4CDC-84D3-53079DADEAB7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wen.ModbusCommunicationLib", "Wen.ModbucCommunicationLib\Wen.ModbusCommunicationLib.csproj", "{B8258DD9-9385-4CDC-84D3-53079DADEAB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

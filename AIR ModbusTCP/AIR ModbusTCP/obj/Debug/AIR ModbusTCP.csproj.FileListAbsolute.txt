@@ -1,0 +1,40 @@
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\bin\Debug\AIR ModbusTCP.exe.config
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\bin\Debug\AIR ModbusTCP.exe
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\bin\Debug\AIR ModbusTCP.pdb
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\bin\Debug\AIR BLL.dll
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\bin\Debug\CommonHelper.dll
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\bin\Debug\Model.dll
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\bin\Debug\Wen.KYJControlLib.dll
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\bin\Debug\AIR DAL.dll
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\bin\Debug\MySql.Data.dll
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\bin\Debug\System.Data.SQLite.dll
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\bin\Debug\Newtonsoft.Json.dll
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\bin\Debug\System.Memory.dll
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\bin\Debug\System.Numerics.Vectors.dll
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\bin\Debug\System.Buffers.dll
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\bin\Debug\AIR BLL.pdb
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\bin\Debug\CommonHelper.pdb
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\bin\Debug\Model.pdb
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\bin\Debug\Wen.KYJControlLib.pdb
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\bin\Debug\AIR DAL.pdb
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\obj\Debug\AIR ModbusTCP.csproj.AssemblyReference.cache
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\obj\Debug\AIR_ModbusTCP.FrmMonitor.resources
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\obj\Debug\AIR_ModbusTCP.FrmUserManage.resources
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\obj\Debug\AIR_ModbusTCP.FrmReport.resources
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\obj\Debug\AIR_ModbusTCP.FrmParamSet.resources
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\obj\Debug\AIR_ModbusTCP.FrmHistroyTrend.resources
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\obj\Debug\AIR_ModbusTCP.FrmActualTrend.resources
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\obj\Debug\AIR_ModbusTCP.FrmAlarmLog.resources
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\obj\Debug\AIR_ModbusTCP.FrmHistoryLog.resources
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\obj\Debug\AIR_ModbusTCP.FrmLogin.resources
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\obj\Debug\AIR_ModbusTCP.FrmMain.resources
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\obj\Debug\AIR_ModbusTCP.FrmMessageBoxWithAck.resources
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\obj\Debug\AIR_ModbusTCP.FrmMessageBoxWithOutAck.resources
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\obj\Debug\AIR_ModbusTCP.FrmPrint.resources
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\obj\Debug\AIR_ModbusTCP.Properties.Resources.resources
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\obj\Debug\AIR ModbusTCP.csproj.GenerateResource.cache
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\obj\Debug\AIR ModbusTCP.csproj.CoreCompileInputs.cache
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\obj\Debug\AIR Modb.4E1301A2.Up2Date
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\obj\Debug\AIR ModbusTCP.exe
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\obj\Debug\AIR ModbusTCP.pdb
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\obj\Debug\AIR_ModbusTCP.FrmTapControl.resources

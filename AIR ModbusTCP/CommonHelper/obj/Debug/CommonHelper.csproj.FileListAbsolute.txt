@@ -1,0 +1,12 @@
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\CommonHelper\bin\Debug\CommonHelper.dll
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\CommonHelper\bin\Debug\CommonHelper.pdb
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\CommonHelper\bin\Debug\System.Memory.dll
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\CommonHelper\bin\Debug\EnvDTE.dll
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\CommonHelper\bin\Debug\System.Numerics.Vectors.dll
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\CommonHelper\bin\Debug\System.Buffers.dll
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\CommonHelper\bin\Debug\stdole.dll
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\CommonHelper\obj\Debug\CommonHelper.csproj.AssemblyReference.cache
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\CommonHelper\obj\Debug\CommonHelper.csproj.CoreCompileInputs.cache
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\CommonHelper\obj\Debug\CommonHe.9C9C8D79.Up2Date
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\CommonHelper\obj\Debug\CommonHelper.dll
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\CommonHelper\obj\Debug\CommonHelper.pdb

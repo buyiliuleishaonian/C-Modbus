@@ -18,7 +18,7 @@ namespace AIR_CompressorModbusRTU
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //连接数据库
-            new SQLLiteManage().ConnStr("Data Source="+Application.StartupPath+"\\DataBase\\KYJScada;Po0ling=true;FailIfMissing=false");
+            new SQLLiteManage().ConnStr("Data Source="+Application.StartupPath+"\\DataBase\\KYJScada;Pooling=true;FailIfMissing=false");
             FrmLogIn frmLogIn = new FrmLogIn();
             if (frmLogIn.ShowDialog()==DialogResult.OK)
             {

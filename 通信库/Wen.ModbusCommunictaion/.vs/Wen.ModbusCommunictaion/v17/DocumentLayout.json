@@ -1,0 +1,549 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuccommunicationlib\\base\\serialdevicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|solutionrelative:wen.modbuccommunicationlib\\base\\serialdevicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|c:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50plc\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\wen.modbuscommunictaion\\wen.modbuccommunicationlib\\library\\modbustcp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|solutionrelative:wen.modbuccommunicationlib\\library\\modbustcp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuccommunicationlib\\library\\modbusrtu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|solutionrelative:wen.modbuccommunicationlib\\library\\modbusrtu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuccommunicationlib\\base\\netdevicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|solutionrelative:wen.modbuccommunicationlib\\base\\netdevicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuccommunicationlib\\base\\readwritebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|solutionrelative:wen.modbuccommunicationlib\\base\\readwritebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934AF2D7-5608-409A-8936-1A1D6A20D053}|Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuscommunictaion\\frmmodbustcp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{934AF2D7-5608-409A-8936-1A1D6A20D053}|Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion.csproj|solutionrelative:wen.modbuscommunictaion\\frmmodbustcp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934AF2D7-5608-409A-8936-1A1D6A20D053}|Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuscommunictaion\\frmmodbusrtu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934AF2D7-5608-409A-8936-1A1D6A20D053}|Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion.csproj|solutionrelative:wen.modbuscommunictaion\\frmmodbusrtu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934AF2D7-5608-409A-8936-1A1D6A20D053}|Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuscommunictaion\\frmmodbusrtu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{934AF2D7-5608-409A-8936-1A1D6A20D053}|Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion.csproj|solutionrelative:wen.modbuscommunictaion\\frmmodbusrtu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934AF2D7-5608-409A-8936-1A1D6A20D053}|Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuscommunictaion\\frmmodbustcp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934AF2D7-5608-409A-8936-1A1D6A20D053}|Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion.csproj|solutionrelative:wen.modbuscommunictaion\\frmmodbustcp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuccommunicationlib\\message\\modbustcpmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|solutionrelative:wen.modbuccommunicationlib\\message\\modbustcpmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuccommunicationlib\\lock\\simplehybirdlock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|solutionrelative:wen.modbuccommunicationlib\\lock\\simplehybirdlock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934AF2D7-5608-409A-8936-1A1D6A20D053}|Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuscommunictaion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934AF2D7-5608-409A-8936-1A1D6A20D053}|Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion.csproj|solutionrelative:wen.modbuscommunictaion\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuccommunicationlib\\helper\\modbushelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|solutionrelative:wen.modbuccommunicationlib\\helper\\modbushelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuccommunicationlib\\interface\\imessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|solutionrelative:wen.modbuccommunicationlib\\interface\\imessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934AF2D7-5608-409A-8936-1A1D6A20D053}|Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuscommunictaion\\commonmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934AF2D7-5608-409A-8936-1A1D6A20D053}|Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion.csproj|solutionrelative:wen.modbuscommunictaion\\commonmethods.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuccommunicationlib\\enum\\enum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|solutionrelative:wen.modbuccommunicationlib\\enum\\enum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934AF2D7-5608-409A-8936-1A1D6A20D053}|Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuscommunictaion\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{934AF2D7-5608-409A-8936-1A1D6A20D053}|Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion.csproj|solutionrelative:wen.modbuscommunictaion\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuccommunicationlib\\message\\modbusrtumessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|solutionrelative:wen.modbuccommunicationlib\\message\\modbusrtumessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuccommunicationlib\\helper\\parityhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|solutionrelative:wen.modbuccommunicationlib\\helper\\parityhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuccommunicationlib\\storearea\\modbusstorearea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|solutionrelative:wen.modbuccommunicationlib\\storearea\\modbusstorearea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbucCommunicationLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuccommunicationlib\\library\\modbusrtu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbucCommunicationLib.csproj|solutionrelative:wen.modbuccommunicationlib\\library\\modbusrtu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.PLCConnumication.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuccommunicationlib\\base\\serialdevicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.PLCConnumication.csproj|solutionrelative:wen.modbuccommunicationlib\\base\\serialdevicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuccommunicationlib\\interface\\ireadwrite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbusCommunicationLib.csproj|solutionrelative:wen.modbuccommunicationlib\\interface\\ireadwrite.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbucCommunicationLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuccommunicationlib\\helper\\modbushelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbucCommunicationLib.csproj|solutionrelative:wen.modbuccommunicationlib\\helper\\modbushelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbucCommunicationLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuccommunicationlib\\enum\\enum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbucCommunicationLib.csproj|solutionrelative:wen.modbuccommunicationlib\\enum\\enum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbucCommunicationLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuccommunicationlib\\storearea\\modbusstorearea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbucCommunicationLib.csproj|solutionrelative:wen.modbuccommunicationlib\\storearea\\modbusstorearea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbucCommunicationLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuccommunicationlib\\helper\\parityhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbucCommunicationLib.csproj|solutionrelative:wen.modbuccommunicationlib\\helper\\parityhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbucCommunicationLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuccommunicationlib\\base\\serialdevicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbucCommunicationLib.csproj|solutionrelative:wen.modbuccommunicationlib\\base\\serialdevicebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbucCommunicationLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuccommunicationlib\\base\\readwritebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8258DD9-9385-4CDC-84D3-53079DADEAB7}|Wen.ModbucCommunicationLib\\Wen.ModbucCommunicationLib.csproj|solutionrelative:wen.modbuccommunicationlib\\base\\readwritebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934AF2D7-5608-409A-8936-1A1D6A20D053}|Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuscommunictaion\\frmmodbusrtu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934AF2D7-5608-409A-8936-1A1D6A20D053}|Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion.csproj|solutionrelative:wen.modbuscommunictaion\\frmmodbusrtu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934AF2D7-5608-409A-8936-1A1D6A20D053}|Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuscommunictaion\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{934AF2D7-5608-409A-8936-1A1D6A20D053}|Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion.csproj|solutionrelative:wen.modbuscommunictaion\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{934AF2D7-5608-409A-8936-1A1D6A20D053}|Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\wen.modbuscommunictaion\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{934AF2D7-5608-409A-8936-1A1D6A20D053}|Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion.csproj|solutionrelative:wen.modbuscommunictaion\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FrmModbusRTU.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion\\FrmModbusRTU.cs",
+              "RelativeDocumentMoniker": "Wen.ModbusCommunictaion\\FrmModbusRTU.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion\\FrmModbusRTU.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "Wen.ModbusCommunictaion\\FrmModbusRTU.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T11:22:25.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReadWriteBase.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Base\\ReadWriteBase.cs",
+              "RelativeDocumentMoniker": "Wen.ModbucCommunicationLib\\Base\\ReadWriteBase.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Base\\ReadWriteBase.cs",
+              "RelativeToolTip": "Wen.ModbucCommunicationLib\\Base\\ReadWriteBase.cs",
+              "ViewState": "AQIAABoCAAAAAAAAAAAkwFMCAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T14:13:19.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NetDeviceBase.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Base\\NetDeviceBase.cs",
+              "RelativeDocumentMoniker": "Wen.ModbucCommunicationLib\\Base\\NetDeviceBase.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Base\\NetDeviceBase.cs",
+              "RelativeToolTip": "Wen.ModbucCommunicationLib\\Base\\NetDeviceBase.cs",
+              "ViewState": "AQIAAHMAAAAAAAAAAAAAwNAAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T14:32:13.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FrmModbusTCP.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion\\FrmModbusTCP.cs",
+              "RelativeDocumentMoniker": "Wen.ModbusCommunictaion\\FrmModbusTCP.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion\\FrmModbusTCP.cs",
+              "RelativeToolTip": "Wen.ModbusCommunictaion\\FrmModbusTCP.cs",
+              "ViewState": "AQIAAKEAAAAAAAAAAAAQwPsAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T04:04:07.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ModbusTCP.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Library\\ModbusTCP.cs",
+              "RelativeDocumentMoniker": "Wen.ModbucCommunicationLib\\Library\\ModbusTCP.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Library\\ModbusTCP.cs",
+              "RelativeToolTip": "Wen.ModbucCommunicationLib\\Library\\ModbusTCP.cs",
+              "ViewState": "AQIAAMcAAAAAAAAAAAAkwB4BAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T02:58:33.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SimpleHybirdLock.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Lock\\SimpleHybirdLock.cs",
+              "RelativeDocumentMoniker": "Wen.ModbucCommunicationLib\\Lock\\SimpleHybirdLock.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Lock\\SimpleHybirdLock.cs",
+              "RelativeToolTip": "Wen.ModbucCommunicationLib\\Lock\\SimpleHybirdLock.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAIwFIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T14:14:52.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FrmModbusRTU.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion\\FrmModbusRTU.cs",
+              "RelativeDocumentMoniker": "Wen.ModbusCommunictaion\\FrmModbusRTU.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion\\FrmModbusRTU.cs",
+              "RelativeToolTip": "Wen.ModbusCommunictaion\\FrmModbusRTU.cs",
+              "ViewState": "AQIAAA4BAAAAAAAAAAAowA4BAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T11:22:25.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ModbusRTU.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Library\\ModbusRTU.cs",
+              "RelativeDocumentMoniker": "Wen.ModbucCommunicationLib\\Library\\ModbusRTU.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Library\\ModbusRTU.cs",
+              "RelativeToolTip": "Wen.ModbucCommunicationLib\\Library\\ModbusRTU.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAiwN8AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T02:59:31.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SerialDeviceBase.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Base\\SerialDeviceBase.cs",
+              "RelativeDocumentMoniker": "Wen.ModbucCommunicationLib\\Base\\SerialDeviceBase.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Base\\SerialDeviceBase.cs",
+              "RelativeToolTip": "Wen.ModbucCommunicationLib\\Base\\SerialDeviceBase.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAADwv4IAAABoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T02:24:55.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmModbusTCP.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion\\FrmModbusTCP.cs",
+              "RelativeDocumentMoniker": "Wen.ModbusCommunictaion\\FrmModbusTCP.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion\\FrmModbusTCP.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "Wen.ModbusCommunictaion\\FrmModbusTCP.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T04:02:02.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion\\Program.cs",
+              "RelativeDocumentMoniker": "Wen.ModbusCommunictaion\\Program.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion\\Program.cs",
+              "RelativeToolTip": "Wen.ModbusCommunictaion\\Program.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAQwA0AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T11:22:25.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ModbusTCPMessage.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Message\\ModbusTCPMessage.cs",
+              "RelativeDocumentMoniker": "Wen.ModbucCommunicationLib\\Message\\ModbusTCPMessage.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Message\\ModbusTCPMessage.cs",
+              "RelativeToolTip": "Wen.ModbucCommunicationLib\\Message\\ModbusTCPMessage.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAkwEwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T02:27:50.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IMessage.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Interface\\IMessage.cs",
+              "RelativeDocumentMoniker": "Wen.ModbucCommunicationLib\\Interface\\IMessage.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Interface\\IMessage.cs",
+              "RelativeToolTip": "Wen.ModbucCommunicationLib\\Interface\\IMessage.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAowCYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T14:27:54.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ModbusHelper.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Helper\\ModbusHelper.cs",
+              "RelativeDocumentMoniker": "Wen.ModbucCommunicationLib\\Helper\\ModbusHelper.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Helper\\ModbusHelper.cs",
+              "RelativeToolTip": "Wen.ModbucCommunicationLib\\Helper\\ModbusHelper.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAlwF8AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T05:52:47.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CommonMethods.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion\\CommonMethods.cs",
+              "RelativeDocumentMoniker": "Wen.ModbusCommunictaion\\CommonMethods.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion\\CommonMethods.cs",
+              "RelativeToolTip": "Wen.ModbusCommunictaion\\CommonMethods.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T11:22:25.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FrmMain.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion\\FrmMain.cs",
+              "RelativeDocumentMoniker": "Wen.ModbusCommunictaion\\FrmMain.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion\\FrmMain.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "Wen.ModbusCommunictaion\\FrmMain.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T11:22:25.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Enum.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Enum\\Enum.cs",
+              "RelativeDocumentMoniker": "Wen.ModbucCommunicationLib\\Enum\\Enum.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Enum\\Enum.cs",
+              "RelativeToolTip": "Wen.ModbucCommunicationLib\\Enum\\Enum.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAowDcAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T14:14:47.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ModbusRTUMessage.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Message\\ModbusRTUMessage.cs",
+              "RelativeDocumentMoniker": "Wen.ModbucCommunicationLib\\Message\\ModbusRTUMessage.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Message\\ModbusRTUMessage.cs",
+              "RelativeToolTip": "Wen.ModbucCommunicationLib\\Message\\ModbusRTUMessage.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T14:15:43.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ParityHelper.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Helper\\ParityHelper.cs",
+              "RelativeDocumentMoniker": "Wen.ModbucCommunicationLib\\Helper\\ParityHelper.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Helper\\ParityHelper.cs",
+              "RelativeToolTip": "Wen.ModbucCommunicationLib\\Helper\\ParityHelper.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAAA0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T14:14:47.627Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ModbusStoreArea.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\StoreArea\\ModbusStoreArea.cs",
+              "RelativeDocumentMoniker": "Wen.ModbucCommunicationLib\\StoreArea\\ModbusStoreArea.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\StoreArea\\ModbusStoreArea.cs",
+              "RelativeToolTip": "Wen.ModbucCommunicationLib\\StoreArea\\ModbusStoreArea.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T14:14:47.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ModbusRTU.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Library\\ModbusRTU.cs",
+              "RelativeDocumentMoniker": "Wen.ModbucCommunicationLib\\Library\\ModbusRTU.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Library\\ModbusRTU.cs",
+              "RelativeToolTip": "Wen.ModbucCommunicationLib\\Library\\ModbusRTU.cs",
+              "ViewState": "AQIAALEAAAAAAAAAAAAYwN8AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T11:22:25.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SerialDeviceBase.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Base\\SerialDeviceBase.cs",
+              "RelativeDocumentMoniker": "Wen.ModbucCommunicationLib\\Base\\SerialDeviceBase.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Base\\SerialDeviceBase.cs",
+              "RelativeToolTip": "Wen.ModbucCommunicationLib\\Base\\SerialDeviceBase.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAowDcAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T14:13:19.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IReadWrite.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Interface\\IReadWrite.cs",
+              "RelativeDocumentMoniker": "Wen.ModbucCommunicationLib\\Interface\\IReadWrite.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Interface\\IReadWrite.cs",
+              "RelativeToolTip": "Wen.ModbucCommunicationLib\\Interface\\IReadWrite.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T15:01:26.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ModbusHelper.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Helper\\ModbusHelper.cs",
+              "RelativeDocumentMoniker": "Wen.ModbucCommunicationLib\\Helper\\ModbusHelper.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Helper\\ModbusHelper.cs",
+              "RelativeToolTip": "Wen.ModbucCommunicationLib\\Helper\\ModbusHelper.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABoAAACUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T11:22:25.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Enum.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Enum\\Enum.cs",
+              "RelativeDocumentMoniker": "Wen.ModbucCommunicationLib\\Enum\\Enum.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Enum\\Enum.cs",
+              "RelativeToolTip": "Wen.ModbucCommunicationLib\\Enum\\Enum.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T11:22:25.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ModbusStoreArea.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\StoreArea\\ModbusStoreArea.cs",
+              "RelativeDocumentMoniker": "Wen.ModbucCommunicationLib\\StoreArea\\ModbusStoreArea.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\StoreArea\\ModbusStoreArea.cs",
+              "RelativeToolTip": "Wen.ModbucCommunicationLib\\StoreArea\\ModbusStoreArea.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwCkAAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T11:22:25.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ParityHelper.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Helper\\ParityHelper.cs",
+              "RelativeDocumentMoniker": "Wen.ModbucCommunicationLib\\Helper\\ParityHelper.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Helper\\ParityHelper.cs",
+              "RelativeToolTip": "Wen.ModbucCommunicationLib\\Helper\\ParityHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T11:22:25.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ReadWriteBase.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Base\\ReadWriteBase.cs",
+              "RelativeDocumentMoniker": "Wen.ModbucCommunicationLib\\Base\\ReadWriteBase.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Base\\ReadWriteBase.cs",
+              "RelativeToolTip": "Wen.ModbucCommunicationLib\\Base\\ReadWriteBase.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAmwFEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T11:22:25.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SerialDeviceBase.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Base\\SerialDeviceBase.cs",
+              "RelativeDocumentMoniker": "Wen.ModbucCommunicationLib\\Base\\SerialDeviceBase.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbucCommunicationLib\\Base\\SerialDeviceBase.cs",
+              "RelativeToolTip": "Wen.ModbucCommunicationLib\\Base\\SerialDeviceBase.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAADwv3kAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T11:22:25.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "FrmModbusRTU.designer.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion\\FrmModbusRTU.Designer.cs",
+              "RelativeDocumentMoniker": "Wen.ModbusCommunictaion\\FrmModbusRTU.Designer.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion\\FrmModbusRTU.Designer.cs",
+              "RelativeToolTip": "Wen.ModbusCommunictaion\\FrmModbusRTU.Designer.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAA0AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T11:22:25.779Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "FrmMain.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion\\FrmMain.cs",
+              "RelativeDocumentMoniker": "Wen.ModbusCommunictaion\\FrmMain.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion\\FrmMain.cs",
+              "RelativeToolTip": "Wen.ModbusCommunictaion\\FrmMain.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA0AAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T11:22:25.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion\\App.config",
+              "RelativeDocumentMoniker": "Wen.ModbusCommunictaion\\App.config",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\\u901A\u4FE1\u5E93\\Wen.ModbusCommunictaion\\Wen.ModbusCommunictaion\\App.config",
+              "RelativeToolTip": "Wen.ModbusCommunictaion\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-08-12T11:22:25.787Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
