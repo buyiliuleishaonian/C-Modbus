@@ -30,11 +30,11 @@ namespace AIR_CompressorModbusRTU
 
             //对于Y轴的绘制需要根据参数变化来变化
             this.ChartHistory.AxisY.AutoScale=false;
-            this.ChartHistory.AxisY.Maximum=100.0f;
-            this.ChartHistory.AxisY.Minimum=-100.0f;
+            this.ChartHistory.AxisY.Maximum=5.0f;
+            this.ChartHistory.AxisY.Minimum=-0.0f;
 
-            this.ChartHistory.AxisY2.Maximum=3.5f;
-            this.ChartHistory.AxisY2.Minimum=-3.5f;
+            this.ChartHistory.AxisY2.Maximum=100.0f;
+            this.ChartHistory.AxisY2.Minimum=0f;
             this.ChartHistory.AxisY2.AutoScale=false;
 
 
@@ -168,11 +168,11 @@ namespace AIR_CompressorModbusRTU
 
                 if (this.ChartHistory.Series[i].Name.Contains("温度"))
                 {
-                    this.ChartHistory.Series[i].YPlotAxis=SeeSharpTools.JY.GUI.StripChartXAxis.PlotAxis.Primary;
+                    this.ChartHistory.Series[i].YPlotAxis=SeeSharpTools.JY.GUI.StripChartXAxis.PlotAxis.Secondary;
                 }
                 else
                 {
-                    this.ChartHistory.Series[i].YPlotAxis=SeeSharpTools.JY.GUI.StripChartXAxis.PlotAxis.Secondary;
+                    this.ChartHistory.Series[i].YPlotAxis=SeeSharpTools.JY.GUI.StripChartXAxis.PlotAxis.Primary;
                 }
             }
 
@@ -306,6 +306,8 @@ namespace AIR_CompressorModbusRTU
                 }
             }
         }
+
+
 
         /// <summary>
         /// 显示参数变量

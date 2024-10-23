@@ -94,7 +94,7 @@ namespace AIR_CompressorModbusRTU
         {
             if (sender is NumKeyboard num)
             {
-                this.txt_VarValueSet.Text=num.InitialValue;
+                this.txt_VarValueSet.Text=num.ResultValue;
                 this.Controls.Remove(num);
             }
         }

@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConfigModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SysAdminModel.cs" />
     <Compile Include="SysLogModel.cs" />

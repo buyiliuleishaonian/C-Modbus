@@ -18,6 +18,11 @@ using Wen.ModbucCommunicationLib.Library;
 using Wen.ModbucCommunicationLib.Helper;
 using Wen.ModbucCommunicationLib.StoreArea;
 using NPOI.SS.Util;
+using System.Collections.ObjectModel;
+using Model;
+using System.Runtime.InteropServices;
+using Microsoft.Win32;
+using AIR_BLL;
 
 namespace AIR_ModbusTCP
 {
@@ -32,7 +37,68 @@ namespace AIR_ModbusTCP
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
+            //读取plc参数数据，建立通信
             Initial();
+
+            //解锁锁屏标志位
+            islock=CommonMethod.Config.AutoLock;
+
+            //锁屏定时器
+            LockTime=new System.Timers.Timer();
+            LockTime.Interval=200;
+            LockTime.Elapsed+=LockTime_Elapsed;
+            LockTime.Start();
+            //消息筛选
+            message= new MessageFilter();
+            Application.AddMessageFilter(message);
+
+            //解锁事件
+            SystemEvents.SessionSwitch+=SystemEvents_SessionSwitch;
+
+            this.FormClosing+=FrmMain_FormClosing;
+        }
+
+
+        /// <summary>
+        /// 关闭窗体
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void FrmMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SystemEvents.SessionSwitch -= SystemEvents_SessionSwitch;
+        }
+
+
+        /// <summary>
+        /// 锁屏定期器
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void LockTime_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+        {
+            if (CommonMethod.Config.AutoLock&&islock)
+            {
+                CommonMethod.tickCount++;
+                if (CommonMethod.tickCount>=CommonMethod.Config.LockyPeriod*60*1000/LockTime.Interval)
+                {
+                    //锁屏
+                    LockWorkStation();
+                }
+            }
+        }
+
+        /// <summary>
+        /// 锁屏，解锁的事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SystemEvents_SessionSwitch(object sender, SessionSwitchEventArgs e)
+        {
+            if (e.Reason == SessionSwitchReason.SessionUnlock)
+            {
+                OnUserUnlock();
+            }
         }
 
         /// <summary>
@@ -41,6 +107,46 @@ namespace AIR_ModbusTCP
         private string path = Application.StartupPath+@"\Config\Device.json";
 
 
+        /// <summary>
+        /// 变量属性的动态集合
+        /// </summary>
+        private ObservableCollection<string> observableCollection { get; set; } = new ObservableCollection<string>();
+
+        /// <summary>
+        ///参数报警系统委托 属性
+        /// </summary>
+        private Action<SysLogModel> AddAlarmLog { get; set; }
+
+        /// <summary>
+        /// 当前时间
+        /// </summary>
+        private DateTime CurrentTime { get; set; } = DateTime.Now;
+
+        /// <summary>
+        /// 锁屏定时器
+        /// </summary>
+        private static System.Timers.Timer LockTime { get; set; }
+
+        /// <summary>
+        /// 消息筛选器
+        /// </summary>
+        private MessageFilter message { get; set; }
+
+        /// <summary>
+        /// 锁屏标志位
+        /// </summary>
+        private static bool islock { get; set; } = false;
+        
+        /// <summary>
+        /// 数据管理
+        /// </summary>
+        private DataManage DataManage { get; set; } = new DataManage();
+
+        private string Inserttime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
+
+
+        #region 读取Device文件，初始化所有变量，添加变量报警事件，通信PLC，读取数据
         /// <summary>
         /// 初始化
         /// </summary>
@@ -51,12 +157,30 @@ namespace AIR_ModbusTCP
             OpenForm(FormNames.日志报警);
             OpenForm(FormNames.控制流程);
 
+            //读取变量文件
             CommonMethod.PLCDevice=ReadDevice(path).Content;
+
+            //初始化所有变量的值
+            CommonMethod.PLCDevice.Init();
+            ///长短地址
             CommonMethod.PLC.IsShortAddress=CommonMethod.PLCDevice.IsShortAddress;
-            DataFormat df=(DataFormat)CommonMethod.PLCDevice.DataFormat;
+            //大小端
+            DataFormat df = (DataFormat)CommonMethod.PLCDevice.DataFormat;
+
 
             //设定多线程手动取消
             CommonMethod.PLCDevice.CancellationTokenSource=new CancellationTokenSource();
+
+            //变量参数报警
+            CommonMethod.PLCDevice.AlarmTriggerEvent+=PLCDevice_AlarmTriggerEvent;
+
+
+            observableCollection.CollectionChanged+=ObservableCollection_CollectionChanged;
+
+
+            //从站地址
+            CommonMethod.PLC.DevAddress=Convert.ToByte("1");
+
 
             Task.Run(() =>
             {
@@ -65,10 +189,86 @@ namespace AIR_ModbusTCP
 
         }
 
-        #region 读取配置文件，进行通信，读取数据
+        /// <summary>
+        /// 动态集合发生变化
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ObservableCollection_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+        {
+            //需要根据 actualAlarmList 集合  数量判断
+            //为0，没有报警，不显示报警滚动条
+            //为1，显示唯一的滚动条，但是不滚动
+            //超过1，显示所有报警，滚动显示条
+            switch (this.observableCollection.Count)
+            {
+                case 0:
+                    this.AlarmPanel.Visible = false;
+                    break;
+                case 1:
+                    this.AlarmPanel.Visible = true;
+                    this.SystemSct.TextScroll=this.observableCollection[0];
+                    break;
+                default:
+                    this.AlarmPanel.Visible = true;
+                    this.SystemSct.TextScroll=string.Join("   ", observableCollection);
+                    break;
+            }
+        }
 
         /// <summary>
-        /// 读取配置文件
+        /// 参数报警 委托 方法
+        /// </summary>
+        /// <param name="model"></param>
+        private void AddAlarm(SysLogModel model)
+        {
+            if (AddAlarmLog!=null)
+            {
+                AddAlarmLog(model);
+
+            }
+        }
+
+        /// <summary>
+        /// 报警触发事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        /// <exception cref="NotImplementedException"></exception>
+        private void PLCDevice_AlarmTriggerEvent(object sender, AlarmEventArgs e)
+        {
+            AddAlarm(new SysLogModel
+            {
+                InsertTime=CurrentTime.ToString("yyyy-MM-dd HH:mm:ss"),
+                LogType="系统报警",
+                AlarmSet=e.SetValue,
+                AlarmValue=e.CurrentValue,
+                Note=e.AlarmNote,
+                AlarmType=e.IsTrigger ? "触发" : "消除",
+                VarName=e.Name,
+                Operator=CommonMethod.SysAdminModel.LoginName,
+            });
+
+            if (e.IsTrigger)
+            {
+                if (!this.observableCollection.Contains(e.AlarmNote))
+                {
+                    this.observableCollection.Add(e.AlarmNote);
+                }
+            }
+            else
+            {
+                if (this.observableCollection.Contains(e.AlarmNote))
+                {
+                    this.observableCollection.Remove(e.AlarmNote);
+                }
+            }
+        }
+
+        #region 读取参数文件，进行通信，读取数据
+
+        /// <summary>
+        /// 读取参数文件
         /// </summary>
         /// <param name="path"></param>
         /// <returns></returns>
@@ -126,15 +326,25 @@ namespace AIR_ModbusTCP
                     {
                         SetConnectLed(result);
                         device.IsConnected = true;
-                        Console.WriteLine("通信成功");
+                        CommonMethod.Addsystemlog(false, "通信成功");
                     }
                     else
                     {
-                        device.IsConnected = false;
-                        SetConnectLed(result);
+                        if (device.ErrorTimes<=device.AllowErrorTimes)
+                        {
+                            device.IsConnected = false;
+                            SetConnectLed(result);
+                            device.ErrorTimes++;
+                            CommonMethod.Addsystemlog(true, "通信失败");
+                        }
+                        else
+                        {
+                            device.CancellationTokenSource.Cancel();
+                        }
                         //new FrmMessageBoxWithOutAck("通信PLC","通信失败，请检查ip地址和端口号").Show();
                     }
                 }
+                //连接
                 else
                 {
                     var result = ReadGroup(device);
@@ -143,14 +353,17 @@ namespace AIR_ModbusTCP
                         SetConnectLed(true);
                         //清空错误连接次数
                         device.ErrorTimes=0;
+                        DataManage.AddData(CommonMethod.PLCDevice.StoreVarList.Select(c=>c.VarName).ToList(),CommonMethod.PLCDevice.StoreVarList.Select(c=>c.VarValue.ToString()).ToList(),Inserttime);
                     }
                     else
                     {
                         SetConnectLed(false);
+                        CommonMethod.Addsystemlog(true, "通信失败");
                         device.ErrorTimes++;
                         if (device.ErrorTimes>=device.AllowErrorTimes)
                         {
-                            //暂时等待
+                            //停止连接通信
+                            CommonMethod.PLCDevice.CancellationTokenSource.Cancel();
                         }
                     }
                 }
@@ -165,7 +378,7 @@ namespace AIR_ModbusTCP
         {
             if (this.led_ConnState.InvokeRequired)
             {
-                this.led_ConnState.State = state;   
+                this.led_ConnState.State = state;
             }
             else
             {
@@ -349,6 +562,15 @@ namespace AIR_ModbusTCP
         }
         #endregion
 
+
+        #endregion
+
+        private System.Timers.Timer lockTime = new System.Timers.Timer();
+
+
+
+
+
         #region 窗体切换
 
         private bool naviControl1_SelectButtonForm(object sender, EventArgs e)
@@ -444,6 +666,9 @@ namespace AIR_ModbusTCP
                         break;
                     case FormNames.日志报警:
                         frm = new FrmAlarmLog();
+                        CommonMethod.AddSystemLog+=((FrmAlarmLog)frm).AddLog;
+                        CommonMethod.AddOperateLog+=((FrmAlarmLog)(frm)).AddOperateLog;
+                        AddAlarmLog+=((FrmAlarmLog)(frm)).AddAlarmLog;
                         break;
                     case FormNames.日志查询:
                         frm = new FrmHistoryLog();
@@ -499,6 +724,42 @@ namespace AIR_ModbusTCP
             {
                 this.Location=new Point(this.Location.X+e.X-size.X, this.Location.Y+e.Y-size.Y);
             }
+        }
+        #endregion
+
+        #region 锁屏,解锁
+        //调用window32的
+        [DllImport("user32")]
+        private static extern bool LockWorkStation();
+
+        /// <summary>
+        /// 消息过滤类
+        /// </summary>
+        internal class MessageFilter : IMessageFilter
+        {
+            public bool PreFilterMessage(ref Message m)
+            {
+                //如果检查到鼠标或者键盘的消息，则基数为0
+                if (m.Msg==0x2000||m.Msg==0x201||m.Msg==0x207)
+                {
+                    CommonMethod.tickCount=0;
+                }
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// 解锁
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private static void OnUserUnlock()
+        {
+            islock =true;
+
+            LockTime.Stop();
+            CommonMethod.tickCount=0;
+            LockTime.Start();
         }
         #endregion
 

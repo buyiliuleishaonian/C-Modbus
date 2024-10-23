@@ -87,7 +87,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(170, 110);
+            this.button1.Location = new System.Drawing.Point(200, 110);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(68, 31);
             this.button1.TabIndex = 33;
@@ -106,6 +106,7 @@
             this.btn_save.TabIndex = 32;
             this.btn_save.Text = "保存";
             this.btn_save.UseVisualStyleBackColor = false;
+            this.btn_save.Click += new System.EventHandler(this.btn_Export_Click);
             // 
             // btn_Export
             // 
@@ -119,6 +120,7 @@
             this.btn_Export.TabIndex = 31;
             this.btn_Export.Text = "导出";
             this.btn_Export.UseVisualStyleBackColor = false;
+            this.btn_Export.Click += new System.EventHandler(this.button1_Click);
             // 
             // btn_Select
             // 
@@ -132,6 +134,7 @@
             this.btn_Select.TabIndex = 30;
             this.btn_Select.Text = "查询";
             this.btn_Select.UseVisualStyleBackColor = false;
+            this.btn_Select.Click += new System.EventHandler(this.btn_Select_Click);
             // 
             // cmb_Param
             // 
@@ -271,8 +274,8 @@
             this.ChartHistory.AxisY.MajorGridCount = 6;
             this.ChartHistory.AxisY.MajorGridEnabled = true;
             this.ChartHistory.AxisY.MajorGridType = SeeSharpTools.JY.GUI.StripChartXAxis.GridStyle.Dash;
-            this.ChartHistory.AxisY.Maximum = 3.5D;
-            this.ChartHistory.AxisY.Minimum = 0.5D;
+            this.ChartHistory.AxisY.Maximum = 5D;
+            this.ChartHistory.AxisY.Minimum = 0D;
             this.ChartHistory.AxisY.MinorGridColor = System.Drawing.Color.Black;
             this.ChartHistory.AxisY.MinorGridEnabled = false;
             this.ChartHistory.AxisY.MinorGridType = SeeSharpTools.JY.GUI.StripChartXAxis.GridStyle.DashDot;

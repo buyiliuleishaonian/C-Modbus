@@ -44,9 +44,9 @@
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox12 = new System.Windows.Forms.CheckBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.lbl_Title = new System.Windows.Forms.Label();
             this.panelEx1 = new thinger.ControlLib.PanelEx();
             this.Chart_ActualThread = new SeeSharpTools.JY.GUI.StripChartX();
-            this.lbl_Title = new System.Windows.Forms.Label();
             this.panelEnhanced1.SuspendLayout();
             this.panelMain.SuspendLayout();
             this.panelEx1.SuspendLayout();
@@ -243,6 +243,18 @@
             this.checkBox6.Text = "冷却塔回水温度";
             this.checkBox6.UseVisualStyleBackColor = true;
             // 
+            // lbl_Title
+            // 
+            this.lbl_Title.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_Title.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lbl_Title.ForeColor = System.Drawing.Color.White;
+            this.lbl_Title.Location = new System.Drawing.Point(28, 29);
+            this.lbl_Title.Name = "lbl_Title";
+            this.lbl_Title.Size = new System.Drawing.Size(102, 28);
+            this.lbl_Title.TabIndex = 3;
+            this.lbl_Title.Text = "实时趋势";
+            this.lbl_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panelEx1
             // 
             this.panelEx1.BackColor = System.Drawing.Color.Transparent;
@@ -314,7 +326,7 @@
             this.Chart_ActualThread.AxisY.MajorGridCount = 5;
             this.Chart_ActualThread.AxisY.MajorGridEnabled = true;
             this.Chart_ActualThread.AxisY.MajorGridType = SeeSharpTools.JY.GUI.StripChartXAxis.GridStyle.Dash;
-            this.Chart_ActualThread.AxisY.Maximum = 3.5D;
+            this.Chart_ActualThread.AxisY.Maximum = 5D;
             this.Chart_ActualThread.AxisY.Minimum = 0.5D;
             this.Chart_ActualThread.AxisY.MinorGridColor = System.Drawing.Color.Black;
             this.Chart_ActualThread.AxisY.MinorGridEnabled = false;
@@ -414,18 +426,6 @@
             this.Chart_ActualThread.YCursor.Mode = SeeSharpTools.JY.GUI.StripChartXCursor.CursorMode.Disabled;
             this.Chart_ActualThread.YCursor.SelectionColor = System.Drawing.Color.LightGray;
             this.Chart_ActualThread.YCursor.Value = double.NaN;
-            // 
-            // lbl_Title
-            // 
-            this.lbl_Title.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Title.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.lbl_Title.ForeColor = System.Drawing.Color.White;
-            this.lbl_Title.Location = new System.Drawing.Point(28, 29);
-            this.lbl_Title.Name = "lbl_Title";
-            this.lbl_Title.Size = new System.Drawing.Size(102, 28);
-            this.lbl_Title.TabIndex = 3;
-            this.lbl_Title.Text = "实时趋势";
-            this.lbl_Title.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FrmActualTrend
             // 

@@ -36,7 +36,7 @@ namespace AIR_ModbusTCP
                 this.UpdateTimer?.Stop();
             };
 
-            
+
         }
 
         /// <summary>
@@ -46,39 +46,40 @@ namespace AIR_ModbusTCP
         /// <param name="e"></param>
         private void UpdateTimer_Elapsed(object sender, ElapsedEventArgs e)
         {
-            if (CommonMethod.PLCDevice.IsConnected)
+            this.Invoke(new Action(() =>
             {
-                foreach (var item in this.panelEnhanced3.Controls)
+                if (CommonMethod.PLCDevice.IsConnected)
                 {
-                    if (item is TextShow txt)
+                    foreach (var item in this.panelEnhanced3.Controls)
                     {
-                        if (txt.BindVarName!=null&&txt.BindVarName.Length>0)
+                        if (item is TextShow txt)
                         {
-                            var result = CommonMethod.PLCDevice.GroupList[0].VarList.First(c => c.VarName==txt.BindVarName).VarValue;
+                            if (txt.BindVarName!=null&&txt.BindVarName.Length>0)
+                            {
+                                var result = CommonMethod.PLCDevice.VarList.First(c => c.VarName==txt.BindVarName);
+                                txt.CurrentValue=result.VarValue==null ? "0.0" : result.VarValue.ToString();
+                            }
+                        }
+                        else if (item is PumpControl pump)
+                        {
+                            var result = CommonMethod.PLCDevice.VarList.First(c => c.VarName==pump.BindVarName).VarValue;
                             this.Invoke(new Action(() =>
                             {
-                                txt.CurrentValue=result.ToString();
+                                pump.PumpState=Convert.ToByte(result);
+                            }));
+                        }
+                        else if (item is TapControl tap)
+                        {
+                            var result = CommonMethod.PLCDevice.VarList.First(c => c.VarName==tap.BindVarName).VarValue;
+                            this.Invoke(new Action(() =>
+                            {
+                                tap.TapStaTe=Convert.ToInt32(result);
                             }));
                         }
                     }
-                    else if (item is PumpControl pump)
-                    {
-                        var result = CommonMethod.PLCDevice.GroupList[0].VarList.First(c => c.VarName==pump.BindVarName).VarValue;
-                        this.Invoke(new Action(() =>
-                        {
-                            pump.PumpState=Convert.ToByte(result);
-                        }));
-                    }
-                    else if (item is TapControl tap)
-                    {
-                        var result = CommonMethod.PLCDevice.GroupList[0].VarList.First(c => c.VarName==tap.BindVarName).VarValue;
-                        this.Invoke(new Action(() =>
-                        {
-                            tap.TapStaTe=Convert.ToInt32(result);
-                        }));
-                    }
                 }
-            }
+            }));
+
         }
 
 
@@ -89,12 +90,15 @@ namespace AIR_ModbusTCP
         /// <param name="e"></param>
         private void tapCommon_DoubleClick(object sender, EventArgs e)
         {
-            if (sender is TapControl tap)
+            if (CommonMethod.PLCDevice.IsConnected)
             {
-                if (tap.BindVarName.ToString().Trim().Length>0&&tap.BindVarName!=null)
+                if (sender is TapControl tap)
                 {
-                    FrmTapControl frm = new FrmTapControl();
-                    frm.ShowDialog();
+                    if (tap.BindVarName.ToString().Trim().Length>0&&tap.BindVarName!=null)
+                    {
+                        FrmTapControl frm = new FrmTapControl();
+                        frm.ShowDialog();
+                    }
                 }
             }
         }
@@ -104,9 +108,19 @@ namespace AIR_ModbusTCP
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void pumpControl2_PumpDoubleClick(object sender, EventArgs e)
+        private void pumpCommon_PumpDoubleClick(object sender, EventArgs e)
         {
-
+            if (CommonMethod.PLCDevice.IsConnected)
+            {
+                if (sender is PumpControl pump)
+                {
+                    var variable = CommonMethod.PLCDevice.VarList.Where(c => c.VarName==pump.BindVarName).First();
+                    FrmPump frm = new FrmPump(pump.BindVarName);
+                    frm.ShowDialog();
+                }
+            }
         }
+
+
     }
 }

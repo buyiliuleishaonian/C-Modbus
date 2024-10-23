@@ -135,6 +135,8 @@
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmLogin";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TopPanel_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.TopPanel_MouseMove);
             this.panelEnhanced1.ResumeLayout(false);
             this.panelEnhanced1.PerformLayout();
             this.ResumeLayout(false);

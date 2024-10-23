@@ -16,8 +16,8 @@
         "IsShortAddress": true,
         "GroupList": [
           {
-            "Start": "1.400001",
-            "Length": 76,
+            "Start": "1.40001",
+            "Length": 77,
             "VarList": [
               {
                 "Start": "0",
@@ -374,7 +374,7 @@
               {
                 "Start": "44",
                 "VarName": "LQB1_Speed",
-                "VarType": "Short",
+                "VarType": "Float",
                 "VarAddress": "1.40045",
                 "Comments": "冷却泵1转速",
                 "Scale": 1.0,
@@ -422,7 +422,7 @@
               {
                 "Start": "49",
                 "VarName": "LQB1_RunHour",
-                "VarType": "Short",
+                "VarType": "Float",
                 "VarAddress": "1.40050",
                 "Comments": "冷却泵1运行时间",
                 "Scale": 1.0,
@@ -550,7 +550,7 @@
               {
                 "Start": "62",
                 "VarName": "LQB2_HeaterTemp",
-                "VarType": "Short",
+                "VarType": "Float",
                 "VarAddress": "1.40063",
                 "Comments": "冷却泵2加热器温度",
                 "Scale": 1.0,
@@ -754,14 +754,30 @@
                 "LowAlarmEnable": false,
                 "LowAlarmValue": 0.0,
                 "LowAlarmNote": null
+              },
+              {
+                "Start": "76",
+                "VarName": "CQG4Out_State",
+                "VarType": "Short",
+                "VarAddress": "1.40077",
+                "Comments": "储气罐4出气阀状态",
+                "Scale": 1.0,
+                "Offset": 0.0,
+                "ArchiveEnable": false,
+                "HighAlarmEnable": false,
+                "HighAlarmValue": 0.0,
+                "HighAlarmNote": null,
+                "LowAlarmEnable": false,
+                "LowAlarmValue": 0.0,
+                "LowAlarmNote": null
               }
             ],
-            "GroupName": "实时值",
+            "GroupName": "实时组",
             "IsActive": true
           },
           {
-            "Start": "1.000001",
-            "Length": 52,
+            "Start": "1.00001",
+            "Length": 54,
             "VarList": [
               {
                 "Start": "0",
@@ -1594,13 +1610,45 @@
                 "LowAlarmEnable": false,
                 "LowAlarmValue": 0.0,
                 "LowAlarmNote": null
+              },
+              {
+                "Start": "52",
+                "VarName": "CQG4Out_Open",
+                "VarType": "Bool",
+                "VarAddress": "1.53",
+                "Comments": "储气罐4出气阀打开",
+                "Scale": 1.0,
+                "Offset": 0.0,
+                "ArchiveEnable": false,
+                "HighAlarmEnable": false,
+                "HighAlarmValue": 0.0,
+                "HighAlarmNote": null,
+                "LowAlarmEnable": false,
+                "LowAlarmValue": 0.0,
+                "LowAlarmNote": null
+              },
+              {
+                "Start": "53",
+                "VarName": "CQG4Out_Close",
+                "VarType": "Bool",
+                "VarAddress": "1.54",
+                "Comments": "储气罐4出气阀关闭",
+                "Scale": 1.0,
+                "Offset": 0.0,
+                "ArchiveEnable": false,
+                "HighAlarmEnable": false,
+                "HighAlarmValue": 0.0,
+                "HighAlarmNote": null,
+                "LowAlarmEnable": false,
+                "LowAlarmValue": 0.0,
+                "LowAlarmNote": null
               }
             ],
             "GroupName": "状态组",
             "IsActive": true
           },
           {
-            "Start": "1.400101",
+            "Start": "1.40101",
             "Length": 48,
             "VarList": [
               {
@@ -1992,7 +2040,7 @@
             "IsActive": true
           },
           {
-            "Start": "1.400201",
+            "Start": "1.40201",
             "Length": 35,
             "VarList": [
               {
@@ -2236,7 +2284,7 @@
                 "LowAlarmNote": null
               },
               {
-                "Start": "219.1",
+                "Start": "219.10",
                 "VarName": "TestString",
                 "VarType": "String",
                 "VarAddress": "1.40220.1",

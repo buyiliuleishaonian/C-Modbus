@@ -75,6 +75,13 @@ namespace KYJDAL
             }
         }
 
+        /// <summary>
+        /// 创建数据表
+        /// </summary>
+        /// <param name="tableName"></param>
+        /// <param name="columns"></param>
+        /// <param name="isPrimarykey"></param>
+        /// <returns></returns>
         public bool CreateTable(string tableName,List<string> columns,bool isPrimarykey=true)
         { 
             StringBuilder stringBuilder = new StringBuilder();

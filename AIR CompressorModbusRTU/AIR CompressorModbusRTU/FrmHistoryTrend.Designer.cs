@@ -263,8 +263,8 @@
             this.ChartHistory.AxisY.MajorGridCount = 6;
             this.ChartHistory.AxisY.MajorGridEnabled = true;
             this.ChartHistory.AxisY.MajorGridType = SeeSharpTools.JY.GUI.StripChartXAxis.GridStyle.Dash;
-            this.ChartHistory.AxisY.Maximum = 3.5D;
-            this.ChartHistory.AxisY.Minimum = 0.5D;
+            this.ChartHistory.AxisY.Maximum = 5D;
+            this.ChartHistory.AxisY.Minimum = 0D;
             this.ChartHistory.AxisY.MinorGridColor = System.Drawing.Color.Black;
             this.ChartHistory.AxisY.MinorGridEnabled = false;
             this.ChartHistory.AxisY.MinorGridType = SeeSharpTools.JY.GUI.StripChartXAxis.GridStyle.DashDot;
@@ -286,8 +286,8 @@
             this.ChartHistory.AxisY2.MajorGridCount = 6;
             this.ChartHistory.AxisY2.MajorGridEnabled = true;
             this.ChartHistory.AxisY2.MajorGridType = SeeSharpTools.JY.GUI.StripChartXAxis.GridStyle.Dash;
-            this.ChartHistory.AxisY2.Maximum = 3.5D;
-            this.ChartHistory.AxisY2.Minimum = 0.5D;
+            this.ChartHistory.AxisY2.Maximum = 100D;
+            this.ChartHistory.AxisY2.Minimum = 0D;
             this.ChartHistory.AxisY2.MinorGridColor = System.Drawing.Color.Black;
             this.ChartHistory.AxisY2.MinorGridEnabled = false;
             this.ChartHistory.AxisY2.MinorGridType = SeeSharpTools.JY.GUI.StripChartXAxis.GridStyle.DashDot;

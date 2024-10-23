@@ -139,6 +139,12 @@ namespace CommonHelper
 
 
         #region DataTableToList
+        /// <summary>
+        /// ½«table×ªÎªlist
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="table"></param>
+        /// <returns></returns>
         public static List<T> DataTableToList<T>(DataTable table)
         {
             if (table == null)

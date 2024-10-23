@@ -34,14 +34,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelEnhanced1 = new thinger.ControlLib.PanelEnhanced();
             this.dgv_Log = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_Save = new System.Windows.Forms.Button();
             this.btn_Select = new System.Windows.Forms.Button();
             this.cmb_LogType = new System.Windows.Forms.ComboBox();
@@ -51,6 +43,14 @@
             this.date_Start = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelEnhanced1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Log)).BeginInit();
             this.SuspendLayout();
@@ -131,65 +131,7 @@
             this.dgv_Log.RowTemplate.Height = 23;
             this.dgv_Log.Size = new System.Drawing.Size(1181, 644);
             this.dgv_Log.TabIndex = 13;
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "inserttime";
-            this.Column1.HeaderText = "日期时间";
-            this.Column1.Name = "Column1";
-            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column1.Width = 200;
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "LogType";
-            this.Column2.HeaderText = "日志类型";
-            this.Column2.Name = "Column2";
-            this.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "AlarmType";
-            this.Column4.HeaderText = "报警类型";
-            this.Column4.Name = "Column4";
-            this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Column6
-            // 
-            this.Column6.DataPropertyName = "Note";
-            this.Column6.HeaderText = "日志报警信息";
-            this.Column6.Name = "Column6";
-            this.Column6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column6.Width = 250;
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "operador";
-            this.Column5.HeaderText = "操作对象";
-            this.Column5.Name = "Column5";
-            this.Column5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Column7
-            // 
-            this.Column7.DataPropertyName = "varname";
-            this.Column7.HeaderText = "变量名称";
-            this.Column7.Name = "Column7";
-            this.Column7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Column8
-            // 
-            this.Column8.DataPropertyName = "alarmSet";
-            this.Column8.HeaderText = "报警设定";
-            this.Column8.Name = "Column8";
-            this.Column8.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // Column9
-            // 
-            this.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column9.DataPropertyName = "alarmValue";
-            this.Column9.HeaderText = "报警值";
-            this.Column9.Name = "Column9";
-            this.Column9.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.dgv_Log.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.dgv_Log_RowPostPaint);
             // 
             // btn_Save
             // 
@@ -203,6 +145,7 @@
             this.btn_Save.TabIndex = 21;
             this.btn_Save.Text = "导出";
             this.btn_Save.UseVisualStyleBackColor = false;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
             // btn_Select
             // 
@@ -216,6 +159,7 @@
             this.btn_Select.TabIndex = 20;
             this.btn_Select.Text = "查询";
             this.btn_Select.UseVisualStyleBackColor = false;
+            this.btn_Select.Click += new System.EventHandler(this.btn_Select_Click);
             // 
             // cmb_LogType
             // 
@@ -271,6 +215,7 @@
             this.date_Start.Name = "date_Start";
             this.date_Start.Size = new System.Drawing.Size(200, 26);
             this.date_Start.TabIndex = 15;
+            this.date_Start.Value = new System.DateTime(2024, 10, 9, 17, 5, 0, 0);
             // 
             // label1
             // 
@@ -296,6 +241,65 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "日志查询";
             // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "inserttime";
+            this.Column1.HeaderText = "日期时间";
+            this.Column1.Name = "Column1";
+            this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column1.Width = 200;
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "LogType";
+            this.Column2.HeaderText = "日志类型";
+            this.Column2.Name = "Column2";
+            this.Column2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "AlarmType";
+            this.Column4.HeaderText = "报警类型";
+            this.Column4.Name = "Column4";
+            this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "Note";
+            this.Column6.HeaderText = "日志报警信息";
+            this.Column6.Name = "Column6";
+            this.Column6.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Column6.Width = 250;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "operator";
+            this.Column5.HeaderText = "操作对象";
+            this.Column5.Name = "Column5";
+            this.Column5.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Column7
+            // 
+            this.Column7.DataPropertyName = "varname";
+            this.Column7.HeaderText = "变量名称";
+            this.Column7.Name = "Column7";
+            this.Column7.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Column8
+            // 
+            this.Column8.DataPropertyName = "alarmSet";
+            this.Column8.HeaderText = "报警设定";
+            this.Column8.Name = "Column8";
+            this.Column8.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Column9
+            // 
+            this.Column9.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column9.DataPropertyName = "alarmValue";
+            this.Column9.HeaderText = "报警值";
+            this.Column9.Name = "Column9";
+            this.Column9.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
             // FrmHistoryLog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -318,14 +322,6 @@
 
         private thinger.ControlLib.PanelEnhanced panelEnhanced1;
         private System.Windows.Forms.DataGridView dgv_Log;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.Button btn_Save;
         private System.Windows.Forms.Button btn_Select;
         private System.Windows.Forms.ComboBox cmb_LogType;
@@ -335,5 +331,13 @@
         private System.Windows.Forms.DateTimePicker date_Start;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
     }
 }

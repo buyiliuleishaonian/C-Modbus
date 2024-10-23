@@ -3,47 +3,265 @@
   "WorkspaceRootPath": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\commonmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\commonmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmusermanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmusermanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmhistorytrend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmhistorytrend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmhistorytrend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmhistorytrend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmhistorytrend.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmhistorytrend.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmpump.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmpump.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmparamset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmparamset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|c:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50plc\u5F00\u653E\u5F0F\u901A\u4FE1\\air modbustcp\\air modbustcp\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmtapcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmtapcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|c:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50plc\u5F00\u653E\u5F0F\u901A\u4FE1\\air modbustcp\\air modbustcp\\bin\\debug\\config\\device.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\bin\\debug\\config\\device.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmtapcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmtapcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmactualtrend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmactualtrend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmactualtrend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmactualtrend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmalarmlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmalarmlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86BEE030-D0DE-4166-9AF1-941BD6F0A212}|AIR DAL\\AIR DAL.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air dal\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86BEE030-D0DE-4166-9AF1-941BD6F0A212}|AIR DAL\\AIR DAL.csproj|solutionrelative:air dal\\dataservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86BEE030-D0DE-4166-9AF1-941BD6F0A212}|AIR DAL\\AIR DAL.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air dal\\sqliteserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86BEE030-D0DE-4166-9AF1-941BD6F0A212}|AIR DAL\\AIR DAL.csproj|solutionrelative:air dal\\sqliteserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmparamset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmparamset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDEA9369-FA4C-4597-8AAE-C6CFFECCCC25}|AIR BLL\\AIR BLL.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air bll\\sqlitemanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDEA9369-FA4C-4597-8AAE-C6CFFECCCC25}|AIR BLL\\AIR BLL.csproj|solutionrelative:air bll\\sqlitemanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\commonhelper\\sqllitehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|solutionrelative:commonhelper\\sqllitehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmmessageboxwithack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmmessageboxwithack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96E13294-A95C-47D9-AFC0-E6D068ED07C0}|Wen.KYJControlLib\\Wen.KYJControlLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\wen.kyjcontrollib\\devicecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96E13294-A95C-47D9-AFC0-E6D068ED07C0}|Wen.KYJControlLib\\Wen.KYJControlLib.csproj|solutionrelative:wen.kyjcontrollib\\devicecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EDEA9369-FA4C-4597-8AAE-C6CFFECCCC25}|AIR BLL\\AIR BLL.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air bll\\datamanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDEA9369-FA4C-4597-8AAE-C6CFFECCCC25}|AIR BLL\\AIR BLL.csproj|solutionrelative:air bll\\datamanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96E13294-A95C-47D9-AFC0-E6D068ED07C0}|Wen.KYJControlLib\\Wen.KYJControlLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\wen.kyjcontrollib\\devicecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{96E13294-A95C-47D9-AFC0-E6D068ED07C0}|Wen.KYJControlLib\\Wen.KYJControlLib.csproj|solutionrelative:wen.kyjcontrollib\\devicecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96E13294-A95C-47D9-AFC0-E6D068ED07C0}|Wen.KYJControlLib\\Wen.KYJControlLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\wen.kyjcontrollib\\kyjcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{96E13294-A95C-47D9-AFC0-E6D068ED07C0}|Wen.KYJControlLib\\Wen.KYJControlLib.csproj|solutionrelative:wen.kyjcontrollib\\kyjcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmtapcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmtapcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmprint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmprint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmmodify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmmodify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\commonmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\commonmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmhistorylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmhistorylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmhistorylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmhistorylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|c:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50plc\u5F00\u653E\u5F0F\u901A\u4FE1\\air modbustcp\\air modbustcp\\frmmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmtapcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmtapcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{96E13294-A95C-47D9-AFC0-E6D068ED07C0}|Wen.KYJControlLib\\Wen.KYJControlLib.csproj|c:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50plc\u5F00\u653E\u5F0F\u901A\u4FE1\\air modbustcp\\wen.kyjcontrollib\\devicestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EDEA9369-FA4C-4597-8AAE-C6CFFECCCC25}|AIR BLL\\AIR BLL.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air bll\\sysadminmanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDEA9369-FA4C-4597-8AAE-C6CFFECCCC25}|AIR BLL\\AIR BLL.csproj|solutionrelative:air bll\\sysadminmanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDEA9369-FA4C-4597-8AAE-C6CFFECCCC25}|AIR BLL\\AIR BLL.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air bll\\logmanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDEA9369-FA4C-4597-8AAE-C6CFFECCCC25}|AIR BLL\\AIR BLL.csproj|solutionrelative:air bll\\logmanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86BEE030-D0DE-4166-9AF1-941BD6F0A212}|AIR DAL\\AIR DAL.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air dal\\logserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86BEE030-D0DE-4166-9AF1-941BD6F0A212}|AIR DAL\\AIR DAL.csproj|solutionrelative:air dal\\logserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86BEE030-D0DE-4166-9AF1-941BD6F0A212}|AIR DAL\\AIR DAL.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air dal\\sysadminserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86BEE030-D0DE-4166-9AF1-941BD6F0A212}|AIR DAL\\AIR DAL.csproj|solutionrelative:air dal\\sysadminserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmmodify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmmodify.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\commonhelper\\sqlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|solutionrelative:commonhelper\\sqlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmmessageboxwithoutack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmmessageboxwithoutack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmpump.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmpump.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmparamset.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmparamset.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\commonhelper\\iniconfighelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|solutionrelative:commonhelper\\iniconfighelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmalarmlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmalarmlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|CommonHelper||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|AIR DAL||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96E13294-A95C-47D9-AFC0-E6D068ED07C0}|Wen.KYJControlLib\\Wen.KYJControlLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\wen.kyjcontrollib\\devicecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{96E13294-A95C-47D9-AFC0-E6D068ED07C0}|Wen.KYJControlLib\\Wen.KYJControlLib.csproj|solutionrelative:wen.kyjcontrollib\\devicecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C68DB6-4FA2-4CEE-A1D5-7F84B2D4A166}|Model\\Model.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\model\\configmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C68DB6-4FA2-4CEE-A1D5-7F84B2D4A166}|Model\\Model.csproj|solutionrelative:model\\configmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\printdgv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\printdgv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\commonhelper\\excelhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|solutionrelative:commonhelper\\excelhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\commonhelper\\datagridviewstyle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|solutionrelative:commonhelper\\datagridviewstyle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\commonhelper\\datatypeenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|solutionrelative:commonhelper\\datatypeenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68C68DB6-4FA2-4CEE-A1D5-7F84B2D4A166}|Model\\Model.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\model\\syslogmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68C68DB6-4FA2-4CEE-A1D5-7F84B2D4A166}|Model\\Model.csproj|solutionrelative:model\\syslogmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\commonhelper\\csvhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|solutionrelative:commonhelper\\csvhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\commonhelper\\filehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|solutionrelative:commonhelper\\filehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\commonhelper\\datavalidate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|solutionrelative:commonhelper\\datavalidate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\commonhelper\\xmlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|solutionrelative:commonhelper\\xmlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\commonhelper\\mysqlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|solutionrelative:commonhelper\\mysqlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\commonhelper\\jsonhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|solutionrelative:commonhelper\\jsonhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmmonitor.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmmonitor.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmpump.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmpump.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96E13294-A95C-47D9-AFC0-E6D068ED07C0}|Wen.KYJControlLib\\Wen.KYJControlLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\wen.kyjcontrollib\\devicecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96E13294-A95C-47D9-AFC0-E6D068ED07C0}|Wen.KYJControlLib\\Wen.KYJControlLib.csproj|solutionrelative:wen.kyjcontrollib\\devicecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\commonhelper\\modbustcp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|solutionrelative:commonhelper\\modbustcp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\commonhelper\\bytearray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|solutionrelative:commonhelper\\bytearray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\commonhelper\\cpuinfohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|solutionrelative:commonhelper\\cpuinfohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96E13294-A95C-47D9-AFC0-E6D068ED07C0}|Wen.KYJControlLib\\Wen.KYJControlLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\wen.kyjcontrollib\\kyjcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{96E13294-A95C-47D9-AFC0-E6D068ED07C0}|Wen.KYJControlLib\\Wen.KYJControlLib.csproj|solutionrelative:wen.kyjcontrollib\\kyjcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96E13294-A95C-47D9-AFC0-E6D068ED07C0}|Wen.KYJControlLib\\Wen.KYJControlLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\wen.kyjcontrollib\\devicestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{96E13294-A95C-47D9-AFC0-E6D068ED07C0}|Wen.KYJControlLib\\Wen.KYJControlLib.csproj|solutionrelative:wen.kyjcontrollib\\devicestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -51,79 +269,15 @@
       "RelativeMoniker": "D:0:0:{96E13294-A95C-47D9-AFC0-E6D068ED07C0}|Wen.KYJControlLib\\Wen.KYJControlLib.csproj|solutionrelative:wen.kyjcontrollib\\devicestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmmessageboxwithoutack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmmessageboxwithoutack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\\u5B66\u4E60\u6587\u4EF6\\C#\u9879\u76EE\\\u9879\u76EE\u56DB\u4E0A\u4F4D\u673A\u914D\u7F6E\u8F6F\u4EF6\\ProConfigSys_Project\\Wen.ProConfigSys\\ConfigLib\\Config\\ConfigManage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmalarmlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmalarmlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmhistorytrend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmhistorytrend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmhistorylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmhistorylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmhistorylog.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmhistorylog.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmhistorylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmhistorylog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmactualtrend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmactualtrend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmalarmlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmalarmlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmalarmlog.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmalarmlog.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmusermanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmusermanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmprint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmprint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmparamset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmparamset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmactualtrend.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmactualtrend.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmactualtrend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmactualtrend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmusermanage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -132,10 +286,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmparamset.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmparamset.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{96E13294-A95C-47D9-AFC0-E6D068ED07C0}|Wen.KYJControlLib\\Wen.KYJControlLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\wen.kyjcontrollib\\title.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -154,34 +304,6 @@
       "RelativeMoniker": "D:0:0:{96E13294-A95C-47D9-AFC0-E6D068ED07C0}|Wen.KYJControlLib\\Wen.KYJControlLib.csproj|solutionrelative:wen.kyjcontrollib\\navicontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{96E13294-A95C-47D9-AFC0-E6D068ED07C0}|Wen.KYJControlLib\\Wen.KYJControlLib.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\wen.kyjcontrollib\\navicontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{96E13294-A95C-47D9-AFC0-E6D068ED07C0}|Wen.KYJControlLib\\Wen.KYJControlLib.csproj|solutionrelative:wen.kyjcontrollib\\navicontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDEA9369-FA4C-4597-8AAE-C6CFFECCCC25}|AIR BLL\\AIR BLL.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air bll\\sqlitemanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDEA9369-FA4C-4597-8AAE-C6CFFECCCC25}|AIR BLL\\AIR BLL.csproj|solutionrelative:air bll\\sqlitemanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86BEE030-D0DE-4166-9AF1-941BD6F0A212}|AIR DAL\\AIR DAL.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air dal\\sqliteserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86BEE030-D0DE-4166-9AF1-941BD6F0A212}|AIR DAL\\AIR DAL.csproj|solutionrelative:air dal\\sqliteserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\commonhelper\\mysqlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|solutionrelative:commonhelper\\mysqlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\commonhelper\\sqllitehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|solutionrelative:commonhelper\\sqllitehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{86BEE030-D0DE-4166-9AF1-941BD6F0A212}|AIR DAL\\AIR DAL.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air dal\\sysadminserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{86BEE030-D0DE-4166-9AF1-941BD6F0A212}|AIR DAL\\AIR DAL.csproj|solutionrelative:air dal\\sysadminserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmmessageboxwithoutack.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmmessageboxwithoutack.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -198,59 +320,7 @@
       "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmmessageboxwithack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|CommonHelper||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|AIR DAL||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|AIR BLL||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|AIR ModbusTCP||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDEA9369-FA4C-4597-8AAE-C6CFFECCCC25}|AIR BLL\\AIR BLL.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air bll\\sysadminmanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDEA9369-FA4C-4597-8AAE-C6CFFECCCC25}|AIR BLL\\AIR BLL.csproj|solutionrelative:air bll\\sysadminmanage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\commonhelper\\cpuinfohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|solutionrelative:commonhelper\\cpuinfohelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\commonhelper\\datagridviewstyle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|solutionrelative:commonhelper\\datagridviewstyle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\commonhelper\\jsonhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|solutionrelative:commonhelper\\jsonhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\commonhelper\\modbustcp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|solutionrelative:commonhelper\\modbustcp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\commonhelper\\bytearray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|solutionrelative:commonhelper\\bytearray.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\commonhelper\\excelhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|solutionrelative:commonhelper\\excelhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\commonhelper\\sqlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAEA47EE-DC5F-429D-8AC4-E2E036475C52}|CommonHelper\\CommonHelper.csproj|solutionrelative:commonhelper\\sqlhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\24242\\AppData\\Local\\Temp\\.vsdbgsrc\\cdeff39f53d5f49cf769a964fb40ff9176d8d6c7aad7d535e60a53bbc75f3bc4\\SQLiteHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\printdgv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\printdgv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{68C68DB6-4FA2-4CEE-A1D5-7F84B2D4A166}|Model\\Model.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\model\\syslogmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{68C68DB6-4FA2-4CEE-A1D5-7F84B2D4A166}|Model\\Model.csproj|solutionrelative:model\\syslogmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{68C68DB6-4FA2-4CEE-A1D5-7F84B2D4A166}|Model\\Model.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\model\\sysadminmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -269,18 +339,6 @@
       "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmparamset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmparamset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmhistorytrend.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmhistorytrend.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmhistorytrend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmhistorytrend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\frmprint.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\frmprint.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -291,10 +349,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\air modbustcp\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
       "RelativeMoniker": "D:0:0:{BAF45534-CBA3-4BFE-A3AC-4189CF515145}|AIR ModbusTCP\\AIR ModbusTCP.csproj|solutionrelative:air modbustcp\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\bin\\Debug\\Config\\Device.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AIR ModbusTCP\\bin\\Debug\\Config\\Device.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -304,94 +358,110 @@
       "DocumentGroups": [
         {
           "DockedHeight": 287,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FrmTapControl.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmTapControl.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmTapControl.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmTapControl.cs",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmTapControl.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAIwDIAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T10:20:47.817Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DeviceControl.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\DeviceControl.cs",
-              "RelativeDocumentMoniker": "Wen.KYJControlLib\\DeviceControl.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\DeviceControl.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "Wen.KYJControlLib\\DeviceControl.cs [\u8BBE\u8BA1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T12:56:51.589Z",
-              "EditorCaption": " [\u8BBE\u8BA1]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FrmMonitor.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMonitor.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmMonitor.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMonitor.cs",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmMonitor.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAjwF8AAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T05:36:26.201Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "KYJcontrol.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\KYJcontrol.cs",
-              "RelativeDocumentMoniker": "Wen.KYJControlLib\\KYJcontrol.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\KYJcontrol.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "Wen.KYJControlLib\\KYJcontrol.cs [\u8BBE\u8BA1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T12:57:07.535Z",
-              "EditorCaption": " [\u8BBE\u8BA1]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DeviceControl.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\DeviceControl.cs",
-              "RelativeDocumentMoniker": "Wen.KYJControlLib\\DeviceControl.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\DeviceControl.cs",
-              "RelativeToolTip": "Wen.KYJControlLib\\DeviceControl.cs",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAowGoAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T12:56:58.241Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "FrmMessageBoxWithAck.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMessageBoxWithAck.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmMessageBoxWithAck.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMessageBoxWithAck.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmMessageBoxWithAck.cs [\u8BBE\u8BA1]",
+              "Title": "FrmPump.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmPump.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmPump.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmPump.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmPump.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T13:41:19.076Z",
+              "WhenOpened": "2024-09-23T03:22:50.073Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmHistoryTrend.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmHistoryTrend.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmHistoryTrend.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmHistoryTrend.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmHistoryTrend.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:52:12.333Z",
               "EditorCaption": " [\u8BBE\u8BA1]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "FrmHistoryTrend.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmHistoryTrend.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmHistoryTrend.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmHistoryTrend.cs",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmHistoryTrend.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAgwDQBAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:52:29.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmHistoryTrend.Designer.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmHistoryTrend.Designer.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmHistoryTrend.Designer.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmHistoryTrend.Designer.cs",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmHistoryTrend.Designer.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAqwHoAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:51:44.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmUserManage.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmUserManage.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmUserManage.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmUserManage.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmUserManage.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T14:00:56.744Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmParamSet.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmParamSet.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmParamSet.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmParamSet.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmParamSet.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:55:27.885Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FrmMain.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMain.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmMain.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMain.cs",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmMain.cs",
+              "ViewState": "AQIAAJEAAAAAAAAAAAAiwKEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:04:34.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "FrmMain.cs [\u8BBE\u8BA1]",
               "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMain.cs",
               "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmMain.cs",
@@ -403,166 +473,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CommonMethod.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\CommonMethod.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\CommonMethod.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\CommonMethod.cs",
-              "RelativeToolTip": "AIR ModbusTCP\\CommonMethod.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAWwCQAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T13:48:22.418Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FrmTapControl.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmTapControl.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmTapControl.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmTapControl.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmTapControl.cs [\u8BBE\u8BA1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T10:49:21.924Z",
-              "EditorCaption": " [\u8BBE\u8BA1]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "FrmMonitor.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMonitor.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmMonitor.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMonitor.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmMonitor.cs [\u8BBE\u8BA1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T10:44:23.747Z",
-              "EditorCaption": " [\u8BBE\u8BA1]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "FrmMain.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMain.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmMain.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMain.cs",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmMain.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAwwCgAAABNAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T13:04:34.875Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "FrmLogin.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmLogin.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmLogin.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmLogin.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmLogin.cs [\u8BBE\u8BA1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T12:28:24.137Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\Program.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\Program.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\Program.cs",
-              "RelativeToolTip": "AIR ModbusTCP\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAATAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T12:35:13.517Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DeviceState.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\DeviceState.cs",
-              "RelativeDocumentMoniker": "Wen.KYJControlLib\\DeviceState.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\DeviceState.cs",
-              "RelativeToolTip": "Wen.KYJControlLib\\DeviceState.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-18T01:22:46.279Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DeviceState.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\DeviceState.cs",
-              "RelativeDocumentMoniker": "Wen.KYJControlLib\\DeviceState.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\DeviceState.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "Wen.KYJControlLib\\DeviceState.cs [\u8BBE\u8BA1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T12:57:06.105Z",
-              "EditorCaption": " [\u8BBE\u8BA1]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ConfigManage.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\C#\u9879\u76EE\\\u9879\u76EE\u56DB\u4E0A\u4F4D\u673A\u914D\u7F6E\u8F6F\u4EF6\\ProConfigSys_Project\\Wen.ProConfigSys\\ConfigLib\\Config\\ConfigManage.cs",
-              "RelativeDocumentMoniker": "..\\..\\C#\u9879\u76EE\\\u9879\u76EE\u56DB\u4E0A\u4F4D\u673A\u914D\u7F6E\u8F6F\u4EF6\\ProConfigSys_Project\\Wen.ProConfigSys\\ConfigLib\\Config\\ConfigManage.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\C#\u9879\u76EE\\\u9879\u76EE\u56DB\u4E0A\u4F4D\u673A\u914D\u7F6E\u8F6F\u4EF6\\ProConfigSys_Project\\Wen.ProConfigSys\\ConfigLib\\Config\\ConfigManage.cs",
-              "RelativeToolTip": "..\\..\\C#\u9879\u76EE\\\u9879\u76EE\u56DB\u4E0A\u4F4D\u673A\u914D\u7F6E\u8F6F\u4EF6\\ProConfigSys_Project\\Wen.ProConfigSys\\ConfigLib\\Config\\ConfigManage.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAAwEcAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-02T23:41:51.159Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
-              "Title": "SQLiteHelper.cs",
-              "DocumentMoniker": "C:\\Users\\24242\\AppData\\Local\\Temp\\.vsdbgsrc\\cdeff39f53d5f49cf769a964fb40ff9176d8d6c7aad7d535e60a53bbc75f3bc4\\SQLiteHelper.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\Users\\24242\\AppData\\Local\\Temp\\.vsdbgsrc\\cdeff39f53d5f49cf769a964fb40ff9176d8d6c7aad7d535e60a53bbc75f3bc4\\SQLiteHelper.cs",
-              "ToolTip": "C:\\Users\\24242\\AppData\\Local\\Temp\\.vsdbgsrc\\cdeff39f53d5f49cf769a964fb40ff9176d8d6c7aad7d535e60a53bbc75f3bc4\\SQLiteHelper.cs",
-              "RelativeToolTip": "..\\..\\..\\Users\\24242\\AppData\\Local\\Temp\\.vsdbgsrc\\cdeff39f53d5f49cf769a964fb40ff9176d8d6c7aad7d535e60a53bbc75f3bc4\\SQLiteHelper.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAYwFYAAABNAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T14:56:14.861Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 8,
               "Title": "Device.json",
               "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\bin\\Debug\\Config\\Device.json",
               "RelativeDocumentMoniker": "AIR ModbusTCP\\bin\\Debug\\Config\\Device.json",
               "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\bin\\Debug\\Config\\Device.json",
               "RelativeToolTip": "AIR ModbusTCP\\bin\\Debug\\Config\\Device.json",
-              "ViewState": "AQIAAEYGAAAAAAAAAAAAAGUGAAApAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-13T03:35:33.53Z",
+              "WhenOpened": "2024-10-23T12:36:37.286Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "FrmAlarmLog.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmAlarmLog.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmAlarmLog.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmAlarmLog.cs",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmAlarmLog.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAaAAAA",
+              "DocumentIndex": 10,
+              "Title": "FrmActualTrend.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmActualTrend.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmActualTrend.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmActualTrend.cs",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmActualTrend.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAqwEYAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T13:18:25.715Z"
+              "WhenOpened": "2024-08-31T13:19:36.595Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "FrmMessageBoxWithOutAck.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMessageBoxWithOutAck.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmMessageBoxWithOutAck.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMessageBoxWithOutAck.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmMessageBoxWithOutAck.cs [\u8BBE\u8BA1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T13:41:17.972Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 11,
               "Title": "FrmActualTrend.cs [\u8BBE\u8BA1]",
               "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmActualTrend.cs",
               "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmActualTrend.cs",
@@ -573,7 +509,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 12,
               "Title": "FrmAlarmLog.cs [\u8BBE\u8BA1]",
               "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmAlarmLog.cs",
               "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmAlarmLog.cs",
@@ -584,87 +520,125 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "FrmHistoryLog.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmHistoryLog.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmHistoryLog.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmHistoryLog.cs",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmHistoryLog.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T13:30:56.513Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "FrmHistoryLog.Designer.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmHistoryLog.Designer.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmHistoryLog.Designer.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmHistoryLog.Designer.cs",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmHistoryLog.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T13:31:20.439Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "FrmHistoryLog.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmHistoryLog.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmHistoryLog.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmHistoryLog.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmHistoryLog.cs [\u8BBE\u8BA1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T13:31:27.547Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "FrmHistoryTrend.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmHistoryTrend.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmHistoryTrend.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmHistoryTrend.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmHistoryTrend.cs [\u8BBE\u8BA1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T13:52:12.333Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "FrmAlarmLog.Designer.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmAlarmLog.Designer.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmAlarmLog.Designer.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmAlarmLog.Designer.cs",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmAlarmLog.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T13:18:43.745Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "FrmUserManage.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmUserManage.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmUserManage.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmUserManage.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmUserManage.cs [\u8BBE\u8BA1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T14:00:56.744Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 9,
               "Title": "FrmReport.cs [\u8BBE\u8BA1]",
               "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmReport.cs",
               "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmReport.cs",
               "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmReport.cs [\u8BBE\u8BA1]",
               "RelativeToolTip": "AIR ModbusTCP\\FrmReport.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T13:56:49.248Z"
+              "WhenOpened": "2024-08-27T13:56:49.248Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 13,
+              "Title": "DataService.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR DAL\\DataService.cs",
+              "RelativeDocumentMoniker": "AIR DAL\\DataService.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR DAL\\DataService.cs",
+              "RelativeToolTip": "AIR DAL\\DataService.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAiwDMAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T12:33:22.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SQLLiteHelper.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\SQLLiteHelper.cs",
+              "RelativeDocumentMoniker": "CommonHelper\\SQLLiteHelper.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\SQLLiteHelper.cs",
+              "RelativeToolTip": "CommonHelper\\SQLLiteHelper.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAiwCUAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T03:53:25.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SQLiteServer.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR DAL\\SQLiteServer.cs",
+              "RelativeDocumentMoniker": "AIR DAL\\SQLiteServer.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR DAL\\SQLiteServer.cs",
+              "RelativeToolTip": "AIR DAL\\SQLiteServer.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAiwCUAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T12:57:35.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SQLiteManage.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR BLL\\SQLiteManage.cs",
+              "RelativeDocumentMoniker": "AIR BLL\\SQLiteManage.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR BLL\\SQLiteManage.cs",
+              "RelativeToolTip": "AIR BLL\\SQLiteManage.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAADgvxYAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T05:43:18.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FrmParamSet.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmParamSet.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmParamSet.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmParamSet.cs",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmParamSet.cs",
+              "ViewState": "AQIAAIsAAAAAAAAAAAAvwLIAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:55:02.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FrmMessageBoxWithAck.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMessageBoxWithAck.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmMessageBoxWithAck.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMessageBoxWithAck.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmMessageBoxWithAck.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T13:41:19.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DataManage.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR BLL\\DataManage.cs",
+              "RelativeDocumentMoniker": "AIR BLL\\DataManage.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR BLL\\DataManage.cs",
+              "RelativeToolTip": "AIR BLL\\DataManage.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACIAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-21T10:40:56.706Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FrmLogin.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmLogin.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmLogin.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmLogin.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmLogin.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T12:28:24.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FrmTapControl.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmTapControl.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmTapControl.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmTapControl.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmTapControl.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T10:49:21.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "FrmPrint.cs [\u8BBE\u8BA1]",
               "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmPrint.cs",
               "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmPrint.cs",
@@ -675,257 +649,232 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "FrmParamSet.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmParamSet.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmParamSet.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmParamSet.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmParamSet.cs [\u8BBE\u8BA1]",
+              "DocumentIndex": 23,
+              "Title": "FrmModify.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmModify.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmModify.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmModify.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmModify.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T13:55:27.885Z"
+              "WhenOpened": "2024-10-15T14:29:53.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "FrmMonitor.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMonitor.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmMonitor.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMonitor.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmMonitor.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T10:44:23.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CommonMethod.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\CommonMethod.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\CommonMethod.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\CommonMethod.cs",
+              "RelativeToolTip": "AIR ModbusTCP\\CommonMethod.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAqwIQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T13:48:22.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "FrmHistoryLog.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmHistoryLog.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmHistoryLog.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmHistoryLog.cs",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmHistoryLog.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAkwCwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T13:30:56.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "FrmHistoryLog.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmHistoryLog.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmHistoryLog.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmHistoryLog.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmHistoryLog.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T13:31:27.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "FrmMonitor.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMonitor.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmMonitor.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMonitor.cs",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmMonitor.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAuwC8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T05:36:26.201Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 29,
-              "Title": "FrmActualTrend.Designer.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmActualTrend.Designer.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmActualTrend.Designer.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmActualTrend.Designer.cs",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmActualTrend.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAgAAAA",
+              "Title": "FrmTapControl.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmTapControl.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmTapControl.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmTapControl.cs",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmTapControl.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAASwCwAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T13:19:59.892Z"
+              "WhenOpened": "2024-09-17T10:20:47.817Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 30,
-              "Title": "FrmActualTrend.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmActualTrend.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmActualTrend.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmActualTrend.cs",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmActualTrend.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAdAAAA",
+              "Title": "SysAdminManage.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR BLL\\SysAdminManage.cs",
+              "RelativeDocumentMoniker": "AIR BLL\\SysAdminManage.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR BLL\\SysAdminManage.cs",
+              "RelativeToolTip": "AIR BLL\\SysAdminManage.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAnwBoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T13:19:36.595Z"
+              "WhenOpened": "2024-08-29T05:35:41.4Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 31,
-              "Title": "FrmUserManage.Designer.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmUserManage.Designer.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmUserManage.Designer.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmUserManage.Designer.cs",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmUserManage.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAA4AAAA",
+              "Title": "LogManage.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR BLL\\LogManage.cs",
+              "RelativeDocumentMoniker": "AIR BLL\\LogManage.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR BLL\\LogManage.cs",
+              "RelativeToolTip": "AIR BLL\\LogManage.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAWwCcAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T14:00:41.376Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "FrmMain.Designer.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMain.Designer.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmMain.Designer.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMain.Designer.cs",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmMain.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIEAAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T13:01:07.986Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "FrmParamSet.Designer.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmParamSet.Designer.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmParamSet.Designer.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmParamSet.Designer.cs",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmParamSet.Designer.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAiwBEAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T13:55:22.875Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Title.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\Title.cs",
-              "RelativeDocumentMoniker": "Wen.KYJControlLib\\Title.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\Title.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "Wen.KYJControlLib\\Title.cs [\u8BBE\u8BA1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T12:57:09.586Z"
+              "WhenOpened": "2024-09-25T01:44:43.204Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 35,
-              "Title": "TapControl.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\TapControl.cs",
-              "RelativeDocumentMoniker": "Wen.KYJControlLib\\TapControl.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\TapControl.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "Wen.KYJControlLib\\TapControl.cs [\u8BBE\u8BA1]",
+              "Title": "FrmModify.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmModify.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmModify.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmModify.cs",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmModify.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAmwFoAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T12:57:09.18Z"
+              "WhenOpened": "2024-10-15T14:45:09.501Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "PumpControl.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\PumpControl.cs",
-              "RelativeDocumentMoniker": "Wen.KYJControlLib\\PumpControl.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\PumpControl.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "Wen.KYJControlLib\\PumpControl.cs [\u8BBE\u8BA1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T12:57:08.629Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "NaviControl.cs [\u8BBE\u8BA1]",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\NaviControl.cs",
-              "RelativeDocumentMoniker": "Wen.KYJControlLib\\NaviControl.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\NaviControl.cs [\u8BBE\u8BA1]",
-              "RelativeToolTip": "Wen.KYJControlLib\\NaviControl.cs [\u8BBE\u8BA1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T12:57:08.224Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 34,
               "Title": "FrmLogin.cs",
               "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmLogin.cs",
               "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmLogin.cs",
               "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmLogin.cs",
               "RelativeToolTip": "AIR ModbusTCP\\FrmLogin.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAOAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAUwCwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-27T12:35:01.217Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "MySQLHelper.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\MySQLHelper.cs",
-              "RelativeDocumentMoniker": "CommonHelper\\MySQLHelper.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\MySQLHelper.cs",
-              "RelativeToolTip": "CommonHelper\\MySQLHelper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T03:55:39.524Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "NaviControl.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\NaviControl.cs",
-              "RelativeDocumentMoniker": "Wen.KYJControlLib\\NaviControl.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\NaviControl.cs",
-              "RelativeToolTip": "Wen.KYJControlLib\\NaviControl.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAEMAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T00:42:19.512Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "SQLiteManage.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR BLL\\SQLiteManage.cs",
-              "RelativeDocumentMoniker": "AIR BLL\\SQLiteManage.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR BLL\\SQLiteManage.cs",
-              "RelativeToolTip": "AIR BLL\\SQLiteManage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T05:43:18.346Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "SQLLiteHelper.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\SQLLiteHelper.cs",
-              "RelativeDocumentMoniker": "CommonHelper\\SQLLiteHelper.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\SQLLiteHelper.cs",
-              "RelativeToolTip": "CommonHelper\\SQLLiteHelper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T03:53:25.527Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "SQLiteServer.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR DAL\\SQLiteServer.cs",
-              "RelativeDocumentMoniker": "AIR DAL\\SQLiteServer.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR DAL\\SQLiteServer.cs",
-              "RelativeToolTip": "AIR DAL\\SQLiteServer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T12:57:35.315Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 33,
               "Title": "SysAdminServer.cs",
               "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR DAL\\SysAdminServer.cs",
               "RelativeDocumentMoniker": "AIR DAL\\SysAdminServer.cs",
               "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR DAL\\SysAdminServer.cs",
               "RelativeToolTip": "AIR DAL\\SysAdminServer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAA7AAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAswBYAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-31T01:21:32.281Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "FrmMessageBoxWithOutAck.cs",
+              "DocumentIndex": 32,
+              "Title": "LogServer.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR DAL\\LogServer.cs",
+              "RelativeDocumentMoniker": "AIR DAL\\LogServer.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR DAL\\LogServer.cs",
+              "RelativeToolTip": "AIR DAL\\LogServer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEMAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T14:28:21.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "FrmMessageBoxWithOutAck.cs [\u8BBE\u8BA1]",
               "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMessageBoxWithOutAck.cs",
               "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmMessageBoxWithOutAck.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMessageBoxWithOutAck.cs",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmMessageBoxWithOutAck.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMessageBoxWithOutAck.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmMessageBoxWithOutAck.cs [\u8BBE\u8BA1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T00:54:23.972Z"
+              "WhenOpened": "2024-08-25T13:41:17.972Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "FrmMessageBoxWithOutAck.Designer.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMessageBoxWithOutAck.Designer.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmMessageBoxWithOutAck.Designer.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMessageBoxWithOutAck.Designer.cs",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmMessageBoxWithOutAck.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAXAAAA",
+              "DocumentIndex": 36,
+              "Title": "SQLHelper.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\SQLHelper.cs",
+              "RelativeDocumentMoniker": "CommonHelper\\SQLHelper.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\SQLHelper.cs",
+              "RelativeToolTip": "CommonHelper\\SQLHelper.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABcAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T13:41:36.865Z"
+              "WhenOpened": "2024-08-31T03:53:24.868Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "FrmMessageBoxWithAck.Designer.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMessageBoxWithAck.Designer.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmMessageBoxWithAck.Designer.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMessageBoxWithAck.Designer.cs",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmMessageBoxWithAck.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAXAAAA",
+              "DocumentIndex": 38,
+              "Title": "FrmPump.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmPump.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmPump.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmPump.cs",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmPump.cs",
+              "ViewState": "AQIAANUAAAAAAAAAAAAmwOMAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T13:41:20.825Z",
+              "WhenOpened": "2024-09-23T03:28:51.89Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "FrmMessageBoxWithAck.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMessageBoxWithAck.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmMessageBoxWithAck.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMessageBoxWithAck.cs",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmMessageBoxWithAck.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
+              "DocumentIndex": 43,
+              "Title": "AIR DAL",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR DAL\\AIR DAL.csproj",
+              "RelativeDocumentMoniker": "AIR DAL\\AIR DAL.csproj",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR DAL\\AIR DAL.csproj",
+              "RelativeToolTip": "AIR DAL\\AIR DAL.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-08-31T01:35:19.123Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "FrmParamSet.Designer.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmParamSet.Designer.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmParamSet.Designer.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmParamSet.Designer.cs",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmParamSet.Designer.cs",
+              "ViewState": "AQIAAMMCAAAAAAAAAAAWwNgCAABvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T05:01:48.278Z",
+              "WhenOpened": "2024-08-27T13:55:22.875Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 40,
+              "Title": "IniConfigHelper.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\IniConfigHelper.cs",
+              "RelativeDocumentMoniker": "CommonHelper\\IniConfigHelper.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\IniConfigHelper.cs",
+              "RelativeToolTip": "CommonHelper\\IniConfigHelper.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAhwEEAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T10:17:03.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
               "Title": "CommonHelper",
               "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\CommonHelper.csproj",
               "RelativeDocumentMoniker": "CommonHelper\\CommonHelper.csproj",
@@ -936,53 +885,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "AIR BLL",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR BLL\\AIR BLL.csproj",
-              "RelativeDocumentMoniker": "AIR BLL\\AIR BLL.csproj",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR BLL\\AIR BLL.csproj",
-              "RelativeToolTip": "AIR BLL\\AIR BLL.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-31T04:53:11.365Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "ModbusTCP.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\ModbusTCP.cs",
-              "RelativeDocumentMoniker": "CommonHelper\\ModbusTCP.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\ModbusTCP.cs",
-              "RelativeToolTip": "CommonHelper\\ModbusTCP.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAFAAAA",
+              "DocumentIndex": 41,
+              "Title": "FrmAlarmLog.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmAlarmLog.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmAlarmLog.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmAlarmLog.cs",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmAlarmLog.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAABYAAAA5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T04:00:02.088Z"
+              "WhenOpened": "2024-08-31T13:18:25.715Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "AIR ModbusTCP",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\AIR ModbusTCP.csproj",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\AIR ModbusTCP.csproj",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\AIR ModbusTCP.csproj",
-              "RelativeToolTip": "AIR ModbusTCP\\AIR ModbusTCP.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-31T01:26:30.594Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "SysAdminManage.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR BLL\\SysAdminManage.cs",
-              "RelativeDocumentMoniker": "AIR BLL\\SysAdminManage.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR BLL\\SysAdminManage.cs",
-              "RelativeToolTip": "AIR BLL\\SysAdminManage.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAnwBoAAAAIAAAA",
+              "DocumentIndex": 46,
+              "Title": "ConfigModel.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Model\\ConfigModel.cs",
+              "RelativeDocumentMoniker": "Model\\ConfigModel.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Model\\ConfigModel.cs",
+              "RelativeToolTip": "Model\\ConfigModel.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwAkAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T05:35:41.4Z"
+              "WhenOpened": "2024-10-11T09:48:57.697Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 44,
+              "Title": "DeviceControl.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\DeviceControl.cs",
+              "RelativeDocumentMoniker": "Wen.KYJControlLib\\DeviceControl.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\DeviceControl.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "Wen.KYJControlLib\\DeviceControl.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T12:56:51.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\Program.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\Program.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\Program.cs",
+              "RelativeToolTip": "AIR ModbusTCP\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T12:35:13.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "PrintDGV.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\PrintDGV.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\PrintDGV.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\PrintDGV.cs",
+              "RelativeToolTip": "AIR ModbusTCP\\PrintDGV.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAgwDwAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T13:30:47.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "ExcelHelper.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\ExcelHelper.cs",
+              "RelativeDocumentMoniker": "CommonHelper\\ExcelHelper.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\ExcelHelper.cs",
+              "RelativeToolTip": "CommonHelper\\ExcelHelper.cs",
+              "ViewState": "AQIAAHkDAAAAAAAAAADwv24DAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T03:57:25.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
               "Title": "DataGridViewStyle.cs",
               "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\DataGridViewStyle.cs",
               "RelativeDocumentMoniker": "CommonHelper\\DataGridViewStyle.cs",
@@ -994,54 +968,103 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
-              "Title": "SQLHelper.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\SQLHelper.cs",
-              "RelativeDocumentMoniker": "CommonHelper\\SQLHelper.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\SQLHelper.cs",
-              "RelativeToolTip": "CommonHelper\\SQLHelper.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T03:53:24.868Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 50,
-              "Title": "AIR DAL",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR DAL\\AIR DAL.csproj",
-              "RelativeDocumentMoniker": "AIR DAL\\AIR DAL.csproj",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR DAL\\AIR DAL.csproj",
-              "RelativeToolTip": "AIR DAL\\AIR DAL.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-08-31T01:35:19.123Z"
+              "Title": "DataTypeEnum.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\DataTypeEnum.cs",
+              "RelativeDocumentMoniker": "CommonHelper\\DataTypeEnum.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\DataTypeEnum.cs",
+              "RelativeToolTip": "CommonHelper\\DataTypeEnum.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T14:47:30.193Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "ExcelHelper.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\ExcelHelper.cs",
-              "RelativeDocumentMoniker": "CommonHelper\\ExcelHelper.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\ExcelHelper.cs",
-              "RelativeToolTip": "CommonHelper\\ExcelHelper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "DocumentIndex": 51,
+              "Title": "SysLogModel.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Model\\SysLogModel.cs",
+              "RelativeDocumentMoniker": "Model\\SysLogModel.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Model\\SysLogModel.cs",
+              "RelativeToolTip": "Model\\SysLogModel.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwCMAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T03:57:25.493Z"
+              "WhenOpened": "2024-08-25T14:58:45.753Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
-              "Title": "ByteArray.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\ByteArray.cs",
-              "RelativeDocumentMoniker": "CommonHelper\\ByteArray.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\ByteArray.cs",
-              "RelativeToolTip": "CommonHelper\\ByteArray.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 55,
+              "Title": "XmlHelper.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\XmlHelper.cs",
+              "RelativeDocumentMoniker": "CommonHelper\\XmlHelper.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\XmlHelper.cs",
+              "RelativeToolTip": "CommonHelper\\XmlHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T04:00:26.162Z"
+              "WhenOpened": "2024-10-10T11:57:07.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "CsvHelper.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\CsvHelper.cs",
+              "RelativeDocumentMoniker": "CommonHelper\\CsvHelper.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\CsvHelper.cs",
+              "RelativeToolTip": "CommonHelper\\CsvHelper.cs",
+              "ViewState": "AQIAABUBAAAAAAAAAADwv9gAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T11:49:27.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "FileHelper.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\FileHelper.cs",
+              "RelativeDocumentMoniker": "CommonHelper\\FileHelper.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\FileHelper.cs",
+              "RelativeToolTip": "CommonHelper\\FileHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T11:58:27.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "DataValidate.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\DataValidate.cs",
+              "RelativeDocumentMoniker": "CommonHelper\\DataValidate.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\DataValidate.cs",
+              "RelativeToolTip": "CommonHelper\\DataValidate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T14:47:25.685Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 56,
+              "Title": "MySQLHelper.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\MySQLHelper.cs",
+              "RelativeDocumentMoniker": "CommonHelper\\MySQLHelper.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\MySQLHelper.cs",
+              "RelativeToolTip": "CommonHelper\\MySQLHelper.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T03:55:39.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "FrmMonitor.Designer.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMonitor.Designer.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmMonitor.Designer.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMonitor.Designer.cs",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmMonitor.Designer.cs",
+              "ViewState": "AQIAAMECAAAAAAAAAAAUwNICAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T03:18:00.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
               "Title": "JsonHelper.cs",
               "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\JsonHelper.cs",
               "RelativeDocumentMoniker": "CommonHelper\\JsonHelper.cs",
@@ -1053,7 +1076,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 59,
+              "Title": "FrmPump.Designer.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmPump.Designer.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmPump.Designer.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmPump.Designer.cs",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmPump.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T12:00:11.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "ModbusTCP.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\ModbusTCP.cs",
+              "RelativeDocumentMoniker": "CommonHelper\\ModbusTCP.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\ModbusTCP.cs",
+              "RelativeToolTip": "CommonHelper\\ModbusTCP.cs",
+              "ViewState": "AQIAAGABAAAAAAAAAAAQwCwBAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T04:00:02.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "DeviceControl.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\DeviceControl.cs",
+              "RelativeDocumentMoniker": "Wen.KYJControlLib\\DeviceControl.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\DeviceControl.cs",
+              "RelativeToolTip": "Wen.KYJControlLib\\DeviceControl.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAYwGoAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T12:56:58.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
               "Title": "CPUInfoHelper.cs",
               "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\CPUInfoHelper.cs",
               "RelativeDocumentMoniker": "CommonHelper\\CPUInfoHelper.cs",
@@ -1066,30 +1126,219 @@
             {
               "$type": "Document",
               "DocumentIndex": 62,
-              "Title": "PrintDGV.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\PrintDGV.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\PrintDGV.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\PrintDGV.cs",
-              "RelativeToolTip": "AIR ModbusTCP\\PrintDGV.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAgwDwAAAAQAAAA",
+              "Title": "ByteArray.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\ByteArray.cs",
+              "RelativeDocumentMoniker": "CommonHelper\\ByteArray.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\CommonHelper\\ByteArray.cs",
+              "RelativeToolTip": "CommonHelper\\ByteArray.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T13:30:47.774Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 63,
-              "Title": "SysLogModel.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Model\\SysLogModel.cs",
-              "RelativeDocumentMoniker": "Model\\SysLogModel.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Model\\SysLogModel.cs",
-              "RelativeToolTip": "Model\\SysLogModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T14:58:45.753Z"
+              "WhenOpened": "2024-08-31T04:00:26.162Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 64,
+              "Title": "KYJcontrol.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\KYJcontrol.cs",
+              "RelativeDocumentMoniker": "Wen.KYJControlLib\\KYJcontrol.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\KYJcontrol.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "Wen.KYJControlLib\\KYJcontrol.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T12:57:07.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "DeviceState.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\DeviceState.cs",
+              "RelativeDocumentMoniker": "Wen.KYJControlLib\\DeviceState.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\DeviceState.cs",
+              "RelativeToolTip": "Wen.KYJControlLib\\DeviceState.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T01:22:46.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "DeviceState.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\DeviceState.cs",
+              "RelativeDocumentMoniker": "Wen.KYJControlLib\\DeviceState.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\DeviceState.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "Wen.KYJControlLib\\DeviceState.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T12:57:06.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "ConfigManage.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\C#\u9879\u76EE\\\u9879\u76EE\u56DB\u4E0A\u4F4D\u673A\u914D\u7F6E\u8F6F\u4EF6\\ProConfigSys_Project\\Wen.ProConfigSys\\ConfigLib\\Config\\ConfigManage.cs",
+              "RelativeDocumentMoniker": "..\\..\\C#\u9879\u76EE\\\u9879\u76EE\u56DB\u4E0A\u4F4D\u673A\u914D\u7F6E\u8F6F\u4EF6\\ProConfigSys_Project\\Wen.ProConfigSys\\ConfigLib\\Config\\ConfigManage.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\C#\u9879\u76EE\\\u9879\u76EE\u56DB\u4E0A\u4F4D\u673A\u914D\u7F6E\u8F6F\u4EF6\\ProConfigSys_Project\\Wen.ProConfigSys\\ConfigLib\\Config\\ConfigManage.cs",
+              "RelativeToolTip": "..\\..\\C#\u9879\u76EE\\\u9879\u76EE\u56DB\u4E0A\u4F4D\u673A\u914D\u7F6E\u8F6F\u4EF6\\ProConfigSys_Project\\Wen.ProConfigSys\\ConfigLib\\Config\\ConfigManage.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAwEcAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-02T23:41:51.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "SQLiteHelper.cs",
+              "DocumentMoniker": "C:\\Users\\24242\\AppData\\Local\\Temp\\.vsdbgsrc\\cdeff39f53d5f49cf769a964fb40ff9176d8d6c7aad7d535e60a53bbc75f3bc4\\SQLiteHelper.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\24242\\AppData\\Local\\Temp\\.vsdbgsrc\\cdeff39f53d5f49cf769a964fb40ff9176d8d6c7aad7d535e60a53bbc75f3bc4\\SQLiteHelper.cs",
+              "ToolTip": "C:\\Users\\24242\\AppData\\Local\\Temp\\.vsdbgsrc\\cdeff39f53d5f49cf769a964fb40ff9176d8d6c7aad7d535e60a53bbc75f3bc4\\SQLiteHelper.cs",
+              "RelativeToolTip": "..\\..\\..\\Users\\24242\\AppData\\Local\\Temp\\.vsdbgsrc\\cdeff39f53d5f49cf769a964fb40ff9176d8d6c7aad7d535e60a53bbc75f3bc4\\SQLiteHelper.cs",
+              "ViewState": "AQIAADkAAAAAAAAAAAAYwFYAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T14:56:14.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "FrmHistoryLog.Designer.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmHistoryLog.Designer.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmHistoryLog.Designer.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmHistoryLog.Designer.cs",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmHistoryLog.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T13:31:20.439Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "FrmAlarmLog.Designer.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmAlarmLog.Designer.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmAlarmLog.Designer.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmAlarmLog.Designer.cs",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmAlarmLog.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T13:18:43.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "FrmUserManage.Designer.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmUserManage.Designer.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmUserManage.Designer.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmUserManage.Designer.cs",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmUserManage.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T14:00:41.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "FrmMain.Designer.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMain.Designer.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmMain.Designer.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMain.Designer.cs",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmMain.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIEAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T13:01:07.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "Title.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\Title.cs",
+              "RelativeDocumentMoniker": "Wen.KYJControlLib\\Title.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\Title.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "Wen.KYJControlLib\\Title.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T12:57:09.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "TapControl.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\TapControl.cs",
+              "RelativeDocumentMoniker": "Wen.KYJControlLib\\TapControl.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\TapControl.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "Wen.KYJControlLib\\TapControl.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T12:57:09.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "PumpControl.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\PumpControl.cs",
+              "RelativeDocumentMoniker": "Wen.KYJControlLib\\PumpControl.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\PumpControl.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "Wen.KYJControlLib\\PumpControl.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T12:57:08.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "NaviControl.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\NaviControl.cs",
+              "RelativeDocumentMoniker": "Wen.KYJControlLib\\NaviControl.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Wen.KYJControlLib\\NaviControl.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "Wen.KYJControlLib\\NaviControl.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-27T12:57:08.224Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "FrmMessageBoxWithOutAck.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMessageBoxWithOutAck.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmMessageBoxWithOutAck.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMessageBoxWithOutAck.cs",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmMessageBoxWithOutAck.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T00:54:23.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "FrmMessageBoxWithOutAck.Designer.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMessageBoxWithOutAck.Designer.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmMessageBoxWithOutAck.Designer.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMessageBoxWithOutAck.Designer.cs",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmMessageBoxWithOutAck.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T13:41:36.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "FrmMessageBoxWithAck.Designer.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMessageBoxWithAck.Designer.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmMessageBoxWithAck.Designer.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMessageBoxWithAck.Designer.cs",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmMessageBoxWithAck.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-25T13:41:20.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "FrmMessageBoxWithAck.cs",
+              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMessageBoxWithAck.cs",
+              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmMessageBoxWithAck.cs",
+              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmMessageBoxWithAck.cs",
+              "RelativeToolTip": "AIR ModbusTCP\\FrmMessageBoxWithAck.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-31T05:01:48.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
               "Title": "SysAdminModel.cs",
               "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\Model\\SysAdminModel.cs",
               "RelativeDocumentMoniker": "Model\\SysAdminModel.cs",
@@ -1101,7 +1350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 82,
               "Title": "FrmUserManage.cs",
               "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmUserManage.cs",
               "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmUserManage.cs",
@@ -1109,11 +1358,12 @@
               "RelativeToolTip": "AIR ModbusTCP\\FrmUserManage.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T14:00:15.626Z"
+              "WhenOpened": "2024-08-27T14:00:15.626Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 83,
               "Title": "FrmReport.Designer.cs",
               "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmReport.Designer.cs",
               "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmReport.Designer.cs",
@@ -1121,11 +1371,12 @@
               "RelativeToolTip": "AIR ModbusTCP\\FrmReport.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T13:56:38.845Z"
+              "WhenOpened": "2024-08-27T13:56:38.845Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 84,
               "Title": "FrmReport.cs",
               "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmReport.cs",
               "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmReport.cs",
@@ -1133,47 +1384,12 @@
               "RelativeToolTip": "AIR ModbusTCP\\FrmReport.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T13:56:19.417Z"
+              "WhenOpened": "2024-08-27T13:56:19.417Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
-              "Title": "FrmParamSet.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmParamSet.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmParamSet.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmParamSet.cs",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmParamSet.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T13:55:02.227Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 69,
-              "Title": "FrmHistoryTrend.Designer.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmHistoryTrend.Designer.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmHistoryTrend.Designer.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmHistoryTrend.Designer.cs",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmHistoryTrend.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T13:51:44.253Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 70,
-              "Title": "FrmHistoryTrend.cs",
-              "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmHistoryTrend.cs",
-              "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmHistoryTrend.cs",
-              "ToolTip": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmHistoryTrend.cs",
-              "RelativeToolTip": "AIR ModbusTCP\\FrmHistoryTrend.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T13:52:29.211Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 87,
               "Title": "Resources.resx",
               "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\Properties\\Resources.resx",
               "RelativeDocumentMoniker": "AIR ModbusTCP\\Properties\\Resources.resx",
@@ -1184,7 +1400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 86,
               "Title": "FrmPrint.cs",
               "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmPrint.cs",
               "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmPrint.cs",
@@ -1196,7 +1412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 85,
               "Title": "FrmPrint.designer.cs",
               "DocumentMoniker": "C:\\\u5B66\u4E60\u6587\u4EF6\\\u897F\u95E8\u5B50PLC\u5F00\u653E\u5F0F\u901A\u4FE1\\AIR ModbusTCP\\AIR ModbusTCP\\FrmPrint.designer.cs",
               "RelativeDocumentMoniker": "AIR ModbusTCP\\FrmPrint.designer.cs",

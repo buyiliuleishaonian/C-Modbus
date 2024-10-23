@@ -39,7 +39,7 @@ namespace AIR_CompressorModbusRTU
         /// <summary>
         /// 配置文件路径
         /// </summary>
-        private static string initialPath = Application.StartupPath+@"\Config\Config.ini";
+        private static string initialPath { get; set; } = Application.StartupPath+@"\Config\Config.ini";
 
         public static int tickCount = 0;
 

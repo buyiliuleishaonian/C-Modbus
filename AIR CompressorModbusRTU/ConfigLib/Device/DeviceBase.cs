@@ -200,7 +200,6 @@ namespace ConfigLib
                             AlarmNote = variable.LowAlarmNote,
                             IsTrigger = compareResult == 1
                         });
-
                     }
                     variable.LowAlarmCacheValue = compareValue;
                 }

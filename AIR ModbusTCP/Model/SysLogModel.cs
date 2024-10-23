@@ -46,6 +46,6 @@ namespace Model
         /// <summary>
         /// 变量报警类型
         /// </summary>
-        public bool AlarmType { get; set; }
+        public string AlarmType { get; set; }
     }
 }

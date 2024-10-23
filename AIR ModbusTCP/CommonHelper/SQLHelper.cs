@@ -21,7 +21,7 @@ namespace CommonHelper
             //private static string sql1 = ConfigurationManager.ConnectionStrings["sqlStr"].ToString();
             //通过输入来得到数据库
             private static string sql2 = "server=.;uid=jgw;password=123456;database=MultiThMonitorDB";
-
+            
             /// <summary>
             /// 放回增删改的结果是否成功
             /// </summary>

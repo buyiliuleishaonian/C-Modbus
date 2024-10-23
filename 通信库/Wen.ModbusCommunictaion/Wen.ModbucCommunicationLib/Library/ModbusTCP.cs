@@ -265,10 +265,10 @@ namespace Wen.ModbucCommunicationLib.Library
         /// <summary>
         /// 拼接报文，写入的报文帧
         /// </summary>
-        /// <param name="address"></param>
-        /// <param name="value"></param>
-        /// <param name="isBit"></param>
-        /// <param name="colilength"></param>
+        /// <param name="address">起始地址</param>
+        /// <param name="value">数据</param>
+        /// <param name="isBit">是否是写入布尔</param>
+        /// <param name="colilength">布尔数组长度</param>
         /// <returns></returns>
         public OperateResult<byte[]> BuildWriteMessageFrame(string address, byte[] value, bool isBit, int colilength = 0)
         {

@@ -38,3 +38,12 @@ C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\obj\Debu
 C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\obj\Debug\AIR ModbusTCP.exe
 C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\obj\Debug\AIR ModbusTCP.pdb
 C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\obj\Debug\AIR_ModbusTCP.FrmTapControl.resources
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\obj\Debug\AIR_ModbusTCP.FrmPump.resources
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\bin\Debug\System.Buffers.xml
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\bin\Debug\System.Memory.xml
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\bin\Debug\System.Numerics.Vectors.xml
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\学习文件\西门子PLC开放式通信\AIR ModbusTCP\AIR ModbusTCP\obj\Debug\AIR_ModbusTCP.FrmModify.resources

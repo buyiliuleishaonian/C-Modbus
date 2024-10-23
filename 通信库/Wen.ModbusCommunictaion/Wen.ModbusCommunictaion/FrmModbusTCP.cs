@@ -9,7 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using thinger.DataConvertLib;
+using Wen.ModbucCommunicationLib.Helper;
 using Wen.ModbucCommunicationLib.Library;
+using Wen.ModbucCommunicationLib.StoreArea;
 
 namespace Wen.ModbusCommunictaion
 {
@@ -240,6 +242,7 @@ namespace Wen.ModbusCommunictaion
                 }
         }
 
+
         private void btn_Write_Click(object sender, EventArgs e)
         {
             DataType dataType = (DataType)Enum.Parse(typeof(DataType), this.cmb_DataType.Text);
@@ -250,6 +253,14 @@ namespace Wen.ModbusCommunictaion
             {
                 case DataType.Bool:
                     result = ModbusTCP.WriteCommon(this.txt_Variable.Text, BitLib.GetBitArrayFromBitArrayString(this.txt_SetValue.Text.Trim()));
+
+                   // var result1 = ModbusHelper.ModbusAddressAnalysis(this.txt_Variable.Text, 1, true);
+                    //if (result.IsSuccess)
+                    //{
+                    // result=   ModbusTCP.WriteBool(this.txt_Variable.Text, bool.Parse(this.txt_SetValue.Text.Trim()),
+                    //        (result1.Content1==ModbusStoreArea.x0&&result1.Content1==ModbusStoreArea.x1) ? true : false);
+                    //}
+                    //OperateResult.CreateFailResult($"变量{this.txt_Variable.Text}不存在，请检查变量表");
                     break;
                 case DataType.Byte:
                 case DataType.SByte:

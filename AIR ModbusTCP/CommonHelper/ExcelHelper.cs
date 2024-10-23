@@ -963,8 +963,9 @@ namespace CommonHelper
             {
                 workbook.Write(fs);
             }
-            catch
+            catch(Exception ex)
             {
+                string  message=ex.Message;
                 result = false;
                 return result;
             }

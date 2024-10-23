@@ -30,6 +30,7 @@ using System.Web.UI.WebControls;
 
 namespace AIR_CompressorModbusRTU
 {
+
     public partial class FraMain : Form
     {
         /// <summary>
@@ -55,32 +56,31 @@ namespace AIR_CompressorModbusRTU
         /// <summary>
         /// 锁屏，解锁标志位
         /// </summary>
-        private static bool lockbit = false;
-
-        //设置解锁屏监控对象
-        public ManagementEventWatcher unlockWatcher;
-
-        /// <summary>
-        /// 当前周几
-        /// </summary>
-        public DayOfWeek  CurrentWeek { get; set; }=DateTime.Now.DayOfWeek;
+        private static bool lockbit { get; set; } = false;
 
         /// <summary>
         /// 消息自动过滤类
         /// </summary>
         private MessageFilter messageFilter { get; set; }
 
+        /// <summary>
+        /// 当前周几
+        /// </summary>
+        public DayOfWeek CurrentWeek { get; set; } = DateTime.Now.DayOfWeek;
+
+
+
         //数据写入数据库定时器
-        private System.Timers.Timer Writetimer=new System.Timers.Timer();
+        private System.Timers.Timer Writetimer = new System.Timers.Timer();
 
         //数据表管理对象
-        private SQLLiteManage SQLLiteManage=new SQLLiteManage();    
+        private SQLLiteManage SQLLiteManage = new SQLLiteManage();
 
         //数据名称集合
-        private List<string> varName=new List<string>();
+        private List<string> varName = new List<string>();
 
         //数据集合
-        private List<string> varValue; 
+        private List<string> varValue;
 
         //数据逻辑对象
         private ActualDataManage ActualDataManage = new ActualDataManage();
@@ -120,7 +120,7 @@ namespace AIR_CompressorModbusRTU
         /// <param name="e"></param>
         private void Timer_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
         {
-            this.Invoke(new Action(() => 
+            this.Invoke(new Action(() =>
             {
                 this.lbl_CurrentTime.Text=CurrentTime.ToString()+CurrentWeek.ToString();
             }));
@@ -132,11 +132,11 @@ namespace AIR_CompressorModbusRTU
                 varValue.AddRange(CommonMethod.PLCDevice.StoreVarList.Select(c => c.VarValue?.ToString()).ToList());
                 try
                 {
-                    ActualDataManage.AddActualData(varName,varValue);
+                    ActualDataManage.AddActualData(varName, varValue);
                 }
-                catch 
+                catch
                 {
-                    CommonMethod.AddLog(true,"添加数据失败");
+                    CommonMethod.AddLog(true, "添加数据失败");
                 }
             }
         }
@@ -169,7 +169,6 @@ namespace AIR_CompressorModbusRTU
                     LockWorkStation();
                 }
             }
-
         }
 
         /// <summary>
@@ -225,14 +224,15 @@ namespace AIR_CompressorModbusRTU
             CommonMethod.PLCDevice=result.Content;
             //手动停止多线程源
             CommonMethod.PLCDevice.Cts=new CancellationTokenSource();
-            CommonMethod.PLCDevice.DataFormat=(int)DataFormat.CDAB;
+            CommonMethod.PLCDevice.DataFormat=(int)DataFormat.ABCD;
 
             //给定变量初始值
             CommonMethod.PLCDevice.Init();
 
             //配置PLC通信对象
-            CommonMethod.PLC.DataFormat=DataFormat.CDAB;
+            CommonMethod.PLC.DataFormat=DataFormat.ABCD;
 
+            //报警触发事件
             CommonMethod.PLCDevice.AlarmTriggerEvent+=PLCDevice_AlarmTriggerEvent;
 
             //自动锁屏消息过滤对象,保证鼠标或者键盘信息给到的时候，重新计时锁屏
@@ -241,7 +241,7 @@ namespace AIR_CompressorModbusRTU
 
             //添加数据名称
             varName.Add("insertTime");
-            varName.AddRange(CommonMethod.PLCDevice.StoreVarList.Select(c=>c.VarName));
+            varName.AddRange(CommonMethod.PLCDevice.StoreVarList.Select(c => c.VarName));
 
             //多线程，进行连接读取
             Task.Run(() =>
@@ -905,7 +905,6 @@ namespace AIR_CompressorModbusRTU
             }
         }
         #endregion
-
 
         #region 锁屏,解锁
         //调用window32的

@@ -180,54 +180,6 @@ namespace AIR_CompressorModbusRTU
         }
 
         #region 配置操作
-        /// <summary>
-        /// 修改开机自动启动
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void tog_AutoStart_CheckedChanged(object sender, EventArgs e)
-        {
-         
-        }
-
-        /// <summary>
-        /// 修改程序自动登入
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void tog_AutoLogin_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-        /// <summary>
-        /// 修改自动锁屏
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void tog_AutoLock_CheckedChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        /// <summary>
-        /// 修改锁屏时间
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void up_LockPeriod_ValueChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        /// <summary>
-        /// 修改显示
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void up_ShowSeriesCount_ValueChanged(object sender, EventArgs e)
-        {
-            
-        }
 
         /// <summary>
         /// 开机自动启动注册表

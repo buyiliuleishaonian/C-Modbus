@@ -727,11 +727,11 @@
             this.pumpControl2.Location = new System.Drawing.Point(114, 619);
             this.pumpControl2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pumpControl2.Name = "pumpControl2";
-            this.pumpControl2.PumpIndex = 1;
+            this.pumpControl2.PumpIndex = 2;
             this.pumpControl2.PumpState = ((byte)(0));
             this.pumpControl2.Size = new System.Drawing.Size(126, 77);
             this.pumpControl2.TabIndex = 119;
-            this.pumpControl2.PumpDoubleClick += new System.EventHandler(this.pumpControl2_PumpDoubleClick);
+            this.pumpControl2.PumpDoubleClick += new System.EventHandler(this.pumpCommon_PumpDoubleClick);
             // 
             // pumpControl1
             // 
@@ -744,6 +744,7 @@
             this.pumpControl1.PumpState = ((byte)(0));
             this.pumpControl1.Size = new System.Drawing.Size(126, 77);
             this.pumpControl1.TabIndex = 118;
+            this.pumpControl1.PumpDoubleClick += new System.EventHandler(this.pumpCommon_PumpDoubleClick);
             // 
             // flowControl22
             // 

@@ -138,6 +138,7 @@
             this.btn_Operate.TabIndex = 85;
             this.btn_Operate.Text = "操作";
             this.btn_Operate.UseVisualStyleBackColor = false;
+            this.btn_Operate.Click += new System.EventHandler(this.btn_Operate_Click);
             // 
             // label7
             // 
@@ -312,6 +313,7 @@
             this.textSet19.TitleScale = 50;
             this.textSet19.Unit = "Hz";
             this.textSet19.ValueScale = 30;
+            this.textSet19.ControlDoubleClick += new System.EventHandler(this.CommonTextSet_ControlDoubleClick);
             // 
             // textSet20
             // 
@@ -329,6 +331,7 @@
             this.textSet20.TitleScale = 50;
             this.textSet20.Unit = "Hz";
             this.textSet20.ValueScale = 30;
+            this.textSet20.ControlDoubleClick += new System.EventHandler(this.CommonTextSet_ControlDoubleClick);
             // 
             // textSet21
             // 
@@ -346,6 +349,7 @@
             this.textSet21.TitleScale = 50;
             this.textSet21.Unit = "Hz";
             this.textSet21.ValueScale = 30;
+            this.textSet21.ControlDoubleClick += new System.EventHandler(this.CommonTextSet_ControlDoubleClick);
             // 
             // textSet22
             // 
@@ -363,6 +367,7 @@
             this.textSet22.TitleScale = 50;
             this.textSet22.Unit = "Hz";
             this.textSet22.ValueScale = 30;
+            this.textSet22.ControlDoubleClick += new System.EventHandler(this.CommonTextSet_ControlDoubleClick);
             // 
             // textSet23
             // 
@@ -380,6 +385,7 @@
             this.textSet23.TitleScale = 50;
             this.textSet23.Unit = "Hz";
             this.textSet23.ValueScale = 30;
+            this.textSet23.ControlDoubleClick += new System.EventHandler(this.CommonTextSet_ControlDoubleClick);
             // 
             // textSet24
             // 
@@ -397,6 +403,7 @@
             this.textSet24.TitleScale = 50;
             this.textSet24.Unit = "Hz";
             this.textSet24.ValueScale = 30;
+            this.textSet24.ControlDoubleClick += new System.EventHandler(this.CommonTextSet_ControlDoubleClick);
             // 
             // textSet11
             // 
@@ -414,6 +421,7 @@
             this.textSet11.TitleScale = 50;
             this.textSet11.Unit = "℃";
             this.textSet11.ValueScale = 30;
+            this.textSet11.ControlDoubleClick += new System.EventHandler(this.CommonTextSet_ControlDoubleClick);
             // 
             // textSet16
             // 
@@ -431,6 +439,7 @@
             this.textSet16.TitleScale = 50;
             this.textSet16.Unit = "℃";
             this.textSet16.ValueScale = 30;
+            this.textSet16.ControlDoubleClick += new System.EventHandler(this.CommonTextSet_ControlDoubleClick);
             // 
             // textSet17
             // 
@@ -448,6 +457,7 @@
             this.textSet17.TitleScale = 50;
             this.textSet17.Unit = "Mpa";
             this.textSet17.ValueScale = 30;
+            this.textSet17.ControlDoubleClick += new System.EventHandler(this.CommonTextSet_ControlDoubleClick);
             // 
             // textSet18
             // 
@@ -465,6 +475,7 @@
             this.textSet18.TitleScale = 50;
             this.textSet18.Unit = "Mpa";
             this.textSet18.ValueScale = 30;
+            this.textSet18.ControlDoubleClick += new System.EventHandler(this.CommonTextSet_ControlDoubleClick);
             // 
             // textSet12
             // 
@@ -482,6 +493,7 @@
             this.textSet12.TitleScale = 50;
             this.textSet12.Unit = "℃";
             this.textSet12.ValueScale = 30;
+            this.textSet12.ControlDoubleClick += new System.EventHandler(this.CommonTextSet_ControlDoubleClick);
             // 
             // textSet13
             // 
@@ -499,6 +511,7 @@
             this.textSet13.TitleScale = 50;
             this.textSet13.Unit = "℃";
             this.textSet13.ValueScale = 30;
+            this.textSet13.ControlDoubleClick += new System.EventHandler(this.CommonTextSet_ControlDoubleClick);
             // 
             // textSet14
             // 
@@ -516,6 +529,7 @@
             this.textSet14.TitleScale = 50;
             this.textSet14.Unit = "Mpa";
             this.textSet14.ValueScale = 30;
+            this.textSet14.ControlDoubleClick += new System.EventHandler(this.CommonTextSet_ControlDoubleClick);
             // 
             // textSet15
             // 
@@ -533,6 +547,7 @@
             this.textSet15.TitleScale = 50;
             this.textSet15.Unit = "Mpa";
             this.textSet15.ValueScale = 30;
+            this.textSet15.ControlDoubleClick += new System.EventHandler(this.CommonTextSet_ControlDoubleClick);
             // 
             // textSet10
             // 
@@ -550,6 +565,7 @@
             this.textSet10.TitleScale = 50;
             this.textSet10.Unit = "℃";
             this.textSet10.ValueScale = 30;
+            this.textSet10.ControlDoubleClick += new System.EventHandler(this.CommonTextSet_ControlDoubleClick);
             // 
             // textSet9
             // 
@@ -567,6 +583,7 @@
             this.textSet9.TitleScale = 50;
             this.textSet9.Unit = "℃";
             this.textSet9.ValueScale = 30;
+            this.textSet9.ControlDoubleClick += new System.EventHandler(this.CommonTextSet_ControlDoubleClick);
             // 
             // textSet8
             // 
@@ -584,6 +601,7 @@
             this.textSet8.TitleScale = 50;
             this.textSet8.Unit = "℃";
             this.textSet8.ValueScale = 30;
+            this.textSet8.ControlDoubleClick += new System.EventHandler(this.CommonTextSet_ControlDoubleClick);
             // 
             // textSet7
             // 
@@ -601,6 +619,7 @@
             this.textSet7.TitleScale = 50;
             this.textSet7.Unit = "℃";
             this.textSet7.ValueScale = 30;
+            this.textSet7.ControlDoubleClick += new System.EventHandler(this.CommonTextSet_ControlDoubleClick);
             // 
             // textSet6
             // 
@@ -618,6 +637,7 @@
             this.textSet6.TitleScale = 50;
             this.textSet6.Unit = "Mpa";
             this.textSet6.ValueScale = 30;
+            this.textSet6.ControlDoubleClick += new System.EventHandler(this.CommonTextSet_ControlDoubleClick);
             // 
             // textSet5
             // 
@@ -635,6 +655,7 @@
             this.textSet5.TitleScale = 50;
             this.textSet5.Unit = "Mpa";
             this.textSet5.ValueScale = 30;
+            this.textSet5.ControlDoubleClick += new System.EventHandler(this.CommonTextSet_ControlDoubleClick);
             // 
             // textSet4
             // 
@@ -652,6 +673,7 @@
             this.textSet4.TitleScale = 50;
             this.textSet4.Unit = "℃";
             this.textSet4.ValueScale = 30;
+            this.textSet4.ControlDoubleClick += new System.EventHandler(this.CommonTextSet_ControlDoubleClick);
             // 
             // textSet3
             // 
@@ -669,6 +691,7 @@
             this.textSet3.TitleScale = 50;
             this.textSet3.Unit = "℃";
             this.textSet3.ValueScale = 30;
+            this.textSet3.ControlDoubleClick += new System.EventHandler(this.CommonTextSet_ControlDoubleClick);
             // 
             // textSet2
             // 
@@ -686,6 +709,7 @@
             this.textSet2.TitleScale = 50;
             this.textSet2.Unit = "Mpa";
             this.textSet2.ValueScale = 30;
+            this.textSet2.ControlDoubleClick += new System.EventHandler(this.CommonTextSet_ControlDoubleClick);
             // 
             // textSet1
             // 
@@ -703,6 +727,7 @@
             this.textSet1.TitleScale = 50;
             this.textSet1.Unit = "Mpa";
             this.textSet1.ValueScale = 30;
+            this.textSet1.ControlDoubleClick += new System.EventHandler(this.CommonTextSet_ControlDoubleClick);
             // 
             // Title5
             // 
